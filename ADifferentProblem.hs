@@ -1,0 +1,1 @@
+main = getContents >>= mapM_ (print . abs . uncurry (-)) . map (\[a, b] -> (read a :: Int, read b :: Int)) . (map words . lines)
