@@ -4,7 +4,6 @@ main :: IO ()
 main = liftA2 (yoda [] []) get get >>= \(n, m) -> putStrLn n >> putStrLn m
     where get = fmap read getLine
 
-
 yoda :: [Int] -> [Int] -> Int -> Int -> (String, String)
 yoda xs ys 0 0 = (digitsToYoda xs, digitsToYoda ys)
 yoda xs ys n m | ln < lm   = yoda  xs     (lm:ys) (div n 10) (div m 10)
