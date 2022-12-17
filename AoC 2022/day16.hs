@@ -1,67 +1,56 @@
-{-# LANGUAGE TupleSections #-}
+{-# LANGUAGE TupleSections, FlexibleInstances #-}
 
 import Data.Int (Int8)
 
-import Data.Array (Array, Ix, array, (!), assocs, bounds, indices)
-import qualified Data.Set as S
-import Data.List (sort, find)
-import Data.Bifunctor (bimap, first, second)
-import Data.Char (ord)
+import Data.Array (Array, array, (!), assocs, bounds, indices)
+import qualified Data.IntSet as S
+import qualified Data.Set as SS
+import Data.List (sort, nub)
+import Data.Bifunctor (bimap, first)
 import Data.Maybe (fromJust)
 
 import Debug.Trace (trace)
 
+-- mellom 2413 og 1961
+
 main :: IO ()
 main = do
-    (g,f) <- fmap preprocess (readFile "day16-input.txt")
-    print (brute g f)
+    (g,f) <- fmap (first clique . parse SS.empty [] [] . map words . lines) (readFile "day16-input.txt")
+    let valves = S.fromList (filter (\u -> f ! u > 0) (indices f))
+        result1 = fst $ search valves 30 0 0 g f
+        (elephant, unopened) = search valves 26 0 0 g f
+        (me, s) = search unopened 26 0 0 g f
+    --print (valves, unopened, s)
+    print (result1, elephant + me)
 
+type Flow = Array Int Int
+type CliqueGraph = Array (Int, Int) Int
 
-type Flow  = Array Int8 Int
-type Graph = Array Int8 [(Int8, Int8)]
+search :: S.IntSet -> Int -> Int -> Int -> CliqueGraph -> Flow -> (Int, S.IntSet)
+search unopened time current u g f | time <= 0 = (0, unopened)
+                                   | null toSearch = (current * time, unopened)
+                                   | otherwise = maximum searches
+    where
+          searches = map (\v -> first (current * (g!(u,v)) +) $ search (S.delete v unopened) (time-g!(u,v)) (current + f ! v) v g f) toSearch
+          toSearch = filter (\v -> f ! v > 0 && S.member v unopened && g ! (u,v) < time)  [1..n]
+          n = snd (bounds f)
 
-brute = bruteForce 0 30 0 S.empty S.empty
-
-bruteForce :: Int8 -> Int8 -> Int -> S.Set Int8 -> S.Set Int8 -> Graph -> Flow -> Int
-bruteForce i time current turned visited g f | time <= 0 = 0
-                                     | S.member i turned && null neighbourCalls = fromIntegral time * current
-                                     | S.member i turned = maximum neighbourCalls
-                                     | otherwise = maximum (current + bruteForce i (time-1) (current+ f ! i) (S.insert i turned) S.empty g f : neighbourCalls)
+clique :: Array Int [Int] -> CliqueGraph
+clique g = array ((0,0), (n, n)) $ concatMap (\i -> bfs i (S.singleton i) [i] [((i,i),0)] 2) (indices g)
     where 
-        neighbourCalls :: [Int]
-        neighbourCalls = map (\(w,n) -> fromIntegral w * current + bruteForce n (time-w) current turned (S.insert n visited) g f) neighbours
+        n = snd (bounds g)
+        bfs :: Int -> S.IntSet -> [Int] -> [((Int, Int), Int)] -> Int -> [((Int, Int), Int)]
+        bfs start visited gen ret dist | null next = ret
+                                       | otherwise = bfs start (S.union visited (S.fromList next)) next (map (\v -> ((start,v),dist)) next ++ ret) (dist+1)
+            where next = nub $ filter (flip S.notMember visited) (concatMap (g!) gen) 
 
-        neighbours :: [(Int8, Int8)]
-        neighbours = filter (\(w,n) -> w <= time && S.notMember n visited) (g ! i)
-
-preprocess :: String -> (Graph, Flow)
-preprocess s = (contract (indices g) g f, f)
-    where (g,f) = parse S.empty [] [] $ map words $ lines s
-
-parse :: S.Set String -> [(String, [(Int8, String)])] -> [(String, Int)] -> [[String]] -> (Graph, Flow)
-parse names neighbours flows [] = let aix = array (0, fromIntegral (S.size names)-1)
-                                      translate = fromJust . flip lookup (zip (sort $ S.toList names) [0..])
-                                      neighbours' = map (bimap translate (map (second translate))) neighbours
+parse :: SS.Set String -> [(String, [String])] -> [(String, Int)] -> [[String]] -> (Array Int [Int], Flow)
+parse names neighbours flows [] = let aix = array (0, fromIntegral (SS.size names)-1)
+                                      translate = fromJust . flip lookup (zip (sort $ SS.toList names) [0..])
+                                      neighbours' = map (bimap translate (map translate)) neighbours
                                       flows' = map (first translate) flows
                                   in  (aix neighbours', aix flows')
-parse names neighbours flows ((_:name:_:_:flow:_:_:_:_:neighs):xs) = parse (S.insert name names) ((name,ns):neighbours) ((name,f):flows) xs
-    where ns = map (1,) $ last neighs : map init (init neighs)
+parse names neighbours flows ((_:name:_:_:flow:_:_:_:_:neighs):xs) = parse (SS.insert name names) ((name,ns):neighbours) ((name,f):flows) xs
+    where ns = last neighs : map init (init neighs)
           f  = read (init (drop 5 flow))
-
-contract :: [Int8] -> Graph -> Flow -> Graph
-contract [] g _ = g
-contract (x:xs) g f | f ! x /= 0 = contract xs g f
-                    | otherwise  = contract xs (imap combine g) f
-    where combine :: Int8 -> [(Int8, Int8)] -> [(Int8, Int8)]
-          combine y ns = case fmap fst (find ((==x) . snd) ns) of
-            Just d  -> foldr insert (map (first (d+)) $ filter ((/=y) . snd) (g ! x)) (filter ((/=x) . snd) ns)
-            Nothing | y == x && x /= 0 -> []
-                    | otherwise        -> ns
-          insert :: (Ord a, Eq b) => (a,b) -> [(a,b)] -> [(a,b)]
-          insert a [] = [a]
-          insert (a,b) ((a',b'):xs) | b == b'   = (min a a', b) : xs
-                                    | otherwise = (a',b') : insert (a,b) xs
-
-imap :: Ix i => (i -> a -> b) -> Array i a -> Array i b
-imap f arr = array (bounds arr) [ (i, f i a) | (i, a) <- assocs arr ]
 
