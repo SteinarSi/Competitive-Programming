@@ -1,17 +1,19 @@
-{-# LANGUAGE Strict, TupleSections #-}
+{-# LANGUAGE TupleSections #-}
 
 import Data.List (genericLength)
 import qualified Data.Set as S
 
-import Control.Concurrent
+import Control.Concurrent (forkFinally, getNumCapabilities, setNumCapabilities)
 import Control.DeepSeq (deepseq)
 import Control.Monad (forM_)
-import Control.Concurrent.QSemN
+import Control.Concurrent.QSemN (QSemN, newQSemN, waitQSemN, signalQSemN)
 
-
-import Debug.Trace (trace)
-
-target = 2000000
+data Beacon = Beacon {
+        beacon :: (Int, Int),
+        sensor :: (Int, Int), 
+        distance :: Int
+    }
+    deriving (Show)
 
 main :: IO ()
 main = do
@@ -26,19 +28,15 @@ main = do
 concurrentSearch :: [Beacon] -> IO ()
 concurrentSearch beacons = do
     qsem <- newQSemN 0
-    forM_ beacons search
+    forM_ beacons (\b -> forkFinally (search b) (const (signalQSemN qsem 1)))
     waitQSemN qsem (length beacons)
     where search beacon = let signals = findSignal beacon beacons
-                          in  if null (signals)
+                          in  if null (deepseq signals signals)
                             then pure ()
                             else print (map (\(x, y) -> (x,y, 4000000*x+y)) signals)
 
-data Beacon = Beacon {
-        beacon :: (Int, Int),
-        sensor :: (Int, Int), 
-        distance :: Int
-    }
-    deriving (Show)
+target :: Int
+target = 2000000
 
 edges :: Beacon -> S.Set (Int, Int)
 edges (Beacon (bx,by) ~_ d) = S.fromList $ filter (\(x,y) -> x>=0 && x<=4000000 && y>=0 && y<=4000000) allEdges
@@ -64,4 +62,3 @@ parse (_:_:x:y:_:_:_:_:x':y':_) = Beacon (s1, s2) (b1, b2) (manhattan (s1,s2) (b
           s2 = d y
           b1 = d x'
           b2 = read (drop 2 y')
-
