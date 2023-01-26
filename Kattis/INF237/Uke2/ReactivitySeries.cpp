@@ -8,19 +8,19 @@
 using namespace std;
 using i64 = int64_t;
 
-array<vector<set<int>>, 2> build_graph(){
+tuple<vector<set<int>>, vector<int>> build_graph(){
     int N, K;
     cin >> N >> K;
 
     int from;
     int to;
     vector<set<int>> outgoing(N);
-    vector<set<int>> incoming(N);
+    vector<int> incoming(N, 0);
 
     for (int i {0}; i < K; i++){
         cin >> from >> to;
         outgoing[from].insert(to);
-        incoming[to].insert(from);
+        incoming[to]++;
     }
     return {outgoing, incoming};
 }
@@ -30,6 +30,8 @@ L ← Empty list that will contain the sorted elements
 S ← Set of all nodes with no incoming edge
 
 while S is not empty do
+    if S has size > 1 then
+        output "back to the lab"
     remove a node n from S
     add n to L
     for each node m with an edge e from n to m do
@@ -37,18 +39,14 @@ while S is not empty do
         if m has no other incoming edges then
             insert m into S
 
-if graph has edges then
-    return error   (graph has at least one cycle)
-else 
-    return L   (a topologically sorted order)
 */
 
-void solve(vector<set<int>> &outgoing, vector<set<int>> &incoming){
-    set<int> S;
+void solve(vector<set<int>> &outgoing, vector<int> &incoming){
+    vector<int> S;
     vector<int> result;
     for(int v {0}; v < incoming.size(); v++){
-        if (incoming[v].empty()){
-            S.insert(v);
+        if (incoming[v] == 0){
+            S.push_back(v);
         }
     }   
 
@@ -58,13 +56,12 @@ void solve(vector<set<int>> &outgoing, vector<set<int>> &incoming){
             printf("back to the lab");
             return;
         }
-        u = *S.begin();
-        S.erase(u);
+        u = S.back();
+        S.pop_back();
         result.push_back(u);
         for (int v : outgoing[u]){
-            incoming[v].erase(u);
-            if (incoming[v].size() == 0){
-                S.insert(v);
+            if (--incoming[v] == 0){
+                S.push_back(v);
             }
         }
     }
