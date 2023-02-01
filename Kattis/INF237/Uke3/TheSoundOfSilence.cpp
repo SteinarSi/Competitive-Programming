@@ -1,5 +1,4 @@
 #include <iostream>
-#include <string>
 #include <vector>
 #include <iomanip>
 #include <set>
@@ -13,22 +12,6 @@ int main() {
     cin.exceptions(ios::failbit);
     cout << setprecision(10) << fixed;
 
-
-/*
-    multiset<int> test;
-    test.insert(0);
-    test.insert(0);
-    test.insert(1);
-    test.insert(2);
-    test.insert(2);
-    test.insert(5);
-    for (int i : test){
-        cout << i << '\n';
-    }
-    cout << '\n' << *test.begin() << ' ' << *(test.end()-1) << '\n';
-    return 0;
-*/
-
     int n, m, c;
     vector<int> samples;
     cin >> n >> m >> c;
@@ -40,7 +23,6 @@ int main() {
 
     vector<int> result;
     multiset<int> sub_samples;
-    
 
     for (int i {0}; i < m; i++){
         sub_samples.insert(samples[i]);
@@ -57,21 +39,11 @@ int main() {
             result.push_back(i+1);
         }
     }
+    for (int j : result){
+        cout << j << '\n';
+    }
 
-    if (result.size()){
-        for (int j : result){
-            cout << j << '\n';
-        }
-    }else{
+    if (! result.size()){
         cout << "NONE\n";
     }
 }
-
-/*
-7 2 0
-0 1 1 2 3 2 2
-
-2
-6
-
-*/
