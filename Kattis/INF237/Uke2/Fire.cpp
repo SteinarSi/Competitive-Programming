@@ -54,7 +54,6 @@ void solve(vector<string> &graph, int h, int w){
     }
     vector<pair<int, int>> generation = {player};
     vector<vector<long>> fire_graph = bfs(graph, h, w, fire);
-    vector<vector<long>> player_graph = bfs(graph, h, w, generation);
     vector<vector<bool>> visited(h, vector(w, false));
     int time {0};
     while ( ! generation.empty()){
@@ -66,7 +65,7 @@ void solve(vector<string> &graph, int h, int w){
                     cout << time << '\n';
                     return;
                 }
-                if (graph[dy+y][dx+x] == '.' && ! visited[dy+y][dx+x] && player_graph[dy+y][dx+x] < fire_graph[dy+y][dx+x]){
+                if (graph[dy+y][dx+x] == '.' && ! visited[dy+y][dx+x] && time < fire_graph[dy+y][dx+x]){
                     next.push_back({dx+x, dy+y});
                     visited[dy+y][dx+x] = true;
                 }
