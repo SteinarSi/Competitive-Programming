@@ -1,0 +1,1 @@
+main = interact (('h':) . (++"y") . flip replicate 'e' . (2*) . length . filter (=='e'))
