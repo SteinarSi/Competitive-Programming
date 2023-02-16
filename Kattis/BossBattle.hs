@@ -1,0 +1,1 @@
+main = getLine >>= print . max 1 . subtract 2 . read
