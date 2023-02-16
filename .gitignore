@@ -24,3 +24,5 @@ cabal.project.local~
 tempCodeRunnerFile.py
 *.exe
 .vscode*
+a.in
+a.out
