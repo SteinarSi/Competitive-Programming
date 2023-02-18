@@ -1,0 +1,1 @@
+print(round(float(input())/4, 2))
