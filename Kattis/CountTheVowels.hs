@@ -1,0 +1,1 @@
+main = getLine >>= print . length . filter (`elem` ['a','e','i','o','u','A','E','I','O','U'])
