@@ -9,6 +9,7 @@ public class LastFactorialDigit {
             int Nfak = facto(N);
             System.out.println(Nfak % 10);
         }
+        input.close();
     }
     public static int facto(int n){
         int ret = 1;

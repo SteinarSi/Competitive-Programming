@@ -1,1 +1,1 @@
-main = getLine >>= putStrLn . ("1 " ++)
+main=interact("1 "++)

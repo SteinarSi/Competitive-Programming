@@ -5,7 +5,7 @@ import Data.List (nub, sort, delete, sortOn)
 import Data.Bifunctor (bimap, first)
 import Data.Maybe (fromJust)
 
-import Control.Concurrent.MVar.Strict (modifyMVar_, newMVar, readMVar)
+import Control.Concurrent.MVar (modifyMVar_, newMVar, readMVar)
 import Control.Concurrent (getNumCapabilities, setNumCapabilities, forkIO)
 import Control.Concurrent.QSemN (newQSemN, waitQSemN, signalQSemN)
 import Control.DeepSeq (deepseq)

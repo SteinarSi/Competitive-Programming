@@ -2,7 +2,6 @@ import Data.List.Split (splitWhen)
 import Data.Char (isDigit)
 import Data.Bool (bool)
 import Data.List (elemIndex)
-import Control.Applicative
 
 data Distress = N Int | L [Distress]
     deriving (Eq, Read)

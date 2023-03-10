@@ -21,6 +21,7 @@ public class DamsInDistress {
             dependents.get(parentID).add(damn);
             dependents.put(i, new ArrayList<>());
         }
+        scn.close();
 
         System.out.println(findBest(camp, 0));
     }

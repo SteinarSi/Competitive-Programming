@@ -1,7 +1,7 @@
 import Control.Monad (replicateM_)
 
 main :: IO ()
-main = read <$> getLine >>= flip replicateM_ (count . map read . words <$> getLine >>= print)
+main = getLine >>= flip replicateM_ (getLine >>= print . count . map read . words) . read
 
 count :: [Int] -> Int
 count [] = 0
