@@ -4,6 +4,8 @@
 
 using namespace std;
 
+// The highest possible sum of all problems
+int MAX_SUM = 86400;
 
 struct WeightCombination{
     vector<int> used_indices;
@@ -28,6 +30,30 @@ struct WeightOptions{
         return ret;
     }
 };
+
+vector<int> mergeCombinations(vector<WeightOptions> &combs){
+    vector<int> data;
+    for (int d {1}; d <= MAX_SUM / 2; d++){
+        vector<WeightCombination> merged = combs[d].merge();
+        combs[2*d].options.insert(combs[2*d].options.end(), make_move_iterator(merged.begin()), make_move_iterator(merged.end()));
+        for (int i {0}; i < combs[d].options.size(); i++){
+            data.push_back(combs[d].weight);
+        }
+    }
+    return data;
+}
+
+void printSolution(vector<int> result, vector<WeightOptions> &combs){
+    if (result.size() == 0) cout << "commence the thumb-twiddling\n";
+    else {
+        for (int d : result){
+            WeightOptions *options = &combs[d];
+            WeightCombination c = options->options.back();
+            options->options.pop_back();
+            for (int i : c.used_indices) cout << i+1 << '\n';
+        } 
+    }
+}
 
 vector<int> backtrack(vector<int> &data, vector<vector<pair<int, int>>> &parent){
     vector<int> ret;
@@ -70,48 +96,22 @@ int main(){
     int n, d;
     int s = 0;
     cin >> n;
-    vector<int> diff_count(n, 0);
-    vector<WeightOptions> combs(7201);
-    vector<int> data;
-    for (int w {0}; w < 7201; w++){
+    vector<WeightOptions> combs(MAX_SUM+1);
+    for (int w {0}; w <= MAX_SUM; w++){
         combs[w].weight = w;
     }
 
     for (int i {0}; i < n; i++){
         cin >> d;
-        ++diff_count[d];
-        data.push_back(d);
         s += d;
-        combs[d].options.push_back(WeightCombination{vector<int>(i)});
+        combs[d].options.push_back(WeightCombination{{i}});
     }
     if (s % 2 == 1) {
         cout << "commence the thumb-twiddling\n";
         return 0;
     }
 
+    vector<int> data = mergeCombinations(combs);
     vector<int> result = sss(data, s / 2);
-    if (result.size() == 0) cout << "commence the thumb-twiddling\n";
-    else {
-        for (int i : result) cout << i << '\n';
-    }
-/*
-    for (d = 1; d < 3601; d++){
-        vector<WeightCombination> merged = combs[d].merge();
-        combs[2*d].options.insert(combs[2*d].options.end(), make_move_iterator(merged.begin()), make_move_iterator(merged.end()));
-        for (int i {0}; i < combs[d].options.size(); i++){
-            data.push_back(combs[d].weight);
-        }
-    }
-    */
-
-    //for (int picked : sss(data, s / 2)){
-    //    cout << picked << '\n'; //TODO
-        /*
-        for (int i = 0; i < combs[picked].options[combs[picked].options.size()-1].used_indices.size(); i++){
-            int index = combs[picked].options[combs[picked].options.size()-1].used_indices[i];
-            cout << index+1 << '\n';
-        }
-        combs[picked].options.pop_back();
-        */
-    //}
+    printSolution(result, combs);
 }
