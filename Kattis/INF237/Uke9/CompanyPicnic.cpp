@@ -79,44 +79,6 @@ void maximum_weighted_cardinal_matching(int u, vector<vector<pair<int,double>>> 
     sum_with[u] = sum_with_all + best_sum_with;
 }
 
-void solve(int id, vector<vector<pair<int,double>>> &graph, vector<int> &count_with, vector<int> &count_without, vector<double> &sum_with, vector<double> &sum_without){
-    if (graph[id].size() == 0){
-        count_with[id] = 0;
-        count_without[id] = 0;
-        sum_with[id] = 0.0;
-        sum_without[id] = 0.0;
-        return;
-    }
-    for (auto [emp, w] : graph[id]){
-        solve(emp, graph, count_with, count_without, sum_with, sum_without);
-    }
-
-    int count_with_all = 0;
-    double sum_with_all = 0.0;
-    int best_without = -1;
-    int smallest_diff = 9999;
-    for (auto [emp, w] : graph[id]){
-        count_with_all += max(count_with[emp], count_without[emp]);
-        sum_with_all += max(sum_with[emp], sum_without[emp]);
-        smallest_diff = min(smallest_diff, count_with[emp] - count_without[emp]);
-    }
-    count_without[id] = count_with_all;
-    count_with[id] = 1 + count_with_all - smallest_diff;
-
-    sum_without[id] = 0.0;
-    for (auto [emp, w] : graph[id]){
-        if      (count_with[emp] > count_without[emp]) sum_without[id] += sum_with[emp];
-        else if (count_with[emp] < count_without[emp]) sum_without[id] += sum_without[emp];
-        else                                           sum_without[id] += max(sum_with[emp], sum_without[emp]);
-    }
-    for (auto [emp, w] : graph[id]){
-        if (count_without[emp] + 1 - max(count_with[emp], count_without[emp]) >= 0){
-            sum_with[id] = max(sum_with[id], sum_with_all - max(sum_with[emp], sum_without[emp]) + sum_without[emp] + w);
-        }
-    }
-}
-
-
 int main(){
     int n;
     cin >> n;
@@ -132,10 +94,10 @@ int main(){
     vector<double> sum_without(n);
     maximum_weighted_cardinal_matching(ceo, graph, count_with, count_without, sum_with, sum_without);
 
-    int s;
-    double a;
-    if      (count_with[ceo] > count_without[ceo]) { s = count_with[ceo]; a = sum_with[ceo]; }
-    else if (count_with[ceo] < count_without[ceo]) { s = count_without[ceo]; a = sum_without[ceo]; }
-    else { s = count_with[ceo]; a = max(sum_with[ceo], sum_without[ceo]); }
-    cout << s << ' ' << a / (double) s << '\n';
+    int count;
+    double average;
+    if      (count_with[ceo] > count_without[ceo]) { count = count_with[ceo];    average = sum_with[ceo]; }
+    else if (count_with[ceo] < count_without[ceo]) { count = count_without[ceo]; average = sum_without[ceo]; }
+    else {                                           count = count_with[ceo];    average = max(sum_with[ceo], sum_without[ceo]); }
+    cout << count << ' ' << average / (double) count << '\n';
 }
