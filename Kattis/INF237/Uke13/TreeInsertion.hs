@@ -1,8 +1,12 @@
-import Control.Monad (when)
+{-# LANGUAGE Strict, OverloadedStrings #-}
+
+import Control.Monad (when, replicateM_)
 import Data.List (genericLength)
+import Data.Maybe (fromJust)
+import qualified Data.ByteString.Char8 as C
 
 main :: IO ()
-main = getLine >>= flip when (getLine >>= print . combs . map read . words >> main) . (/="0")
+main = C.getLine >>= flip when (C.getLine >>= print . combs . map (fromIntegral . fst . fromJust . C.readInt) . C.words >> main) . (/="0")
 
 combs :: [Integer] -> Integer
 combs [] = 1
