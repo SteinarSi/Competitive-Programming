@@ -1,3 +1,4 @@
+main :: IO ()
 main = do
     inn <- getLine
     let b = takeWhile (=='|') inn

@@ -1,3 +1,5 @@
+# This is for the easy version of 99 problems, see 99Problems.cpp for the hard version
+
 n = int(input())
 
 if n <= 100:
