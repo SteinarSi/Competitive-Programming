@@ -5,32 +5,31 @@
 using namespace std;
 using i64 = int64_t;
 
+template <typename Num>
 class UF {
-    vector<i64> repr;
-    vector<i64> size;
+    vector<Num> repr;
+    vector<Num> size;
+    Num comps;
 
     public:
-    UF(i64 n){
-        repr = vector<i64>(n, 0);
-        size = vector<i64>(n, 1);
-        for (i64 i {0}; i < n; i++){
-            repr[i] = i;
-        }
+    UF(Num n){
+        repr = vector<Num>(n, 0);
+        size = vector<Num>(n, 1);
+        comps = n;
+        for (Num i {0}; i < n; repr[i++] = i);
     }
-
-    i64 find(i64 u){
+    Num find(Num u){
         if (repr[u] == u) return u;
-        i64 r = find(repr[u]);
+        Num r = find(repr[u]);
         repr[u] = r;
         return r;
     }
-
-    void merge(i64 u, i64 v){
-        i64 r1 = find(u);
-        i64 r2 = find(v);
+    void merge(Num u, Num v){
+        Num r1 = find(u);
+        Num r2 = find(v);
         if (r1 == r2) return;
-        i64 s1 = size[r1];
-        i64 s2 = size[r2];
+        Num s1 = size[r1];
+        Num s2 = size[r2];
         if (s1 < s2){
             repr[r1] = r2;
             size[r2] += size[r1];
@@ -39,11 +38,10 @@ class UF {
             repr[r2] = r1;
             size[r1] += size[r2];
         }
+        comps--;
     }
-
-    i64 size_of(i64 u){
-        return size[find(u)];
-    }
+    Num size_of(Num u){ return size[find(u)]; }
+    Num components(){ return comps; }
 };
 
 class ID {
@@ -67,7 +65,7 @@ int main(){
     ios::sync_with_stdio(false);
     i64 n;
     cin >> n;
-    UF uf = UF(200000);
+    UF uf = UF<i64>(200000);
     ID id = ID();
     string a, b;
     i64 f, t;
