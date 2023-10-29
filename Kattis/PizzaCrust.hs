@@ -1,0 +1,1 @@
+main = getLine >>= (\(r:c:_) -> print (100 * ((r-c)^2) / (r^2))) . map read . words
