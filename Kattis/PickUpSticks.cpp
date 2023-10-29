@@ -16,20 +16,9 @@ int main(){
     }
 
     vector<u64> ret;
-    vector<u64> q;
-    for (int u {1}; u <= n; u++){
-        if (indegree[u] == 0) q.push_back(u);
-    }
-    while ( ! q.empty()){
-        a = q.back();
-        q.pop_back();
-        ret.push_back(a);
-        for (int v : graph[a]){
-            indegree[v]--;
-            if (indegree[v] == 0) q.push_back(v);
-        }
-    }
-    if (ret.size() == n){
-        for (int u : ret) cout << u << '\n';
-    }else cout << "IMPOSSIBLE\n";
+    for (int u {1}; u <= n; u++) if ( ! indegree[u]) ret.push_back(u);
+    for (int i {0}; i < ret.size(); i++) for (int v : graph[ret[i]]) if (!--indegree[v]) ret.push_back(v);
+    
+    if (ret.size() == n) for (int u : ret) cout << u << '\n';
+    else cout << "IMPOSSIBLE\n";
 }
