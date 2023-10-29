@@ -10,10 +10,9 @@ int digit_sum(int p) {
 
 int solve(int p) {
     int s = digit_sum(p);
-    int q = 11;
-    while (true) {
+    int q = 10;
+    while (q++) {
         if (digit_sum(p * q) == s) return q;
-        q++;
     }
 }
 
