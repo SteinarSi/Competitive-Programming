@@ -5,20 +5,23 @@
 
 using namespace std;
 
+template <typename Data, typename Op>
 class SegmentTree{
-    vector<long long> tree;
+    vector<Data> tree;
     int n;
+    bool incl;
 
     public:
-    SegmentTree(vector<long long> data){
+    SegmentTree(vector<Data> data, bool inclusive, Op f){
         n = data.size();
-        tree = vector<long long>(pow(2,ceil(log2(n))+1), 0);
+        incl = inclusive;
+        tree = vector<Data>(pow(2,ceil(log2(n))+1), 0);
         for (int i {n}; i < 2 * n; i++){
             tree[i] = data[i-n];
         }
 
         for (int i {n-1}; i > 0; i--){
-            tree[i] = tree[left(i)] + tree[right(i)];    // Endre på plussen til op
+            tree[i] = f(tree[left(i)], tree[right(i)]);
         }
     };
 
@@ -26,13 +29,13 @@ class SegmentTree{
     int right(int i){ return 2 * i + 1; }
     int parent(int i){ return i / 2; }
     int index(int i){ return n + i; }
-    long long lookup(int i){ return tree[index(i)]; }
+    Data lookup(int i){ return tree[index(i)]; }
 
-    void update(int i, long long value){
+    void update(int i, Data value){
         int idx = index(i);
         tree[idx] = value;
-        while ((idx = parent(idx)) > 0){ //TODO: sjekk at dette trikset fungerer
-            tree[idx] = tree[left(idx)] + tree[right(idx)];    // Endre på plussen til op
+        while ((idx = parent(idx)) > 0){
+            tree[idx] = f(tree[left(idx)], tree[right(idx)]);
         }
     }
 
@@ -41,22 +44,29 @@ class SegmentTree{
         cout << endl;
     }
 
-    long long query(int l, int r){
+    Data query(int l, int r){
         l = index(l);
         r = index(r);
-        long long ret {0};
-        ret += tree[l];             // erstatt + med op
+        Data ret {tree[l]};
         if (l == r) return ret;
-        ret += tree[r];             //pluss på r bare om vi skal ha [l,r], ikke om vi skal ha [l, r>
+        if (incl) ret = f(ret, tree[r]);
+        // ret = f(ret, tree[r]); // ta med denne om vi vi skal ha [l, r] istedet for [l,r>
         int pl, pr;
         while (true){
             pl = parent(l);
             pr = parent(r);
             if (pl == pr) return ret;
-            if (l % 2 == 0) ret += tree[right(pl)];        //erstatt + med op
-            if (r % 2 == 1) ret += tree[left(pr)];
+            if (l % 2 == 0) ret = f(ret, tree[right(pl)]);
+            if (r % 2 == 1) ret = f(ret, tree[left(pr)]);
             l = pl;
             r = pr;
         }
     }
 };
+
+int main(){
+    vector<int> arr {0, 1, 2, 3, 4, 5};
+    SegmentTree st = SegmentTree(arr, true, [](int a, int b){
+        return a + b;
+    });
+}
