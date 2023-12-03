@@ -5,21 +5,20 @@ import Data.List.Split (splitOn)
 import Meta (AoC(..))
 
 data Day2 = Day2
-instance AoC Day2 [Game] where
+instance AoC Day2 [Game] Int where
     parse _ = map parseGame . lines
-    part1 _ = fromIntegral . sum . map fst . filter possible
-    part2 _ = fromIntegral . sum . map (product . colors . snd)
+    part1 _ = sum . map fst . filter possible
+    part2 _ = sum . map (product . colors . snd)
     date _ = 2
     testAnswerPart1 _ = 8
     testAnswerPart2 _ = 2286
 
-
 type Game = (Int, Bag)
 
 data Bag = Bag {
-    red :: Int,
-    green :: Int,
-    blue :: Int
+    red   :: !Int,
+    green :: !Int,
+    blue  :: !Int
 }
 
 instance Semigroup Bag where

@@ -51,7 +51,7 @@ extra-doc-files:    CHANGELOG.md
 -- extra-source-files:
 
 common warnings
-    ghc-options: -Wall, -Wno-incomplete-uni-patterns
+    ghc-options: -Wall -O3 -Wno-unused-do-bind
 
 library
     -- Import common warning flags.
@@ -60,19 +60,25 @@ library
     -- Modules exported by the library.
     exposed-modules:
         Meta,
+        Utils,
         Day1,
-        Day2
+        Day2,
+        Day3
 
     -- Modules included in this library but not exported.
     -- other-modules:
 
     -- LANGUAGE extensions used by modules in this package.
-    -- other-extensions:
+    default-extensions:
+        BangPatterns,
+        FunctionalDependencies
 
     -- Other library packages from which modules are imported.
     build-depends: 
         base ^>=4.16.4.0,
-        split
+        split,
+        array,
+        time
 
     -- Directories containing source files.
     hs-source-dirs:   src
