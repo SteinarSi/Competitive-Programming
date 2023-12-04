@@ -1,8 +1,7 @@
-module Utils (takeDropWhile, padWith, toArray, benchmark) where
+module Utils (takeDropWhile, padWith, toArray, mapSome) where
 
 import Data.Bifunctor (first)
 import Data.Array (Array, array)
-import Data.Time.Clock.System (getSystemTime, SystemTime(systemNanoseconds))
 
 takeDropWhile :: (a -> Bool) -> [a] -> ([a], [a])
 takeDropWhile _ [] = ([], [])
@@ -18,10 +17,7 @@ toArray xss = array b l
     where l = [ ((x, y), s) | (y, xs) <- zip [0..] xss, (x, s) <- zip [0..] xs]
           b = ((0, 0), (length (head xss)-1, length xss-1))
 
-benchmark :: IO a -> IO a
-benchmark action = do
-    start  <- getSystemTime
-    result <- action
-    end    <- getSystemTime
-    putStrLn ("Time spent: " ++ show ((systemNanoseconds end - systemNanoseconds start) `div` 1000) ++ "ms")
-    pure result
+mapSome :: Integral i => (a -> a) -> i -> [a] -> [a]
+mapSome _ 0 xs = xs
+mapSome _ _ [] = []
+mapSome f i (x:xs) = f x : mapSome f (pred i) xs

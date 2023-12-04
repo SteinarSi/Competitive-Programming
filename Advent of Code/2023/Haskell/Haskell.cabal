@@ -51,7 +51,7 @@ extra-doc-files:    CHANGELOG.md
 -- extra-source-files:
 
 common warnings
-    ghc-options: -Wall -O3 -Wno-unused-do-bind
+    ghc-options: -Wall -O3 -Wno-unused-do-bind -Wno-incomplete-uni-patterns
 
 library
     -- Import common warning flags.
@@ -63,7 +63,8 @@ library
         Utils,
         Day1,
         Day2,
-        Day3
+        Day3,
+        Day4
 
     -- Modules included in this library but not exported.
     -- other-modules:

@@ -34,8 +34,8 @@ possible :: Game -> Bool
 possible = and . zipWith (>=) [12,13,14] . colors . snd
 
 parseGame :: String -> (Int, Bag)
-parseGame s = (read (init id), foldMap (parseGame' mempty . words) rest)
-    where (_:id:r) = words s
+parseGame s = (read (init idd), foldMap (parseGame' mempty . words) rest)
+    where (_:idd:r) = words s
           rest = splitOn ";" $ filter (/= ',') $ unwords r
           parseGame' b (x:"red"  :xs) = parseGame' (b {red = red b + read x}) xs
           parseGame' b (x:"green":xs) = parseGame' (b {green = green b + read x}) xs
