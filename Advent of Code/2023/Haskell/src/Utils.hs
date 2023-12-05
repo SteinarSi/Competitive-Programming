@@ -1,4 +1,4 @@
-module Utils (takeDropWhile, padWith, toArray, mapSome) where
+module Utils (takeDropWhile, padWith, toArray, mapSome, toTuple, toTriple) where
 
 import Data.Bifunctor (first)
 import Data.Array (Array, array)
@@ -21,3 +21,12 @@ mapSome :: Integral i => (a -> a) -> i -> [a] -> [a]
 mapSome _ 0 xs = xs
 mapSome _ _ [] = []
 mapSome f i (x:xs) = f x : mapSome f (pred i) xs
+
+toTuple :: Show a => [a] -> (a, a)
+toTuple [a, b] = (a, b)
+toTuple xs = error ("List doesn't have two elements: " ++ show xs)
+
+toTriple :: Show a => [a] -> (a, a, a)
+toTriple [a, b, c] = (a, b, c)
+toTriple xs = error ("List doesn't have three elements: " ++ show xs)
+

@@ -1,9 +1,11 @@
 module Meta (test, solve, AoC(..), bench, benchAll) where
 
 import Control.Monad (when, void, forM)
-import Data.Time.Clock.System (getSystemTime, SystemTime(systemNanoseconds))
-import Data.Word (Word32)
 import Prelude hiding (log)
+
+import Data.Time.Clock (diffUTCTime, getCurrentTime, NominalDiffTime, nominalDiffTimeToSeconds)
+import Text.Printf (printf)
+import Data.Fixed (showFixed)
 
 class (Eq answer, Show answer) => AoC day problem answer | day -> problem answer where
     parse :: day -> String  -> problem
@@ -12,7 +14,6 @@ class (Eq answer, Show answer) => AoC day problem answer | day -> problem answer
     date  :: day -> Integer
     testAnswerPart1 :: day -> answer
     testAnswerPart2 :: day -> answer
-
 
 test :: AoC day problem answer => day -> IO Bool
 test day = do
@@ -38,19 +39,19 @@ meta day input = do
     problem <- parse day <$> readFile input
     pure (part1 day problem, part2 day problem)
 
-bench :: IO a -> IO Word32
+bench :: IO a -> IO NominalDiffTime
 bench = benchmark True
 
-benchmark :: Bool -> IO a -> IO Word32
+benchmark :: Bool -> IO a -> IO NominalDiffTime
 benchmark log action = do
-    start  <- getSystemTime
+    start  <- getCurrentTime
     void action
-    end    <- getSystemTime
-    let time = systemNanoseconds end - systemNanoseconds start
-    when log $ putStrLn ("\nTime spent: " ++ show (time `div` 1000000) ++ "ms")
+    end    <- getCurrentTime
+    let time = diffUTCTime end start
+    when log $ putStrLn ("\nTime spent: " ++ formatTime time)
     pure time
 
-benchAll :: Bool -> [IO a] -> IO Word32
+benchAll :: Bool -> [IO a] -> IO NominalDiffTime
 benchAll log actions = do
     dash
     total <- fmap sum $ forM actions $ \action -> do
@@ -58,7 +59,10 @@ benchAll log actions = do
         time <- benchmark log action
         dash
         pure time
-    putStrLn ("\nTime spent in total: " ++ show (total `div` 1000000) ++ "ms")
+    putStrLn ("\nTime spent in total: " ++ formatTime total)
     pure total
 
     where dash = putStrLn ('\n' : replicate 100 '=')
+
+formatTime :: NominalDiffTime -> String
+formatTime = printf "%.4fs" . (read :: String -> Double) . showFixed True . nominalDiffTimeToSeconds
