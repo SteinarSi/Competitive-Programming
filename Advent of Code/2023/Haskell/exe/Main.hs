@@ -11,9 +11,8 @@ import Day5
 import Day6
 
 main :: IO ()
-main = do
-    void $ test Day6
-    solve Day6
+main = solveAll
+
 
 doAll :: IO ()
 doAll = testAll >> solveAll

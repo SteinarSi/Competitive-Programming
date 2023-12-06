@@ -1,7 +1,10 @@
-module Utils (takeDropWhile, padWith, toArray, mapSome, toTuple, toTriple) where
+module Utils (takeDropWhile, padWith, toArray, mapSome, toTuple, toTriple, read') where
 
-import Data.Bifunctor (first)
 import Data.Array (Array, array)
+import Data.Bifunctor (first)
+import Data.Maybe (fromMaybe)
+import Text.Read (readMaybe)
+
 
 takeDropWhile :: (a -> Bool) -> [a] -> ([a], [a])
 takeDropWhile _ [] = ([], [])
@@ -30,3 +33,5 @@ toTriple :: Show a => [a] -> (a, a, a)
 toTriple [a, b, c] = (a, b, c)
 toTriple xs = error ("List doesn't have three elements: " ++ show xs)
 
+read' :: (Read r, Show r) => String -> r
+read' s = fromMaybe (error ("Could not read " ++ s)) (readMaybe s)
