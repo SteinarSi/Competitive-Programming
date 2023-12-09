@@ -1,10 +1,10 @@
 module Day6 where
 
-import Data.List (find)
-import Data.Maybe (fromJust)
+import           Data.List  (find)
+import           Data.Maybe (fromJust)
 
-import Meta (AoC(..))
-import Utils (toTuple)
+import           Meta       (AoC (..))
+import           Utils      (toTuple)
 
 data Day6 = Day6
 instance AoC Day6 [(Int, Int)] Int where

@@ -1,9 +1,9 @@
 module Day1 where
 
-import Data.Char (isDigit)
-import Data.List (isPrefixOf, find)
+import           Data.Char (isDigit)
+import           Data.List (find, isPrefixOf)
 
-import Meta (AoC(..))
+import           Meta      (AoC (..))
 
 data Day1 = Day1
 instance AoC Day1 [[(Bool, Int)]] Int where

@@ -1,9 +1,9 @@
 module Day4 where
 
-import Data.Bifunctor (first)
+import           Data.Bifunctor (first)
 
-import Meta (AoC(..))
-import Utils (takeDropWhile, mapSome)
+import           Meta           (AoC (..))
+import           Utils          (mapSome, takeDropWhile)
 
 data Day4 = Day4
 instance AoC Day4 [Integer] Integer where
@@ -23,5 +23,5 @@ parseCard s = fromIntegral $ length (filter (`elem` winning) (tail actual))
     where (winning, actual) = takeDropWhile (/="|") (drop 2 (words s))
 
 duplicateCards :: [(Integer, Integer)] -> Integer
-duplicateCards [] = 0
+duplicateCards []         = 0
 duplicateCards ((c,x):xs) = c + duplicateCards (mapSome (first (+c)) x xs)

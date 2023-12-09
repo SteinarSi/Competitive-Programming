@@ -1,17 +1,17 @@
 module Day3 where
 
-import Data.Char (isDigit, isControl)
-import Data.Array (Array, (!))
-import Data.Bifunctor (bimap)
-import Data.List (sort, groupBy)
+import           Data.Array     (Array, (!))
+import           Data.Bifunctor (bimap)
+import           Data.Char      (isControl, isDigit)
+import           Data.List      (groupBy, sort)
 
-import Meta (AoC(..))
-import Utils (takeDropWhile, padWith, toArray)
+import           Meta           (AoC (..))
+import           Utils          (padWith, takeDropWhile, toArray)
 
 data Day3 = Day3
 instance AoC Day3 ([((Int, Int), Int)], [Int]) Int where
     parse _ input = search 1 1 (toArray (padWith '.' l)) l
-        where l = lines input 
+        where l = lines input
     part1 _ = sum  . snd
     part2 _ = sum . map product . filter ((2==) . length) . map (map snd) . groupBy (\a b -> fst a == fst b) . sort . fst
     date _ = 3

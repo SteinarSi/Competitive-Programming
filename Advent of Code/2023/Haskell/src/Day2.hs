@@ -1,8 +1,8 @@
 module Day2 (Day2(..)) where
 
-import Data.List.Split (splitOn)
+import           Data.List.Split (splitOn)
 
-import Meta (AoC(..))
+import           Meta            (AoC (..))
 
 data Day2 = Day2
 instance AoC Day2 [Game] Int where

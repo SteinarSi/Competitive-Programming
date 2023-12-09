@@ -2,10 +2,10 @@
 
 module Day5 where
 
-import Data.List.Split (splitOn, chunksOf)
+import           Data.List.Split (chunksOf, splitOn)
 
-import Meta (AoC(..))
-import Utils (toTuple, toTriple)
+import           Meta            (AoC (..))
+import           Utils           (toTriple, toTuple)
 
 data Day5 = Day5
 instance AoC Day5 ([Int], [[(Int, Int, Int)]]) Int where
