@@ -1,6 +1,6 @@
-module Utils (takeDropWhile, padWith, toArray, mapSome, toTuple, toTriple, read', length', trace', revSort) where
+module Utils (takeDropWhile, padWith, toArray, arrayToString, inBounds, mapSome, tupleToList, toTuple, toTriple, read', length', trace', revSort, (!!!), (+++), directions) where
 
-import           Data.Array     (Array, array)
+import           Data.Array     (Array, Ix (inRange), array, bounds, (!))
 import           Data.Bifunctor (first)
 import           Data.List      (sortBy)
 import           Data.Maybe     (fromMaybe)
@@ -23,10 +23,21 @@ toArray xss = array b l
     where l = [ ((x, y), s) | (y, xs) <- zip [0..] xss, (x, s) <- zip [0..] xs]
           b = ((0, 0), (length (head xss)-1, length xss-1))
 
+arrayToString :: (Ix i, Enum i) => Array (i, i) a -> ((i, i) -> a -> String) -> String
+arrayToString arr f = unlines [ row y | y <- [y1..y2] ]
+    where row y = concat [ f (x, y) (arr ! (x, y)) | x <- [x1..x2] ]
+          ((x1, y1), (x2, y2)) = bounds arr
+
+inBounds :: (Ix i) => Array i a -> i -> Bool
+inBounds arr = inRange (bounds arr)
+
 mapSome :: Integral i => (a -> a) -> i -> [a] -> [a]
 mapSome _ 0 xs     = xs
 mapSome _ _ []     = []
 mapSome f i (x:xs) = f x : mapSome f (pred i) xs
+
+tupleToList :: (a, a) -> [a]
+tupleToList (a, b) = [a, b]
 
 toTuple :: Show a => [a] -> (a, a)
 toTuple [a, b] = (a, b)
@@ -47,3 +58,13 @@ length' = fromIntegral . length
 
 trace' :: Show s => s -> a -> a
 trace' s = trace (show s)
+
+(!!!) :: (Ix i, Show i) => Array i a -> i -> a
+(!!!) arr i | inBounds arr i = arr ! i
+            | otherwise      = error ("Error in array index: " ++ show i ++ " is not in " ++ show (bounds arr))
+
+(+++) :: Num a => (a, a) -> (a, a) -> (a, a)
+(+++) (a, b) (x, y) = (a+x, b+y)
+
+directions :: [(Int, Int)]
+directions = [(0,1), (0,-1), (1,0), (-1,0)]
