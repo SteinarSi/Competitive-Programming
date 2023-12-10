@@ -7,12 +7,12 @@ import           Meta       (AoC (..))
 import           Utils      (directions, toArray, (!!!), (+++))
 
 data Day10 = Day10
-instance AoC Day10 ((Int, Int), Array (Int, Int) Char) Int where
-    parse _ s = (pos, arr)
+instance AoC Day10 [(Int, Int)] Int where
+    parse _ s = travel arr pos
         where arr = toArray (lines s)
               pos = head [p | p <- indices arr, arr !!! p == 'S']
-    part1 _ (pos, arr) = length (travel arr pos) `div` 2
-    part2 _ (pos, arr) = area (travel arr pos)
+    part1 _ path = length path `div` 2
+    part2 _ = area
     date _ = 10
     testAnswerPart1 _ = 70
     testAnswerPart2 _ = 8
