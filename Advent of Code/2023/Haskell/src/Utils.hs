@@ -1,12 +1,18 @@
-module Utils (takeDropWhile, padWith, toArray, arrayToString, inBounds, mapSome, tupleToList, toTuple, toTriple, read', length', trace', revSort, (!!!), (+++), directions) where
+module Utils (
+    takeDropWhile, padWith, toArray, arrayToString,
+    inBounds, mapSome, tupleToList, toTuple, toTriple,
+    read', length', trace', revSort, (!!!), (+++),
+    directions, count', modifyArray, groupOn
+    ) where
 
-import           Data.Array     (Array, Ix (inRange), array, bounds, (!))
-import           Data.Bifunctor (first)
-import           Data.List      (sortBy)
-import           Data.Maybe     (fromMaybe)
-import           Data.Ord       (Down (Down), comparing)
-import           Debug.Trace    (trace)
-import           Text.Read      (readMaybe)
+import           Data.Array        (Array, Ix (inRange), array, bounds, (!))
+import           Data.Array.MArray (MArray, readArray, writeArray)
+import           Data.Bifunctor    (first)
+import           Data.List         (groupBy, sortBy)
+import           Data.Maybe        (fromMaybe)
+import           Data.Ord          (Down (Down), comparing)
+import           Debug.Trace       (trace)
+import           Text.Read         (readMaybe)
 
 
 takeDropWhile :: (a -> Bool) -> [a] -> ([a], [a])
@@ -68,3 +74,15 @@ trace' s = trace (show s)
 
 directions :: [(Int, Int)]
 directions = [(0,1), (0,-1), (1,0), (-1,0)]
+
+count' :: Eq a => a -> [a] -> Int
+count' _ [] = 0
+count' a (x:xs) | a == x = 1 + count' a xs
+               | otherwise = count' a xs
+
+
+modifyArray :: (MArray a b m, Ix i) => a i b -> i -> (b -> b) -> m ()
+modifyArray arr i f = readArray arr i >>= writeArray arr i . f
+
+groupOn :: Eq b => (a -> b) -> [a] -> [[a]]
+groupOn f = groupBy (\x y -> f x == f y)
