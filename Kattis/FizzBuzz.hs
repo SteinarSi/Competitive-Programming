@@ -1,14 +1,11 @@
+main :: IO ()
 main = do
-    input <- getLine
-    let split = words input
-    fizzBuzz2 1 (read (split!!0)::Int) (read(split!!1)::Int) (read(split!!2)::Int)
+    [fizz, buzz, n] <- fmap (map read . words) getLine
+    mapM_ (putStrLn . fizzBuzz fizz buzz) [1..n]
 
-fizzBuzz2 :: Int -> Int -> Int -> Int -> IO()
-fizzBuzz2 i fizz buzz n = do
-    if i == (n+1) then return()
-    else do
-    if i `mod` fizz == 0 && i `mod` buzz == 0 then putStrLn "FizzBuzz"
-    else if i `mod` fizz == 0 then putStrLn "Fizz"
-    else if i `mod` buzz == 0 then putStrLn "Buzz"
-    else print i
-    fizzBuzz2 (i+1) fizz buzz n
+fizzBuzz :: Int -> Int -> Int -> String
+fizzBuzz fizz buzz i = case (i `mod` fizz, i `mod` buzz) of
+    (0, 0) -> "FizzBuzz"
+    (0, _) -> "Fizz"
+    (_, 0) -> "Buzz"
+    (_, _) -> show i
