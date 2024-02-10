@@ -4,8 +4,6 @@ import           Data.Function         (on)
 import           Data.List             (sortBy)
 import           Data.Maybe            (fromJust)
 
-import           Debug.Trace           (traceShow)
-
 main :: IO ()
 main = C.getContents >>= (
             C.words
