@@ -5,9 +5,6 @@ import qualified Data.ByteString.Char8 as C
 import           Data.Function         (on)
 import           Data.Maybe            (fromJust)
 
-data Player = Harry | Vicky
-    deriving (Read, Eq)
-
 main :: IO ()
 main = C.getContents >>= (
             C.lines
