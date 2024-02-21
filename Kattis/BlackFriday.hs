@@ -3,7 +3,7 @@ import           Control.Monad         (join)
 import qualified Data.ByteString.Char8 as C
 import           Data.Functor          ((<&>))
 import           Data.IntSet           (IntSet, delete, empty, findMax, insert,
-                                        member, null)
+                                        member)
 import qualified Data.IntSet           as S
 import           Data.List             (elemIndex)
 import           Data.Maybe            (fromJust)
@@ -13,8 +13,7 @@ main = C.getContents >>= (
             C.words
         >>> tail
         >>> map (C.readInt >>> fromJust >>> fst)
-        >>> (\xs -> solve empty empty xs <&> (`elemIndex` xs))
-        >>> join
+        >>> (\xs -> solve empty empty xs >>= (`elemIndex` xs))
         >>> maybe "none" (succ >>> show)
         >>> putStrLn
     )
