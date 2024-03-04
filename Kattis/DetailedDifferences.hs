@@ -1,18 +1,17 @@
-import Data.Bool (bool)
-import Data.Char (isAlphaNum)
+import           Control.Monad (join, replicateM_)
+import           Data.Bool     (bool)
+import           Data.Function ((&))
+import           Data.Functor  ((<&>))
 
 main :: IO ()
-main = getLine >>= solve . read
+main = do
+    t <- getLine <&> read
+    replicateM_ t $ do
+        xs <- getLine
+        ys <- getLine
+        [xs, ys, diff xs ys]
+            & unlines
+            & putStrLn
 
-solve :: Int -> IO ()
-solve 0 = pure ()
-solve n = do
-    a <- fmap (filter isAlphaNum) getLine
-    b <- fmap (filter isAlphaNum) getLine
-    putStrLn a
-    putStrLn b
-    putStrLn $ zipWith (\a b -> bool '*' '.' (a==b)) a b
-    putChar '\n'
-    solve (n-1)
-
-    
+diff :: String -> String -> String
+diff = zipWith ((bool '*' '.' .) . (==))
