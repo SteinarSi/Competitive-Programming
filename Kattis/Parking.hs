@@ -1,15 +1,22 @@
-import           Control.Monad         (replicateM_)
-import qualified Data.ByteString       as B
-import qualified Data.ByteString.Char8 as BC
-import           Data.Maybe            (fromJust)
+import           Control.Arrow ((>>>))
+import           Data.Functor  ((<&>))
+import           Data.List     (sort)
 
 main :: IO ()
 main = do
-    t <- fmap readBS B.getLine
-    replicateM_ t $ do
-        getLine
-        xs <- fmap (map readBS . BC.words) B.getLine
-        print (2 * (maximum xs - minimum xs))
+    costs <- getLine <&> (words >>> map read >>> (0:))
+    times <- getContents <&> (
+            lines
+        >>> concatMap (
+                words
+            >>> map read
+            >>> (\(a:b:_) -> [(a,1),(b,-1)])
+        )
+        >>> sort
+        )
 
-readBS :: B.ByteString -> Int
-readBS = fst . fromJust . BC.readInt
+    print (parking 0 0 costs times)
+
+parking :: Int -> Int -> [Int] -> [(Int,Int)] -> Int
+parking curr prev costs [] = 0
+parking curr prev costs ((a,d):xs) = curr * (costs !! curr) * (a - prev) + parking (curr+d) a costs xs
