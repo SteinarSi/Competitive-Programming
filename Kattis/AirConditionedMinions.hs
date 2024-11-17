@@ -4,16 +4,16 @@ import           Data.List             (sortOn)
 import           Data.Maybe            (fromJust)
 
 main :: IO ()
-main = C.getContents >>= (
+main = C.getContents>>= (
             C.lines
-        >>> tail
-        >>> map (C.words >>> map readInt >>> (\[a,b] -> (a,b)))
+        >>> drop 1
+        >>> map (C.words >>> map readInt >>> (\[a, b] -> (a, b)))
         >>> sortOn snd
         >>> solve 0
         >>> print
     )
 
-solve :: Int -> [(Int,Int)] -> Int
+solve :: Int -> [(Int, Int)] -> Int
 solve _ [] = 0
 solve t ((a,b):xs) | a > t = 1 + solve b xs
                    | otherwise = solve t xs
