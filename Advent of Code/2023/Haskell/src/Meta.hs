@@ -1,3 +1,5 @@
+-- {-# LANGUAGE FunctionalDependencies #-}
+
 module Meta (test, solve, AoC(..), bench, benchAll) where
 
 import           Control.Monad   (forM, void, when)
@@ -12,14 +14,15 @@ class (Eq answer, Show answer) => AoC day problem answer | day -> problem answer
     parse :: day -> String  -> problem
     part1 :: day -> problem -> answer
     part2 :: day -> problem -> answer
-    date  :: day -> Integer
+    date  :: day -> Int
+    year  :: day -> Int
     testAnswerPart1 :: day -> answer
     testAnswerPart2 :: day -> answer
 
 test :: AoC day problem answer => day -> IO Bool
 test day = do
-    putStrLn $ "Testing Day " ++ show (date day) ++ ": "
-    (s1, s2) <- meta day ("inputs/day" ++ show (date day) ++ "-test.txt")
+    printf "Testing Year%d/Day%d:\n" (year day) (date day)
+    (s1, s2) <- meta day (printf "inputs/year%d/day%d-test.txt" (year day) (date day))
     if s1 /= testAnswerPart1 day
         then putStrLn $ "    Got wrong answer on part 1: " ++ show s1 ++ " /= " ++ show (testAnswerPart1 day)
         else putStrLn   "    Part 1 is correct!"
@@ -30,8 +33,8 @@ test day = do
 
 solve :: AoC day problem answer => day -> IO ()
 solve day = do
-    putStrLn $ "Solving Day " ++ show (date day) ++ ": "
-    (s1, s2) <- meta day ("inputs/day" ++ show (date day) ++ "-input.txt")
+    printf "Solving Year%d/Day%d:\n" (year day) (date day)
+    (s1, s2) <- meta day (printf "inputs/year%d/day%d-input.txt" (year day) (date day))
     putStrLn $ "    Part 1: " ++ show s1
     putStrLn $ "    Part 2: " ++ show s2
 
