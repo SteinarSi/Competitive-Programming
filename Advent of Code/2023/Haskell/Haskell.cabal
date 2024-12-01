@@ -7,7 +7,7 @@ maintainer:         steinar.simonnes@gmail.com
 build-type:         Simple
 
 common warnings
-    ghc-options: -Wall -O3 -Wno-unused-do-bind -Wno-incomplete-uni-patterns
+    ghc-options: -Wall -O3 -Wno-unused-do-bind -Wno-incomplete-uni-patterns -Wx-partial
 
 library
     import:           warnings
@@ -40,7 +40,9 @@ library
         Year.Year2023.Day22,
         Year.Year2023.Day23,
         Year.Year2023.Day24,
-        Year.Year2023.Day25
+        Year.Year2023.Day25,
+        Year.Year2024,
+        Year.Year2024.Day1
     default-extensions:
         BangPatterns,
         FunctionalDependencies,

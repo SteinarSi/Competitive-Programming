@@ -1,7 +1,9 @@
 module Main where
 
-import Year.Year2023 (test2023, solve2023)
+import Year.Year2024 (test2024, solve2024)
 
 main :: IO ()
-main = test2023 >> solve2023
+main = do
+    test2024
+    solve2024
 

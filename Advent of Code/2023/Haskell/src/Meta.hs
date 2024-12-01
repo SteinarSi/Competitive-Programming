@@ -1,5 +1,3 @@
--- {-# LANGUAGE FunctionalDependencies #-}
-
 module Meta (test, solve, AoC(..), bench, benchAll) where
 
 import           Control.Monad   (forM, void, when)
