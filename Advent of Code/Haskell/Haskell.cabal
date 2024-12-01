@@ -7,7 +7,11 @@ maintainer:         steinar.simonnes@gmail.com
 build-type:         Simple
 
 common warnings
-    ghc-options: -Wall -O3 -Wno-unused-do-bind -Wno-incomplete-uni-patterns -Wx-partial
+    ghc-options: 
+        -- -O3 
+        -Wno-unused-do-bind 
+        -Wno-incomplete-uni-patterns 
+        -Wno-x-partial
 
 library
     import:           warnings
@@ -15,6 +19,22 @@ library
         Meta,
         Utility.Misc,
         Utility.Structure.UF,
+        Utility.Structure.HashSet,
+        Year.Year2022,
+        Year.Year2022.Day1,
+        Year.Year2022.Day2,
+        Year.Year2022.Day3,
+        Year.Year2022.Day4,
+        Year.Year2022.Day5,
+        Year.Year2022.Day6,
+        Year.Year2022.Day7,
+        Year.Year2022.Day8,
+        Year.Year2022.Day9,
+        Year.Year2022.Day10,
+        Year.Year2022.Day11,
+        Year.Year2022.Day12,
+        Year.Year2022.Day13,
+        Year.Year2022.Day14,
         Year.Year2023,
         Year.Year2023.Day1,
         Year.Year2023.Day2,
@@ -46,7 +66,9 @@ library
     default-extensions:
         BangPatterns,
         FunctionalDependencies,
-        OverloadedStrings
+        OverloadedStrings,
+        TupleSections,
+        StrictData
     build-depends: 
         base ^>=4.20.0.0,
         split,
@@ -58,7 +80,8 @@ library
         range,
         mtl,
         z3,
-        random
+        random,
+        bytestring
     hs-source-dirs:   src
     default-language: GHC2021
 

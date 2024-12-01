@@ -11,6 +11,6 @@ test2024 = void . benchAll False $ map void [
     ]
 
 solve2024 :: IO ()
-solve2024 = void . benchAll False $ map void [
+solve2024 = void . benchAll True $ map void [
         solve Day1
     ]

@@ -23,6 +23,7 @@ import qualified Numeric             as N
 import           Text.Read           (readMaybe)
 
 
+-- | Er ikke dette bare det samme som Data.List.span?
 takeDropWhile :: (a -> Bool) -> [a] -> ([a], [a])
 takeDropWhile _ [] = ([], [])
 takeDropWhile p (x:xs) | p x       = first (x:) (takeDropWhile p xs)
@@ -100,6 +101,7 @@ read' s = fromMaybe (error ("Could not read " ++ s)) (readMaybe s)
 length' :: Integral i => [a] -> i
 length' = fromIntegral . length
 
+-- | Egentlig det samme som Debug.Trace.traceShow
 trace' :: Show s => s -> a -> a
 trace' s = trace (show s)
 
