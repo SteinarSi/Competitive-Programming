@@ -1,6 +1,6 @@
 module Meta (test, solve, AoC(..), bench, benchAll) where
 
-import           Control.Monad   (forM, void, when)
+import           Control.Monad   (forM, void, when, unless)
 import           Prelude         hiding (log)
 
 import           Data.Fixed      (showFixed)
@@ -16,6 +16,8 @@ class (Eq answer, Show answer) => AoC day problem answer | day -> problem answer
     year  :: day -> Int
     testAnswerPart1 :: day -> answer
     testAnswerPart2 :: day -> answer
+    debug :: day -> problem -> [String]
+    debug _ _ = []
 
 test :: AoC day problem answer => day -> IO Bool
 test day = do
@@ -39,6 +41,7 @@ solve day = do
 meta :: AoC day problem answer => day -> String -> IO (answer, answer)
 meta day input = do
     problem <- parse day <$> readFile input
+    mapM_ putStrLn (debug day problem)
     pure (part1 day problem, part2 day problem)
 
 bench :: IO a -> IO NominalDiffTime
