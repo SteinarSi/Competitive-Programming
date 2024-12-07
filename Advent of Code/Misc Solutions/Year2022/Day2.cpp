@@ -23,7 +23,7 @@ int main() {
     cin.exceptions(ios::failbit);
     cout << setprecision(10) << fixed;
 
-    ifstream in ("inputs/day2-input.txt");
+    ifstream in ("inputs/year2022/day2-input.txt");
     string line;
     int predetermined_sum {0};
     int rigged_sum {0};

@@ -17,7 +17,7 @@ int main() {
 
     std::priority_queue <i64> calories;
 
-    ifstream in ("inputs/day1-input.txt");
+    ifstream in ("inputs/year2022/day1-input.txt");
     string line;
     i64 sum {0};
     while (! in.eof()){
