@@ -7,11 +7,13 @@ module Utility.Misc (
 
 import           Control.Monad       (filterM, forM, forM_)
 import           Control.Monad.ST    (ST, runST)
-import           Data.Array          (Array, Ix (inRange), array, bounds, (!))
+import           Data.Array          (Array)
+import           Data.Array.Base     (array, bounds, (!))
 import           Data.Array.MArray   (MArray, newArray, readArray, writeArray)
 import           Data.Array.ST       (STArray)
 import           Data.Bifunctor      (first)
 import           Data.Char           (isDigit, ord)
+import           Data.Ix             (Ix, inRange)
 import           Data.List           (groupBy, sortBy)
 import           Data.List.Split     (splitWhen)
 import           Data.Maybe          (fromMaybe)
@@ -34,7 +36,7 @@ padWith a xss = row : [a : xs ++ [a] | xs <- xss] ++ [row]
     where row = replicate (length (head xss) + 2) a
 
 toArray :: IArray a e => [[e]] -> a (Int,Int) e
-toArray xss = listArray ((0,0),(length (head xss)-1,length xss-1)) (concat xss)
+toArray xss = listArray ((0,0),(length xss - 1,length (head xss) - 1)) (concat xss)
 
 arrayToString :: (Ix i, Enum i) => Array (i, i) a -> ((i, i) -> a -> String) -> String
 arrayToString arr f = unlines [ row y | y <- [y1..y2] ]
@@ -47,7 +49,7 @@ extractNaturals = extractIntegers . filter (/='-')
 extractIntegers :: (Num a, Read a) => String -> [a]
 extractIntegers = map read' . filter (not . null) . splitWhen (\c -> not (c == '-' || isDigit c))
 
-inBounds :: (Ix i) => Array i a -> i -> Bool
+inBounds :: (Ix i, IArray a e) => a i e -> i -> Bool
 inBounds arr = inRange (bounds arr)
 
 inbetween :: Ord a => a -> (a, a) -> Bool
@@ -103,7 +105,7 @@ length' = fromIntegral . length
 trace' :: Show s => s -> a -> a
 trace' s = trace (show s)
 
-(!!!) :: (Ix i, Show i) => Array i a -> i -> a
+(!!!) :: (Ix i, Show i, IArray a e) => a i e -> i -> e
 (!!!) arr i | inBounds arr i = arr ! i
             | otherwise      = error ("Error in array index: " ++ show i ++ " is not in " ++ show (bounds arr))
 

@@ -28,7 +28,7 @@ test day = do
         then printf "    Got a wrong answer on part 1: %s /= %s\n" (show s1) (show (testAnswerPart1 day))
         else printf "    Part 1 is correct!\n"
     if s2 /= testAnswerPart2 day
-        then printf "    Got a wrong answer on part 2: %s /= %s\n" (show s1) (show (testAnswerPart2 day))
+        then printf "    Got a wrong answer on part 2: %s /= %s\n" (show s2) (show (testAnswerPart2 day))
         else printf "    Part 2 is correct!\n"
     pure (s1 == testAnswerPart1 day && s2 == testAnswerPart2 day)
 
