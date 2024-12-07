@@ -2,9 +2,9 @@ module Utility.Structure.HashSet where
 
 import qualified Data.IntSet as S
 
-class Hashable a where
-    hash   :: a -> Int
-    unhash :: Int -> a
+class Hashable h where
+    hash   :: h -> Int
+    unhash :: Int -> h
 
 instance Hashable Int where
     hash = id
@@ -13,7 +13,6 @@ instance Hashable Int where
 instance Hashable (Int,Int) where
     hash (a,b) = 100000 * a + b
     unhash = (`quotRem` 100000)
-
 
 instance Hashable Bool where
     hash False = 0
@@ -33,22 +32,31 @@ instance Monoid HashSet where
 empty :: HashSet
 empty = HashSet S.empty
 
-singleton :: Hashable a => a -> HashSet
+singleton :: Hashable h => h -> HashSet
 singleton x = HashSet (S.singleton (hash x))
 
-fromList :: Hashable a => [a] -> HashSet
+fromList :: Hashable h => [h] -> HashSet
 fromList xs = HashSet (S.fromList (map hash xs))
 
-insert :: Hashable a => a -> HashSet -> HashSet
+toList :: Hashable h => HashSet -> [h]
+toList = toAscList
+
+toAscList :: Hashable h => HashSet -> [h]
+toAscList (HashSet set) = map unhash (S.toAscList set)
+
+toDescList :: Hashable h => HashSet -> [h]
+toDescList (HashSet set) = map unhash (S.toDescList set)
+
+insert :: Hashable h => h -> HashSet -> HashSet
 insert x (HashSet set) = HashSet (S.insert (hash x) set)
 
-delete :: Hashable a => a -> HashSet -> HashSet
+delete :: Hashable h => h -> HashSet -> HashSet
 delete x (HashSet set) = HashSet (S.delete (hash x) set)
 
-member :: Hashable a => a -> HashSet -> Bool
+member :: Hashable h => h -> HashSet -> Bool
 member x (HashSet set) = S.member (hash x) set
 
-notMember :: Hashable a => a -> HashSet -> Bool
+notMember :: Hashable h => h -> HashSet -> Bool
 notMember x hs = not (member x hs)
 
 size :: HashSet -> Int
