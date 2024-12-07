@@ -20,6 +20,7 @@ library
         Utility.Misc,
         Utility.Structure.UF,
         Utility.Structure.HashSet,
+        Utility.Structure.HashMap,
         Year.Year2022,
         Year.Year2022.Day1,
         Year.Year2022.Day2,
@@ -63,7 +64,12 @@ library
         Year.Year2023.Day25,
         Year.Year2024,
         Year.Year2024.Day1,
-        Year.Year2024.Day2
+        Year.Year2024.Day2,
+        Year.Year2024.Day3,
+        Year.Year2024.Day4,
+        Year.Year2024.Day5,
+        Year.Year2024.Day6,
+        Year.Year2024.Day7
     default-extensions:
         BangPatterns,
         FunctionalDependencies,
@@ -82,7 +88,8 @@ library
         mtl,
         z3,
         random,
-        bytestring
+        bytestring,
+        regex-tdfa
     hs-source-dirs:   src
     default-language: GHC2021
 

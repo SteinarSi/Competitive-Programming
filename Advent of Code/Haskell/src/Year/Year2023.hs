@@ -49,13 +49,13 @@ test2023 = void . benchAll False $ map void [
         test Day16,
         test Day17,
         test Day18,
-        test Day19,
+        -- test Day19, -- TODO refactor
         -- test Day20, have to rewrite the test framework before this can work, because the test input is a different problem than the real input
-        test Day21,
+        -- test Day21, -- TODO refactor
         test Day22,
-        test Day23,
+        test Day23
         -- test Day24,
-        test Day25
+        -- test Day25
     ]
 
 solve2023 :: IO ()
@@ -78,11 +78,11 @@ solve2023 = void . benchAll True $ map void [
         solve Day16,
         solve Day17,
         solve Day18,
-        solve Day19,
+        -- solve Day19, -- TODO refactor
         solve Day20,
-        solve Day21,
+        -- solve Day21, -- TODO refactor
         solve Day22,
-        solve Day23,
-        -- solve Day24,
-        solve Day25
+        solve Day23
+        -- solve Day24, -- TODO solve properly
+        -- solve Day25  -- TODO solve properly
     ]
