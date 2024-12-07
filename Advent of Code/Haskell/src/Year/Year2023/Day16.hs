@@ -1,18 +1,19 @@
-module Year.Year2023.Day16(Day16(Day16)) where
+module Year.Year2023.Day16 (Day16(Day16)) where
 
-import           Control.Monad     (unless)
-import           Control.Monad.ST  (ST, runST)
-import           Data.Array        (Array, bounds, (!))
-import           Data.Array.MArray (MArray (newArray), getElems, readArray,
-                                    writeArray)
-import           Data.Array.ST     (STArray)
-import           Data.Ix           (Ix (..))
-import           Meta              (AoC (..))
-import           Utility.Misc
+import           Control.Arrow      ((>>>))
+import           Control.Monad      (unless)
+import           Control.Monad.ST   (ST, runST)
+import           Data.Array.Unboxed (UArray, bounds, (!))
+import           Data.Array.MArray  (newArray, getElems, readArray, writeArray)
+import           Data.Array.ST      (STUArray)
+import           Data.Ix            (Ix(..))
+
+import           Meta               (AoC (..))
+import           Utility.Misc       (inBounds, toArray, (+++))
 
 data Day16 = Day16
 instance AoC Day16 Grid Int where
-    parse _ = toArray . lines
+    parse _ = lines >>> toArray
     part1 _ grid = energize grid ((0,0), East)
     part2 _ = optimizeEnergy
     date _ = 16
@@ -21,15 +22,15 @@ instance AoC Day16 Grid Int where
     testAnswerPart2 _ = 51
 
 type Pos = (Int, Int)
-type Grid = Array Pos Char
+type Grid = UArray Pos Char
 
 data Dir = North | South | West | East
     deriving (Eq, Ord, Ix)
 
 optimizeEnergy :: Grid -> Int
 optimizeEnergy grid = maximum $ map (energize grid) $ concatMap concat [
-        [ [((x,0), South), ((x,my), North)] | x <- range (0, mx) ],
-        [ [((0,y), East ), ((mx,y), West )] | y <- range (0, my) ]
+        [ [((0,x), South), ((my,x), North)] | x <- range (0, mx) ],
+        [ [((y,0), East ), ((y,mx), West )] | y <- range (0, my) ]
     ]
     where (mx, my) = snd (bounds grid)
 
@@ -42,8 +43,8 @@ energize grid (start, sdir) = runST $ do
     countEnergy eng
 
     where
-        energize' :: Pos -> Pos -> Dir -> STArray s Pos Bool -> STArray s (Pos, Dir) Bool -> ST s ()
-        energize' ori pos dir eng memo | not (inRange (bounds grid) pos) = pure ()
+        energize' :: Pos -> Pos -> Dir -> STUArray s Pos Bool -> STUArray s (Pos, Dir) Bool -> ST s ()
+        energize' ori pos dir eng memo | not (inBounds grid pos) = pure ()
                                        | otherwise = do
             energized <- readArray memo (pos, dir)
             unless energized $ do
@@ -70,10 +71,10 @@ energize grid (start, sdir) = runST $ do
                         ('\\', West ) -> goNorth
                         _             -> error "bruh"
             where
-                goNorth = energize' ori (pos +++ (0,-1)) North eng memo
-                goSouth = energize' ori (pos +++ (0, 1)) South eng memo
-                goWest  = energize' ori (pos +++ (-1,0)) West  eng memo
-                goEast  = energize' ori (pos +++ ( 1,0)) East  eng memo
+                goNorth = energize' ori (pos +++ (-1, 0)) North eng memo
+                goSouth = energize' ori (pos +++ ( 1, 0)) South eng memo
+                goWest  = energize' ori (pos +++ ( 0,-1)) West  eng memo
+                goEast  = energize' ori (pos +++ ( 0, 1)) East  eng memo
 
-        countEnergy :: STArray s Pos Bool -> ST s Int
-        countEnergy = ((length . filter id) <$>) . getElems
+        countEnergy :: STUArray s Pos Bool -> ST s Int
+        countEnergy = getElems >>> ((filter id >>> length) <$>)
