@@ -21,7 +21,7 @@ import qualified Data.Sequence       as Seq
 import           Debug.Trace         (trace)
 import qualified Numeric             as N
 import           Text.Read           (readMaybe)
-
+import           Data.Array.Base     (IArray, listArray)
 
 -- | Er ikke dette bare det samme som Data.List.span?
 takeDropWhile :: (a -> Bool) -> [a] -> ([a], [a])
@@ -33,10 +33,8 @@ padWith :: a -> [[a]] -> [[a]]
 padWith a xss = row : [a : xs ++ [a] | xs <- xss] ++ [row]
     where row = replicate (length (head xss) + 2) a
 
-toArray :: [[a]] -> Array (Int, Int) a
-toArray xss = array b l
-    where l = [ ((x, y), s) | (y, xs) <- zip [0..] xss, (x, s) <- zip [0..] xs]
-          b = ((0, 0), (length (head xss)-1, length xss-1))
+toArray :: IArray a e => [[e]] -> a (Int,Int) e
+toArray xss = listArray ((0,0),(length (head xss)-1,length xss-1)) (concat xss)
 
 arrayToString :: (Ix i, Enum i) => Array (i, i) a -> ((i, i) -> a -> String) -> String
 arrayToString arr f = unlines [ row y | y <- [y1..y2] ]
@@ -96,7 +94,7 @@ revSort :: Ord a => [a] -> [a]
 revSort = sortBy (comparing Down)
 
 read' :: Read r => String -> r
-read' s = fromMaybe (error ("Could not read " ++ s)) (readMaybe s)
+read' s = fromMaybe (error ("Could not read '" ++ s ++ "'")) (readMaybe s)
 
 length' :: Integral i => [a] -> i
 length' = fromIntegral . length
