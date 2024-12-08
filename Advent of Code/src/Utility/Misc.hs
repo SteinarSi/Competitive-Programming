@@ -1,8 +1,8 @@
 module Utility.Misc (
     takeDropWhile, padWith, toArray, arrayToString, inBounds, mapSome, tupleToList, toTuple, toTriple,
-    read', length', trace', revSort, (!!!), (+++), directions, count', modifyArray, groupOn, ifM,
+    read', length', trace', revSort, (!!!), (+++), directions, occurences, modifyArray, groupOn, ifM,
     spfa, replace, bruh, Cost(..), infinum, supremum, hex, internalPolygonArea, shoelace, extractNaturals,
-    extractIntegers, inbetween, hashString, imap, manhattan
+    extractIntegers, inbetween, hashString, imap, manhattan, countBy
     ) where
 
 import           Control.Monad       (filterM, forM, forM_)
@@ -115,10 +115,13 @@ trace' s = trace (show s)
 directions :: [(Int, Int)]
 directions = [(0,1), (0,-1), (1,0), (-1,0)]
 
-count' :: Eq a => a -> [a] -> Int
-count' _ [] = 0
-count' a (x:xs) | a == x = 1 + count' a xs
-               | otherwise = count' a xs
+countBy :: (a -> Bool) -> [a] -> Int
+countBy _ [] = 0
+countBy p (x:xs) | p x       = 1 + countBy p xs
+                 | otherwise =     countBy p xs
+
+occurences :: Eq a => a -> [a] -> Int
+occurences x = countBy (x==)
 
 imap :: (Int -> a -> b) -> [a] -> [b]
 imap f = zipWith f [0..]

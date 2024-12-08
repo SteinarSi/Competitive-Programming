@@ -27,7 +27,7 @@ insert :: HashMap -> [String] -> Int -> HashMap
 insert hmap xs i = insertWith (flip (++)) (load xs) [(xs, i)] hmap
 
 load :: [String] -> Int
-load = sum . zipWith (\i x -> i * count' 'O' x) [1..] . reverse
+load = sum . zipWith (\i x -> i * occurences 'O' x) [1..] . reverse
 
 simulate :: HashMap -> Int -> [String] -> [String]
 simulate hmap i xs | i == 1000000000 = xs
