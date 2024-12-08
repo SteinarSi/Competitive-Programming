@@ -1,4 +1,4 @@
-import Data.Array (Array, array, (!), bounds, indices)
+import Data.Array.Base (UArray, array, bounds, indices, (!))
 import qualified Data.IntSet as S
 import qualified Data.Set as SS
 import Data.List (nub, sort, delete, sortOn)
@@ -11,13 +11,13 @@ import Control.Concurrent.QSemN (newQSemN, waitQSemN, signalQSemN)
 import Control.DeepSeq (deepseq)
 import Control.Monad (forM_)
 
-type Flow = Array Int Int
-type CliqueGraph = Array (Int, Int) Int
+type Flow = UArray Int Int
+type CliqueGraph = UArray (Int, Int) Int
 
 main :: IO ()
 main = do
     getNumCapabilities >>= setNumCapabilities
-    (g,f) <- fmap (first clique . parse SS.empty [] [] . map words . lines) (readFile "inputs/day16-input.txt")
+    (g,f) <- fmap (first clique . parse SS.empty [] [] . map words . lines) (readFile "inputs/year2022/day16-input.txt")
     let valves = filter ((>0) . (f!)) (indices f)
     print $ pathValue g f 30 0 0 $ last $ sortOn (pathValue g f 30 0 0) (paths g 30 (reverse $ sortOn (f!) valves))
     concurrentBruteForce (S.fromList valves) g f >>= print
@@ -50,7 +50,7 @@ paths g = paths' 0 []
                                 | otherwise = concatMap (\x -> paths' x (x:ret) (time - g ! (prev,x)) (delete x xs)) next
             where next = filter (\x -> g ! (prev, x) < time) xs
 
-clique :: Array Int [Int] -> CliqueGraph
+clique :: UArray Int [Int] -> CliqueGraph
 clique g = array ((0,0), (n, n)) $ concatMap (\i -> bfs i (S.singleton i) [i] [((i,i),0)] 2) (indices g)
     where 
         n = snd (bounds g)
@@ -59,7 +59,7 @@ clique g = array ((0,0), (n, n)) $ concatMap (\i -> bfs i (S.singleton i) [i] [(
                                        | otherwise = bfs start (S.union visited (S.fromList next)) next (map (\v -> ((start,v),dist)) next ++ ret) (dist+1)
             where next = nub $ filter (flip S.notMember visited) (concatMap (g!) gen) 
 
-parse :: SS.Set String -> [(String, [String])] -> [(String, Int)] -> [[String]] -> (Array Int [Int], Flow)
+parse :: SS.Set String -> [(String, [String])] -> [(String, Int)] -> [[String]] -> (UArray Int [Int], Flow)
 parse names neighbours flows [] = let aix = array (0, fromIntegral (SS.size names)-1)
                                       translate = fromJust . flip lookup (zip (sort $ SS.toList names) [0..])
                                       neighbours' = map (bimap translate (map translate)) neighbours

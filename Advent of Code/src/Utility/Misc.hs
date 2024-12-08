@@ -2,7 +2,7 @@ module Utility.Misc (
     takeDropWhile, padWith, toArray, arrayToString, inBounds, mapSome, tupleToList, toTuple, toTriple,
     read', length', trace', revSort, (!!!), (+++), directions, count', modifyArray, groupOn, ifM,
     spfa, replace, bruh, Cost(..), infinum, supremum, hex, internalPolygonArea, shoelace, extractNaturals,
-    extractIntegers, inbetween, hashString, imap
+    extractIntegers, inbetween, hashString, imap, manhattan
     ) where
 
 import           Control.Monad       (filterM, forM, forM_)

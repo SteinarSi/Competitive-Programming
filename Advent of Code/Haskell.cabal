@@ -36,6 +36,8 @@ library
         Year.Year2022.Day12,
         Year.Year2022.Day13,
         Year.Year2022.Day14,
+        Year.Year2022.Day15,
+        Year.Year2022.Day18,
         Year.Year2023,
         Year.Year2023.Day1,
         Year.Year2023.Day2,
@@ -90,10 +92,12 @@ library
         z3,
         random,
         bytestring,
-        regex-tdfa
+        regex-tdfa,
+        deepseq,
+        union-find
     hs-source-dirs:   src
     default-language: GHC2021
-
+    -- TODO repalce union-find
 executable Haskell
     import:           warnings
     main-is:          Main.hs

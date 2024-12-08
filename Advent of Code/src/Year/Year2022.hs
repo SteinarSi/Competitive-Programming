@@ -16,6 +16,8 @@ import Year.Year2022.Day11
 import Year.Year2022.Day12
 import Year.Year2022.Day13
 import Year.Year2022.Day14
+import Year.Year2022.Day15
+import Year.Year2022.Day18
 import Meta
 
 test2022 :: IO ()
@@ -33,7 +35,9 @@ test2022 = void . benchAll False $ map void [
         test Day11,
         test Day12,
         test Day13,
-        test Day14
+        test Day14,
+        -- test Day15, -- TODO needs to use the new framework and be muuuuuuuch faster
+        test Day18
     ]
 
 solve2022 :: IO ()
@@ -51,5 +55,7 @@ solve2022 = void . benchAll True $ map void [
         solve Day11,
         solve Day12,
         solve Day13,
-        solve Day14
+        solve Day14,
+        -- solve Day15, -- TODO needs to use the new framework and be muuuuuuuch faster
+        solve Day18
     ]

@@ -1,12 +1,27 @@
-{-# LANGUAGE TupleSections #-}
+module Year.Year2022.Day15 (Day15(Day15)) where
 
 import Data.List (genericLength)
 import qualified Data.Set as S
 
+import Control.Arrow ((>>>))
 import Control.Concurrent (forkFinally, getNumCapabilities, setNumCapabilities)
 import Control.DeepSeq (deepseq)
 import Control.Monad (forM_)
 import Control.Concurrent.QSemN (QSemN, newQSemN, waitQSemN, signalQSemN)
+
+import           Meta  (AoC (..))
+import           Utility.Misc (manhattan)
+
+data Day15 = Day15
+instance AoC Day15 [Beacon] Int where
+    parse _ = lines >>> map (words >>> parseBeacon)
+    part1 _ = const 0
+    part2 _ = const 0
+    date _  = 15
+    year _  = 2022
+    testAnswerPart1 _ = 26
+    testAnswerPart2 _ = 56000011
+    debug _ ps = []
 
 data Beacon = Beacon {
         beacon :: (Int, Int),
@@ -15,10 +30,12 @@ data Beacon = Beacon {
     }
     deriving (Show)
 
+-- TODO need to rewrite this to something that works without IO
+--  Oh, and it needs to be a lot faster, too
 main :: IO ()
 main = do
     getNumCapabilities >>= setNumCapabilities
-    beacons <- fmap (map (parse . words) . lines) (readFile "inputs/day15-input.txt")
+    beacons <- fmap (map (parseBeacon . words) . lines) (readFile "inputs/year2022/day15-test.txt")
     let closeBeacons = filter (\(Beacon (_,sy) _ d) -> abs (sy - target) <= d) beacons
         max' = maximum $ map (\(Beacon (sx,_) _ d) -> sx+d) closeBeacons
         min' = minimum $ map (\(Beacon (sx,_) _ d) -> sx-d) closeBeacons
@@ -52,11 +69,11 @@ canHaveBeacon (Beacon s@(sx,sy) b@(bx,by) d :xs) p@(x,y) | b == p = False
                                                          | manhattan s p <= d = True
                                                          | otherwise = canHaveBeacon xs p
 
-manhattan :: (Int, Int) -> (Int, Int) -> Int
-manhattan (a,b) (c,d) = abs (a-c) + abs (b-d)
+-- manhattan :: (Int, Int) -> (Int, Int) -> Int
+-- manhattan (a,b) (c,d) = abs (a-c) + abs (b-d)
 
-parse :: [String] -> Beacon
-parse (_:_:x:y:_:_:_:_:x':y':_) = Beacon (s1, s2) (b1, b2) (manhattan (s1,s2) (b1,b2))
+parseBeacon :: [String] -> Beacon
+parseBeacon (_:_:x:y:_:_:_:_:x':y':_) = Beacon (s1, s2) (b1, b2) (manhattan (s1,s2) (b1,b2))
     where d = read . drop 2 . init
           s1 = d x
           s2 = d y
