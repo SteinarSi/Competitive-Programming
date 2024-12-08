@@ -1,27 +1,29 @@
 module Year.Year2022 where
 
-import Control.Monad (void)
 
-import Year.Year2022.Day1 
-import Year.Year2022.Day2
-import Year.Year2022.Day3
-import Year.Year2022.Day4
-import Year.Year2022.Day5
-import Year.Year2022.Day6
-import Year.Year2022.Day7
-import Year.Year2022.Day8
-import Year.Year2022.Day9
-import Year.Year2022.Day10
-import Year.Year2022.Day11
-import Year.Year2022.Day12
-import Year.Year2022.Day13
-import Year.Year2022.Day14
-import Year.Year2022.Day15
-import Year.Year2022.Day18
-import Meta
+import           Year.Year2022.Day1 
+import           Year.Year2022.Day2
+import           Year.Year2022.Day3
+import           Year.Year2022.Day4
+import           Year.Year2022.Day5
+import           Year.Year2022.Day6
+import           Year.Year2022.Day7
+import           Year.Year2022.Day8
+import           Year.Year2022.Day9
+import           Year.Year2022.Day10
+import           Year.Year2022.Day11
+import           Year.Year2022.Day12
+import           Year.Year2022.Day13
+import           Year.Year2022.Day14
+import           Year.Year2022.Day15
+import           Year.Year2022.Day18
 
-test2022 :: IO ()
-test2022 = void . benchAll False $ map void [
+import           Meta (Year(..), solve, solveYear, test, testYear)
+
+data Year2022 = Year2022
+instance Year Year2022 where
+    year _ = 2022
+    tests _ = [
         test Day1,
         test Day2,
         test Day3,
@@ -38,10 +40,8 @@ test2022 = void . benchAll False $ map void [
         test Day14,
         -- test Day15, -- TODO needs to use the new framework and be muuuuuuuch faster
         test Day18
-    ]
-
-solve2022 :: IO ()
-solve2022 = void . benchAll True $ map void [
+        ]
+    days _ = [
         solve Day1,
         solve Day2,
         solve Day3,
@@ -58,4 +58,10 @@ solve2022 = void . benchAll True $ map void [
         solve Day14,
         -- solve Day15, -- TODO needs to use the new framework and be muuuuuuuch faster
         solve Day18
-    ]
+        ]
+
+test2022 :: IO ()
+test2022 = testYear Year2022
+
+solve2022 :: IO ()
+solve2022 = solveYear Year2022
