@@ -9,11 +9,10 @@ import           Utility.Misc    (bruh, hashString)
 
 data Day15 = Day15
 instance AoC Day15 [String] Int where
+    date _ = (15,2023)
     parse _ = splitOn "," . filter (not . isControl)
     part1 _ = sum . map hash
     part2 _ = focusPower . flip configure empty . map reverse
-    date _ = 15
-    year _ = 2023
     testAnswerPart1 _ = 1320
     testAnswerPart2 _ = 145
 

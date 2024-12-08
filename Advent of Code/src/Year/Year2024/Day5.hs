@@ -13,6 +13,7 @@ import           Utility.Misc    (read')
 
 data Day5 = Day5
 instance AoC Day5 [([Int],[Int])] Int where
+    date _ = (5,2024)
     parse _ xss = let (rules,updates) = (lines xss)
                         & span (null >>> not)
                         & parseRules *** ((tail >>> map (splitOn "," >>> map read')))
@@ -23,8 +24,6 @@ instance AoC Day5 [([Int],[Int])] Int where
     part2 _ = filter (uncurry (/=))
             >>> map (snd >>> middle)
             >>> sum
-    date _  = 5
-    year _  = 2024
     testAnswerPart1 _ = 143
     testAnswerPart2 _ = 123
 

@@ -11,6 +11,7 @@ import           Utility.Misc    (padWith, takeDropWhile, toArray)
 
 data Day3 = Day3
 instance AoC Day3 ([((Int, Int), Int)], [Int]) Int where
+    date _ = (3,2023)
     parse _ input = search 1 1 (toArray (padWith '.' l)) l
         where l = lines input
     part1 _ = snd >>> sum
@@ -21,8 +22,6 @@ instance AoC Day3 ([((Int, Int), Int)], [Int]) Int where
             >>> filter (length >>> (2==))
             >>> map product
             >>> sum
-    date _ = 3
-    year _ = 2023
     testAnswerPart1 _ = 4361
     testAnswerPart2 _ = 467835
 

@@ -22,6 +22,7 @@ Når det funker burde Flow parses og preprosseseres bedre.
 
 data Day19 = Day19
 instance AoC Day19 (Flows, [[Range]]) Integer where
+    date _ = (19,2023)
     parse _ s = (fromList (map parseFlow flows), map (map (\n -> (n,n)) . extractNaturals) parts)
         where [flows, parts] = splitOn [""] (lines s)
     part1 _ (flows, parts) = let a = map (flowCheck flows "in") parts
@@ -31,8 +32,6 @@ instance AoC Day19 (Flows, [[Range]]) Integer where
                             --  in  trace' parts trace' d trace' b trace' c (sum c)
                              in  sum a
     part2 _ (flows, _) = flowCheck flows "in" (replicate 4 (1,4000))
-    date _ = 19
-    year _ = 2023
     testAnswerPart1 _ = 19114
     testAnswerPart2 _ = 167409079868000
 

@@ -10,11 +10,10 @@ import           Utility.Misc    (read')
 
 data Day3 = Day3
 instance AoC Day3 String Int where
+    date _ = (3,2024)
     parse _ = id
     part1 _ = mult
     part2 _ = dos >>> mult
-    date _  = 3
-    year _  = 2024
     testAnswerPart1 _ = 161
     testAnswerPart2 _ = 48
 

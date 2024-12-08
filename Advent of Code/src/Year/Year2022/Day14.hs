@@ -10,11 +10,10 @@ import qualified Utility.Structure.HashSet as HS
 
 data Day14 = Day14
 instance AoC Day14 (HS.HashSet, Int) Int where
+    date _ = (14,2022)
     parse _ = lines >>> concatMap drawLine >>> (HS.fromList &&& (map snd >>> maximum >>> (+2)))
     part1 _ (inn,my) = simulate (my, inn)
     part2 _ (inn,my) = succ $ simulate (my, inn <> HS.fromList (map (,my) [500-my*2..500+my*2]))
-    date _  = 14
-    year _  = 2022
     testAnswerPart1 _ = 24
     testAnswerPart2 _ = 93
 

@@ -8,11 +8,10 @@ import           Utility.Structure.HashSet as HS
 
 data Day9 = Day9
 instance AoC Day9 [(Char, Int)] Int where
+    date _ = (9,2022)
     parse _ = lines >>> map words >>> map (\[[c],n] -> (c, read n))
     part1 _ = solve 1
     part2 _ = solve 9
-    date _  = 9
-    year _  = 2022
     testAnswerPart1 _ = 13
     testAnswerPart2 _ = 1
 

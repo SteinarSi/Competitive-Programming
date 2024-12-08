@@ -10,11 +10,10 @@ import           Utility.Misc    (tupleToList)
 
 data Day3 = Day3
 instance AoC Day3 [String] Int where
+    date _ = (3,2022)
     parse _ = lines
     part1 _ = map (\xs -> tupleToList (splitAt (length xs `div` 2) xs)) >>> search
     part2 _ = chunksOf 3 >>> search
-    date _  = 3
-    year _  = 2022
     testAnswerPart1 _ = 157
     testAnswerPart2 _ = 70
 

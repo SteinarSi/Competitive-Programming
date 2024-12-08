@@ -7,11 +7,10 @@ import           Utility.Misc   (mapSome, takeDropWhile)
 
 data Day4 = Day4
 instance AoC Day4 [Integer] Integer where
+    date _ = (4,2023)
     parse _ = map parseCard . lines
     part1 _ = sum . map score
     part2 _ = duplicateCards . map (1,)
-    date _ = 4
-    year _ = 2023
     testAnswerPart1 _ = 13
     testAnswerPart2 _ = 30
 

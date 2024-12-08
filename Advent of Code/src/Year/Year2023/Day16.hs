@@ -13,11 +13,10 @@ import           Utility.Misc       (inBounds, toArray, (+++))
 
 data Day16 = Day16
 instance AoC Day16 Grid Int where
+    date _ = (16,2023)
     parse _ = lines >>> toArray
     part1 _ grid = energize grid ((0,0), East)
     part2 _ = optimizeEnergy
-    date _ = 16
-    year _ = 2023
     testAnswerPart1 _ = 46
     testAnswerPart2 _ = 51
 

@@ -12,12 +12,11 @@ import           Utility.Misc    (bruh)
 
 data Day20 = Day20
 instance AoC Day20 State Integer where
+    date _ = (20,2023)
     parse _ = parseCircuit . map preParse . lines
     part1 _ = solulu 1000
     part2 _ state@(State {modules}) = pulse 1 [] (keys indeg) state
         where Just (Conjunction _ indeg _) = find (elem "rx" . outdegree) (elems modules)
-    date _ = 20
-    year _ = 2023
     testAnswerPart1 _ = 11687500
     testAnswerPart2 _ = -1 -- Need to rewrite the test framework
 

@@ -9,11 +9,10 @@ import           Meta            (AoC (..))
 
 data Day13 = Day13
 instance AoC Day13 [[Distress]] Int where
+    date _ = (13,2022)
     parse _ = lines >>> splitWhen null >>> map (map (insert >>> read))
     part1 _ = zipWith (\i [a,b] -> bool 0 i (a<=b)) [1..] >>> sum
     part2 _ = concat >>> search 2 &&& (search 6 >>> succ) >>> uncurry (*)
-    date _  = 13
-    year _  = 2022
     testAnswerPart1 _ = 13
     testAnswerPart2 _ = 140
 

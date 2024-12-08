@@ -13,11 +13,10 @@ import           Meta            (AoC (..))
 
 data Day11 = Day11
 instance AoC Day11 ([Monkey], [[Integer]]) Integer where
+    date _ = (11,2022)
     parse _ = lines >>> splitWhen null >>> map (map words) >>> parser [] []
     part1 _ (ms, is) = simulate 20 is (map div3 ms)
     part2 _ (ms, is) = simulate 10000 is ms
-    date _  = 11
-    year _  = 2022
     testAnswerPart1 _ = 10605
     testAnswerPart2 _ = 2713310158
 

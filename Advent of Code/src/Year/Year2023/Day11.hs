@@ -6,14 +6,13 @@ import           Utility.Misc
 
 data Day11 = Day11
 instance AoC Day11 (Integer, [Integer], [Integer]) Integer where
+    date _ = (11,2023)
     parse _ s = (sum rs, rs, cs)
         where ls = lines s
               rs = galaxiesPerRow ls
               cs = galaxiesPerCol ls
     part1 _ = distances 1
     part2 _ = distances 999999
-    date _ = 11
-    year _ = 2023
     testAnswerPart1 _ = 374
     testAnswerPart2 _ = 82000210
 

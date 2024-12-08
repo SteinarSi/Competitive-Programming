@@ -7,11 +7,10 @@ import           Meta      (AoC (..))
 
 data Day1 = Day1
 instance AoC Day1 [[(Bool, Int)]] Int where
+    date _ = (1,2023)
     parse _ = map parseRow . lines
     part1 _ = sum . map ((\s -> 10 * head s + last s) . map snd . filter fst)
     part2 _ = sum . map ((\s -> 10 * head s + last s) . map snd)
-    date _ = 1
-    year _ = 2023
     testAnswerPart1 _ = 297 -- had to change this, since we have two test inputs
     testAnswerPart2 _ = 281
 

@@ -12,11 +12,10 @@ type Dir = Array (Int, Int) [Int]
 
 data Day8 = Day8
 instance AoC Day8 (UArray (Int, Int) Int, Dir, Dir, Dir, Dir) Int where
+    date _ = (8,2022)
     parse _ = directions . chart . lines
     part1 _ = visible
     part2 _ = nicest
-    date _  = 8
-    year _  = 2022
     testAnswerPart1 _ = 21
     testAnswerPart2 _ = 8
 

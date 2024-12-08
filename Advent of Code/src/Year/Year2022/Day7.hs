@@ -10,11 +10,10 @@ type Directory = M.Map [String] [Either Integer String]
 
 data Day7 = Day7
 instance AoC Day7 Directory Integer where
+    date _ = (7,2022)
     parse _ = lines >>> map words >>> parseDirectory M.empty []
     part1 _ dic = directory (const 0) (\d p -> (+bool 0 (size d p) (size d p <= 100000)) . sum) dic ["/"]
     part2 _ dic = minimum $ filter (>=max 0 (size dic ["/"] - 40000000)) (directory (const []) (\d p -> (size d p:) . concat) dic ["/"])
-    date _  = 7
-    year _  = 2022
     testAnswerPart1 _ = 95437
     testAnswerPart2 _ = 24933642
 

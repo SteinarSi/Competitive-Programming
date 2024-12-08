@@ -10,11 +10,10 @@ import           Utility.Misc
 
 data Day12 = Day12
 instance AoC Day12 [(String,[Int])] Integer where
+    date _ = (12,2023)
     parse _ = map parseRow . lines
     part1 _ = sum . map solulu
     part2 _ = sum . map (solulu . unfold)
-    date _ = 12
-    year _ = 2023
     testAnswerPart1 _ = 21
     testAnswerPart2 _ = 525152
 

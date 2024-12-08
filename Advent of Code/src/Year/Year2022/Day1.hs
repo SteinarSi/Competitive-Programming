@@ -8,10 +8,9 @@ import           Utility.Misc    (read', revSort)
 
 data Day1 = Day1
 instance AoC Day1 [Int] Int where
+    date _ = (1,2022)
     parse _ = lines >>> splitWhen null >>> map (map read' >>> sum) >>> revSort
     part1 _ = head
     part2 _ = take 3 >>> sum
-    date _  = 1
-    year _  = 2022
     testAnswerPart1 _ = 24000
     testAnswerPart2 _ = 45000

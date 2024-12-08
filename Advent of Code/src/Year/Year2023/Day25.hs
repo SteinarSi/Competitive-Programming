@@ -20,11 +20,10 @@ import           Utility.Misc
 
 data Day25 = Day25
 instance AoC Day25 (Edges, Graph) Int where
+    date _ = (25,2023)
     parse _ = buildGraph M.empty . map words . lines . filter (/=':')
     part1 _ = const 0
     part2 _ = const 49
-    date _ = 25
-    year _ = 2023
     testAnswerPart1 _ = 54
     testAnswerPart2 _ = 49
 

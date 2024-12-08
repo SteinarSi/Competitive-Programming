@@ -11,11 +11,10 @@ import           Utility.Misc    (toArray)
 
 data Day4 = Day4
 instance AoC Day4 (UArray (Int,Int) Char) Int where
+    date _ = (4,2024)
     parse _ = lines >>> toArray
     part1 _ = xmas
     part2 _ = mmass
-    date _  = 4
-    year _  = 2024
     testAnswerPart1 _ = 18
     testAnswerPart2 _ = 9
 

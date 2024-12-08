@@ -8,11 +8,10 @@ import           Meta          (AoC (..))
 
 data Day2 = Day2
 instance AoC Day2 [String] Int where
+    date _ = (2,2022)
     parse _ = lines
     part1 _ = map score >>> sum
     part2 _ = map scripted >>> sum
-    date _  = 2
-    year _  = 2022
     testAnswerPart1 _ = 15
     testAnswerPart2 _ = 12
 

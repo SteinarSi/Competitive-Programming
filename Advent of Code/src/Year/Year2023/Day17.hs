@@ -13,11 +13,10 @@ import           Utility.Misc        (inBounds, toArray)
 
 data Day17 = Day17
 instance AoC Day17 Grid Int where
+    date _ = (17,2023)
     parse _ = toArray . map (map digitToInt) . lines
     part1 _ = crucible (1,3)
     part2 _ = crucible (4,10)
-    date _ = 17
-    year _ = 2023
     testAnswerPart1 _ = 102
     testAnswerPart2 _ = 94
 

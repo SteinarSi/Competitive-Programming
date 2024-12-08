@@ -7,11 +7,10 @@ import           Utility.Misc
 
 data Day18 = Day18
 instance AoC Day18 [[String]] Int where
+    date _ = (18,2023)
     parse _ = map words . lines
     part1 _ = digArea . map parseNormalInstruction
     part2 _ = digArea . map parseHexInstruction
-    date _ = 18
-    year _ = 2023
     testAnswerPart1 _ = 62
     testAnswerPart2 _ = 952408144115
 

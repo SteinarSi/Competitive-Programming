@@ -14,11 +14,10 @@ import           Utility.Misc (manhattan)
 
 data Day15 = Day15
 instance AoC Day15 [Beacon] Int where
+    date _ = (15,2022)
     parse _ = lines >>> map (words >>> parseBeacon)
     part1 _ = const 0
     part2 _ = const 0
-    date _  = 15
-    year _  = 2022
     testAnswerPart1 _ = 26
     testAnswerPart2 _ = 56000011
     debug _ ps = []
@@ -68,9 +67,6 @@ canHaveBeacon [] _ = False
 canHaveBeacon (Beacon s@(sx,sy) b@(bx,by) d :xs) p@(x,y) | b == p = False
                                                          | manhattan s p <= d = True
                                                          | otherwise = canHaveBeacon xs p
-
--- manhattan :: (Int, Int) -> (Int, Int) -> Int
--- manhattan (a,b) (c,d) = abs (a-c) + abs (b-d)
 
 parseBeacon :: [String] -> Beacon
 parseBeacon (_:_:x:y:_:_:_:_:x':y':_) = Beacon (s1, s2) (b1, b2) (manhattan (s1,s2) (b1,b2))

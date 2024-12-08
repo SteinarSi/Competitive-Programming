@@ -11,11 +11,10 @@ import           Utility.Misc
 
 data Day24 = Day24
 instance AoC Day24 [Hail] Integer where
+    date _ = (24,2023)
     parse _ = map parseHail . lines
     part1 _ = allIntersections testArea
     part2 _ = sum . fromJust . unsafePerformIO . evalZ3 . throwSnowball
-    date _ = 24
-    year _ = 2023
     testAnswerPart1 _ = 0 -- The test should use a different area. (7, 27) instead of testArea.
     testAnswerPart2 _ = 47
 

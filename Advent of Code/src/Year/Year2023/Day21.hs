@@ -15,6 +15,7 @@ import           Utility.Misc
 
 data Day21 = Day21
 instance AoC Day21 (Array Pos Char, Pos) Integer where
+    date _ = (21,2023)
     parse _ s = (arr, start)
         where arr = toArray (lines s)
               start = head [ p | p <- range (bounds arr), arr !!! p == 'S' ]
@@ -25,8 +26,6 @@ instance AoC Day21 (Array Pos Char, Pos) Integer where
     -- part2 _ _ = g goal
     -- part2 _ _ = f goal
     -- part2 _ = infiniteStepCount 1000
-    date _ = 21
-    year _ = 2023
     testAnswerPart1 _ = 42
     testAnswerPart2 _ = -1
 

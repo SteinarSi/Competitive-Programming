@@ -15,6 +15,7 @@ type Instruction = (Int,Int,Int)
 
 data Day5 = Day5
 instance AoC Day5 (Crates, [Instruction]) String where
+    date _ = (5,2022)
     parse _ = lines
             >>> span (null >>> not)
             >>> (init >>> parseCrates) 
@@ -22,8 +23,6 @@ instance AoC Day5 (Crates, [Instruction]) String where
                 (tail >>> map (words >>> parseInstruction))
     part1 _ = uncurry (simul False)
     part2 _ = uncurry (simul True)
-    date _  = 5
-    year _  = 2022
     testAnswerPart1 _ = "CMZ"
     testAnswerPart2 _ = "MCD"
 

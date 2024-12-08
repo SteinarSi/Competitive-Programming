@@ -15,11 +15,10 @@ import           Utility.Structure.UF (newUF, find, union)
 
 data Day18 = Day18
 instance AoC Day18 (Grid,Int) Int where
+    date _ = (18,2022)
     parse _ = lines >>> map (map read . splitWhen (==',')) >>> toGrid >>> id &&& count
     part1 _ = snd
     part2 _ = uncurry airSearch
-    date _  = 18
-    year _  = 2022
     testAnswerPart1 _ = 64
     testAnswerPart2 _ = 58
 

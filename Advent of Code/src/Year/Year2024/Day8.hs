@@ -13,6 +13,7 @@ import qualified Utility.Structure.HashSet as HS
 
 data Day8 = Day8
 instance AoC Day8 (UArray (Int,Int) Char, [[(Int,Int)]]) Int where
+    date _ = (8,2024)
     parse _ = lines >>> toArray >>> id &&& antennas
     part1 _ (grid,xss) = map (antinodes (segment grid)) xss
                     & HS.unions
@@ -20,8 +21,6 @@ instance AoC Day8 (UArray (Int,Int) Char, [[(Int,Int)]]) Int where
     part2 _ (grid,xss) = map (\xs -> HS.fromList xs <> antinodes (line grid) xs) xss
                     & HS.unions
                     & HS.size
-    date _  = 8
-    year _  = 2024
     testAnswerPart1 _ = 14
     testAnswerPart2 _ = 34
 

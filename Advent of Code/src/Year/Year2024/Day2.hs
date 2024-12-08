@@ -8,11 +8,10 @@ import           Meta          (AoC (..))
 
 data Day2 = Day2
 instance AoC Day2 [[Int]] Int where
+    date _ = (2,2024)
     parse _ = lines >>> map (words >>> map read)
     part1 _ = filter safe >>> length
     part2 _ = filter safeish >>> length
-    date _  = 2
-    year _  = 2024
     testAnswerPart1 _ = 2
     testAnswerPart2 _ = 4
 

@@ -9,12 +9,11 @@ import           Utility.Misc    (toTriple, toTuple)
 
 data Day5 = Day5
 instance AoC Day5 ([Int], [[(Int, Int, Int)]]) Int where
+    date _ = (5,2023)
     parse _ inn = (map read (tail (words seeds)), map (map (toTriple . map read . words) . tail) (splitOn [""] rest))
         where (seeds:_:rest) = lines inn
     part1 _ (seeds, maps) = minimum $ foldr (map . convertSingle) seeds (reverse maps)
     part2 _ (seeds, maps) = fst $ minimum $ foldr ((=<<) . convertRange) (map toTuple (chunksOf 2 seeds)) (reverse maps)
-    date _ = 5
-    year _ = 2023
     testAnswerPart1 _ = 35
     testAnswerPart2 _ = 46
 

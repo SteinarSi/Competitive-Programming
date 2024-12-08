@@ -8,13 +8,12 @@ import           Meta               (AoC (..))
 
 data Day10 = Day10
 instance AoC Day10 [(Int, Int)] Int where
+    date _ = (10,2023)
     parse _ s = travel arr pos
         where arr = toArray (lines s)
               pos = head [p | p <- indices arr, arr !!! p == 'S']
     part1 _ path = length path `div` 2
     part2 _ = internalPolygonArea
-    date _ = 10
-    year _ = 2023
     testAnswerPart1 _ = 70
     testAnswerPart2 _ = 7
 

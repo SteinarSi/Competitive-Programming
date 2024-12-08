@@ -7,11 +7,10 @@ import           Meta            (AoC (..))
 
 data Day4 = Day4
 instance AoC Day4 [((Int,Int), (Int,Int))] Int where
+    date _ = (4,2022)
     parse _ = lines >>> map (splitOn "," >>> map (splitOn "-" >>> map read) >>> (\[[a,b],[c,d]] -> ((a,b),(c,d))))
     part1 _ = filter fullOverlap >>> length
     part2 _ = filter overlap >>> length
-    date _  = 4
-    year _  = 2022
     testAnswerPart1 _ = 2
     testAnswerPart2 _ = 4
 

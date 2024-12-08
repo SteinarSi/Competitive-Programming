@@ -9,11 +9,10 @@ import           Utility.Misc (revSort, toTuple)
 
 data Day7 = Day7
 instance AoC Day7 [(String, Int)] Int where
+    date _ = (7,2023)
     parse _ = map (fmap read . toTuple . words) . lines
     part1 _ = winnings strength
     part2 _ = winnings jokerStrength
-    date _ = 7
-    year _ = 2023
     testAnswerPart1 _ = 6440
     testAnswerPart2 _ = 5905
 

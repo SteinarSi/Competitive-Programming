@@ -9,11 +9,10 @@ import           Utility.Misc
 
 data Day14 = Day14
 instance AoC Day14 [String] Int where
+    date _ = (14,2023)
     parse _ = lines
     part1 _ = load . north
     part2 _ = load . simulate empty 0
-    date _ = 14
-    year _ = 2023
     testAnswerPart1 _ = 136
     testAnswerPart2 _ = 64
 

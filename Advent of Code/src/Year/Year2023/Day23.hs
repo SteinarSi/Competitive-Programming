@@ -13,11 +13,10 @@ import qualified Utility.Structure.HashSet as HS
 
 data Day23 = Day23
 instance AoC Day23 (Pos, Pos, HM.HashMap [(Int,Pos,Bool)]) Int where
+    date _ = (23,2023)
     parse _ = lines >>> toArray >>> contract
     part1 _ = longLongWaaaaaaalk False
     part2 _ = longLongWaaaaaaalk True
-    date _ = 23
-    year _ = 2023
     testAnswerPart1 _ = 94
     testAnswerPart2 _ = 154
 

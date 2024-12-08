@@ -6,11 +6,10 @@ import           Meta            (AoC (..))
 
 data Day2 = Day2
 instance AoC Day2 [Game] Int where
+    date _ = (2,2023)
     parse _ = map parseGame . lines
     part1 _ = sum . map fst . filter possible
     part2 _ = sum . map (product . colors . snd)
-    date _ = 2
-    year _ = 2023
     testAnswerPart1 _ = 8
     testAnswerPart2 _ = 2286
 

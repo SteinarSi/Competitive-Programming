@@ -11,12 +11,11 @@ import           Meta       (AoC (..))
 
 data Day8 = Day8
 instance AoC Day8 (String, Graph) Int where
+    date _ = (8,2023)
     parse _ s = (dirs, fromList (map parseRow rest))
         where (dirs:_:rest) = lines s
     part1 _ (dirs, graph) = follow graph (cycle dirs) "AAA"
     part2 _ (dirs, graph) = foldr (lcm . follow graph (cycle dirs)) 1 . filter (\s -> last s == 'A')  $ keys graph
-    date _ = 8
-    year _ = 2023
     testAnswerPart1 _ = 2
     testAnswerPart2 _ = 2
 

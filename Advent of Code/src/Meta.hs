@@ -13,8 +13,7 @@ class (Eq answer, Show answer) => AoC day problem answer | day -> problem answer
     parse :: day -> String  -> problem
     part1 :: day -> problem -> answer
     part2 :: day -> problem -> answer
-    date  :: day -> Int
-    year  :: day -> Int
+    date  :: day -> (Int,Int)
     testAnswerPart1 :: day -> answer
     testAnswerPart2 :: day -> answer
     debug :: day -> problem -> [String]
@@ -22,8 +21,9 @@ class (Eq answer, Show answer) => AoC day problem answer | day -> problem answer
 
 test :: AoC day problem answer => day -> IO Bool
 test day = do
-    printf "Testing Year%d/Day%d:\n" (year day) (date day)
-    (s1, s2) <- meta day (printf "inputs/year%d/day%d-test.txt" (year day) (date day))
+    let (d,y) = date day
+    printf "Testing Year%d/Day%d:\n" y d
+    (s1, s2) <- meta day (printf "inputs/test/year%d/day%d.txt" y d)
     if s1 /= testAnswerPart1 day
         then printf "    Got a wrong answer on part 1: %s /= %s\n" (show s1) (show (testAnswerPart1 day))
         else printf "    Part 1 is correct!\n"
@@ -34,8 +34,9 @@ test day = do
 
 solve :: AoC day problem answer => day -> IO ()
 solve day = do
-    printf "Solving Year%d/Day%d:\n" (year day) (date day)
-    (s1, s2) <- meta day (printf "inputs/year%d/day%d-input.txt" (year day) (date day))
+    let (d,y) = date day
+    printf "Solving Year%d/Day%d:\n" y d
+    (s1, s2) <- meta day (printf "inputs/prod/year%d/day%d.txt" y d)
     printf "    Part 1: %s\n" (show s1)
     printf "    Part 2: %s\n" (show s2)
 

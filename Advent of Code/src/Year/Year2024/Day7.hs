@@ -8,6 +8,7 @@ import           Meta            (AoC (..))
 
 data Day7 = Day7
 instance AoC Day7 ([(Integer,[Integer])],[(Integer,[Integer])]) Integer where
+    date _ = (7,2024)
     parse _ = filter (/=':') 
             >>> lines 
             >>> map (splitOn " " 
@@ -21,8 +22,6 @@ instance AoC Day7 ([(Integer,[Integer])],[(Integer,[Integer])]) Integer where
             >>> uncurry (<>)
             >>> map fst
             >>> sum
-    date _  = 7
-    year _  = 2024
     testAnswerPart1 _ = 3749
     testAnswerPart2 _ = 11387
 

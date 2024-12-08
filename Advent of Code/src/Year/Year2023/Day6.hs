@@ -8,11 +8,10 @@ import           Utility.Misc (toTuple)
 
 data Day6 = Day6
 instance AoC Day6 [(Int, Int)] Int where
+    date _ = (6,2023)
     parse _ = uncurry zip . toTuple . map (map read . tail . words) . lines
     part1 _ = product . map ways
     part2 _ = ways . kerning
-    date _ = 6
-    year _ = 2023
     testAnswerPart1 _ = 288
     testAnswerPart2 _ = 71503
 

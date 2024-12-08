@@ -13,6 +13,7 @@ import Utility.Structure.HashMap as HM
 
 data Day6 = Day6
 instance AoC Day6 (UArray (Int,Int) Char,[(Int,Int)],(Int,Int)) Int where
+    date _ = (6,2024)
     parse _ xss = let grid = toArray (lines xss)
                       start = assocs grid
                             & find (snd >>> (=='^'))
@@ -23,8 +24,6 @@ instance AoC Day6 (UArray (Int,Int) Char,[(Int,Int)],(Int,Int)) Int where
                   in  (grid,path,start)
     part1 _ (grid,path,start) = length path
     part2 _ (grid,path,start) = blockade grid HM.empty 0 start (-1,0)
-    date _  = 6
-    year _  = 2024
     testAnswerPart1 _ = 41
     testAnswerPart2 _ = 6
 

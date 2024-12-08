@@ -4,11 +4,10 @@ import           Meta (AoC (..))
 
 data Day9 = Day9
 instance AoC Day9 [[Int]] Int where
+    date _ = (9,2023)
     parse _ = map (map read . words) . lines
     part1 _ = predicc
     part2 _ = predicc . map reverse
-    date _ = 9
-    year _ = 2023
     testAnswerPart1 _ = 114
     testAnswerPart2 _ = 2
 

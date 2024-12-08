@@ -12,6 +12,7 @@ import           Meta            (AoC (..))
 
 data Day12 = Day12
 instance AoC Day12 (UArray (Int, Int) Char, (Int,Int), (Int,Int)) Int where
+    date _ = (12,2022)
     parse _ xs = let arr = listArray ((0, 0), (length (lines xs)-1, length (head (lines xs))-1)) (filter isAlpha xs)
                      s = find arr 'S'
                      e = find arr 'E'
@@ -24,8 +25,6 @@ instance AoC Day12 (UArray (Int, Int) Char, (Int,Int), (Int,Int)) Int where
             & filter (\(k, a) -> arr ! k == 'a')
             & map snd
             & minimum
-    date _  = 12
-    year _  = 2022
     testAnswerPart1 _ = 31
     testAnswerPart2 _ = 29
 

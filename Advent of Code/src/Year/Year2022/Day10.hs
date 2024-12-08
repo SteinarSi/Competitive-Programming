@@ -11,11 +11,10 @@ data Instruction = NOOP | ADDX Int deriving (Read, Show)
 
 data Day10 = Day10
 instance AoC Day10 (Int, String) String where
+    date _ = (10,2022)
     parse _ = lines >>> map (read . map toUpper) >>> cycling 1 1 0 0 ""
     part1 _ = fst >>> show
     part2 _ = const "ZFBFHGUP" -- This doesn't really work in this framework :(
-    date _  = 10
-    year _  = 2022
     testAnswerPart1 _ = "13140"
     testAnswerPart2 _ = "ZFBFHGUP"
 

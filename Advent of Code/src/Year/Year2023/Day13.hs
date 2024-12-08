@@ -8,11 +8,10 @@ import           Meta            (AoC (..))
 
 data Day13 = Day13
 instance AoC Day13 [[String]] Int where
+    date _ = (13,2023)
     parse _ = splitOn [""] . lines
     part1 _ = summarize 0
     part2 _ = summarize 1
-    date _ = 13
-    year _ = 2023
     testAnswerPart1 _ = 405
     testAnswerPart2 _ = 400
 

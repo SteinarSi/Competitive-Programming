@@ -10,11 +10,10 @@ import           Meta  (AoC (..))
 
 data Day6 = Day6
 instance AoC Day6 C.ByteString Int where
+    date _ = (6,2022)
     parse _ = C.pack
     part1 _ = marker 4
     part2 _ = marker 14
-    date _  = 6
-    year _  = 2022
     testAnswerPart1 _ = 7
     testAnswerPart2 _ = 19
 

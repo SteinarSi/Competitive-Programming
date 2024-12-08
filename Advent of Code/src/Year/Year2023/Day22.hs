@@ -17,12 +17,11 @@ import           Utility.Misc        (modifyArray)
 
 data Day22 = Day22
 instance AoC Day22 ([Int], (Array Int [Int], Array Int [Int])) Int where
+    date _ = (22,2023)
     parse _ s = (map idx bricks, dependentMap highest lowest bricks)
         where (highest, lowest, bricks) = falling [] empty empty . sort . zipWith (curry parseBrick) [1..] $ lines s
     part1 _ (bricks, dep) = length $ filter (canRemove dep) bricks
     part2 _ (bricks, (_, dep)) = countDegreeSolve bricks dep
-    date _ = 22
-    year _ = 2023
     testAnswerPart1 _ = 5
     testAnswerPart2 _ = 7
 
