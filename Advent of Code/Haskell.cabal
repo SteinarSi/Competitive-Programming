@@ -69,7 +69,8 @@ library
         Year.Year2024.Day4,
         Year.Year2024.Day5,
         Year.Year2024.Day6,
-        Year.Year2024.Day7
+        Year.Year2024.Day7,
+        Year.Year2024.Day8
     default-extensions:
         BangPatterns,
         FunctionalDependencies,

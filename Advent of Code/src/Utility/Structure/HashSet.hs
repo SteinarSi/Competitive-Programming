@@ -65,6 +65,11 @@ size (HashSet set) = S.size set
 union :: HashSet -> HashSet -> HashSet
 union (HashSet a) (HashSet b) = HashSet (a `S.union` b)
 
+unions :: [HashSet] -> HashSet
+unions [] = empty
+unions [x] = x
+unions (x:y:xs) = unions (union x y : xs)
+
 intersection :: HashSet -> HashSet -> HashSet
 intersection (HashSet a) (HashSet b) = HashSet (a `S.intersection` b)
 
