@@ -1,51 +1,63 @@
-module Utility.Structure.UF (UF, newUF, find, merge, connected, size, components) where
+{-# LANGUAGE FlexibleContexts #-}
 
-import Control.Monad.ST (ST)
-import Control.Monad (when)
-import Data.STRef (STRef, newSTRef, modifySTRef', readSTRef)
-import Data.Array.ST (STUArray, newArray, readArray, writeArray)
-import Data.Array.Base (listUArrayST)
+module Utility.Structure.UF (UF, newUF, find, union, connected, size, components) where
 
-data UF s = UF {
+import           Control.Applicative (liftA2)
+import           Control.Monad       (when)
+import           Control.Monad.ST    (ST)
+import           Data.Array.ST       (STUArray, newArray, readArray, writeArray)
+import           Data.STRef          (STRef, modifySTRef', newSTRef, readSTRef)
+
+import           Control.Arrow       ((>>>))
+import           Data.Array.Base     (listUArrayST)
+import           Data.Ix             (Ix (..))
+
+data UF s i = UF {
+    rng   :: (i,i),
     comps :: STRef    s Int,
     repr  :: STUArray s Int Int,
     sizes :: STUArray s Int Int
 }
 
-newUF :: Int -> ST s (UF s)
-newUF n = UF <$> newSTRef n <*> listUArrayST (0,n-1) [0..] <*> newArray (0,n-1) 1
+newUF :: Ix i => (i,i) -> ST s (UF s i)
+newUF r = UF r <$> newSTRef n <*> listUArrayST (0,n-1) [0..] <*> newArray (0,n-1) 1
+    where n = rangeSize r
 
-find :: UF s -> Int -> ST s Int
-find uf u = do
-    parent <- readArray (repr uf) u
-    if parent == u
-        then pure u
-        else do
-            grandparent <- find uf parent
-            writeArray (repr uf) u grandparent
-            pure grandparent
+find :: Ix i => UF s i -> i -> ST s Int
+find uf u = find' (index (rng uf) u)
+    where find' ix = do
+            parent <- readArray (repr uf) ix
+            if ix == parent
+                then pure ix
+                else do
+                    grandparent <- readArray (repr uf) parent
+                    writeArray (repr uf) ix grandparent
+                    find' grandparent
 
-merge :: UF s -> Int -> Int -> ST s ()
-merge uf u v = do
+union :: Ix i => UF s i -> i -> i -> ST s Bool
+union uf u v = do
     p1 <- find uf u
     p2 <- find uf v
-    when (p1 /= p2) $ do
-        modifySTRef' (comps uf) pred
-        s1 <- size uf p1
-        s2 <- size uf p2
-        if s1 < s2
-            then do
-                writeArray (repr  uf) p1 p2
-                writeArray (sizes uf) p2 (s1 + s2)
-            else do
-                writeArray (repr  uf) p2 p1
-                writeArray (sizes uf) p1 (s1 + s2)
+    if p1 == p2
+        then pure False
+        else do
+            modifySTRef' (comps uf) pred
+            s1 <- readArray (sizes uf) p1
+            s2 <- readArray (sizes uf) p2
+            if s1 < s2
+                then do
+                    writeArray (repr  uf) p1 p2
+                    writeArray (sizes uf) p2 (s1 + s2)
+                else do
+                    writeArray (repr  uf) p2 p1
+                    writeArray (sizes uf) p1 (s1 + s2)
+            pure True
 
-connected :: UF s -> Int -> Int -> ST s Bool
-connected uf u v = liftA2 (==) (find uf u) (find uf v) 
+connected :: Ix i => UF s i -> i -> i -> ST s Bool
+connected uf u v = liftA2 (==) (find uf u) (find uf v)
 
-size :: UF s -> Int -> ST s Int
+size :: Ix i => UF s i -> i -> ST s Int
 size uf u = find uf u >>= readArray (sizes uf)
 
-components :: UF s -> ST s Int
-components = readSTRef . comps
+components :: UF s i -> ST s Int
+components = comps >>> readSTRef

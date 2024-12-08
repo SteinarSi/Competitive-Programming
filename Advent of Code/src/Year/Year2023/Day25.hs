@@ -16,7 +16,6 @@ import           System.Random        (RandomGen (next), StdGen)
 import           Control.Monad.ST     (runST)
 import           Data.Maybe           (fromJust)
 import           Meta                 (AoC (..))
-import           Utility.Structure.UF (UF, components, merge, newUF)
 import           Utility.Misc
 
 data Day25 = Day25
@@ -50,8 +49,6 @@ emplace k m = (m', fromJust (M.lookup k m'))
 
 karger :: StdGen -> (Edges, Graph) -> Int
 karger gen (edges, graph) = runST $ do
-    uf <- newUF (M.size graph)
-
     pure 42
 
     -- where
