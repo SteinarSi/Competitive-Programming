@@ -1,16 +1,13 @@
-import           Control.Arrow         ((>>>), (***), (&&&))
-import           Control.Monad         (filterM)
+import           Control.Arrow         ((>>>), (&&&))
 import           Control.Monad.ST      (ST, runST)
-import           Data.Array            (Array)
-import           Data.Array.ST         (STUArray, newArray, newArray_, runSTUArray, writeArray, runSTArray)
-import           Data.Array.Base       (MArray, UArray, amap, assocs, readArray, (!), listArray)
+import           Data.Array.ST         (STUArray, newArray, runSTUArray, writeArray)
+import           Data.Array.Base       (UArray, listArray, readArray, (!))
 import           Data.Bool             (bool)
 import qualified Data.ByteString.Char8 as C
 import           Data.Function         ((&))
 import           Data.Functor          ((<&>))
-import           Data.Ix               (Ix, index, range)
+import           Data.Ix               (index, range)
 import           Data.Maybe            (fromJust)
-import qualified Data.IntSet           as S
 
 main :: IO ()
 main = do
@@ -63,17 +60,6 @@ parseAccept n fs = runSTUArray $ do
         accept <- newArray (1,n) False
         mapM_ (readInt >>> flip (writeArray accept) True) (C.words fs)
         pure accept
-
-anyM :: Monad m => (a -> m Bool) -> [a] -> m Bool
-anyM _ [] = pure False
-anyM p (x:xs) = do
-        b <- p x
-        if b
-            then pure True
-            else anyM p xs
-
-modifyArray :: (MArray a b m, Ix i) => a i b -> i -> (b -> b) -> m ()
-modifyArray arr ix f = readArray arr ix >>= (f >>> writeArray arr ix)
 
 readInt :: C.ByteString -> Int
 readInt = C.readInt >>> fromJust >>> fst
