@@ -2,8 +2,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class DamsInDistress {
-
+public class damsindistress {
     static HashMap<Integer, ArrayList<Dam>> dependents = new HashMap<>();
 
     public static void main(String[] args) {

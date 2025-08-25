@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Nered {
+public class nered {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
@@ -14,10 +14,8 @@ public class Nered {
         }
         ArrayList<int[]> dimensions = getDimensions(n, m);  //Alle rektanglene som kan lages inni n*n med areal m.
 
-
         int best = m;
         for (int[] dim : dimensions){               //Looper for hver faktor i m, inkludert 1 og seg selv.
-            //System.out.println("Tester dim: " + Arrays.toString(dim));
             int sumOuter;
             int sumStacks;
             for (int offsetY = 0; offsetY + dim[0] <= n ; offsetY++) {
@@ -32,7 +30,6 @@ public class Nered {
                 }
                 best = Math.min(best, sumStacks+sumOuter);
                 for (int offsetX = 0; offsetX + dim[1] < n ; offsetX++) {
-                    //System.out.println("Rektangel fra " + offsetX + ", " + offsetY + " til " + (offsetX + dim[1]) + ", " + (offsetY + dim[0]));
                     for (int rY = offsetY; rY < offsetY + dim[0]; rY++) {
                         int o = grid[rY][offsetX];      //Ruten som nå er utenfor rektanglet
                         int i = grid[rY][offsetX+dim[1]];   //Ruten som nå er innenfor rektanglet
@@ -42,7 +39,6 @@ public class Nered {
                         if(i >= 2) sumStacks += i-1;
                     }
                     best = Math.min(best, sumStacks+sumOuter);
-                    //System.out.println("Beste så langt: " + best);
                 }
             }
         }
@@ -56,6 +52,4 @@ public class Nered {
         }
         return factors;
     }
-
-
 }

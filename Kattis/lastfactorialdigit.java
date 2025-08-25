@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class LastFactorialDigit {
+public class lastfactorialdigit {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int antall = input.nextInt();
@@ -9,12 +9,10 @@ public class LastFactorialDigit {
             int Nfak = facto(N);
             System.out.println(Nfak % 10);
         }
-        input.close();
     }
     public static int facto(int n){
         int ret = 1;
-        for(int i=1; i<n+1; i++)
-            ret *= i;
+        for(int i=1; i<n+1; i++) ret *= i;
         return ret;
     }
 }
