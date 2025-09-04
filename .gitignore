@@ -26,6 +26,8 @@ tempCodeRunnerFile.py
 .vscode*
 a.in
 a.out
+out/
 Unfinished*
 Advent of Code/inputs/prod
 Scripts*
+Competitions/
