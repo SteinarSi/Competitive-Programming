@@ -1,1616 +1,1652 @@
-# Competetive Programming
-This repository contains my solutions to various competetive programming problems, 
+# Competitive Programming
+This repository contains my solutions to various competitive programming problems, 
 which notably includes over 1.6k Kattis problems.
 
 ## Kattis Statistics
-Last updated: 2025-09-05
+Last updated: 2025-09-21
 
-* Problems solved: 1655
-* Score: 4276.7
-* Global rank: 77
-* Norway rank: 3
+* Problems solved: 1694
+* Score: 4432.3
+* Global rank: #72
+* Norway rank: #3
 
 ## Solved Kattis problems
 
-| Name | id | Rating | Languages |
+| Name | id | Rating | Solution(s) |
 | ---- | -- | ------ | --------- |
-| [10 Kinds of People](https://open.kattis.com/problems/10kindsofpeople) | 10kindsofpeople | 4.0 | [C++](Kattis/10kindsofpeople.cpp) |
-| [1-D Frogger (Easy)](https://open.kattis.com/problems/1dfroggereasy) | 1dfroggereasy | 2.7 | [Haskell](Kattis/1dfroggereasy.hs) |
-| [2048](https://open.kattis.com/problems/2048) | 2048 | 2.7 | [Haskell](Kattis/2048.hs) |
-| [So you want to be a 2^n-aire?](https://open.kattis.com/problems/2naire) | 2naire | 3.2 | [Haskell](Kattis/2naire.hs) |
-| [3D Printed Statues](https://open.kattis.com/problems/3dprinter) | 3dprinter | 2.2 | [Haskell](Kattis/3dprinter.hs) |
-| [3-Puzzle](https://open.kattis.com/problems/3puzzle) | 3puzzle | 3.4 | [Haskell](Kattis/3puzzle.hs) |
-| [4 thought](https://open.kattis.com/problems/4thought) | 4thought | 2.8 | [Python](Kattis/4thought.py) |
-| [Eight Queens](https://open.kattis.com/problems/8queens) | 8queens | 2.8 | [Haskell](Kattis/8queens.hs) |
-| [99 Problems](https://open.kattis.com/problems/99problems) | 99problems | 2.5 | [Python](Kattis/99problems.py) |
-| [99 Problems](https://open.kattis.com/problems/99problems2) | 99problems2 | 5.0 | [C++](Kattis/99problems2.cpp) |
-| [Aaah!](https://open.kattis.com/problems/aaah) | aaah | 1.4 | [Haskell](Kattis/aaah.hs) |
-| [ABC](https://open.kattis.com/problems/abc) | abc | 1.8 | [Haskell](Kattis/abc.hs) |
-| [Above Average](https://open.kattis.com/problems/aboveaverage) | aboveaverage | 1.9 | [Python](Kattis/aboveaverage.py) |
-| [Above Sea Level](https://open.kattis.com/problems/abovesealevel) | abovesealevel | 1.3 | [Haskell](Kattis/abovesealevel.hs) |
-| [Absolutely Symmetric](https://open.kattis.com/problems/absolutelysymmetric) | absolutelysymmetric | 4.3 | [Haskell](Kattis/absolutelysymmetric.hs) |
-| [A Cappella Recording](https://open.kattis.com/problems/acappellarecording) | acappellarecording | 2.6 | [Haskell](Kattis/acappellarecording.hs) |
-| [Access Denied](https://open.kattis.com/problems/accessdenied) | accessdenied | 4.5 | [Haskell](Kattis/accessdenied.hs) |
-| [Ace Arbiter](https://open.kattis.com/problems/acearbiter) | acearbiter | 5.6 | [Python](Kattis/acearbiter.py) |
-| [ACKME Company Picnic](https://open.kattis.com/problems/ackmecompanypicnic) | ackmecompanypicnic | 4.5 | [Haskell](Kattis/ackmecompanypicnic.hs) |
-| [ACM Contest Scoring](https://open.kattis.com/problems/acm) | acm | 1.7 | [Haskell](Kattis/acm.hs) |
-| [Association for Computing Machinery](https://open.kattis.com/problems/acm2) | acm2 | 2.5 | [Haskell](Kattis/acm2.hs) |
-| [Acquire Hardware](https://open.kattis.com/problems/acquirehardware) | acquirehardware | 1.9 | [Haskell](Kattis/acquirehardware.hs) |
-| [The Calculus of Ada](https://open.kattis.com/problems/ada) | ada | 2.4 | [Haskell](Kattis/ada.hs) |
-| [Adding Trouble](https://open.kattis.com/problems/addingtrouble) | addingtrouble | 1.2 | [Haskell](Kattis/addingtrouble.hs) |
-| [Adding Words](https://open.kattis.com/problems/addingwords) | addingwords | 3.6 | [Haskell](Kattis/addingwords.hs) |
-| [Add Two Numbers](https://open.kattis.com/problems/addtwonumbers) | addtwonumbers | 1.2 | [Haskell](Kattis/addtwonumbers.hs) |
-| [Afjörmun](https://open.kattis.com/problems/afjormun) | afjormun | 1.5 | [Python](Kattis/afjormun.py) [Haskell](Kattis/afjormun.hs) |
-| [Air Conditioned Minions](https://open.kattis.com/problems/airconditioned) | airconditioned | 2.7 | [Haskell](Kattis/airconditioned.hs) |
-| [Airfare Grants](https://open.kattis.com/problems/airfaregrants) | airfaregrants | 1.4 | [Haskell](Kattis/airfaregrants.hs) |
-| [Akcija](https://open.kattis.com/problems/akcija) | akcija | 1.7 | [Haskell](Kattis/akcija.hs) |
-| [Akureyri](https://open.kattis.com/problems/akureyri) | akureyri | 1.5 | [Haskell](Kattis/akureyri.hs) |
-| [Aldur](https://open.kattis.com/problems/aldur) | aldur | 1.2 | [Haskell](Kattis/aldur.hs) |
-| [Aldursröðun](https://open.kattis.com/problems/aldursrodun) | aldursrodun | 2.3 | [Haskell](Kattis/aldursrodun.hs) |
-| [Alehouse](https://open.kattis.com/problems/alehouse) | alehouse | 4.1 | [Haskell](Kattis/alehouse.hs) |
-| [Á leið í bíó](https://open.kattis.com/problems/aleidibio) | aleidibio | 1.1 | [Haskell](Kattis/aleidibio.hs) |
-| [Alex and Barb](https://open.kattis.com/problems/alexandbarb) | alexandbarb | 3.7 | [Haskell](Kattis/alexandbarb.hs) |
-| [Alien Attack 2](https://open.kattis.com/problems/alienattack2) | alienattack2 | 2.4 | [Haskell](Kattis/alienattack2.hs) |
-| [Alien Math](https://open.kattis.com/problems/alienmath) | alienmath | 2.3 | [Haskell](Kattis/alienmath.hs) |
-| [Alien Numbers](https://open.kattis.com/problems/aliennumbers) | aliennumbers | 1.9 | [C++](Kattis/aliennumbers.cpp) |
-| [All about that base](https://open.kattis.com/problems/allaboutthatbase) | allaboutthatbase | 2.9 | [Haskell](Kattis/allaboutthatbase.hs) |
-| [Almost Perfect](https://open.kattis.com/problems/almostperfect) | almostperfect | 2.5 | [Haskell](Kattis/almostperfect.hs) |
-| [Almost Union-Find](https://open.kattis.com/problems/almostunionfind) | almostunionfind | 4.1 | [Haskell](Kattis/almostunionfind.hs) |
-| [Alphabet](https://open.kattis.com/problems/alphabet) | alphabet | 2.8 | [Haskell](Kattis/alphabet.hs) |
-| [Alphabetical Aristocrats](https://open.kattis.com/problems/alphabeticalaristocrats) | alphabeticalaristocrats | 1.9 | [Haskell](Kattis/alphabeticalaristocrats.hs) |
-| [Alphabet Soup](https://open.kattis.com/problems/alphabetsoup) | alphabetsoup | 1.8 | [Haskell](Kattis/alphabetsoup.hs) |
-| [Alphabet Spam](https://open.kattis.com/problems/alphabetspam) | alphabetspam | 1.5 | [Python](Kattis/alphabetspam.py) |
-| [Amanda Lounges](https://open.kattis.com/problems/amanda) | amanda | 5.4 | [C++](Kattis/amanda.cpp) |
-| [A Mazing!](https://open.kattis.com/problems/amazing) | amazing | 6.3 | [Haskell](Kattis/amazing.hs) |
-| [Amerískur vinnustaður](https://open.kattis.com/problems/ameriskur) | ameriskur | 1.2 | [Haskell](Kattis/ameriskur.hs) |
-| [Sheba's Amoebas](https://open.kattis.com/problems/amoebas) | amoebas | 1.6 | [Haskell](Kattis/amoebas.hs) |
-| [A Multiplication Game](https://open.kattis.com/problems/amultiplicationgame) | amultiplicationgame | 3.8 | [Python](Kattis/amultiplicationgame.py) [C++](Kattis/amultiplicationgame.cpp) |
-| [Anagram Counting](https://open.kattis.com/problems/anagramcounting) | anagramcounting | 5.5 | [Haskell](Kattis/anagramcounting.hs) |
-| [Contrarianism](https://open.kattis.com/problems/andmal) | andmal | 1.4 | [Haskell](Kattis/andmal.hs) |
-| [Duck Journey](https://open.kattis.com/problems/andvag) | andvag | 2.3 | [Haskell](Kattis/andvag.hs) |
-| [A New Alphabet](https://open.kattis.com/problems/anewalphabet) | anewalphabet | 2.0 | [Haskell](Kattis/anewalphabet.hs) |
-| [The Duckamyds](https://open.kattis.com/problems/ankamyderna) | ankamyderna | 2.9 | [Haskell](Kattis/ankamyderna.hs) |
-| [Annoyed Coworkers](https://open.kattis.com/problems/annoyedcoworkers) | annoyedcoworkers | 5.9 | [C++](Kattis/annoyedcoworkers.cpp) |
-| [Another Ancient Cipher](https://open.kattis.com/problems/anotherancientcipher) | anotherancientcipher | 2.1 | [Haskell](Kattis/anotherancientcipher.hs) |
-| [Another Brick in the Wall](https://open.kattis.com/problems/anotherbrick) | anotherbrick | 2.1 | [Haskell](Kattis/anotherbrick.hs) |
-| [Another Candies](https://open.kattis.com/problems/anothercandies) | anothercandies | 2.5 | [Haskell](Kattis/anothercandies.hs) |
-| [Anthony and Cora](https://open.kattis.com/problems/anthony) | anthony | 4.5 | [Haskell](Kattis/anthony.hs) [Python](Kattis/anthony.py) |
-| [Anthony and Diablo](https://open.kattis.com/problems/anthonyanddiablo) | anthonyanddiablo | 2.6 | [Haskell](Kattis/anthonyanddiablo.hs) |
-| [Ocean's Anti-11](https://open.kattis.com/problems/anti11) | anti11 | 2.0 | [Haskell](Kattis/anti11.hs) |
-| [Anti-Palindrome](https://open.kattis.com/problems/antipalindrome) | antipalindrome | 2.0 | [Haskell](Kattis/antipalindrome.hs) |
-| [Anti-Tetris](https://open.kattis.com/problems/antitetris) | antitetris | 4.8 | [Haskell](Kattis/antitetris.hs) |
-| [Ants](https://open.kattis.com/problems/ants) | ants | 2.3 | [Haskell](Kattis/ants.hs) |
-| [Any Pythagorean Triple](https://open.kattis.com/problems/anypythagorean) | anypythagorean | 2.0 | [Haskell](Kattis/anypythagorean.hs) |
-| [Apaxiaaaaaaaaaaaans!](https://open.kattis.com/problems/apaxiaaans) | apaxiaaans | 1.4 | [Haskell](Kattis/apaxiaaans.hs) |
-| [Honour Thy (Apaxian) Parent](https://open.kattis.com/problems/apaxianparent) | apaxianparent | 1.7 | [Haskell](Kattis/apaxianparent.hs) |
-| [Aperiodic Appointments](https://open.kattis.com/problems/aperiodicappointments) | aperiodicappointments | 6.7 | [Haskell](Kattis/aperiodicappointments.hs) |
-| [Falling Apples](https://open.kattis.com/problems/apples) | apples | 3.1 | [Haskell](Kattis/apples.hs) |
-| [Johnny Applesack](https://open.kattis.com/problems/applesack) | applesack | 3.6 | [Haskell](Kattis/applesack.hs) |
-| [Approval Area](https://open.kattis.com/problems/approvalarea) | approvalarea | 1.8 | [Haskell](Kattis/approvalarea.hs) |
-| [Is Everybody Appy?](https://open.kattis.com/problems/appy) | appy | 1.7 | [Haskell](Kattis/appy.hs) |
-| [A Prize No One Can Win](https://open.kattis.com/problems/aprizenoonecanwin) | aprizenoonecanwin | 3.1 | [Haskell](Kattis/aprizenoonecanwin.hs) |
-| [Architecture](https://open.kattis.com/problems/architecture) | architecture | 2.8 | [Haskell](Kattis/architecture.hs) |
-| [A Real Challenge](https://open.kattis.com/problems/areal) | areal | 1.8 | [Haskell](Kattis/areal.hs) |
-| [Are You Listening?](https://open.kattis.com/problems/areyoulistening) | areyoulistening | 2.8 | [Haskell](Kattis/areyoulistening.hs) |
-| [Arggggggh!](https://open.kattis.com/problems/arggggggh) | arggggggh | 1.8 | [Haskell](Kattis/arggggggh.hs) |
-| [Arithmetic](https://open.kattis.com/problems/arithmetic) | arithmetic | 3.1 | [Python](Kattis/arithmetic.py) |
-| [Arithmetic Decoding](https://open.kattis.com/problems/arithmeticdecoding) | arithmeticdecoding | 2.4 | [Haskell](Kattis/arithmeticdecoding.hs) |
-| [Arithmetic Functions](https://open.kattis.com/problems/arithmeticfunctions) | arithmeticfunctions | 1.7 | [C](Kattis/arithmeticfunctions.h) [C++](Kattis/arithmeticfunctions.cpp) |
-| [Arm Coordination](https://open.kattis.com/problems/armcoordination) | armcoordination | 1.6 | [Haskell](Kattis/armcoordination.hs) |
-| [Army Strength (Easy)](https://open.kattis.com/problems/armystrengtheasy) | armystrengtheasy | 2.1 | [Haskell](Kattis/armystrengtheasy.hs) |
-| [Army Strength (Hard)](https://open.kattis.com/problems/armystrengthhard) | armystrengthhard | 2.1 | [Haskell](Kattis/armystrengthhard.hs) |
-| [Array of Discord](https://open.kattis.com/problems/arrayofdiscord) | arrayofdiscord | 4.6 | [Haskell](Kattis/arrayofdiscord.hs) |
-| [Array Smoothening](https://open.kattis.com/problems/arraysmoothening) | arraysmoothening | 3.2 | [Haskell](Kattis/arraysmoothening.hs) |
-| [Amalgamated Artichokes](https://open.kattis.com/problems/artichoke) | artichoke | 2.3 | [Haskell](Kattis/artichoke.hs) |
-| [ASCII Addition](https://open.kattis.com/problems/asciiaddition) | asciiaddition | 2.5 | [Haskell](Kattis/asciiaddition.hs) |
-| [ASCII Figure Rotation](https://open.kattis.com/problems/asciifigurerotation) | asciifigurerotation | 3.0 | [C++](Kattis/asciifigurerotation.cpp) |
-| [ASCII kassi](https://open.kattis.com/problems/asciikassi) | asciikassi | 1.4 | [Haskell](Kattis/asciikassi.hs) |
-| [ASCII Kassi 2](https://open.kattis.com/problems/asciikassi2) | asciikassi2 | 2.4 | [Haskell](Kattis/asciikassi2.hs) |
-| [ASCII Box 3](https://open.kattis.com/problems/asciikassi3) | asciikassi3 | 6.2 | [Haskell](Kattis/asciikassi3.hs) |
-| [Associative Exponents](https://open.kattis.com/problems/associativeexponents) | associativeexponents | 3.7 | [Haskell](Kattis/associativeexponents.hs) |
-| [A Stack of Gold](https://open.kattis.com/problems/astackofgold) | astackofgold | 2.4 | [Haskell](Kattis/astackofgold.hs) |
-| [Asteroid Avoidance](https://open.kattis.com/problems/asteroidavoidance) | asteroidavoidance | 2.5 | [Haskell](Kattis/asteroidavoidance.hs) |
-| [Astrological Sign](https://open.kattis.com/problems/astrologicalsign) | astrologicalsign | 2.5 | [Haskell](Kattis/astrologicalsign.hs) |
-| [A Tale of Two Queues](https://open.kattis.com/problems/ataleoftwoqueues) | ataleoftwoqueues | 1.4 | [Haskell](Kattis/ataleoftwoqueues.hs) |
-| [A Terrible Fortress](https://open.kattis.com/problems/aterriblefortress) | aterriblefortress | 1.2 | [Haskell](Kattis/aterriblefortress.hs) |
-| [Atlögur](https://open.kattis.com/problems/atlogur) | atlogur | 2.1 | [Haskell](Kattis/atlogur.hs) |
-| [Attempted Alphabet](https://open.kattis.com/problems/attemptedalphabet) | attemptedalphabet | 1.6 | [Haskell](Kattis/attemptedalphabet.hs) |
-| [Attendance](https://open.kattis.com/problems/attendance2) | attendance2 | 1.8 | [Haskell](Kattis/attendance2.hs) |
-| [Automatic Trading](https://open.kattis.com/problems/automatictrading) | automatictrading | 4.8 | [C++](Kattis/automatictrading.cpp) |
-| [Autori](https://open.kattis.com/problems/autori) | autori | 1.2 | [Python](Kattis/autori.py) |
-| [Average Character](https://open.kattis.com/problems/averagecharacter) | averagecharacter | 2.0 | [Haskell](Kattis/averagecharacter.hs) |
-| [Paradox With Averages](https://open.kattis.com/problems/averageseasy) | averageseasy | 2.6 | [Haskell](Kattis/averageseasy.hs) |
-| [Paradox With Averages (Hard)](https://open.kattis.com/problems/averageshard) | averageshard | 2.8 | [Haskell](Kattis/averageshard.hs) |
-| [Avion](https://open.kattis.com/problems/avion) | avion | 1.4 | [Python](Kattis/avion.py) |
-| [Avoiding the Abyss](https://open.kattis.com/problems/avoidingtheabyss) | avoidingtheabyss | 3.4 | [Haskell](Kattis/avoidingtheabyss.hs) [Python](Kattis/avoidingtheabyss.py) |
-| [Avoidland](https://open.kattis.com/problems/avoidland) | avoidland | 3.0 | [Haskell](Kattis/avoidland.hs) |
-| [Awkward Auction](https://open.kattis.com/problems/awkwardauction) | awkwardauction | 4.5 | [Python](Kattis/awkwardauction.py) |
-| [Awkward Party](https://open.kattis.com/problems/awkwardparty) | awkwardparty | 2.3 | [Haskell](Kattis/awkwardparty.hs) |
-| [Aww Man](https://open.kattis.com/problems/awwman) | awwman | 4.2 | [Haskell](Kattis/awwman.hs) |
-| [Babelfish](https://open.kattis.com/problems/babelfish) | babelfish | 2.9 | [Haskell](Kattis/babelfish.hs) |
-| [Baby Bites](https://open.kattis.com/problems/babybites) | babybites | 1.5 | [Haskell](Kattis/babybites.hs) |
-| [Babylonian Numbers](https://open.kattis.com/problems/babylonian) | babylonian | 2.1 | [Haskell](Kattis/babylonian.hs) |
-| [Baby Panda](https://open.kattis.com/problems/babypanda) | babypanda | 2.2 | [Haskell](Kattis/babypanda.hs) |
-| [Backspace](https://open.kattis.com/problems/backspace) | backspace | 1.6 | [Haskell](Kattis/backspace.hs) |
-| [Bacon, Eggs, and Spam](https://open.kattis.com/problems/baconeggsandspam) | baconeggsandspam | 1.8 | [Haskell](Kattis/baconeggsandspam.hs) |
-| [Bad Directions](https://open.kattis.com/problems/baddirections) | baddirections | 1.7 | [Haskell](Kattis/baddirections.hs) |
-| [Bag Deposit](https://open.kattis.com/problems/bagdeposit) | bagdeposit | 1.9 | [Haskell](Kattis/bagdeposit.hs) |
-| [Balanced Diet](https://open.kattis.com/problems/balanceddiet) | balanceddiet | 3.3 | [Haskell](Kattis/balanceddiet.hs) |
-| [Ball](https://open.kattis.com/problems/ball) | ball | 3.5 | [Haskell](Kattis/ball.hs) |
-| [Baloni](https://open.kattis.com/problems/baloni) | baloni | 2.9 | [Haskell](Kattis/baloni.hs) |
-| [Bank Queue](https://open.kattis.com/problems/bank) | bank | 3.1 | [Haskell](Kattis/bank.hs) |
-| [Bannorð](https://open.kattis.com/problems/bannord) | bannord | 1.6 | [Haskell](Kattis/bannord.hs) |
-| [Barcelona](https://open.kattis.com/problems/barcelona) | barcelona | 1.3 | [Haskell](Kattis/barcelona.hs) |
-| [Bard](https://open.kattis.com/problems/bard) | bard | 2.4 | [Python](Kattis/bard.py) |
-| [Baseball Packs](https://open.kattis.com/problems/baseball) | baseball | 3.3 | [C++](Kattis/baseball.cpp) |
-| [Basic Programming 1](https://open.kattis.com/problems/basicprogramming1) | basicprogramming1 | 4.2 | [Haskell](Kattis/basicprogramming1.hs) |
-| [Basic Programming 2](https://open.kattis.com/problems/basicprogramming2) | basicprogramming2 | 3.5 | [Haskell](Kattis/basicprogramming2.hs) |
-| [Basic Remains](https://open.kattis.com/problems/basicremains) | basicremains | 3.4 | [Haskell](Kattis/basicremains.hs) |
-| [Basketball One-on-One](https://open.kattis.com/problems/basketballoneonone) | basketballoneonone | 1.4 | [Haskell](Kattis/basketballoneonone.hs) |
-| [Batmanacci](https://open.kattis.com/problems/batmanacci) | batmanacci | 3.2 | [Haskell](Kattis/batmanacci.hs) |
-| [Exploding Batteries](https://open.kattis.com/problems/batteries) | batteries | 6.0 | [Haskell](Kattis/batteries.hs) |
-| [Batter Up](https://open.kattis.com/problems/batterup) | batterup | 1.3 | [Haskell](Kattis/batterup.hs) |
-| [Battle of Nieuwpoort](https://open.kattis.com/problems/battleofnieuwpoort) | battleofnieuwpoort | 3.1 | [Haskell](Kattis/battleofnieuwpoort.hs) |
-| [Battle Simulation](https://open.kattis.com/problems/battlesimulation) | battlesimulation | 2.4 | [Haskell](Kattis/battlesimulation.hs) |
-| [Beat the Spread!](https://open.kattis.com/problems/beatspread) | beatspread | 2.2 | [Haskell](Kattis/beatspread.hs) |
-| [Beautiful Primes](https://open.kattis.com/problems/beautifulprimes) | beautifulprimes | 4.0 | [Haskell](Kattis/beautifulprimes.hs) |
-| [Beavergnaw](https://open.kattis.com/problems/beavergnaw) | beavergnaw | 2.0 | [Haskell](Kattis/beavergnaw.hs) |
-| [Beehives](https://open.kattis.com/problems/beehives) | beehives | 2.0 | [Haskell](Kattis/beehives.hs) |
-| [Beekeeper](https://open.kattis.com/problems/beekeeper) | beekeeper | 2.5 | [Python](Kattis/beekeeper.py) |
-| [Bela](https://open.kattis.com/problems/bela) | bela | 1.4 | [Haskell](Kattis/bela.hs) |
-| [Bendilfærslur](https://open.kattis.com/problems/bendilfaerslur) | bendilfaerslur | 2.5 | [Haskell](Kattis/bendilfaerslur.hs) |
-| [BergMál](https://open.kattis.com/problems/bergmal) | bergmal | 1.2 | [Haskell](Kattis/bergmal.hs) |
-| [Bergur](https://open.kattis.com/problems/bergur) | bergur | 1.6 | [Haskell](Kattis/bergur.hs) [C++](Kattis/bergur.cpp) |
-| [Besta gjöfin](https://open.kattis.com/problems/bestagjofin) | bestagjofin | 1.2 | [Haskell](Kattis/bestagjofin.hs) |
-| [Best Compression Ever](https://open.kattis.com/problems/bestcompression) | bestcompression | 2.6 | [Haskell](Kattis/bestcompression.hs) |
-| [Best Relay Team](https://open.kattis.com/problems/bestrelayteam) | bestrelayteam | 1.7 | [Python](Kattis/bestrelayteam.py) |
-| [Better Dice](https://open.kattis.com/problems/betterdice) | betterdice | 2.0 | [Haskell](Kattis/betterdice.hs) |
-| [Betting](https://open.kattis.com/problems/betting) | betting | 1.3 | [Haskell](Kattis/betting.hs) |
-| [Betting Profit](https://open.kattis.com/problems/bettingprofit) | bettingprofit | 1.6 | [Haskell](Kattis/bettingprofit.hs) |
-| [Bicikli](https://open.kattis.com/problems/bicikli) | bicikli | 6.6 | [C++](Kattis/bicikli.cpp) [Python](Kattis/bicikli.py) |
-| [Bið, endalaus bið](https://open.kattis.com/problems/bidendalausbid) | bidendalausbid | 2.2 | [Haskell](Kattis/bidendalausbid.hs) |
-| [Big Boxes](https://open.kattis.com/problems/bigboxes) | bigboxes | 2.1 | [Haskell](Kattis/bigboxes.hs) |
-| [Big Integers](https://open.kattis.com/problems/bigintegers) | bigintegers | 5.0 | [Haskell](Kattis/bigintegers.hs) |
-| [Big Totoro](https://open.kattis.com/problems/bigtotoro) | bigtotoro | 3.2 | [Haskell](Kattis/bigtotoro.hs) |
-| [Bijele](https://open.kattis.com/problems/bijele) | bijele | 1.2 | [Haskell](Kattis/bijele.hs) |
-| [Bikes and Barricades](https://open.kattis.com/problems/bikesandbarricades) | bikesandbarricades | 2.6 | [Haskell](Kattis/bikesandbarricades.hs) |
-| [Bilað Lyklaborð](https://open.kattis.com/problems/biladlyklabord) | biladlyklabord | 1.4 | [Haskell](Kattis/biladlyklabord.hs) |
-| [Billy the apprentice](https://open.kattis.com/problems/billy) | billy | 3.1 | [Haskell](Kattis/billy.hs) |
-| [Bílskúrar](https://open.kattis.com/problems/bilskurar) | bilskurar | 2.5 | [Python](Kattis/bilskurar.py) |
-| [Binary Exponentiation](https://open.kattis.com/problems/binaryexponentiation) | binaryexponentiation | 3.4 | [Python](Kattis/binaryexponentiation.py) [Haskell](Kattis/binaryexponentiation.hs) |
-| [Binary Seating](https://open.kattis.com/problems/binaryseating) | binaryseating | 2.8 | [Haskell](Kattis/binaryseating.hs) |
-| [Birds on a Wire](https://open.kattis.com/problems/birds) | birds | 2.7 | [Haskell](Kattis/birds.hs) |
-| [Bishops](https://open.kattis.com/problems/bishops) | bishops | 2.4 | [Haskell](Kattis/bishops.hs) |
-| [Bitaflipp](https://open.kattis.com/problems/bitaflipp) | bitaflipp | 3.5 | [Haskell](Kattis/bitaflipp.hs) |
-| [Bit by Bit](https://open.kattis.com/problems/bitbybit) | bitbybit | 3.6 | [Haskell](Kattis/bitbybit.hs) |
-| [Bits](https://open.kattis.com/problems/bits) | bits | 2.4 | [Haskell](Kattis/bits.hs) |
-| [Bitte ein Bit](https://open.kattis.com/problems/bitteeinbit) | bitteeinbit | 1.3 | [Haskell](Kattis/bitteeinbit.hs) |
-| [Black Friday](https://open.kattis.com/problems/blackfriday) | blackfriday | 1.9 | [Haskell](Kattis/blackfriday.hs) |
-| [Blackthorn](https://open.kattis.com/problems/blackthorn) | blackthorn | 1.4 | [Haskell](Kattis/blackthorn.hs) |
-| [Blaðra](https://open.kattis.com/problems/bladra) | bladra | 1.8 | [Haskell](Kattis/bladra.hs) [C++](Kattis/bladra.cpp) |
-| [Blaðra](https://open.kattis.com/problems/bladra2) | bladra2 | 1.2 | [Haskell](Kattis/bladra2.hs) |
-| [Blandað Best](https://open.kattis.com/problems/blandadbest) | blandadbest | 1.2 | [Haskell](Kattis/blandadbest.hs) |
-| [Blueberry Waffle](https://open.kattis.com/problems/blueberrywaffle) | blueberrywaffle | 2.1 | [Haskell](Kattis/blueberrywaffle.hs) |
-| [Bluetooth](https://open.kattis.com/problems/bluetooth) | bluetooth | 2.1 | [Haskell](Kattis/bluetooth.hs) |
-| [Boat Parts](https://open.kattis.com/problems/boatparts) | boatparts | 1.7 | [Haskell](Kattis/boatparts.hs) |
-| [Bobby's Bet](https://open.kattis.com/problems/bobby) | bobby | 2.2 | [Haskell](Kattis/bobby.hs) |
-| [Bocchi's Rocks](https://open.kattis.com/problems/bocchinorokku) | bocchinorokku | 2.8 | [Haskell](Kattis/bocchinorokku.hs) |
-| [Boggle](https://open.kattis.com/problems/boggle) | boggle | 4.8 | [C++](Kattis/boggle.cpp) |
-| [Accounting](https://open.kattis.com/problems/bokforing) | bokforing | 3.0 | [Python](Kattis/bokforing.py) |
-| [Bokstavstärningar](https://open.kattis.com/problems/bokstavstarningar) | bokstavstarningar | 3.9 | [Haskell](Kattis/bokstavstarningar.hs) |
-| [Bolir](https://open.kattis.com/problems/bolir) | bolir | 4.5 | [Haskell](Kattis/bolir.hs) |
-| [Booking a Room](https://open.kattis.com/problems/bookingaroom) | bookingaroom | 1.6 | [Haskell](Kattis/bookingaroom.hs) |
-| [Bookshelf Bottleneck](https://open.kattis.com/problems/bookshelfbottleneck) | bookshelfbottleneck | 2.3 | [Haskell](Kattis/bookshelfbottleneck.hs) |
-| [Bootstrapping Number](https://open.kattis.com/problems/bootstrappingnumber) | bootstrappingnumber | 3.0 | [Haskell](Kattis/bootstrappingnumber.hs) |
-| [Killing Aliens in a Borg Maze](https://open.kattis.com/problems/borg) | borg | 3.4 | [Haskell](Kattis/borg.hs) |
-| [The Stock Market](https://open.kattis.com/problems/borsen) | borsen | 3.1 | [Haskell](Kattis/borsen.hs) |
-| [Boss Battle](https://open.kattis.com/problems/bossbattle) | bossbattle | 2.3 | [Haskell](Kattis/bossbattle.hs) |
-| [Bottled-Up Feelings](https://open.kattis.com/problems/bottledup) | bottledup | 2.4 | [C++](Kattis/bottledup.cpp) |
-| [Bottle Opening](https://open.kattis.com/problems/bottleopening) | bottleopening | 1.8 | [Haskell](Kattis/bottleopening.hs) |
-| [Boule Judge](https://open.kattis.com/problems/boulejudge) | boulejudge | 2.3 | [Haskell](Kattis/boulejudge.hs) |
-| [Bounding Robots](https://open.kattis.com/problems/boundingrobots) | boundingrobots | 2.1 | [Haskell](Kattis/boundingrobots.hs) |
-| [Bowser's Pipes](https://open.kattis.com/problems/bowserspipes) | bowserspipes | 5.8 | [Haskell](Kattis/bowserspipes.hs) |
-| [Bracket Matching](https://open.kattis.com/problems/bracketmatching) | bracketmatching | 2.1 | [Haskell](Kattis/bracketmatching.hs) |
-| [Bracket Pairing](https://open.kattis.com/problems/bracketpairing) | bracketpairing | 5.9 | [Haskell](Kattis/bracketpairing.hs) |
-| [Brahmagupta-Fibonacci](https://open.kattis.com/problems/brahmaguptafibonacci) | brahmaguptafibonacci | 5.9 | [Haskell](Kattis/brahmaguptafibonacci.hs) |
-| [Brainfuck](https://open.kattis.com/problems/brainfuck) | brainfuck | 3.5 | [Haskell](Kattis/brainfuck.hs) |
-| [Brandvägg](https://open.kattis.com/problems/brandvagg) | brandvagg | 3.2 | [Haskell](Kattis/brandvagg.hs) |
-| [Breaking Branches](https://open.kattis.com/problems/breakingbranches) | breakingbranches | 1.7 | [Haskell](Kattis/breakingbranches.hs) |
-| [Brexit](https://open.kattis.com/problems/brexit) | brexit | 2.6 | [Haskell](Kattis/brexit.hs) [C++](Kattis/brexit.cpp) |
-| [Brick Wall](https://open.kattis.com/problems/brickwall) | brickwall | 5.3 | [Python](Kattis/brickwall.py) [Haskell](Kattis/brickwall.hs) |
-| [Bridges and Tunnels](https://open.kattis.com/problems/bridgesandtunnels) | bridgesandtunnels | 2.6 | [C++](Kattis/bridgesandtunnels.cpp) |
-| [Brilliance of Wings](https://open.kattis.com/problems/brillianceofwings) | brillianceofwings | 1.8 | [Haskell](Kattis/brillianceofwings.hs) |
-| [Broken Calculator](https://open.kattis.com/problems/brokencalculator) | brokencalculator | 2.7 | [Haskell](Kattis/brokencalculator.hs) |
-| [Broken Keypad](https://open.kattis.com/problems/brokenkeypad) | brokenkeypad | 6.0 | [Haskell](Kattis/brokenkeypad.hs) |
-| [Broken Swords](https://open.kattis.com/problems/brokenswords) | brokenswords | 2.7 | [Haskell](Kattis/brokenswords.hs) |
-| [Brownie Points I](https://open.kattis.com/problems/browniepoints) | browniepoints | 2.2 | [Haskell](Kattis/browniepoints.hs) |
-| [Brýr](https://open.kattis.com/problems/bryr) | bryr | 2.4 | [C++](Kattis/bryr.cpp) |
-| [Buffon's Needle](https://open.kattis.com/problems/buffonsneedle) | buffonsneedle | 3.2 | [Haskell](Kattis/buffonsneedle.hs) |
-| [Buildin' Fences](https://open.kattis.com/problems/buildinfences) | buildinfences | 1.6 | [Haskell](Kattis/buildinfences.hs) |
-| [Building Highways](https://open.kattis.com/problems/buildinghighways) | buildinghighways | 2.2 | [Haskell](Kattis/buildinghighways.hs) |
-| [Buka](https://open.kattis.com/problems/buka) | buka | 2.2 | [Haskell](Kattis/buka.hs) |
-| [Bumped!](https://open.kattis.com/problems/bumped) | bumped | 3.7 | [Python](Kattis/bumped.py) |
-| [Bungee Builder](https://open.kattis.com/problems/bungeebuilder) | bungeebuilder | 3.1 | [Haskell](Kattis/bungeebuilder.hs) |
-| [Bunny Town Bonding](https://open.kattis.com/problems/bunnytownbonding) | bunnytownbonding | 2.3 | [Haskell](Kattis/bunnytownbonding.hs) |
-| [Burizon Fort](https://open.kattis.com/problems/burizonfort) | burizonfort | 4.8 | [Haskell](Kattis/burizonfort.hs) |
-| [Bus](https://open.kattis.com/problems/bus) | bus | 1.7 | [Haskell](Kattis/bus.hs) |
-| [Bus Assignment](https://open.kattis.com/problems/busassignment) | busassignment | 1.4 | [Haskell](Kattis/busassignment.hs) |
-| [Bus Lines](https://open.kattis.com/problems/buslines) | buslines | 2.4 | [Haskell](Kattis/buslines.hs) |
-| [Bus Numbers](https://open.kattis.com/problems/busnumbers) | busnumbers | 2.1 | [Haskell](Kattis/busnumbers.hs) |
-| [Bus Numbers](https://open.kattis.com/problems/busnumbers2) | busnumbers2 | 2.6 | [Haskell](Kattis/busnumbers2.hs) |
-| [The Bus Card](https://open.kattis.com/problems/busskortet) | busskortet | 3.1 | [Haskell](Kattis/busskortet.hs) |
-| [Busy Schedule](https://open.kattis.com/problems/busyschedule) | busyschedule | 2.2 | [Haskell](Kattis/busyschedule.hs) |
-| [Button Bashing](https://open.kattis.com/problems/buttonbashing) | buttonbashing | 2.8 | [Haskell](Kattis/buttonbashing.hs) |
-| [Cake](https://open.kattis.com/problems/cake) | cake | 6.2 | [Haskell](Kattis/cake.hs) |
-| [Cakey McCakeFace](https://open.kattis.com/problems/cakeymccakeface) | cakeymccakeface | 4.3 | [C++](Kattis/cakeymccakeface.cpp) |
-| [Calculating Dart Scores](https://open.kattis.com/problems/calculatingdartscores) | calculatingdartscores | 2.2 | [Haskell](Kattis/calculatingdartscores.hs) |
-| [Calculator](https://open.kattis.com/problems/calculator) | calculator | 3.1 | [Python](Kattis/calculator.py) |
-| [Call for Problems](https://open.kattis.com/problems/callforproblems) | callforproblems | 1.3 | [Haskell](Kattis/callforproblems.hs) |
-| [Nordic Camping](https://open.kattis.com/problems/camping) | camping | 6.8 | [C++](Kattis/camping.cpp) |
-| [Canadians, eh?](https://open.kattis.com/problems/canadianseh) | canadianseh | 1.5 | [Haskell](Kattis/canadianseh.hs) |
-| [Candle Box](https://open.kattis.com/problems/candlebox) | candlebox | 3.1 | [Haskell](Kattis/candlebox.hs) |
-| [Candy Contribution](https://open.kattis.com/problems/candycontribution) | candycontribution | 4.5 | [C++](Kattis/candycontribution.cpp) |
-| [Candy Store](https://open.kattis.com/problems/candystore) | candystore | 1.5 | [Haskell](Kattis/candystore.hs) |
-| [Canonical Coin Systems](https://open.kattis.com/problems/canonical) | canonical | 5.0 | [C++](Kattis/canonical.cpp) |
-| [Cantina of Babel](https://open.kattis.com/problems/cantinaofbabel) | cantinaofbabel | 3.0 | [C++](Kattis/cantinaofbabel.cpp) |
-| [Cantor](https://open.kattis.com/problems/cantor) | cantor | 2.7 | [Haskell](Kattis/cantor.hs) |
-| [Canvas Line](https://open.kattis.com/problems/canvasline) | canvasline | 5.2 | [Haskell](Kattis/canvasline.hs) |
-| [Capsules](https://open.kattis.com/problems/capsules) | capsules | 3.1 | [Haskell](Kattis/capsules.hs) |
-| [Cardboard Container](https://open.kattis.com/problems/cardboardcontainer) | cardboardcontainer | 2.4 | [Haskell](Kattis/cardboardcontainer.hs) |
-| [Card Trick](https://open.kattis.com/problems/cardtrick2) | cardtrick2 | 2.2 | [Haskell](Kattis/cardtrick2.hs) |
-| [Careful Ascent](https://open.kattis.com/problems/carefulascent) | carefulascent | 2.2 | [Haskell](Kattis/carefulascent.hs) |
-| [Carousel Rides](https://open.kattis.com/problems/carousel) | carousel | 2.8 | [Haskell](Kattis/carousel.hs) |
-| [Car Racing](https://open.kattis.com/problems/carracing) | carracing | 2.5 | [Haskell](Kattis/carracing.hs) |
-| [Solving for Carrots](https://open.kattis.com/problems/carrots) | carrots | 1.2 | [Haskell](Kattis/carrots.hs) |
-| [Cascade Centrality](https://open.kattis.com/problems/cascadecentrality) | cascadecentrality | 2.9 | [Haskell](Kattis/cascadecentrality.hs) |
-| [Catalan Numbers](https://open.kattis.com/problems/catalan) | catalan | 3.1 | [Haskell](Kattis/catalan.hs) |
-| [A Feast For Cats](https://open.kattis.com/problems/cats) | cats | 3.9 | [C++](Kattis/cats.cpp) |
-| [Cat Toys](https://open.kattis.com/problems/cattoys) | cattoys | 1.5 | [Haskell](Kattis/cattoys.hs) |
-| [Cave Exploration](https://open.kattis.com/problems/caveexploration) | caveexploration | 3.1 | [Haskell](Kattis/caveexploration.hs) |
-| [CD](https://open.kattis.com/problems/cd) | cd | 4.0 | [C++](Kattis/cd.cpp) |
-| [Ceiling Function](https://open.kattis.com/problems/ceiling) | ceiling | 2.1 | [Haskell](Kattis/ceiling.hs) |
-| [Opening Ceremony](https://open.kattis.com/problems/ceremony) | ceremony | 3.7 | [Python](Kattis/ceremony.py) |
-| [Certainly](https://open.kattis.com/problems/certainly) | certainly | 1.5 | [Haskell](Kattis/certainly.hs) |
-| [Cetiri](https://open.kattis.com/problems/cetiri) | cetiri | 1.8 | [Haskell](Kattis/cetiri.hs) |
-| [Cetvrta](https://open.kattis.com/problems/cetvrta) | cetvrta | 1.3 | [Haskell](Kattis/cetvrta.hs) |
-| [Champernowne Subsequence](https://open.kattis.com/problems/champernownesubsequence) | champernownesubsequence | 3.0 | [Haskell](Kattis/champernownesubsequence.hs) |
-| [Champernowne Verification](https://open.kattis.com/problems/champernowneverification) | champernowneverification | 1.6 | [Haskell](Kattis/champernowneverification.hs) |
-| [Chanukah Challenge](https://open.kattis.com/problems/chanukah) | chanukah | 1.4 | [Haskell](Kattis/chanukah.hs) |
-| [Character Development](https://open.kattis.com/problems/character) | character | 2.1 | [Haskell](Kattis/character.hs) |
-| [Chardonnay](https://open.kattis.com/problems/chardonnay) | chardonnay | 1.5 | [Haskell](Kattis/chardonnay.hs) |
-| [Charged](https://open.kattis.com/problems/charged) | charged | 2.2 | [Haskell](Kattis/charged.hs) |
-| [Charting Progress](https://open.kattis.com/problems/chartingprogress) | chartingprogress | 2.2 | [Haskell](Kattis/chartingprogress.hs) |
-| [Cheater Detection](https://open.kattis.com/problems/cheaterdetection) | cheaterdetection | 3.9 | [Haskell](Kattis/cheaterdetection.hs) |
-| [Cheating at War](https://open.kattis.com/problems/cheatingatwar) | cheatingatwar | 5.4 | [Haskell](Kattis/cheatingatwar.hs) |
-| [Cheating Students](https://open.kattis.com/problems/cheatingstudents) | cheatingstudents | 2.8 | [Haskell](Kattis/cheatingstudents.hs) [C++](Kattis/cheatingstudents.cpp) |
-| [Checkmate in One](https://open.kattis.com/problems/checkmateinone) | checkmateinone | 4.5 | [Haskell](Kattis/checkmateinone.hs) |
-| [Checkout](https://open.kattis.com/problems/checkout) | checkout | 3.7 | [Haskell](Kattis/checkout.hs) |
-| [Cheese Touch](https://open.kattis.com/problems/cheesetouch) | cheesetouch | 3.0 | [Python](Kattis/cheesetouch.py) |
-| [Chemist's vows](https://open.kattis.com/problems/chemistsvows) | chemistsvows | 3.0 | [Haskell](Kattis/chemistsvows.hs) |
-| [Chess](https://open.kattis.com/problems/chess) | chess | 3.1 | [Haskell](Kattis/chess.hs) |
-| [Chewbacca](https://open.kattis.com/problems/chewbacca) | chewbacca | 3.0 | [Haskell](Kattis/chewbacca.hs) |
-| [Chocolate Division](https://open.kattis.com/problems/chocolatedivision) | chocolatedivision | 1.9 | [Haskell](Kattis/chocolatedivision.hs) |
-| [Preludes](https://open.kattis.com/problems/chopin) | chopin | 2.0 | [Haskell](Kattis/chopin.hs) |
-| [Chopping Wood](https://open.kattis.com/problems/chopwood) | chopwood | 3.3 | [Haskell](Kattis/chopwood.hs) |
-| [Chugging](https://open.kattis.com/problems/chugging) | chugging | 1.6 | [Haskell](Kattis/chugging.hs) |
-| [Cinema Crowds](https://open.kattis.com/problems/cinema) | cinema | 2.1 | [Haskell](Kattis/cinema.hs) |
-| [Cinema Crowds 2](https://open.kattis.com/problems/cinema2) | cinema2 | 1.8 | [Haskell](Kattis/cinema2.hs) |
-| [Cinema Seating](https://open.kattis.com/problems/cinemaseating) | cinemaseating | 2.8 | [Haskell](Kattis/cinemaseating.hs) |
-| [Circuit Math](https://open.kattis.com/problems/circuitmath) | circuitmath | 2.0 | [Haskell](Kattis/circuitmath.hs) |
-| [Circular Painting](https://open.kattis.com/problems/circularpainting) | circularpainting | 1.8 | [Haskell](Kattis/circularpainting.hs) |
-| [Class Field Trip](https://open.kattis.com/problems/classfieldtrip) | classfieldtrip | 1.4 | [Haskell](Kattis/classfieldtrip.hs) |
-| [Class Photo](https://open.kattis.com/problems/classphoto) | classphoto | 1.3 | [Haskell](Kattis/classphoto.hs) |
-| [Climbing Worm](https://open.kattis.com/problems/climbingworm) | climbingworm | 2.0 | [Haskell](Kattis/climbingworm.hs) |
-| [Clock Construction](https://open.kattis.com/problems/clockconstruction) | clockconstruction | 3.9 | [Haskell](Kattis/clockconstruction.hs) |
-| [Closest Pair (Uniform)](https://open.kattis.com/problems/closestpair1) | closestpair1 | 4.4 | [C++](Kattis/closestpair1.cpp) |
-| [Closest Pair](https://open.kattis.com/problems/closestpair2) | closestpair2 | 6.3 | [C++](Kattis/closestpair2.cpp) |
-| [Closest Sums](https://open.kattis.com/problems/closestsums) | closestsums | 2.4 | [C++](Kattis/closestsums.cpp) |
-| [Closing the Loop](https://open.kattis.com/problems/closingtheloop) | closingtheloop | 2.1 | [Haskell](Kattis/closingtheloop.hs) |
-| [Club Pizza](https://open.kattis.com/problems/clubpizza) | clubpizza | 2.2 | [Haskell](Kattis/clubpizza.hs) |
-| [Coast Length](https://open.kattis.com/problems/coast) | coast | 2.6 | [C++](Kattis/coast.cpp) |
-| [A Furious Cocktail](https://open.kattis.com/problems/cocktail) | cocktail | 2.8 | [Haskell](Kattis/cocktail.hs) |
-| [Coconut Splat](https://open.kattis.com/problems/coconut) | coconut | 1.8 | [Haskell](Kattis/coconut.hs) |
-| [Code Guessing](https://open.kattis.com/problems/codeguessing) | codeguessing | 2.8 | [Haskell](Kattis/codeguessing.hs) |
-| [Code to Save Lives](https://open.kattis.com/problems/codetosavelives) | codetosavelives | 1.7 | [Haskell](Kattis/codetosavelives.hs) |
-| [Coffee Cup Combo](https://open.kattis.com/problems/coffeecupcombo) | coffeecupcombo | 1.6 | [Python](Kattis/coffeecupcombo.py) |
-| [Cokolada](https://open.kattis.com/problems/cokolada) | cokolada | 2.3 | [Haskell](Kattis/cokolada.hs) |
-| [Cold-puter Science](https://open.kattis.com/problems/cold) | cold | 1.4 | [Python](Kattis/cold.py) [Haskell](Kattis/cold.hs) |
-| [Collapse](https://open.kattis.com/problems/collapse) | collapse | 3.2 | [Haskell](Kattis/collapse.hs) |
-| [Coloring Socks](https://open.kattis.com/problems/color) | color | 2.0 | [Python](Kattis/color.py) |
-| [Colour Wars](https://open.kattis.com/problems/colourwars) | colourwars | 2.4 | [Haskell](Kattis/colourwars.hs) |
-| [Combination Lock](https://open.kattis.com/problems/combinationlock) | combinationlock | 2.7 | [Python](Kattis/combinationlock.py) |
-| [Combinatorial Stanley Cup](https://open.kattis.com/problems/combinatorialstanleycup) | combinatorialstanleycup | 2.7 | [Haskell](Kattis/combinatorialstanleycup.hs) |
-| [Radio Commercials](https://open.kattis.com/problems/commercials) | commercials | 1.9 | [Haskell](Kattis/commercials.hs) |
-| [Common Factors](https://open.kattis.com/problems/commonfactors) | commonfactors | 4.3 | [Haskell](Kattis/commonfactors.hs) |
-| [Jumbled Communication](https://open.kattis.com/problems/communication) | communication | 2.0 | [Haskell](Kattis/communication.hs) |
-| [Communication Line](https://open.kattis.com/problems/communicationline) | communicationline | 4.0 | [Haskell](Kattis/communicationline.hs) |
-| [Company Picnic](https://open.kattis.com/problems/companypicnic) | companypicnic | 4.2 | [C++](Kattis/companypicnic.cpp) |
-| [Jumbled Compass](https://open.kattis.com/problems/compass) | compass | 2.1 | [Python](Kattis/compass.py) |
-| [Competitive Arcade Basketball](https://open.kattis.com/problems/competitivearcadebasketball) | competitivearcadebasketball | 2.0 | [Haskell](Kattis/competitivearcadebasketball.hs) |
-| [Completing the Square](https://open.kattis.com/problems/completingthesquare) | completingthesquare | 2.0 | [Haskell](Kattis/completingthesquare.hs) |
-| [Composed Rhythms](https://open.kattis.com/problems/composedrhythms) | composedrhythms | 1.6 | [Python](Kattis/composedrhythms.py) [Haskell](Kattis/composedrhythms.hs) |
-| [Compositions](https://open.kattis.com/problems/compositions) | compositions | 2.3 | [Haskell](Kattis/compositions.hs) |
-| [Compound Words](https://open.kattis.com/problems/compoundwords) | compoundwords | 1.6 | [Haskell](Kattis/compoundwords.hs) |
-| [Compression](https://open.kattis.com/problems/compression2) | compression2 | 3.5 | [Haskell](Kattis/compression2.hs) |
-| [Best Compromise](https://open.kattis.com/problems/compromise) | compromise | 2.0 | [Haskell](Kattis/compromise.hs) |
-| [Conformity](https://open.kattis.com/problems/conformity) | conformity | 1.6 | [Haskell](Kattis/conformity.hs) |
-| [Conquest](https://open.kattis.com/problems/conquest) | conquest | 2.9 | [C++](Kattis/conquest.cpp) [Python](Kattis/conquest.py) |
-| [Conquest Campaign](https://open.kattis.com/problems/conquestcampaign) | conquestcampaign | 2.1 | [C++](Kattis/conquestcampaign.cpp) [Haskell](Kattis/conquestcampaign.hs) |
-| [Sums](https://open.kattis.com/problems/consecutivesums) | consecutivesums | 3.0 | [Haskell](Kattis/consecutivesums.hs) |
-| [Conservation](https://open.kattis.com/problems/conservation) | conservation | 4.7 | [C++](Kattis/conservation.cpp) |
-| [Contest Struggles](https://open.kattis.com/problems/conteststruggles) | conteststruggles | 2.0 | [Haskell](Kattis/conteststruggles.hs) |
-| [Contingency Planning](https://open.kattis.com/problems/contingencyplanning) | contingencyplanning | 2.1 | [Haskell](Kattis/contingencyplanning.hs) |
-| [Continuous Median](https://open.kattis.com/problems/continuousmedian) | continuousmedian | 2.7 | [C++](Kattis/continuousmedian.cpp) |
-| [Cryptographer's Conundrum](https://open.kattis.com/problems/conundrum) | conundrum | 1.7 | [Haskell](Kattis/conundrum.hs) |
-| [Conversation Log](https://open.kattis.com/problems/conversationlog) | conversationlog | 2.8 | [Haskell](Kattis/conversationlog.hs) |
-| [Converting Romans](https://open.kattis.com/problems/convertingromans) | convertingromans | 3.6 | [Haskell](Kattis/convertingromans.hs) |
-| [Convex Polygon Area](https://open.kattis.com/problems/convexpolygonarea) | convexpolygonarea | 2.0 | [Haskell](Kattis/convexpolygonarea.hs) |
-| [Cookie Cutters](https://open.kattis.com/problems/cookiecutter) | cookiecutter | 2.2 | [Haskell](Kattis/cookiecutter.hs) |
-| [Cookie Monster Concussion](https://open.kattis.com/problems/cookiemonsterconcussion) | cookiemonsterconcussion | 2.8 | [Haskell](Kattis/cookiemonsterconcussion.hs) |
-| [Cooking Water](https://open.kattis.com/problems/cookingwater) | cookingwater | 2.4 | [Haskell](Kattis/cookingwater.hs) |
-| [Cops and Robbers](https://open.kattis.com/problems/copsandrobbers) | copsandrobbers | 4.9 | [C++](Kattis/copsandrobbers.cpp) |
-| [Cornhusker](https://open.kattis.com/problems/cornhusker) | cornhusker | 1.7 | [Haskell](Kattis/cornhusker.hs) |
-| [Cosmic Commute](https://open.kattis.com/problems/cosmiccommute) | cosmiccommute | 5.5 | [C++](Kattis/cosmiccommute.cpp) [Haskell](Kattis/cosmiccommute.hs) |
-| [Cosmic Path Optimization](https://open.kattis.com/problems/cosmicpathoptimization) | cosmicpathoptimization | 1.3 | [Haskell](Kattis/cosmicpathoptimization.hs) |
-| [Costume Contest](https://open.kattis.com/problems/costumecontest) | costumecontest | 2.2 | [Haskell](Kattis/costumecontest.hs) |
-| [Circuit Counting](https://open.kattis.com/problems/countcircuits) | countcircuits | 4.9 | [Python](Kattis/countcircuits.py) |
-| [Count Doubles](https://open.kattis.com/problems/countdoubles) | countdoubles | 1.9 | [Haskell](Kattis/countdoubles.hs) |
-| [Skip Counting](https://open.kattis.com/problems/counting) | counting | 1.4 | [Haskell](Kattis/counting.hs) |
-| [Counting Clauses](https://open.kattis.com/problems/countingclauses) | countingclauses | 1.6 | [Haskell](Kattis/countingclauses.hs) |
-| [Counting Days](https://open.kattis.com/problems/countingdays) | countingdays | 3.1 | [C](Kattis/countingdays.h) [C++](Kattis/countingdays.cpp) |
-| [Counting Stars](https://open.kattis.com/problems/countingstars) | countingstars | 2.6 | [Haskell](Kattis/countingstars.hs) |
-| [Counting Triangles](https://open.kattis.com/problems/countingtriangles) | countingtriangles | 2.0 | [Haskell](Kattis/countingtriangles.hs) |
-| [Count the Vowels](https://open.kattis.com/problems/countthevowels) | countthevowels | 1.2 | [Haskell](Kattis/countthevowels.hs) |
-| [Course Scheduling](https://open.kattis.com/problems/coursescheduling) | coursescheduling | 1.7 | [Haskell](Kattis/coursescheduling.hs) |
-| [CPR Number](https://open.kattis.com/problems/cprnummer) | cprnummer | 1.5 | [Haskell](Kattis/cprnummer.hs) |
-| [Cracking RSA](https://open.kattis.com/problems/crackingrsa) | crackingrsa | 1.9 | [Haskell](Kattis/crackingrsa.hs) |
-| [Crashing Robots](https://open.kattis.com/problems/crashingrobots) | crashingrobots | 3.3 | [C#](Kattis/crashingrobots.cs) |
-| [Crne](https://open.kattis.com/problems/crne) | crne | 2.6 | [Haskell](Kattis/crne.hs) |
-| [Cross Country](https://open.kattis.com/problems/crosscountry) | crosscountry | 2.4 | [Haskell](Kattis/crosscountry.hs) |
-| [Cuckoo Hashing](https://open.kattis.com/problems/cuckoo) | cuckoo | 3.9 | [Haskell](Kattis/cuckoo.hs) |
-| [Cudoviste](https://open.kattis.com/problems/cudoviste) | cudoviste | 1.5 | [Python](Kattis/cudoviste.py) |
-| [Culture shock](https://open.kattis.com/problems/cultureshock) | cultureshock | 1.8 | [Haskell](Kattis/cultureshock.hs) |
-| [Stacking Cups](https://open.kattis.com/problems/cups) | cups | 1.6 | [Haskell](Kattis/cups.hs) |
-| [Cups and Balls](https://open.kattis.com/problems/cupsandballs) | cupsandballs | 1.6 | [Haskell](Kattis/cupsandballs.hs) |
-| [Curse the Darkness](https://open.kattis.com/problems/cursethedarkness) | cursethedarkness | 2.5 | [Haskell](Kattis/cursethedarkness.hs) |
-| [Curveknights](https://open.kattis.com/problems/curveknights) | curveknights | 3.7 | [Haskell](Kattis/curveknights.hs) |
-| [Curve Speed](https://open.kattis.com/problems/curvespeed) | curvespeed | 2.2 | [Haskell](Kattis/curvespeed.hs) |
-| [Cut in Line](https://open.kattis.com/problems/cutinline) | cutinline | 1.6 | [Haskell](Kattis/cutinline.hs) |
-| [Cut the Negativity](https://open.kattis.com/problems/cutthenegativity) | cutthenegativity | 1.4 | [Haskell](Kattis/cutthenegativity.hs) |
-| [Cutting Brownies](https://open.kattis.com/problems/cuttingbrownies) | cuttingbrownies | 4.1 | [Haskell](Kattis/cuttingbrownies.hs) |
-| [Cyanide Rivers](https://open.kattis.com/problems/cyaniderivers) | cyaniderivers | 2.1 | [Haskell](Kattis/cyaniderivers.hs) |
-| [Cyclical Periods](https://open.kattis.com/problems/cyclicalperiods) | cyclicalperiods | 2.6 | [Haskell](Kattis/cyclicalperiods.hs) |
-| [Cypher Decypher](https://open.kattis.com/problems/cypherdecypher) | cypherdecypher | 1.5 | [Haskell](Kattis/cypherdecypher.hs) |
-| [Dacey the Dice](https://open.kattis.com/problems/daceydice) | daceydice | 3.6 | [Python](Kattis/daceydice.py) [Haskell](Kattis/daceydice.hs) |
-| [Dagatal](https://open.kattis.com/problems/dagatal) | dagatal | 1.2 | [Haskell](Kattis/dagatal.hs) |
-| [Damaged Equation](https://open.kattis.com/problems/damagedequation) | damagedequation | 2.4 | [Haskell](Kattis/damagedequation.hs) |
-| [Dams in Distress](https://open.kattis.com/problems/damsindistress) | damsindistress | 3.8 | [Java](Kattis/damsindistress.java) |
-| [Daniel's Debugging Disaster](https://open.kattis.com/problems/danielsdebuggingdisaster) | danielsdebuggingdisaster | 3.1 | [Haskell](Kattis/danielsdebuggingdisaster.hs) |
-| [Danish Date Format](https://open.kattis.com/problems/danishdateformat) | danishdateformat | 1.6 | [Python](Kattis/danishdateformat.py) |
-| [Dansgólf](https://open.kattis.com/problems/dansgolf) | dansgolf | 2.5 | [Haskell](Kattis/dansgolf.hs) |
-| [Darts](https://open.kattis.com/problems/dartscores) | dartscores | 2.1 | [Haskell](Kattis/dartscores.hs) |
-| [Das Blinkenlights](https://open.kattis.com/problems/dasblinkenlights) | dasblinkenlights | 1.6 | [Haskell](Kattis/dasblinkenlights.hs) |
-| [DA-Sort](https://open.kattis.com/problems/dasort) | dasort | 3.5 | [Haskell](Kattis/dasort.hs) |
-| [Datum](https://open.kattis.com/problems/datum) | datum | 1.6 | [Haskell](Kattis/datum.hs) |
-| [Death Knight Hero](https://open.kattis.com/problems/deathknight) | deathknight | 1.5 | [Haskell](Kattis/deathknight.hs) |
-| [Deathstar](https://open.kattis.com/problems/deathstar) | deathstar | 1.7 | [Haskell](Kattis/deathstar.hs) |
-| [Breaking into the Death Star](https://open.kattis.com/problems/deathstar2) | deathstar2 | 1.7 | [Haskell](Kattis/deathstar2.hs) |
-| [Death and Taxes](https://open.kattis.com/problems/deathtaxes) | deathtaxes | 3.1 | [Haskell](Kattis/deathtaxes.hs) |
-| [Deceptive Dice](https://open.kattis.com/problems/deceptivedice) | deceptivedice | 3.0 | [Haskell](Kattis/deceptivedice.hs) |
-| [Decimal deletion](https://open.kattis.com/problems/decimaldeletion) | decimaldeletion | 1.2 | [Haskell](Kattis/decimaldeletion.hs) |
-| [Decisions, Decisions](https://open.kattis.com/problems/decisions) | decisions | 2.9 | [Haskell](Kattis/decisions.hs) |
-| [Deildadrottnun](https://open.kattis.com/problems/deildadrottnun) | deildadrottnun | 3.1 | [Haskell](Kattis/deildadrottnun.hs) |
-| [Deildajöfnuður](https://open.kattis.com/problems/deildajofnudur) | deildajofnudur | 2.1 | [Haskell](Kattis/deildajofnudur.hs) |
-| [Deild Goðsagnanna](https://open.kattis.com/problems/deildgodsagnanna) | deildgodsagnanna | 3.6 | [Haskell](Kattis/deildgodsagnanna.hs) |
-| [Dejavu](https://open.kattis.com/problems/dejavu) | dejavu | 3.0 | [Haskell](Kattis/dejavu.hs) |
-| [Delft Distance](https://open.kattis.com/problems/delftdistance) | delftdistance | 3.9 | [Haskell](Kattis/delftdistance.hs) |
-| [Delimiter Soup](https://open.kattis.com/problems/delimitersoup) | delimitersoup | 1.8 | [Haskell](Kattis/delimitersoup.hs) |
-| [Democratic Naming](https://open.kattis.com/problems/democraticnaming) | democraticnaming | 1.8 | [Haskell](Kattis/democraticnaming.hs) |
-| [Desiigner strengir](https://open.kattis.com/problems/desiigner) | desiigner | 2.1 | [Haskell](Kattis/desiigner.hs) |
-| [Detailed Differences](https://open.kattis.com/problems/detaileddifferences) | detaileddifferences | 1.4 | [Haskell](Kattis/detaileddifferences.hs) |
-| [Deterministic Finite Automata - Complement](https://open.kattis.com/problems/dfacomplement) | dfacomplement | 2.6 | [Haskell](Kattis/dfacomplement.hs) |
-| [Deterministic Finite Automata - Difference](https://open.kattis.com/problems/dfadifference) | dfadifference | 3.0 | [Haskell](Kattis/dfadifference.hs) |
-| [Deterministic Finite Automata - Enumeration](https://open.kattis.com/problems/dfaenumeration) | dfaenumeration | 6.6 | [Haskell](Kattis/dfaenumeration.hs) |
-| [Deterministic Finite Automata - Intersection](https://open.kattis.com/problems/dfaintersection) | dfaintersection | 4.4 | [Haskell](Kattis/dfaintersection.hs) |
-| [Deterministic Finite Automata - Is the Empty Language?](https://open.kattis.com/problems/dfaisempty) | dfaisempty | 3.6 | [Haskell](Kattis/dfaisempty.hs) |
-| [Deterministic Finite Automata - Is a Finite Language?](https://open.kattis.com/problems/dfaisfinite) | dfaisfinite | 6.6 | [Haskell](Kattis/dfaisfinite.hs) |
-| [Deterministic Finite Automata - Maximum Word Length](https://open.kattis.com/problems/dfamaximumwordlength) | dfamaximumwordlength | 5.5 | [Haskell](Kattis/dfamaximumwordlength.hs) |
-| [Deterministic Finite Automata - Minimum Word Length](https://open.kattis.com/problems/dfaminimumwordlength) | dfaminimumwordlength | 2.5 | [Haskell](Kattis/dfaminimumwordlength.hs) |
-| [Deterministic Finite Automata - Read](https://open.kattis.com/problems/dfaread) | dfaread | 2.2 | [Haskell](Kattis/dfaread.hs) |
-| [Deterministic Finite Automata - Symmetric Difference](https://open.kattis.com/problems/dfasymmetricdifference) | dfasymmetricdifference | 3.6 | [Haskell](Kattis/dfasymmetricdifference.hs) |
-| [Deterministic Finite Automata - Union](https://open.kattis.com/problems/dfaunion) | dfaunion | 3.4 | [Haskell](Kattis/dfaunion.hs) |
-| [D Fyrir Dreki](https://open.kattis.com/problems/dfyrirdreki) | dfyrirdreki | 1.2 | [Haskell](Kattis/dfyrirdreki.hs) |
-| [Dialling Digits](https://open.kattis.com/problems/diallingdigits) | diallingdigits | 3.1 | [Haskell](Kattis/diallingdigits.hs) |
-| [Diamonds](https://open.kattis.com/problems/diamonds) | diamonds | 6.5 | [Haskell](Kattis/diamonds.hs) |
-| [Dice Cup](https://open.kattis.com/problems/dicecup) | dicecup | 1.5 | [Haskell](Kattis/dicecup.hs) |
-| [Dice Game](https://open.kattis.com/problems/dicegame) | dicegame | 1.8 | [Python](Kattis/dicegame.py) |
-| [Dickensian Dictionary](https://open.kattis.com/problems/dickensiandictionary) | dickensiandictionary | 1.8 | [Haskell](Kattis/dickensiandictionary.hs) |
-| [Die Hard](https://open.kattis.com/problems/diehard) | diehard | 3.0 | [Python](Kattis/diehard.py) |
-| [A Different Problem](https://open.kattis.com/problems/different) | different | 2.4 | [Rust](Kattis/different.rs) [Haskell](Kattis/different.hs) |
-| [Different Distances](https://open.kattis.com/problems/differentdistances) | differentdistances | 2.2 | [Haskell](Kattis/differentdistances.hs) |
-| [Digit Division](https://open.kattis.com/problems/digitdivision) | digitdivision | 4.7 | [Haskell](Kattis/digitdivision.hs) |
-| [Digits](https://open.kattis.com/problems/digits) | digits | 3.1 | [Haskell](Kattis/digits.hs) |
-| [Digit Swap](https://open.kattis.com/problems/digitswap) | digitswap | 1.2 | [Haskell](Kattis/digitswap.hs) |
-| [Ding Dong Ditch](https://open.kattis.com/problems/dingdongditch) | dingdongditch | 2.6 | [Haskell](Kattis/dingdongditch.hs) [C++](Kattis/dingdongditch.cpp) |
-| [Disc District](https://open.kattis.com/problems/discdistrict) | discdistrict | 2.4 | [Haskell](Kattis/discdistrict.hs) [Python](Kattis/discdistrict.py) |
-| [Dishonest Lottery](https://open.kattis.com/problems/dishonestlottery) | dishonestlottery | 2.1 | [Haskell](Kattis/dishonestlottery.hs) |
-| [Digital display](https://open.kattis.com/problems/display) | display | 2.7 | [Haskell](Kattis/display.hs) |
-| [Distance](https://open.kattis.com/problems/distance) | distance | 3.6 | [Haskell](Kattis/distance.hs) |
-| [Distracted](https://open.kattis.com/problems/distracted) | distracted | 7.3 | [Haskell](Kattis/distracted.hs) |
-| [Distributing Poffins](https://open.kattis.com/problems/distributingpoffins) | distributingpoffins | 1.9 | [Haskell](Kattis/distributingpoffins.hs) |
-| [Diverse Contest](https://open.kattis.com/problems/diversecontest) | diversecontest | 2.7 | [Haskell](Kattis/diversecontest.hs) |
-| [Divisible Subsequences](https://open.kattis.com/problems/divisible) | divisible | 2.9 | [C++](Kattis/divisible.cpp) [Python](Kattis/divisible.py) |
-| [Divvying Up](https://open.kattis.com/problems/divvyingup) | divvyingup | 1.4 | [Haskell](Kattis/divvyingup.hs) |
-| [DnD Dice](https://open.kattis.com/problems/dnddice) | dnddice | 4.7 | [Haskell](Kattis/dnddice.hs) |
-| [Dodecaphony](https://open.kattis.com/problems/dodecaphony) | dodecaphony | 2.9 | [Haskell](Kattis/dodecaphony.hs) |
-| [Dog & Gopher](https://open.kattis.com/problems/doggopher) | doggopher | 2.2 | [Python](Kattis/doggopher.py) |
-| [Dominoes 2](https://open.kattis.com/problems/dominoes2) | dominoes2 | 2.5 | [Haskell](Kattis/dominoes2.hs) |
-| [Don't Be Fake](https://open.kattis.com/problems/dontbefake) | dontbefake | 2.2 | [Python](Kattis/dontbefake.py) |
-| [Don't Fall Down Stairs](https://open.kattis.com/problems/dontfalldownstairs) | dontfalldownstairs | 2.2 | [Haskell](Kattis/dontfalldownstairs.hs) |
-| [Doorman](https://open.kattis.com/problems/doorman) | doorman | 2.6 | [Haskell](Kattis/doorman.hs) |
-| [Double Palindromes](https://open.kattis.com/problems/doublepalindromes) | doublepalindromes | 4.5 | [Haskell](Kattis/doublepalindromes.hs) |
-| [Double Password](https://open.kattis.com/problems/doublepassword) | doublepassword | 1.5 | [Haskell](Kattis/doublepassword.hs) |
-| [Doubleplusgood](https://open.kattis.com/problems/doubleplusgood) | doubleplusgood | 2.6 | [Haskell](Kattis/doubleplusgood.hs) |
-| [Disastrous Downtime](https://open.kattis.com/problems/downtime) | downtime | 3.5 | [Haskell](Kattis/downtime.hs) |
-| [Draga Frá](https://open.kattis.com/problems/dragafra) | dragafra | 1.1 | [Haskell](Kattis/dragafra.hs) |
-| [Dreamer](https://open.kattis.com/problems/dreamer) | dreamer | 2.3 | [Haskell](Kattis/dreamer.hs) |
-| [Drinking Song](https://open.kattis.com/problems/drinkingsong) | drinkingsong | 2.3 | [Haskell](Kattis/drinkingsong.hs) |
-| [Drink Menu](https://open.kattis.com/problems/drinkmenu) | drinkmenu | 1.6 | [Haskell](Kattis/drinkmenu.hs) |
-| [Driver's Dilemma](https://open.kattis.com/problems/driversdilemma) | driversdilemma | 2.3 | [Haskell](Kattis/driversdilemma.hs) |
-| [DRM Messages](https://open.kattis.com/problems/drmmessages) | drmmessages | 1.5 | [Haskell](Kattis/drmmessages.hs) |
-| [Drunk Vigenère](https://open.kattis.com/problems/drunkvigenere) | drunkvigenere | 1.6 | [Python](Kattis/drunkvigenere.py) |
-| [Daylight Saving Time](https://open.kattis.com/problems/dst) | dst | 2.0 | [Haskell](Kattis/dst.hs) |
-| [Duck Pond](https://open.kattis.com/problems/duckpond) | duckpond | 3.1 | [Haskell](Kattis/duckpond.hs) |
-| [Ducky Debugging](https://open.kattis.com/problems/duckydebugging) | duckydebugging | 2.6 | [Haskell](Kattis/duckydebugging.hs) |
-| [Duel of Cards](https://open.kattis.com/problems/duelofcards) | duelofcards | 2.5 | [Haskell](Kattis/duelofcards.hs) |
-| [Pigeon-holes](https://open.kattis.com/problems/dufuskuffur) | dufuskuffur | 1.6 | [Haskell](Kattis/dufuskuffur.hs) |
-| [Dungeon master](https://open.kattis.com/problems/dungeon) | dungeon | 3.2 | [Haskell](Kattis/dungeon.hs) |
-| [Dunglish](https://open.kattis.com/problems/dunglish) | dunglish | 2.8 | [Haskell](Kattis/dunglish.hs) |
-| [Duplicate Removal](https://open.kattis.com/problems/duplicateremoval) | duplicateremoval | 2.9 | [Haskell](Kattis/duplicateremoval.hs) |
-| [DVDs](https://open.kattis.com/problems/dvds) | dvds | 2.8 | [Haskell](Kattis/dvds.hs) |
-| [Dyslectionary](https://open.kattis.com/problems/dyslectionary) | dyslectionary | 2.8 | [Haskell](Kattis/dyslectionary.hs) |
-| [Early Termination](https://open.kattis.com/problems/earlytermination) | earlytermination | 2.4 | [Haskell](Kattis/earlytermination.hs) |
-| [Early Winter](https://open.kattis.com/problems/earlywinter) | earlywinter | 2.1 | [Haskell](Kattis/earlywinter.hs) |
-| [Easier Done than Said?](https://open.kattis.com/problems/easierdonethansaid) | easierdonethansaid | 2.4 | [Haskell](Kattis/easierdonethansaid.hs) |
-| [The Easiest Problem Is This One](https://open.kattis.com/problems/easiest) | easiest | 1.6 | [C++](Kattis/easiest.cpp) |
-| [As Easy as CAB](https://open.kattis.com/problems/easyascab) | easyascab | 7.7 | [Haskell](Kattis/easyascab.hs) |
-| [Eating Out](https://open.kattis.com/problems/eatingout) | eatingout | 2.8 | [Haskell](Kattis/eatingout.hs) |
-| [Echo Echo Echo](https://open.kattis.com/problems/echoechoecho) | echoechoecho | 1.2 | [Python](Kattis/echoechoecho.py) |
-| [E-Clips](https://open.kattis.com/problems/eclips) | eclips | 1.8 | [Haskell](Kattis/eclips.hs) |
-| [Eeny Meeny](https://open.kattis.com/problems/eenymeeny) | eenymeeny | 1.9 | [Python](Kattis/eenymeeny.py) |
-| [Ég elska hann](https://open.kattis.com/problems/egelskahann) | egelskahann | 1.9 | [Haskell](Kattis/egelskahann.hs) |
-| [Egypt](https://open.kattis.com/problems/egypt) | egypt | 1.8 | [Haskell](Kattis/egypt.hs) |
-| [Eidam-Sand Lair](https://open.kattis.com/problems/eidamsandlair) | eidamsandlair | 4.9 | [Haskell](Kattis/eidamsandlair.hs) |
-| [EIEIO](https://open.kattis.com/problems/eieio) | eieio | 2.8 | [Haskell](Kattis/eieio.hs) |
-| [Eiginnöfn](https://open.kattis.com/problems/eiginnofn) | eiginnofn | 2.0 | [Haskell](Kattis/eiginnofn.hs) |
-| [Einfalt Dæmi!](https://open.kattis.com/problems/einfalt) | einfalt | 2.5 | [Haskell](Kattis/einfalt.hs) |
-| [Einkunnir](https://open.kattis.com/problems/einkunnir) | einkunnir | 2.9 | [Haskell](Kattis/einkunnir.hs) |
-| [Einvígi](https://open.kattis.com/problems/einvigi) | einvigi | 3.8 | [Haskell](Kattis/einvigi.hs) |
-| [Ekki dauði opna inni](https://open.kattis.com/problems/ekkidaudi) | ekkidaudi | 1.5 | [Haskell](Kattis/ekkidaudi.hs) |
-| [Eko](https://open.kattis.com/problems/eko) | eko | 3.3 | [Haskell](Kattis/eko.hs) |
-| [Eldspýtur](https://open.kattis.com/problems/eldspytur) | eldspytur | 2.0 | [Haskell](Kattis/eldspytur.hs) |
-| [Election](https://open.kattis.com/problems/election2) | election2 | 2.2 | [Python](Kattis/election2.py) [Haskell](Kattis/election2.hs) |
-| [Election Paradox](https://open.kattis.com/problems/electionparadox) | electionparadox | 1.8 | [Haskell](Kattis/electionparadox.hs) |
-| [Electrical Outlets](https://open.kattis.com/problems/electricaloutlets) | electricaloutlets | 1.4 | [Haskell](Kattis/electricaloutlets.hs) |
-| [Elevating the Prank](https://open.kattis.com/problems/elevatingtheprank) | elevatingtheprank | 1.6 | [Haskell](Kattis/elevatingtheprank.hs) |
-| [Elevators](https://open.kattis.com/problems/elevators) | elevators | 1.6 | [Haskell](Kattis/elevators.hs) |
-| [Elevator Trouble](https://open.kattis.com/problems/elevatortrouble) | elevatortrouble | 2.1 | [Haskell](Kattis/elevatortrouble.hs) |
-| [Eligibility](https://open.kattis.com/problems/eligibility) | eligibility | 1.6 | [Haskell](Kattis/eligibility.hs) |
-| [Elo](https://open.kattis.com/problems/elo) | elo | 3.8 | [Haskell](Kattis/elo.hs) |
-| [The Embarrassed Cryptographer](https://open.kattis.com/problems/embarrassedcryptographer) | embarrassedcryptographer | 5.9 | [Haskell](Kattis/embarrassedcryptographer.hs) |
-| [Emag Eht Htiw Em Pleh](https://open.kattis.com/problems/empleh) | empleh | 1.9 | [Haskell](Kattis/empleh.hs) |
-| [Encoded Message](https://open.kattis.com/problems/encodedmessage) | encodedmessage | 1.6 | [Haskell](Kattis/encodedmessage.hs) |
-| [Encryption](https://open.kattis.com/problems/encryption) | encryption | 2.7 | [Haskell](Kattis/encryption.hs) |
-| [Enduro](https://open.kattis.com/problems/enduro) | enduro | 2.2 | [Haskell](Kattis/enduro.hs) |
-| [Endurvinnsla](https://open.kattis.com/problems/endurvinnsla) | endurvinnsla | 1.7 | [Haskell](Kattis/endurvinnsla.hs) |
-| [Escape from Enemy Territory](https://open.kattis.com/problems/enemyterritory) | enemyterritory | 5.7 | [Haskell](Kattis/enemyterritory.hs) |
-| [Engineering English](https://open.kattis.com/problems/engineeringenglish) | engineeringenglish | 2.5 | [Haskell](Kattis/engineeringenglish.hs) |
-| [Envious Exponents](https://open.kattis.com/problems/enviousexponents) | enviousexponents | 5.1 | [Haskell](Kattis/enviousexponents.hs) |
-| [EpigDanceOff](https://open.kattis.com/problems/epigdanceoff) | epigdanceoff | 1.9 | [Haskell](Kattis/epigdanceoff.hs) |
-| [Equalizing Debt](https://open.kattis.com/problems/equalizingdebt) | equalizingdebt | 4.3 | [Haskell](Kattis/equalizingdebt.hs) |
-| [Equal Shots](https://open.kattis.com/problems/equalshots) | equalshots | 1.3 | [Haskell](Kattis/equalshots.hs) |
-| [Equal Sums (Easy)](https://open.kattis.com/problems/equalsumseasy) | equalsumseasy | 2.6 | [Haskell](Kattis/equalsumseasy.hs) [C++](Kattis/equalsumseasy.cpp) |
-| [Erase Securely](https://open.kattis.com/problems/erase) | erase | 2.1 | [Haskell](Kattis/erase.hs) |
-| [Escape Wall Maria](https://open.kattis.com/problems/escapewallmaria) | escapewallmaria | 5.6 | [Haskell](Kattis/escapewallmaria.hs) |
-| [Espresso!](https://open.kattis.com/problems/espresso) | espresso | 2.0 | [Haskell](Kattis/espresso.hs) |
-| [Espresso Bucks](https://open.kattis.com/problems/espressobucks) | espressobucks | 2.2 | [Haskell](Kattis/espressobucks.hs) |
-| [Integer Estate Agent](https://open.kattis.com/problems/estate) | estate | 5.2 | [Haskell](Kattis/estate.hs) |
-| [Estimating the Area of a Circle](https://open.kattis.com/problems/estimatingtheareaofacircle) | estimatingtheareaofacircle | 1.5 | [Haskell](Kattis/estimatingtheareaofacircle.hs) |
-| [Eszett](https://open.kattis.com/problems/eszett) | eszett | 3.1 | [Haskell](Kattis/eszett.hs) |
-| [Ethanol](https://open.kattis.com/problems/ethanol) | ethanol | 1.5 | [Haskell](Kattis/ethanol.hs) |
-| [Euclidean TSP](https://open.kattis.com/problems/euclideantsp) | euclideantsp | 2.3 | [Haskell](Kattis/euclideantsp.hs) |
-| [Euclid's Algorithm](https://open.kattis.com/problems/euclidsalgorithm) | euclidsalgorithm | 1.6 | [Haskell](Kattis/euclidsalgorithm.hs) |
-| [Eulerian Graphs](https://open.kattis.com/problems/eulerian) | eulerian | 2.3 | [Haskell](Kattis/eulerian.hs) |
-| [Eulerian Graphs 2](https://open.kattis.com/problems/eulerian2) | eulerian2 | 3.1 | [C++](Kattis/eulerian2.cpp) |
-| [Euler's Number](https://open.kattis.com/problems/eulersnumber) | eulersnumber | 2.5 | [Haskell](Kattis/eulersnumber.hs) |
-| [European Trip](https://open.kattis.com/problems/europeantrip) | europeantrip | 3.3 | [Haskell](Kattis/europeantrip.hs) |
-| [Evening Out 1](https://open.kattis.com/problems/eveningout1) | eveningout1 | 2.2 | [Haskell](Kattis/eveningout1.hs) |
-| [Event Planning](https://open.kattis.com/problems/eventplanning) | eventplanning | 2.4 | [Haskell](Kattis/eventplanning.hs) |
-| [Even Up Solitaire](https://open.kattis.com/problems/evenup) | evenup | 2.0 | [Haskell](Kattis/evenup.hs) |
-| [Every Second Counts](https://open.kattis.com/problems/everysecond) | everysecond | 3.1 | [Haskell](Kattis/everysecond.hs) |
-| [I've Been Everywhere, Man](https://open.kattis.com/problems/everywhere) | everywhere | 1.5 | [Python](Kattis/everywhere.py) |
-| [Exactly Electrical](https://open.kattis.com/problems/exactlyelectrical) | exactlyelectrical | 1.6 | [Haskell](Kattis/exactlyelectrical.hs) |
-| [Exam](https://open.kattis.com/problems/exam) | exam | 2.1 | [Haskell](Kattis/exam.hs) |
-| [Exam Manipulation](https://open.kattis.com/problems/exammanipulation) | exammanipulation | 3.7 | [C++](Kattis/exammanipulation.cpp) [Python](Kattis/exammanipulation.py) |
-| [Excellent Engineers](https://open.kattis.com/problems/excellentengineers) | excellentengineers | 5.5 | [C++](Kattis/excellentengineers.cpp) |
-| [Exits in Excess](https://open.kattis.com/problems/exitsinexcess) | exitsinexcess | 4.0 | [Haskell](Kattis/exitsinexcess.hs) |
-| [Expected Earnings](https://open.kattis.com/problems/expectedearnings) | expectedearnings | 1.7 | [Haskell](Kattis/expectedearnings.hs) |
-| [Expected Error](https://open.kattis.com/problems/expectederror) | expectederror | 3.9 | [Haskell](Kattis/expectederror.hs) |
-| [Eye of Sauron](https://open.kattis.com/problems/eyeofsauron) | eyeofsauron | 1.5 | [Haskell](Kattis/eyeofsauron.hs) |
-| [Eye Spy](https://open.kattis.com/problems/eyespy) | eyespy | 2.4 | [Haskell](Kattis/eyespy.hs) |
-| [Factor-Full Tree](https://open.kattis.com/problems/factorfulltree) | factorfulltree | 7.4 | [Haskell](Kattis/factorfulltree.hs) |
-| [Fading Wind](https://open.kattis.com/problems/fadingwind) | fadingwind | 1.6 | [Haskell](Kattis/fadingwind.hs) [C++](Kattis/fadingwind.cpp) |
-| [Fair Grading](https://open.kattis.com/problems/fairgrading) | fairgrading | 1.6 | [Haskell](Kattis/fairgrading.hs) |
-| [Fair Play](https://open.kattis.com/problems/fairplay) | fairplay | 3.4 | [Python](Kattis/fairplay.py) |
-| [Fake Arithmetic Sequence](https://open.kattis.com/problems/fakearithmeticsequence) | fakearithmeticsequence | 3.3 | [Haskell](Kattis/fakearithmeticsequence.hs) |
-| [Faktor](https://open.kattis.com/problems/faktor) | faktor | 1.3 | [Haskell](Kattis/faktor.hs) |
-| [Falcon Dive](https://open.kattis.com/problems/falcondive) | falcondive | 3.2 | [Haskell](Kattis/falcondive.hs) |
-| [Falling Apart](https://open.kattis.com/problems/fallingapart) | fallingapart | 1.5 | [Haskell](Kattis/fallingapart.hs) |
-| [Falling Snow](https://open.kattis.com/problems/fallingsnow2) | fallingsnow2 | 1.5 | [Haskell](Kattis/fallingsnow2.hs) |
-| [False Sense of Security](https://open.kattis.com/problems/falsesecurity) | falsesecurity | 1.9 | [Haskell](Kattis/falsesecurity.hs) |
-| [Fancy Frames](https://open.kattis.com/problems/fancyframes) | fancyframes | 2.4 | [Haskell](Kattis/fancyframes.hs) |
-| [Fantasy Draft](https://open.kattis.com/problems/fantasydraft) | fantasydraft | 3.9 | [Haskell](Kattis/fantasydraft.hs) |
-| [Färgrobot](https://open.kattis.com/problems/fargrobot) | fargrobot | 1.8 | [Haskell](Kattis/fargrobot.hs) |
-| [Fastest Available Route](https://open.kattis.com/problems/fastestavailableroute) | fastestavailableroute | 2.5 | [Haskell](Kattis/fastestavailableroute.hs) |
-| [Fastestest Function](https://open.kattis.com/problems/fastestestfunction) | fastestestfunction | 2.5 | [Haskell](Kattis/fastestestfunction.hs) |
-| [Fast Food Prizes](https://open.kattis.com/problems/fastfood) | fastfood | 1.9 | [Haskell](Kattis/fastfood.hs) |
-| [Fast Fourier Transform](https://open.kattis.com/problems/fastfouriertransform) | fastfouriertransform | 3.8 | [C++](Kattis/fastfouriertransform.cpp) |
-| [A Favourable Ending](https://open.kattis.com/problems/favourable) | favourable | 3.6 | [Haskell](Kattis/favourable.hs) |
-| [FBI Universal Control Numbers](https://open.kattis.com/problems/fbiuniversal) | fbiuniversal | 2.2 | [Haskell](Kattis/fbiuniversal.hs) |
-| [Ferry Loading IV](https://open.kattis.com/problems/ferryloading4) | ferryloading4 | 2.1 | [Haskell](Kattis/ferryloading4.hs) |
-| [Ferskasta Jarmið](https://open.kattis.com/problems/ferskastajarmid) | ferskastajarmid | 1.9 | [Haskell](Kattis/ferskastajarmid.hs) |
-| [Fibonacci Cycles](https://open.kattis.com/problems/fibonaccicycles) | fibonaccicycles | 3.1 | [Haskell](Kattis/fibonaccicycles.hs) |
-| [Minimal Fibonacci Sums](https://open.kattis.com/problems/fibonaccisum) | fibonaccisum | 2.1 | [Haskell](Kattis/fibonaccisum.hs) |
-| [Field Trip](https://open.kattis.com/problems/fieldtrip) | fieldtrip | 2.1 | [C++](Kattis/fieldtrip.cpp) [Haskell](Kattis/fieldtrip.hs) |
-| [Framtíðar FIFA](https://open.kattis.com/problems/fifa) | fifa | 1.2 | [Haskell](Kattis/fifa.hs) |
-| [Fifty Shades of Pink](https://open.kattis.com/problems/fiftyshades) | fiftyshades | 1.4 | [Haskell](Kattis/fiftyshades.hs) |
-| [Figure Skating](https://open.kattis.com/problems/figureskating) | figureskating | 3.1 | [Haskell](Kattis/figureskating.hs) |
-| [Filip](https://open.kattis.com/problems/filip) | filip | 1.3 | [Haskell](Kattis/filip.hs) |
-| [Filling Crates](https://open.kattis.com/problems/fillingcrates) | fillingcrates | 1.9 | [Haskell](Kattis/fillingcrates.hs) |
-| [Fimmtudagstilboð](https://open.kattis.com/problems/fimmtudagstilbod) | fimmtudagstilbod | 1.4 | [Haskell](Kattis/fimmtudagstilbod.hs) |
-| [Final Exam](https://open.kattis.com/problems/finalexam2) | finalexam2 | 1.6 | [Haskell](Kattis/finalexam2.hs) |
-| [Financial Planning](https://open.kattis.com/problems/financialplanning) | financialplanning | 4.0 | [Haskell](Kattis/financialplanning.hs) |
-| [Finding An A](https://open.kattis.com/problems/findingana) | findingana | 1.3 | [Haskell](Kattis/findingana.hs) |
-| [Finding Forks](https://open.kattis.com/problems/findingforks) | findingforks | 1.5 | [Haskell](Kattis/findingforks.hs) |
-| [Find Poly](https://open.kattis.com/problems/findpoly) | findpoly | 2.9 | [Haskell](Kattis/findpoly.hs) |
-| [Find the Graph](https://open.kattis.com/problems/findthegraph) | findthegraph | 3.5 | [Haskell](Kattis/findthegraph.hs) |
-| [Fire](https://open.kattis.com/problems/fire2) | fire2 | 3.5 | [C++](Kattis/fire2.cpp) |
-| [Firefly](https://open.kattis.com/problems/firefly) | firefly | 2.5 | [Haskell](Kattis/firefly.hs) |
-| [FizzBuzz](https://open.kattis.com/problems/fizzbuzz) | fizzbuzz | 1.3 | [Haskell](Kattis/fizzbuzz.hs) |
-| [FizzBuzz](https://open.kattis.com/problems/fizzbuzz2) | fizzbuzz2 | 2.6 | [Haskell](Kattis/fizzbuzz2.hs) |
-| [Fjöldi Bókstafa](https://open.kattis.com/problems/fjoldibokstafa) | fjoldibokstafa | 1.3 | [Haskell](Kattis/fjoldibokstafa.hs) |
-| [Flatbökuveisla](https://open.kattis.com/problems/flatbokuveisla) | flatbokuveisla | 1.1 | [Haskell](Kattis/flatbokuveisla.hs) |
-| [Flexible Spaces](https://open.kattis.com/problems/flexible) | flexible | 1.8 | [Haskell](Kattis/flexible.hs) |
-| [Fleytitala](https://open.kattis.com/problems/fleytitala) | fleytitala | 3.0 | [Haskell](Kattis/fleytitala.hs) |
-| [Flip Five](https://open.kattis.com/problems/flipfive) | flipfive | 4.6 | [Haskell](Kattis/flipfive.hs) |
-| [Flip Flow](https://open.kattis.com/problems/flipflow) | flipflow | 2.1 | [Haskell](Kattis/flipflow.hs) |
-| [Flipping Patties](https://open.kattis.com/problems/flippingpatties) | flippingpatties | 2.4 | [Haskell](Kattis/flippingpatties.hs) |
-| [Floor Plan](https://open.kattis.com/problems/floorplan) | floorplan | 3.8 | [Haskell](Kattis/floorplan.hs) |
-| [Flower Garden](https://open.kattis.com/problems/flowergarden) | flowergarden | 3.9 | [Haskell](Kattis/flowergarden.hs) |
-| [Flowery Trails](https://open.kattis.com/problems/flowerytrails) | flowerytrails | 3.0 | [C++](Kattis/flowerytrails.cpp) |
-| [Flow Layout](https://open.kattis.com/problems/flowlayout) | flowlayout | 1.8 | [Haskell](Kattis/flowlayout.hs) |
-| [Flow Shop](https://open.kattis.com/problems/flowshop) | flowshop | 2.1 | [Haskell](Kattis/flowshop.hs) |
-| [Fluortanten](https://open.kattis.com/problems/fluortanten) | fluortanten | 3.3 | [Haskell](Kattis/fluortanten.hs) |
-| [Flygildi](https://open.kattis.com/problems/flygildi) | flygildi | 4.5 | [Haskell](Kattis/flygildi.hs) |
-| [Flying Safely](https://open.kattis.com/problems/flyingsafely) | flyingsafely | 1.6 | [Haskell](Kattis/flyingsafely.hs) |
-| [Flýtibaka](https://open.kattis.com/problems/flytibaka) | flytibaka | 1.3 | [Python](Kattis/flytibaka.py) |
-| [Birthday Memorization](https://open.kattis.com/problems/fodelsedagsmemorisering) | fodelsedagsmemorisering | 1.6 | [Haskell](Kattis/fodelsedagsmemorisering.hs) |
-| [For, against, or on the Fence](https://open.kattis.com/problems/foragainstoronthefence) | foragainstoronthefence | 2.1 | [Haskell](Kattis/foragainstoronthefence.hs) |
-| [Forced Choice](https://open.kattis.com/problems/forcedchoice) | forcedchoice | 1.4 | [Haskell](Kattis/forcedchoice.hs) |
-| [Forests](https://open.kattis.com/problems/forests) | forests | 3.2 | [Haskell](Kattis/forests.hs) |
-| [Formúlublað](https://open.kattis.com/problems/formulublad) | formulublad | 3.9 | [Haskell](Kattis/formulublad.hs) |
-| [Fouled files](https://open.kattis.com/problems/fouledfiles) | fouledfiles | 2.2 | [Haskell](Kattis/fouledfiles.hs) |
-| [Four Die Rolls](https://open.kattis.com/problems/fourdierolls) | fourdierolls | 2.5 | [Haskell](Kattis/fourdierolls.hs) |
-| [Fractional Lotion](https://open.kattis.com/problems/fractionallotion) | fractionallotion | 2.5 | [Haskell](Kattis/fractionallotion.hs) |
-| [Framvindustika](https://open.kattis.com/problems/framvindustika) | framvindustika | 3.3 | [Haskell](Kattis/framvindustika.hs) |
-| [Free Food](https://open.kattis.com/problems/freefood) | freefood | 1.5 | [Haskell](Kattis/freefood.hs) [Python](Kattis/freefood.py) |
-| [Free-Form Input](https://open.kattis.com/problems/freeforminput) | freeforminput | 2.2 | [Haskell](Kattis/freeforminput.hs) |
-| [Friday the 13th](https://open.kattis.com/problems/friday) | friday | 2.4 | [Haskell](Kattis/friday.hs) |
-| [Fridge](https://open.kattis.com/problems/fridge) | fridge | 3.8 | [Haskell](Kattis/fridge.hs) |
-| [Fridge Distraction](https://open.kattis.com/problems/fridgedistraction) | fridgedistraction | 4.0 | [Haskell](Kattis/fridgedistraction.hs) |
-| [From A to B](https://open.kattis.com/problems/fromatob) | fromatob | 2.7 | [Haskell](Kattis/fromatob.hs) |
-| [Frosh Week](https://open.kattis.com/problems/froshweek) | froshweek | 4.2 | [Python](Kattis/froshweek.py) [C++](Kattis/froshweek.cpp) |
-| [Frosh Week](https://open.kattis.com/problems/froshweek2) | froshweek2 | 1.9 | [Haskell](Kattis/froshweek2.hs) |
-| [Frozen Rose-Heads](https://open.kattis.com/problems/frozenrose) | frozenrose | 4.4 | [C++](Kattis/frozenrose.cpp) |
-| [Frumtölur](https://open.kattis.com/problems/frumtolur) | frumtolur | 1.7 | [Haskell](Kattis/frumtolur.hs) |
-| [Functional Fun](https://open.kattis.com/problems/functionalfun) | functionalfun | 2.1 | [Python](Kattis/functionalfun.py) |
-| [Fundamental Neighbors](https://open.kattis.com/problems/fundamentalneighbors) | fundamentalneighbors | 2.9 | [Haskell](Kattis/fundamentalneighbors.hs) |
-| [Fun House](https://open.kattis.com/problems/funhouse) | funhouse | 2.4 | [Haskell](Kattis/funhouse.hs) |
-| [FYI](https://open.kattis.com/problems/fyi) | fyi | 1.2 | [Python](Kattis/fyi.py) |
-| [Fyrirtækjanafn](https://open.kattis.com/problems/fyrirtaekjanafn) | fyrirtaekjanafn | 1.8 | [Haskell](Kattis/fyrirtaekjanafn.hs) |
-| [Game Rank](https://open.kattis.com/problems/gamerank) | gamerank | 3.8 | [Python](Kattis/gamerank.py) |
-| [Gandalf's Spell](https://open.kattis.com/problems/gandalfsspell) | gandalfsspell | 2.3 | [Haskell](Kattis/gandalfsspell.hs) |
-| [Gangur](https://open.kattis.com/problems/gangur) | gangur | 2.4 | [Haskell](Kattis/gangur.hs) |
-| [Garage Door Code](https://open.kattis.com/problems/garagedoorcode) | garagedoorcode | 2.8 | [Haskell](Kattis/garagedoorcode.hs) |
-| [Gatnamót](https://open.kattis.com/problems/gatnamot) | gatnamot | 3.1 | [Haskell](Kattis/gatnamot.hs) |
-| [GCD](https://open.kattis.com/problems/gcd) | gcd | 1.4 | [Haskell](Kattis/gcd.hs) |
-| [GCVWR](https://open.kattis.com/problems/gcvwr) | gcvwr | 1.4 | [Haskell](Kattis/gcvwr.hs) |
-| [Geezer Scripts](https://open.kattis.com/problems/geezerscripts) | geezerscripts | 2.7 | [C++](Kattis/geezerscripts.cpp) |
-| [Genealogical Research](https://open.kattis.com/problems/genealogical) | genealogical | 3.8 | [Haskell](Kattis/genealogical.hs) |
-| [Gene Block](https://open.kattis.com/problems/geneblock) | geneblock | 2.7 | [Haskell](Kattis/geneblock.hs) |
-| [Generalized FizzBuzz](https://open.kattis.com/problems/generalizedfizzbuzz) | generalizedfizzbuzz | 1.4 | [Haskell](Kattis/generalizedfizzbuzz.hs) |
-| [General Knight](https://open.kattis.com/problems/generalknight) | generalknight | 3.1 | [Haskell](Kattis/generalknight.hs) |
-| [Genetic Search](https://open.kattis.com/problems/geneticsearch) | geneticsearch | 2.8 | [Haskell](Kattis/geneticsearch.hs) |
-| [Genius](https://open.kattis.com/problems/genius) | genius | 3.2 | [Haskell](Kattis/genius.hs) |
-| [Georgette Me, Georgette You](https://open.kattis.com/problems/georgettemegeorgetteyou) | georgettemegeorgetteyou | 3.5 | [Haskell](Kattis/georgettemegeorgetteyou.hs) |
-| [Geppetto](https://open.kattis.com/problems/geppetto) | geppetto | 2.2 | [C++](Kattis/geppetto.cpp) |
-| [German Conference for Public Counting](https://open.kattis.com/problems/germanconferenceforpubliccounting) | germanconferenceforpubliccounting | 3.7 | [Haskell](Kattis/germanconferenceforpubliccounting.hs) |
-| [Gerrymandering](https://open.kattis.com/problems/gerrymandering) | gerrymandering | 1.6 | [Haskell](Kattis/gerrymandering.hs) |
-| [Guest List](https://open.kattis.com/problems/gestalisti) | gestalisti | 2.0 | [Haskell](Kattis/gestalisti.hs) |
-| [Get Shorty](https://open.kattis.com/problems/getshorty) | getshorty | 3.1 | [C++](Kattis/getshorty.cpp) |
-| [Getting Wood](https://open.kattis.com/problems/gettingwood) | gettingwood | 1.4 | [Haskell](Kattis/gettingwood.hs) |
-| [Get to Work](https://open.kattis.com/problems/gettowork) | gettowork | 2.7 | [C++](Kattis/gettowork.cpp) |
-| [Ghostbusters 3](https://open.kattis.com/problems/ghostbusters3) | ghostbusters3 | 4.1 | [Python](Kattis/ghostbusters3.py) [Haskell](Kattis/ghostbusters3.hs) |
-| [Ghost Leg](https://open.kattis.com/problems/ghostleg) | ghostleg | 1.5 | [Haskell](Kattis/ghostleg.hs) |
-| [Gig Combinatorics](https://open.kattis.com/problems/gigcombinatorics) | gigcombinatorics | 3.7 | [Haskell](Kattis/gigcombinatorics.hs) |
-| [Gin Fizz](https://open.kattis.com/problems/ginfizz) | ginfizz | 1.4 | [Haskell](Kattis/ginfizz.hs) |
-| [Gini Stuðull](https://open.kattis.com/problems/ginistudull) | ginistudull | 3.9 | [Haskell](Kattis/ginistudull.hs) |
-| [Giskaðu á svarið](https://open.kattis.com/problems/giskadu) | giskadu | 3.0 | [Haskell](Kattis/giskadu.hs) |
-| [Git Good](https://open.kattis.com/problems/gitgood) | gitgood | 2.0 | [Haskell](Kattis/gitgood.hs) |
-| [\texttt{git mv}](https://open.kattis.com/problems/gitmv) | gitmv | 5.0 | [Haskell](Kattis/gitmv.hs) |
-| [GlitchBot](https://open.kattis.com/problems/glitchbot) | glitchbot | 1.9 | [Haskell](Kattis/glitchbot.hs) |
-| [Glyph Recognition](https://open.kattis.com/problems/glyphrecognition) | glyphrecognition | 2.7 | [Haskell](Kattis/glyphrecognition.hs) |
-| [Gnome Sequencing](https://open.kattis.com/problems/gnomesequencing) | gnomesequencing | 1.5 | [Haskell](Kattis/gnomesequencing.hs) |
-| [Goat Rope](https://open.kattis.com/problems/goatrope) | goatrope | 1.5 | [Haskell](Kattis/goatrope.hs) |
-| [Gluttonous George](https://open.kattis.com/problems/goggi) | goggi | 1.2 | [Haskell](Kattis/goggi.hs) |
-| [Going Nuts](https://open.kattis.com/problems/goingnuts) | goingnuts | 1.4 | [Haskell](Kattis/goingnuts.hs) |
-| [Getting Gold](https://open.kattis.com/problems/gold) | gold | 2.3 | [C++](Kattis/gold.cpp) |
-| [Goldbach's Conjecture](https://open.kattis.com/problems/goldbach2) | goldbach2 | 2.0 | [Haskell](Kattis/goldbach2.hs) |
-| [Golden Landmarks](https://open.kattis.com/problems/goldenlandmarks) | goldenlandmarks | 4.3 | [Haskell](Kattis/goldenlandmarks.hs) |
-| [Golomb Rulers](https://open.kattis.com/problems/golombrulers) | golombrulers | 2.7 | [Haskell](Kattis/golombrulers.hs) |
-| [Good Coalition](https://open.kattis.com/problems/goodcoalition) | goodcoalition | 3.7 | [Haskell](Kattis/goodcoalition.hs) |
-| [Good Morning!](https://open.kattis.com/problems/goodmorning) | goodmorning | 3.0 | [Haskell](Kattis/goodmorning.hs) |
-| [Goomba Stacks](https://open.kattis.com/problems/goombastacks) | goombastacks | 1.6 | [Haskell](Kattis/goombastacks.hs) |
-| [Gopher II](https://open.kattis.com/problems/gopher2) | gopher2 | 3.3 | [C++](Kattis/gopher2.cpp) |
-| [The Gourmet](https://open.kattis.com/problems/gourmeten) | gourmeten | 1.9 | [Haskell](Kattis/gourmeten.hs) |
-| [Grading](https://open.kattis.com/problems/grading) | grading | 1.4 | [Haskell](Kattis/grading.hs) |
-| [Diggy Hole](https://open.kattis.com/problems/grafaholur) | grafaholur | 1.4 | [Haskell](Kattis/grafaholur.hs) |
-| [Grandpa Bernie](https://open.kattis.com/problems/grandpabernie) | grandpabernie | 2.5 | [C++](Kattis/grandpabernie.cpp) |
-| [Through the Grapevine](https://open.kattis.com/problems/grapevine) | grapevine | 3.3 | [C++](Kattis/grapevine.cpp) |
-| [Gregory the Grasshopper](https://open.kattis.com/problems/grasshopper) | grasshopper | 3.0 | [Haskell](Kattis/grasshopper.hs) |
-| [Grass Seed Inc.](https://open.kattis.com/problems/grassseed) | grassseed | 1.3 | [Haskell](Kattis/grassseed.hs) |
-| [Grazed Grains](https://open.kattis.com/problems/grazedgrains) | grazedgrains | 2.7 | [Haskell](Kattis/grazedgrains.hs) |
-| [Greedily Increasing Subsequence](https://open.kattis.com/problems/greedilyincreasing) | greedilyincreasing | 1.6 | [C++](Kattis/greedilyincreasing.cpp) [Haskell](Kattis/greedilyincreasing.hs) |
-| [Greedy Polygons](https://open.kattis.com/problems/greedypolygons) | greedypolygons | 1.9 | [Haskell](Kattis/greedypolygons.hs) |
-| [Greetings!](https://open.kattis.com/problems/greetings2) | greetings2 | 1.4 | [Haskell](Kattis/greetings2.hs) |
-| [Gremlins](https://open.kattis.com/problems/gremlins) | gremlins | 2.7 | [Haskell](Kattis/gremlins.hs) |
-| [Grid](https://open.kattis.com/problems/grid) | grid | 1.9 | [Haskell](Kattis/grid.hs) |
-| [Grid Magic](https://open.kattis.com/problems/gridmagic) | gridmagic | 2.7 | [Haskell](Kattis/gridmagic.hs) |
-| [Groupthink](https://open.kattis.com/problems/groupthink) | groupthink | 2.2 | [Haskell](Kattis/groupthink.hs) |
-| [Growling Gears](https://open.kattis.com/problems/growlinggears) | growlinggears | 1.8 | [Haskell](Kattis/growlinggears.hs) |
-| [Guaranteed Victory](https://open.kattis.com/problems/guaranteedvictory) | guaranteedvictory | 2.6 | [Haskell](Kattis/guaranteedvictory.hs) |
-| [Guess the Number](https://open.kattis.com/problems/guess) | guess | 3.1 | [Haskell](Kattis/guess.hs) |
-| [Guessing Game](https://open.kattis.com/problems/guessinggame) | guessinggame | 2.6 | [Haskell](Kattis/guessinggame.hs) |
-| [I Can Guess the Data Structure!](https://open.kattis.com/problems/guessthedatastructure) | guessthedatastructure | 2.1 | [C++](Kattis/guessthedatastructure.cpp) |
-| [Guess Who](https://open.kattis.com/problems/guesswho) | guesswho | 1.8 | [Haskell](Kattis/guesswho.hs) |
-| [Steam Column](https://open.kattis.com/problems/gufustrokur) | gufustrokur | 1.7 | [Haskell](Kattis/gufustrokur.hs) |
-| [Guilds](https://open.kattis.com/problems/guilds) | guilds | 4.4 | [C++](Kattis/guilds.cpp) |
-| [Guillaume](https://open.kattis.com/problems/guillaume) | guillaume | 2.2 | [Haskell](Kattis/guillaume.hs) |
-| [Gullpeningastaflar](https://open.kattis.com/problems/gullpeningastaflar) | gullpeningastaflar | 3.6 | [Haskell](Kattis/gullpeningastaflar.hs) [Python](Kattis/gullpeningastaflar.py) |
-| [Háhýsi](https://open.kattis.com/problems/hahysi) | hahysi | 3.0 | [Haskell](Kattis/hahysi.hs) |
-| [Haiku](https://open.kattis.com/problems/haiku) | haiku | 4.9 | [Haskell](Kattis/haiku.hs) |
-| [Watch Out For Those Hailstones!](https://open.kattis.com/problems/hailstone) | hailstone | 2.1 | [Haskell](Kattis/hailstone.hs) |
-| [Hailstone Sequences](https://open.kattis.com/problems/hailstone2) | hailstone2 | 1.6 | [Haskell](Kattis/hailstone2.hs) |
-| [Hair of the Dog](https://open.kattis.com/problems/hairofthedog) | hairofthedog | 1.3 | [Haskell](Kattis/hairofthedog.hs) |
-| [Hakkari](https://open.kattis.com/problems/hakkari) | hakkari | 1.4 | [Haskell](Kattis/hakkari.hs) |
-| [Half a Cookie](https://open.kattis.com/problems/halfacookie) | halfacookie | 1.7 | [Haskell](Kattis/halfacookie.hs) |
-| [Handy Beer](https://open.kattis.com/problems/handybeer) | handybeer | 3.6 | [Haskell](Kattis/handybeer.hs) |
-| [Hanging Out on the Terrace](https://open.kattis.com/problems/hangingout) | hangingout | 1.4 | [Haskell](Kattis/hangingout.hs) |
-| [Hangman](https://open.kattis.com/problems/hangman) | hangman | 1.6 | [Haskell](Kattis/hangman.hs) |
-| [Happy and Unhappy Numbers](https://open.kattis.com/problems/happyandunhappynumbers) | happyandunhappynumbers | 4.9 | [Haskell](Kattis/happyandunhappynumbers.hs) |
-| [Happy Hibernation](https://open.kattis.com/problems/happyhibernation) | happyhibernation | 2.6 | [Haskell](Kattis/happyhibernation.hs) |
-| [Happy Happy Prime Prime](https://open.kattis.com/problems/happyprime) | happyprime | 2.0 | [Haskell](Kattis/happyprime.hs) [C++](Kattis/happyprime.cpp) |
-| [Happy Trails](https://open.kattis.com/problems/happytrails) | happytrails | 1.9 | [Haskell](Kattis/happytrails.hs) |
-| [HARDFLOR](https://open.kattis.com/problems/hardflor) | hardflor | 2.2 | [Haskell](Kattis/hardflor.hs) |
-| [Hard Rocks and Atomic Clocks](https://open.kattis.com/problems/hardrocksandatomicclocks) | hardrocksandatomicclocks | 2.8 | [Haskell](Kattis/hardrocksandatomicclocks.hs) |
-| [Hardware](https://open.kattis.com/problems/hardware) | hardware | 2.1 | [Haskell](Kattis/hardware.hs) |
-| [Hardwood Species](https://open.kattis.com/problems/hardwoodspecies) | hardwoodspecies | 2.4 | [Python](Kattis/hardwoodspecies.py) |
-| [Harshad Numbers](https://open.kattis.com/problems/harshadnumbers) | harshadnumbers | 1.4 | [Haskell](Kattis/harshadnumbers.hs) |
-| [Haughty Cuisine](https://open.kattis.com/problems/haughtycuisine) | haughtycuisine | 1.7 | [Haskell](Kattis/haughtycuisine.hs) |
-| [Hay Points](https://open.kattis.com/problems/haypoints) | haypoints | 2.0 | [Haskell](Kattis/haypoints.hs) |
-| [Head Guard](https://open.kattis.com/problems/headguard) | headguard | 2.2 | [Haskell](Kattis/headguard.hs) |
-| [Binary Heap](https://open.kattis.com/problems/heap) | heap | 2.3 | [C](Kattis/heap.h) [C++](Kattis/heap.cpp) |
-| [Heart Rate](https://open.kattis.com/problems/heartrate) | heartrate | 1.5 | [Haskell](Kattis/heartrate.hs) |
-| [Height Ordering](https://open.kattis.com/problems/height) | height | 1.7 | [Haskell](Kattis/height.hs) |
-| [Heiltölusumma](https://open.kattis.com/problems/heiltolusumma) | heiltolusumma | 3.4 | [Haskell](Kattis/heiltolusumma.hs) |
-| [Web Page](https://open.kattis.com/problems/heimasida) | heimasida | 2.4 | [Haskell](Kattis/heimasida.hs) |
-| [Heimavinna](https://open.kattis.com/problems/heimavinna) | heimavinna | 1.6 | [Haskell](Kattis/heimavinna.hs) |
-| [Heimilisverk](https://open.kattis.com/problems/heimilisverk) | heimilisverk | 1.9 | [Haskell](Kattis/heimilisverk.hs) |
-| [Heir's Dilemma](https://open.kattis.com/problems/heirsdilemma) | heirsdilemma | 1.5 | [Haskell](Kattis/heirsdilemma.hs) |
-| [Heliocentric](https://open.kattis.com/problems/heliocentric) | heliocentric | 2.2 | [Haskell](Kattis/heliocentric.hs) |
-| [Hello World!](https://open.kattis.com/problems/hello) | hello | 1.1 | [Python](Kattis/hello.py) [Rust](Kattis/hello.rs) |
-| [Help a PhD candidate out!](https://open.kattis.com/problems/helpaphd) | helpaphd | 1.5 | [Python](Kattis/helpaphd.py) |
-| [Help Me With The Game](https://open.kattis.com/problems/helpme) | helpme | 2.8 | [Haskell](Kattis/helpme.hs) |
-| [Herb Mixing](https://open.kattis.com/problems/herbmixing) | herbmixing | 1.7 | [Python](Kattis/herbmixing.py) |
-| [Herman](https://open.kattis.com/problems/herman) | herman | 1.6 | [Haskell](Kattis/herman.hs) |
-| [Hermits](https://open.kattis.com/problems/hermits) | hermits | 2.8 | [Haskell](Kattis/hermits.hs) |
-| [Heroes of Velmar](https://open.kattis.com/problems/heroesofvelmar) | heroesofvelmar | 2.2 | [Haskell](Kattis/heroesofvelmar.hs) [Python](Kattis/heroesofvelmar.py) |
-| [Hexaphobic Square](https://open.kattis.com/problems/hexaphobicsquare) | hexaphobicsquare | 1.7 | [Haskell](Kattis/hexaphobicsquare.hs) |
-| [Heysáta](https://open.kattis.com/problems/heysata) | heysata | 1.3 | [Haskell](Kattis/heysata.hs) |
-| [Hidden Password](https://open.kattis.com/problems/hidden) | hidden | 2.1 | [Haskell](Kattis/hidden.hs) |
-| [Hiding Places](https://open.kattis.com/problems/hidingplaces) | hidingplaces | 1.7 | [Haskell](Kattis/hidingplaces.hs) |
-| [Highest Hill](https://open.kattis.com/problems/highesthill) | highesthill | 4.2 | [Python](Kattis/highesthill.py) |
-| [High Score](https://open.kattis.com/problems/highscore2) | highscore2 | 5.6 | [Haskell](Kattis/highscore2.hs) |
-| [Hill Climb Racing](https://open.kattis.com/problems/hillclimbracing) | hillclimbracing | 2.4 | [Haskell](Kattis/hillclimbracing.hs) |
-| [H-Index](https://open.kattis.com/problems/hindex) | hindex | 2.6 | [Haskell](Kattis/hindex.hs) |
-| [Hipp Hipp](https://open.kattis.com/problems/hipphipp) | hipphipp | 1.1 | [Haskell](Kattis/hipphipp.hs) |
-| [Hipp Hipp Húrra](https://open.kattis.com/problems/hipphipphurra) | hipphipphurra | 1.2 | [Haskell](Kattis/hipphipphurra.hs) |
-| [It's Hip to Be Square](https://open.kattis.com/problems/hiptobesquare) | hiptobesquare | 1.6 | [Haskell](Kattis/hiptobesquare.hs) |
-| [Hissing Microphone](https://open.kattis.com/problems/hissingmicrophone) | hissingmicrophone | 1.3 | [Python](Kattis/hissingmicrophone.py) |
-| [Histogram](https://open.kattis.com/problems/histogram) | histogram | 4.1 | [Haskell](Kattis/histogram.hs) |
-| [Hitastig](https://open.kattis.com/problems/hitastig) | hitastig | 1.6 | [Haskell](Kattis/hitastig.hs) |
-| [Hittast](https://open.kattis.com/problems/hittast) | hittast | 1.9 | [C++](Kattis/hittast.cpp) |
-| [Hitting the Targets](https://open.kattis.com/problems/hittingtargets) | hittingtargets | 1.6 | [Haskell](Kattis/hittingtargets.hs) |
-| [Hlaupafmæli](https://open.kattis.com/problems/hlaupafmaeli) | hlaupafmaeli | 2.9 | [Haskell](Kattis/hlaupafmaeli.hs) |
-| [Hljóðstilling](https://open.kattis.com/problems/hljodstilling) | hljodstilling | 4.4 | [Haskell](Kattis/hljodstilling.hs) |
-| [Hnappasetningaskipti](https://open.kattis.com/problems/hnappasetningaskipti) | hnappasetningaskipti | 2.1 | [Haskell](Kattis/hnappasetningaskipti.hs) |
-| [Höfundaleit](https://open.kattis.com/problems/hofundaleit) | hofundaleit | 2.6 | [Haskell](Kattis/hofundaleit.hs) |
-| [Honeycomb Walk](https://open.kattis.com/problems/honey) | honey | 2.7 | [Haskell](Kattis/honey.hs) |
-| [Hópavinna](https://open.kattis.com/problems/hopavinna) | hopavinna | 3.3 | [Haskell](Kattis/hopavinna.hs) |
-| [Hopscotch 50](https://open.kattis.com/problems/hopscotch50) | hopscotch50 | 2.6 | [Haskell](Kattis/hopscotch50.hs) |
-| [Hornrétt](https://open.kattis.com/problems/hornrett) | hornrett | 2.2 | [Haskell](Kattis/hornrett.hs) |
-| [Horror List](https://open.kattis.com/problems/horror) | horror | 2.4 | [Haskell](Kattis/horror.hs) |
-| [Höskuldarháska](https://open.kattis.com/problems/hoskuldarhaska) | hoskuldarhaska | 1.8 | [Haskell](Kattis/hoskuldarhaska.hs) |
-| [Hot Hike](https://open.kattis.com/problems/hothike) | hothike | 1.9 | [Haskell](Kattis/hothike.hs) |
-| [Howl](https://open.kattis.com/problems/howl) | howl | 2.3 | [Haskell](Kattis/howl.hs) |
-| [How Many Digits?](https://open.kattis.com/problems/howmanydigits) | howmanydigits | 3.3 | [Python](Kattis/howmanydigits.py) |
-| [Hraðgreining](https://open.kattis.com/problems/hradgreining) | hradgreining | 1.2 | [Haskell](Kattis/hradgreining.hs) |
-| [H to O](https://open.kattis.com/problems/htoo) | htoo | 2.5 | [Haskell](Kattis/htoo.hs) |
-| [Human Cannonball Run](https://open.kattis.com/problems/humancannonball) | humancannonball | 1.7 | [Haskell](Kattis/humancannonball.hs) |
-| [The Amazing Human Cannonball](https://open.kattis.com/problems/humancannonball2) | humancannonball2 | 1.5 | [Haskell](Kattis/humancannonball2.hs) |
-| [Human Pyramid](https://open.kattis.com/problems/humanpyramid) | humanpyramid | 3.0 | [Haskell](Kattis/humanpyramid.hs) |
-| [Hunt the Wumpus](https://open.kattis.com/problems/huntthewumpus) | huntthewumpus | 2.1 | [Haskell](Kattis/huntthewumpus.hs) |
-| [Hvert Skal Mæta?](https://open.kattis.com/problems/hvertskalmaeta) | hvertskalmaeta | 1.5 | [Haskell](Kattis/hvertskalmaeta.hs) |
-| [Hydra's Heads](https://open.kattis.com/problems/hydrasheads) | hydrasheads | 2.0 | [Haskell](Kattis/hydrasheads.hs) |
-| [Hydro Potential](https://open.kattis.com/problems/hydropotential) | hydropotential | 1.5 | [Haskell](Kattis/hydropotential.hs) |
-| [iBoard](https://open.kattis.com/problems/iboard) | iboard | 2.2 | [Haskell](Kattis/iboard.hs) |
-| [Ice Bucket Challenge](https://open.kattis.com/problems/icebucketchallenge) | icebucketchallenge | 7.1 | [Haskell](Kattis/icebucketchallenge.hs) |
-| [I Could Have Won](https://open.kattis.com/problems/icouldhavewon) | icouldhavewon | 3.1 | [Haskell](Kattis/icouldhavewon.hs) |
-| [ICPC Awards](https://open.kattis.com/problems/icpcawards) | icpcawards | 1.6 | [Haskell](Kattis/icpcawards.hs) |
-| [ICPC Team Selection](https://open.kattis.com/problems/icpcteamselection) | icpcteamselection | 2.2 | [Haskell](Kattis/icpcteamselection.hs) |
-| [Ignore the Garbage](https://open.kattis.com/problems/ignore) | ignore | 3.2 | [Haskell](Kattis/ignore.hs) |
-| [Illiteracy](https://open.kattis.com/problems/illiteracy) | illiteracy | 3.3 | [Haskell](Kattis/illiteracy.hs) |
-| [Illuminati Spotti](https://open.kattis.com/problems/illuminatispotti) | illuminatispotti | 2.0 | [Haskell](Kattis/illuminatispotti.hs) |
-| [Image Processing](https://open.kattis.com/problems/imageprocessing) | imageprocessing | 1.8 | [Haskell](Kattis/imageprocessing.hs) |
-| [Imperfect GPS](https://open.kattis.com/problems/imperfectgps) | imperfectgps | 4.0 | [Python](Kattis/imperfectgps.py) |
-| [Incognito](https://open.kattis.com/problems/incognito) | incognito | 2.6 | [C++](Kattis/incognito.cpp) |
-| [Increasing Subsequence](https://open.kattis.com/problems/increasingsubsequence) | increasingsubsequence | 3.2 | [Haskell](Kattis/increasingsubsequence.hs) |
-| [An Industrial Spy](https://open.kattis.com/problems/industrialspy) | industrialspy | 2.3 | [Haskell](Kattis/industrialspy.hs) |
-| [Infinite Cash](https://open.kattis.com/problems/infinitecash) | infinitecash | 6.6 | [Haskell](Kattis/infinitecash.hs) [Python](Kattis/infinitecash.py) |
-| [Inflation](https://open.kattis.com/problems/inflation) | inflation | 2.2 | [Haskell](Kattis/inflation.hs) |
-| [Inflation](https://open.kattis.com/problems/inflation2) | inflation2 | 3.1 | [Haskell](Kattis/inflation2.hs) |
-| [Inheritance](https://open.kattis.com/problems/inheritance) | inheritance | 2.9 | [Haskell](Kattis/inheritance.hs) |
-| [Innvolsarinnihaldslýsing](https://open.kattis.com/problems/innvols) | innvols | 2.0 | [Haskell](Kattis/innvols.hs) |
-| [In-place Sorting](https://open.kattis.com/problems/inplacesorting) | inplacesorting | 5.3 | [Haskell](Kattis/inplacesorting.hs) |
-| [Input Scandal](https://open.kattis.com/problems/inputscandal) | inputscandal | 1.8 | [Haskell](Kattis/inputscandal.hs) |
-| [Inquiry I](https://open.kattis.com/problems/inquiryi) | inquiryi | 2.3 | [Python](Kattis/inquiryi.py) |
-| [Tree Insertion](https://open.kattis.com/problems/insert) | insert | 2.8 | [Haskell](Kattis/insert.hs) |
-| [Integer Division](https://open.kattis.com/problems/integerdivision) | integerdivision | 3.2 | [Haskell](Kattis/integerdivision.hs) |
-| [Integer Lists](https://open.kattis.com/problems/integerlists) | integerlists | 2.5 | [Haskell](Kattis/integerlists.hs) |
-| [International Dates](https://open.kattis.com/problems/internationaldates) | internationaldates | 1.6 | [Haskell](Kattis/internationaldates.hs) |
-| [Interplanetary Tunnels](https://open.kattis.com/problems/interplanetarytunnels) | interplanetarytunnels | 2.0 | [C++](Kattis/interplanetarytunnels.cpp) |
-| [Interpreter](https://open.kattis.com/problems/interpreter) | interpreter | 3.4 | [Haskell](Kattis/interpreter.hs) |
-| [Interval Scheduling](https://open.kattis.com/problems/intervalscheduling) | intervalscheduling | 1.6 | [Haskell](Kattis/intervalscheduling.hs) |
-| [Intuitive Elements](https://open.kattis.com/problems/intuitiveelements) | intuitiveelements | 1.5 | [Haskell](Kattis/intuitiveelements.hs) |
-| [Invoker (Easy)](https://open.kattis.com/problems/invokereasy) | invokereasy | 2.3 | [Haskell](Kattis/invokereasy.hs) |
-| [Invoker (Hard)](https://open.kattis.com/problems/invokerhard) | invokerhard | 2.7 | [Haskell](Kattis/invokerhard.hs) |
-| [I Repeat Myself I Repeat Myself I Repeat](https://open.kattis.com/problems/irepeatmyself) | irepeatmyself | 2.7 | [Python](Kattis/irepeatmyself.py) |
-| [Is It Even?](https://open.kattis.com/problems/isiteven) | isiteven | 2.8 | [Haskell](Kattis/isiteven.hs) |
-| [IsItHalloween.com](https://open.kattis.com/problems/isithalloween) | isithalloween | 1.3 | [Python](Kattis/isithalloween.py) |
-| [Island Exploration](https://open.kattis.com/problems/islandexploration) | islandexploration | 3.0 | [Haskell](Kattis/islandexploration.hs) |
-| [Island Hopping](https://open.kattis.com/problems/islandhopping) | islandhopping | 2.4 | [C++](Kattis/islandhopping.cpp) |
-| [Islands](https://open.kattis.com/problems/islands3) | islands3 | 1.7 | [Haskell](Kattis/islands3.hs) |
-| [Is Y a Vowel?](https://open.kattis.com/problems/isyavowel) | isyavowel | 1.2 | [Haskell](Kattis/isyavowel.hs) |
-| [I Wanna Be The Very Best](https://open.kattis.com/problems/iwannabe) | iwannabe | 2.4 | [Haskell](Kattis/iwannabe.hs) |
-| [Jabuke](https://open.kattis.com/problems/jabuke) | jabuke | 1.6 | [Haskell](Kattis/jabuke.hs) |
-| [Jack-O'-Lantern Juxtaposition](https://open.kattis.com/problems/jackolanternjuxtaposition) | jackolanternjuxtaposition | 1.1 | [Python](Kattis/jackolanternjuxtaposition.py) |
-| [Jackpot](https://open.kattis.com/problems/jackpot) | jackpot | 3.0 | [Haskell](Kattis/jackpot.hs) |
-| [Tag](https://open.kattis.com/problems/jage) | jage | 2.3 | [C++](Kattis/jage.cpp) |
-| [Jamboree](https://open.kattis.com/problems/jamboree) | jamboree | 3.0 | [Python](Kattis/jamboree.py) [Haskell](Kattis/jamboree.hs) |
-| [Jam-packed](https://open.kattis.com/problems/jampacked) | jampacked | 5.9 | [Haskell](Kattis/jampacked.hs) |
-| [Janitor Troubles](https://open.kattis.com/problems/janitortroubles) | janitortroubles | 1.5 | [Haskell](Kattis/janitortroubles.hs) |
-| [Jazz it Up!](https://open.kattis.com/problems/jazzitup) | jazzitup | 2.1 | [Haskell](Kattis/jazzitup.hs) |
-| [Jealous Youngsters](https://open.kattis.com/problems/jealousyoungsters) | jealousyoungsters | 7.7 | [C++](Kattis/jealousyoungsters.cpp) |
-| [Jewelry Box](https://open.kattis.com/problems/jewelrybox) | jewelrybox | 1.8 | [Haskell](Kattis/jewelrybox.hs) |
-| [Jib Job](https://open.kattis.com/problems/jibjob) | jibjob | 2.8 | [Haskell](Kattis/jibjob.hs) |
-| [Job Switching](https://open.kattis.com/problems/jobbyte) | jobbyte | 2.5 | [Haskell](Kattis/jobbyte.hs) |
-| [Job Expenses](https://open.kattis.com/problems/jobexpenses) | jobexpenses | 1.5 | [Haskell](Kattis/jobexpenses.hs) |
-| [John Dillermand](https://open.kattis.com/problems/johndillermand) | johndillermand | 2.6 | [Haskell](Kattis/johndillermand.hs) |
-| [Join Strings](https://open.kattis.com/problems/joinstrings) | joinstrings | 4.2 | [C++](Kattis/joinstrings.cpp) |
-| [Joint Attack](https://open.kattis.com/problems/jointattack) | jointattack | 2.3 | [Haskell](Kattis/jointattack.hs) |
-| [Joint Jog Jam](https://open.kattis.com/problems/jointjogjam) | jointjogjam | 1.7 | [Haskell](Kattis/jointjogjam.hs) |
-| [Jolly Jumpers](https://open.kattis.com/problems/jollyjumpers) | jollyjumpers | 2.5 | [Haskell](Kattis/jollyjumpers.hs) |
-| [Joyless Game](https://open.kattis.com/problems/joylessgame) | joylessgame | 4.1 | [Haskell](Kattis/joylessgame.hs) |
-| [Judging Troubles](https://open.kattis.com/problems/judging) | judging | 2.3 | [Python](Kattis/judging.py) |
-| [Judging Moose](https://open.kattis.com/problems/judgingmoose) | judgingmoose | 1.7 | [Haskell](Kattis/judgingmoose.hs) |
-| [Jug Hard](https://open.kattis.com/problems/jughard) | jughard | 3.5 | [Haskell](Kattis/jughard.hs) |
-| [Julmust](https://open.kattis.com/problems/julmust) | julmust | 2.3 | [C++](Kattis/julmust.cpp) |
-| [Jumbled Scoreboards](https://open.kattis.com/problems/jumbledscoreboards) | jumbledscoreboards | 3.0 | [Haskell](Kattis/jumbledscoreboards.hs) |
-| [Jumbo Javelin](https://open.kattis.com/problems/jumbojavelin) | jumbojavelin | 1.2 | [C++](Kattis/jumbojavelin.cpp) [Haskell](Kattis/jumbojavelin.hs) |
-| [Jumping Yoshi](https://open.kattis.com/problems/jumpingyoshi) | jumpingyoshi | 5.9 | [Haskell](Kattis/jumpingyoshi.hs) |
-| [Jungle Game](https://open.kattis.com/problems/junglegame) | junglegame | 5.2 | [Haskell](Kattis/junglegame.hs) |
-| [Junior price robot](https://open.kattis.com/problems/juniorpricerobot) | juniorpricerobot | 3.1 | [Haskell](Kattis/juniorpricerobot.hs) |
-| [Jurassic Jigsaw](https://open.kattis.com/problems/jurassicjigsaw) | jurassicjigsaw | 2.2 | [Python](Kattis/jurassicjigsaw.py) |
-| [Jury Jeopardy](https://open.kattis.com/problems/juryjeopardy) | juryjeopardy | 2.4 | [Haskell](Kattis/juryjeopardy.hs) |
-| [Just a Minute](https://open.kattis.com/problems/justaminute) | justaminute | 2.6 | [Haskell](Kattis/justaminute.hs) |
-| [Just for Sidekicks](https://open.kattis.com/problems/justforsidekicks) | justforsidekicks | 3.4 | [C++](Kattis/justforsidekicks.cpp) |
-| [Kafkaesque](https://open.kattis.com/problems/kafkaesque) | kafkaesque | 2.0 | [Haskell](Kattis/kafkaesque.hs) |
-| [Cookies](https://open.kattis.com/problems/kakor) | kakor | 1.7 | [Java](Kattis/kakor.java) |
-| [Kaleidoscopic Palindromes](https://open.kattis.com/problems/kaleidoscopicpalindromes) | kaleidoscopicpalindromes | 2.6 | [Haskell](Kattis/kaleidoscopicpalindromes.hs) |
-| [Running Race](https://open.kattis.com/problems/kaploeb) | kaploeb | 2.9 | [Haskell](Kattis/kaploeb.hs) |
-| [Kaprekar Numbers](https://open.kattis.com/problems/kaprekarnumbers) | kaprekarnumbers | 3.2 | [Haskell](Kattis/kaprekarnumbers.hs) |
-| [Karl Coder](https://open.kattis.com/problems/karlcoder) | karlcoder | 4.4 | [Python](Kattis/karlcoder.py) |
-| [Karte](https://open.kattis.com/problems/karte) | karte | 1.5 | [Haskell](Kattis/karte.hs) |
-| [Kastenlauf](https://open.kattis.com/problems/kastenlauf) | kastenlauf | 2.9 | [Haskell](Kattis/kastenlauf.hs) |
-| [Kattis Speedrun](https://open.kattis.com/problems/kattisspeedrun) | kattisspeedrun | 3.5 | [Haskell](Kattis/kattisspeedrun.hs) |
-| [kcuD dlanoD](https://open.kattis.com/problems/kcuddlanod) | kcuddlanod | 1.8 | [Haskell](Kattis/kcuddlanod.hs) |
-| [Kemija](https://open.kattis.com/problems/kemija08) | kemija08 | 1.6 | [Haskell](Kattis/kemija08.hs) |
-| [Keyboardd](https://open.kattis.com/problems/keyboardd) | keyboardd | 2.6 | [Haskell](Kattis/keyboardd.hs) |
-| [Keylogger](https://open.kattis.com/problems/keylogger) | keylogger | 2.6 | [Haskell](Kattis/keylogger.hs) |
-| [Keys, Phone, Wallet](https://open.kattis.com/problems/keysphonewallet) | keysphonewallet | 1.4 | [Haskell](Kattis/keysphonewallet.hs) |
-| [The Key to Cryptography](https://open.kattis.com/problems/keytocrypto) | keytocrypto | 1.7 | [Haskell](Kattis/keytocrypto.hs) |
-| [Keywords](https://open.kattis.com/problems/keywords) | keywords | 1.8 | [Haskell](Kattis/keywords.hs) |
-| [Kiki Boba](https://open.kattis.com/problems/kikiboba) | kikiboba | 1.3 | [Haskell](Kattis/kikiboba.hs) |
-| [Kínahvísl](https://open.kattis.com/problems/kinahvisl) | kinahvisl | 1.4 | [C++](Kattis/kinahvisl.cpp) [Haskell](Kattis/kinahvisl.hs) |
-| [King Arthur's Round Table](https://open.kattis.com/problems/kingarthur) | kingarthur | 1.4 | [Haskell](Kattis/kingarthur.hs) |
-| [King's Decree](https://open.kattis.com/problems/kingsdecree) | kingsdecree | 3.2 | [Haskell](Kattis/kingsdecree.hs) |
-| [Kitchen Combinatorics](https://open.kattis.com/problems/kitchencombinatorics) | kitchencombinatorics | 4.7 | [Python](Kattis/kitchencombinatorics.py) |
-| [Kitten on a Tree](https://open.kattis.com/problems/kitten) | kitten | 1.6 | [Haskell](Kattis/kitten.hs) |
-| [Kitten of Chaos](https://open.kattis.com/problems/kittenofchaos) | kittenofchaos | 3.7 | [Haskell](Kattis/kittenofchaos.hs) |
-| [Kleptography](https://open.kattis.com/problems/kleptography) | kleptography | 1.7 | [Haskell](Kattis/kleptography.hs) |
-| [The Clock](https://open.kattis.com/problems/klockan2) | klockan2 | 1.9 | [Haskell](Kattis/klockan2.hs) |
-| [Klósettröð](https://open.kattis.com/problems/klosettrod) | klosettrod | 2.1 | [Haskell](Kattis/klosettrod.hs) |
-| [Knight Jump](https://open.kattis.com/problems/knightjump) | knightjump | 2.2 | [Haskell](Kattis/knightjump.hs) |
-| [Knight Packing](https://open.kattis.com/problems/knightpacking) | knightpacking | 1.3 | [Haskell](Kattis/knightpacking.hs) |
-| [Knight Search](https://open.kattis.com/problems/knightsearch) | knightsearch | 3.0 | [Haskell](Kattis/knightsearch.hs) |
-| [Knights Move](https://open.kattis.com/problems/knightsmove) | knightsmove | 3.4 | [Haskell](Kattis/knightsmove.hs) |
-| [Knight Walk](https://open.kattis.com/problems/knightwalk) | knightwalk | 2.7 | [Haskell](Kattis/knightwalk.hs) |
-| [Knitting Pattern](https://open.kattis.com/problems/knittingpattern) | knittingpattern | 3.2 | [Haskell](Kattis/knittingpattern.hs) [Python](Kattis/knittingpattern.py) |
-| [Knot Knowledge](https://open.kattis.com/problems/knotknowledge) | knotknowledge | 1.3 | [Haskell](Kattis/knotknowledge.hs) |
-| [Kolone](https://open.kattis.com/problems/kolone) | kolone | 3.2 | [Haskell](Kattis/kolone.hs) |
-| [Kornislav](https://open.kattis.com/problems/kornislav) | kornislav | 1.6 | [Haskell](Kattis/kornislav.hs) |
-| [Kratki](https://open.kattis.com/problems/kratki) | kratki | 3.5 | [Haskell](Kattis/kratki.hs) |
-| [Križaljka](https://open.kattis.com/problems/krizaljka) | krizaljka | 1.7 | [Haskell](Kattis/krizaljka.hs) |
-| [Kuggfrågan](https://open.kattis.com/problems/kuggfragan) | kuggfragan | 2.0 | [Haskell](Kattis/kuggfragan.hs) |
-| [Kutevi](https://open.kattis.com/problems/kutevi) | kutevi | 2.5 | [Haskell](Kattis/kutevi.hs) |
-| [Quack](https://open.kattis.com/problems/kvack) | kvack | 4.5 | [Haskell](Kattis/kvack.hs) |
-| [Evening Fika](https://open.kattis.com/problems/kvallsfika) | kvallsfika | 2.1 | [Haskell](Kattis/kvallsfika.hs) |
-| [Kveðja](https://open.kattis.com/problems/kvedja) | kvedja | 1.1 | [Haskell](Kattis/kvedja.hs) |
-| [Ladder](https://open.kattis.com/problems/ladder) | ladder | 1.5 | [Haskell](Kattis/ladder.hs) |
-| [Lægð yfir landinu](https://open.kattis.com/problems/laegdyfirlandinu) | laegdyfirlandinu | 1.4 | [Haskell](Kattis/laegdyfirlandinu.hs) |
-| [Lamppost Race](https://open.kattis.com/problems/lamppostrace) | lamppostrace | 1.7 | [Haskell](Kattis/lamppostrace.hs) |
-| [Lamps](https://open.kattis.com/problems/lamps) | lamps | 2.9 | [Haskell](Kattis/lamps.hs) |
-| [Landscaping](https://open.kattis.com/problems/landscaping) | landscaping | 4.1 | [C++](Kattis/landscaping.cpp) |
-| [Laptop Sticker](https://open.kattis.com/problems/laptopsticker) | laptopsticker | 1.4 | [Haskell](Kattis/laptopsticker.hs) |
-| [Laptop Stickers](https://open.kattis.com/problems/laptopstickers) | laptopstickers | 2.2 | [Haskell](Kattis/laptopstickers.hs) |
-| [Last Factorial Digit](https://open.kattis.com/problems/lastfactorialdigit) | lastfactorialdigit | 1.2 | [Java](Kattis/lastfactorialdigit.java) [Haskell](Kattis/lastfactorialdigit.hs) |
-| [Last Minute](https://open.kattis.com/problems/lastminute) | lastminute | 2.7 | [Haskell](Kattis/lastminute.hs) |
-| [Lawful Limits](https://open.kattis.com/problems/lawfullimits) | lawfullimits | 5.4 | [C++](Kattis/lawfullimits.cpp) |
-| [Lawn Mower](https://open.kattis.com/problems/lawnmower) | lawnmower | 1.9 | [Haskell](Kattis/lawnmower.hs) |
-| [Left and Right](https://open.kattis.com/problems/leftandright) | leftandright | 2.9 | [Haskell](Kattis/leftandright.hs) |
-| [Left Beehind](https://open.kattis.com/problems/leftbeehind) | leftbeehind | 1.6 | [Haskell](Kattis/leftbeehind.hs) |
-| [Leggja saman](https://open.kattis.com/problems/leggjasaman) | leggjasaman | 1.1 | [Haskell](Kattis/leggjasaman.hs) |
-| [Leiðangur](https://open.kattis.com/problems/leidangur) | leidangur | 2.2 | [Haskell](Kattis/leidangur.hs) |
-| [Lektira](https://open.kattis.com/problems/lektira) | lektira | 2.7 | [Haskell](Kattis/lektira.hs) |
-| [Less vs. Fewer](https://open.kattis.com/problems/lessvsfewer) | lessvsfewer | 2.1 | [Haskell](Kattis/lessvsfewer.hs) |
-| [Léttasta verkefnið?](https://open.kattis.com/problems/lettasta) | lettasta | 1.4 | [Haskell](Kattis/lettasta.hs) |
-| [Leyniþjónusta](https://open.kattis.com/problems/leynithjonusta) | leynithjonusta | 1.3 | [Haskell](Kattis/leynithjonusta.hs) |
-| [License to Launch](https://open.kattis.com/problems/licensetolaunch) | licensetolaunch | 1.5 | [Haskell](Kattis/licensetolaunch.hs) |
-| [Liðaskipting](https://open.kattis.com/problems/lidaskipting) | lidaskipting | 1.6 | [Haskell](Kattis/lidaskipting.hs) |
-| [Liðaskipting 2](https://open.kattis.com/problems/lidaskipting2) | lidaskipting2 | 2.5 | [Haskell](Kattis/lidaskipting2.hs) |
-| [Light Up](https://open.kattis.com/problems/lightup) | lightup | 2.5 | [Haskell](Kattis/lightup.hs) |
-| [Limbo: Part 1](https://open.kattis.com/problems/limbo1) | limbo1 | 3.6 | [Haskell](Kattis/limbo1.hs) |
-| [Linden Mayor System](https://open.kattis.com/problems/lindenmayorsystem) | lindenmayorsystem | 2.2 | [Haskell](Kattis/lindenmayorsystem.hs) |
-| [Lines Per Hour](https://open.kattis.com/problems/linesperhour) | linesperhour | 1.7 | [Haskell](Kattis/linesperhour.hs) |
-| [Line Them Up](https://open.kattis.com/problems/lineup) | lineup | 1.7 | [Haskell](Kattis/lineup.hs) |
-| [Línuhlýnun](https://open.kattis.com/problems/linuhlynun) | linuhlynun | 2.9 | [Haskell](Kattis/linuhlynun.hs) |
-| [Lipschitz Constant](https://open.kattis.com/problems/lipschitzconstant) | lipschitzconstant | 3.5 | [C++](Kattis/lipschitzconstant.cpp) |
-| [Liquid Assets](https://open.kattis.com/problems/liquidassets) | liquidassets | 3.0 | [Haskell](Kattis/liquidassets.hs) |
-| [A List Game](https://open.kattis.com/problems/listgame) | listgame | 2.4 | [C++](Kattis/listgame.cpp) |
-| [Colour Analysis](https://open.kattis.com/problems/litagreining) | litagreining | 1.7 | [Haskell](Kattis/litagreining.hs) |
-| [Ljutnja](https://open.kattis.com/problems/ljutnja) | ljutnja | 5.1 | [Haskell](Kattis/ljutnja.hs) |
-| [Locked Treasure](https://open.kattis.com/problems/lockedtreasure) | lockedtreasure | 2.2 | [Haskell](Kattis/lockedtreasure.hs) |
-| [Locust Locus](https://open.kattis.com/problems/locustlocus) | locustlocus | 1.8 | [Haskell](Kattis/locustlocus.hs) |
-| [Logic Functions](https://open.kattis.com/problems/logicfunctions) | logicfunctions | 1.6 | [C](Kattis/logicfunctions.h) [C++](Kattis/logicfunctions.cpp) |
-| [Logland](https://open.kattis.com/problems/logland) | logland | 5.7 | [Haskell](Kattis/logland.hs) |
-| [Logo](https://open.kattis.com/problems/logo) | logo | 2.1 | [Haskell](Kattis/logo.hs) |
-| [Lone Rook](https://open.kattis.com/problems/lonerook) | lonerook | 7.3 | [Haskell](Kattis/lonerook.hs) |
-| [Longest Collatz Chain](https://open.kattis.com/problems/longestcollatz) | longestcollatz | 2.4 | [Haskell](Kattis/longestcollatz.hs) |
-| [Longest Prime Sum](https://open.kattis.com/problems/longestprimesum) | longestprimesum | 2.3 | [Haskell](Kattis/longestprimesum.hs) |
-| [Loo Rolls](https://open.kattis.com/problems/loorolls) | loorolls | 2.5 | [Haskell](Kattis/loorolls.hs) |
-| [The Dragon of Loowater](https://open.kattis.com/problems/loowater) | loowater | 2.2 | [Haskell](Kattis/loowater.hs) |
-| [Lopsided Lineup](https://open.kattis.com/problems/lopsidedlineup) | lopsidedlineup | 3.0 | [Haskell](Kattis/lopsidedlineup.hs) |
-| [Lost Lineup](https://open.kattis.com/problems/lostlineup) | lostlineup | 1.7 | [Haskell](Kattis/lostlineup.hs) |
-| [Lost Map](https://open.kattis.com/problems/lostmap) | lostmap | 1.8 | [C++](Kattis/lostmap.cpp) |
-| [Low Power](https://open.kattis.com/problems/low) | low | 5.3 | [Python](Kattis/low.py) [Haskell](Kattis/low.hs) |
-| [Lubbi Lærir](https://open.kattis.com/problems/lubbilaerir) | lubbilaerir | 1.1 | [Haskell](Kattis/lubbilaerir.hs) |
-| [Lucky Draw](https://open.kattis.com/problems/luckydraw) | luckydraw | 4.2 | [Haskell](Kattis/luckydraw.hs) |
-| [Luhn's Checksum Algorithm](https://open.kattis.com/problems/luhnchecksum) | luhnchecksum | 1.7 | [Haskell](Kattis/luhnchecksum.hs) |
-| ["lv"-able](https://open.kattis.com/problems/lvable) | lvable | 2.1 | [Haskell](Kattis/lvable.hs) |
-| [Mæting](https://open.kattis.com/problems/maeting) | maeting | 1.4 | [Haskell](Kattis/maeting.hs) |
-| [Mætingarlisti](https://open.kattis.com/problems/maetingarlisti) | maetingarlisti | 1.5 | [Haskell](Kattis/maetingarlisti.hs) |
-| [Magical Runes](https://open.kattis.com/problems/magicalrunes) | magicalrunes | 3.3 | [Haskell](Kattis/magicalrunes.hs) [C++](Kattis/magicalrunes.cpp) |
-| [Magic Trick](https://open.kattis.com/problems/magictrick) | magictrick | 1.4 | [Haskell](Kattis/magictrick.hs) |
-| [Majór Skýrsla](https://open.kattis.com/problems/majorskyrsla) | majorskyrsla | 3.5 | [Haskell](Kattis/majorskyrsla.hs) |
-| [Majstor](https://open.kattis.com/problems/majstor) | majstor | 2.3 | [Haskell](Kattis/majstor.hs) |
-| [Making A Meowth](https://open.kattis.com/problems/makingameowth) | makingameowth | 2.1 | [Haskell](Kattis/makingameowth.hs) |
-| [Veggurinn, seinni hluti](https://open.kattis.com/problems/malari) | malari | 3.7 | [Haskell](Kattis/malari.hs) |
-| [Mancala](https://open.kattis.com/problems/mancala) | mancala | 2.1 | [Haskell](Kattis/mancala.hs) |
-| [Mandelbrot](https://open.kattis.com/problems/mandelbrot) | mandelbrot | 2.7 | [Haskell](Kattis/mandelbrot.hs) |
-| [Identifying Map Tiles](https://open.kattis.com/problems/maptiles2) | maptiles2 | 1.6 | [Haskell](Kattis/maptiles2.hs) |
-| [Marathon](https://open.kattis.com/problems/marathon3) | marathon3 | 2.6 | [Haskell](Kattis/marathon3.hs) |
-| [Marbles On A Tree](https://open.kattis.com/problems/marblestree) | marblestree | 3.1 | [Haskell](Kattis/marblestree.hs) |
-| [Marko](https://open.kattis.com/problems/marko) | marko | 1.8 | [Haskell](Kattis/marko.hs) |
-| [Mars Window](https://open.kattis.com/problems/marswindow) | marswindow | 2.3 | [Haskell](Kattis/marswindow.hs) |
-| [Massive Card Game](https://open.kattis.com/problems/massivecardgame) | massivecardgame | 2.9 | [Haskell](Kattis/massivecardgame.hs) |
-| [Mastering Mastermind](https://open.kattis.com/problems/mastermind) | mastermind | 2.0 | [Haskell](Kattis/mastermind.hs) |
-| [Mate in One](https://open.kattis.com/problems/mateinone) | mateinone | 8.2 | [Haskell](Kattis/mateinone.hs) |
-| [Math Homework](https://open.kattis.com/problems/mathhomework) | mathhomework | 2.1 | [Haskell](Kattis/mathhomework.hs) |
-| [Matrix Inverse](https://open.kattis.com/problems/matrix) | matrix | 2.9 | [Haskell](Kattis/matrix.hs) |
-| [Maximum Number of Colinear Points](https://open.kattis.com/problems/maxcolinear) | maxcolinear | 3.0 | [Haskell](Kattis/maxcolinear.hs) |
-| [Maximum Choice](https://open.kattis.com/problems/maximumchoice) | maximumchoice | 3.7 | [Haskell](Kattis/maximumchoice.hs) |
-| [Maze Movement](https://open.kattis.com/problems/mazemovement) | mazemovement | 3.1 | [C++](Kattis/mazemovement.cpp) |
-| [M-Climb](https://open.kattis.com/problems/mclimb) | mclimb | 1.3 | [Haskell](Kattis/mclimb.hs) |
-| [Mean Words](https://open.kattis.com/problems/meanwords) | meanwords | 1.7 | [Haskell](Kattis/meanwords.hs) |
-| [Imperial Measurement](https://open.kattis.com/problems/measurement) | measurement | 2.6 | [Haskell](Kattis/measurement.hs) |
-| [Message](https://open.kattis.com/problems/meddelande) | meddelande | 1.9 | [Haskell](Kattis/meddelande.hs) |
-| [Melting Snow](https://open.kattis.com/problems/meltingsnow) | meltingsnow | 1.7 | [Haskell](Kattis/meltingsnow.hs) |
-| [Memory Game](https://open.kattis.com/problems/memorygame) | memorygame | 6.3 | [Haskell](Kattis/memorygame.hs) |
-| [Mergjað Mál](https://open.kattis.com/problems/mergjadmal) | mergjadmal | 1.6 | [Haskell](Kattis/mergjadmal.hs) |
-| [Metaprogramming](https://open.kattis.com/problems/metaprogramming) | metaprogramming | 2.0 | [Haskell](Kattis/metaprogramming.hs) |
-| [Methodic Multiplication](https://open.kattis.com/problems/methodicmultiplication) | methodicmultiplication | 1.6 | [Haskell](Kattis/methodicmultiplication.hs) |
-| [Metronome](https://open.kattis.com/problems/metronome) | metronome | 1.1 | [Python](Kattis/metronome.py) |
-| [Mia](https://open.kattis.com/problems/mia) | mia | 2.1 | [Haskell](Kattis/mia.hs) |
-| [Miði](https://open.kattis.com/problems/midi) | midi | 2.1 | [Haskell](Kattis/midi.hs) |
-| [Miðjan](https://open.kattis.com/problems/midjan) | midjan | 3.1 | [Haskell](Kattis/midjan.hs) |
-| [Milk Mystery](https://open.kattis.com/problems/milkmystery) | milkmystery | 1.8 | [Haskell](Kattis/milkmystery.hs) |
-| [Millifærsla](https://open.kattis.com/problems/millifaersla) | millifaersla | 1.1 | [Haskell](Kattis/millifaersla.hs) |
-| [Minimum Cut](https://open.kattis.com/problems/mincut) | mincut | 3.1 | [C++](Kattis/mincut.cpp) |
-| [Mines Football](https://open.kattis.com/problems/minesfootball) | minesfootball | 2.2 | [Haskell](Kattis/minesfootball.hs) |
-| [Mines Meal Plans](https://open.kattis.com/problems/minesmealplans) | minesmealplans | 2.7 | [Haskell](Kattis/minesmealplans.hs) |
-| [Minesweeper](https://open.kattis.com/problems/minesweeper) | minesweeper | 1.5 | [Haskell](Kattis/minesweeper.hs) |
-| [Minimum Scalar Product](https://open.kattis.com/problems/minimumscalar) | minimumscalar | 1.7 | [Haskell](Kattis/minimumscalar.hs) |
-| [Minimum Spanning Tree](https://open.kattis.com/problems/minspantree) | minspantree | 3.1 | [Haskell](Kattis/minspantree.hs) |
-| [Mirror Images](https://open.kattis.com/problems/mirror) | mirror | 1.9 | [Haskell](Kattis/mirror.hs) |
-| [Misa](https://open.kattis.com/problems/misa) | misa | 2.1 | [Python](Kattis/misa.py) |
-| [Mischievous Math](https://open.kattis.com/problems/mischievousmath) | mischievousmath | 5.0 | [Haskell](Kattis/mischievousmath.hs) |
-| [Missing Numbers](https://open.kattis.com/problems/missingnumbers) | missingnumbers | 1.8 | [C++](Kattis/missingnumbers.cpp) |
-| [Mixed Fractions](https://open.kattis.com/problems/mixedfractions) | mixedfractions | 1.5 | [Haskell](Kattis/mixedfractions.hs) |
-| [Mjehuric](https://open.kattis.com/problems/mjehuric) | mjehuric | 1.7 | [Haskell](Kattis/mjehuric.hs) |
-| [Moderate Pace](https://open.kattis.com/problems/moderatepace) | moderatepace | 1.5 | [Haskell](Kattis/moderatepace.hs) |
-| [Modular Arithmetic](https://open.kattis.com/problems/modulararithmetic) | modulararithmetic | 2.7 | [Haskell](Kattis/modulararithmetic.hs) |
-| [Modulo](https://open.kattis.com/problems/modulo) | modulo | 1.5 | [Haskell](Kattis/modulo.hs) |
-| [Modulo Solitaire](https://open.kattis.com/problems/modulosolitaire) | modulosolitaire | 3.0 | [Haskell](Kattis/modulosolitaire.hs) |
-| [Molecules](https://open.kattis.com/problems/molecules) | molecules | 3.8 | [Haskell](Kattis/molecules.hs) |
-| [Mona, Mona, Mona](https://open.kattis.com/problems/monamonamona) | monamonamona | 1.6 | [Haskell](Kattis/monamonamona.hs) |
-| [Money Matters](https://open.kattis.com/problems/moneymatters) | moneymatters | 2.3 | [C++](Kattis/moneymatters.cpp) |
-| [Monopoly](https://open.kattis.com/problems/monopol) | monopol | 1.3 | [Haskell](Kattis/monopol.hs) |
-| [Monster Hunter](https://open.kattis.com/problems/monsterhunter2) | monsterhunter2 | 5.3 | [Haskell](Kattis/monsterhunter2.hs) |
-| [More or Less](https://open.kattis.com/problems/moreorless) | moreorless | 2.1 | [Haskell](Kattis/moreorless.hs) |
-| [Mörk](https://open.kattis.com/problems/mork) | mork | 1.8 | [Haskell](Kattis/mork.hs) |
-| [Moscow Dream](https://open.kattis.com/problems/moscowdream) | moscowdream | 1.8 | [Haskell](Kattis/moscowdream.hs) |
-| [Mosquito Multiplication](https://open.kattis.com/problems/mosquito) | mosquito | 1.9 | [Haskell](Kattis/mosquito.hs) |
-| [Mountainpeeker](https://open.kattis.com/problems/mountainpeeker) | mountainpeeker | 3.6 | [Haskell](Kattis/mountainpeeker.hs) |
-| [Mountain Range](https://open.kattis.com/problems/mountainrange) | mountainrange | 4.8 | [Haskell](Kattis/mountainrange.hs) |
-| [Mouse Pursuit](https://open.kattis.com/problems/mousepursuit) | mousepursuit | 2.1 | [Haskell](Kattis/mousepursuit.hs) |
-| [Moving Day](https://open.kattis.com/problems/movingday) | movingday | 2.0 | [Haskell](Kattis/movingday.hs) |
-| [Mravi](https://open.kattis.com/problems/mravi) | mravi | 2.8 | [Haskell](Kattis/mravi.hs) |
-| [MrCodeFormatGrader](https://open.kattis.com/problems/mrcodeformatgrader) | mrcodeformatgrader | 2.0 | [Haskell](Kattis/mrcodeformatgrader.hs) |
-| [Muddy Hike](https://open.kattis.com/problems/muddyhike) | muddyhike | 4.0 | [Haskell](Kattis/muddyhike.hs) |
-| [Mult!](https://open.kattis.com/problems/mult) | mult | 1.9 | [Haskell](Kattis/mult.hs) |
-| [Multigram](https://open.kattis.com/problems/multigram) | multigram | 2.5 | [Haskell](Kattis/multigram.hs) |
-| [Multiplication](https://open.kattis.com/problems/multiplications) | multiplications | 2.1 | [Haskell](Kattis/multiplications.hs) |
-| [Mumble Rap](https://open.kattis.com/problems/mumblerap) | mumblerap | 1.5 | [Haskell](Kattis/mumblerap.hs) |
-| [Musical Chairs](https://open.kattis.com/problems/musicalchairs) | musicalchairs | 2.9 | [C++](Kattis/musicalchairs.cpp) |
-| [Musical Notation](https://open.kattis.com/problems/musicalnotation) | musicalnotation | 2.1 | [Haskell](Kattis/musicalnotation.hs) |
-| [Musical Scales](https://open.kattis.com/problems/musicalscales) | musicalscales | 1.7 | [Haskell](Kattis/musicalscales.hs) |
-| [Music Your Way](https://open.kattis.com/problems/musicyourway) | musicyourway | 1.9 | [Haskell](Kattis/musicyourway.hs) |
-| [Fullkomin mylla](https://open.kattis.com/problems/mylla) | mylla | 1.6 | [Haskell](Kattis/mylla.hs) |
-| [Mylla](https://open.kattis.com/problems/mylla2) | mylla2 | 1.5 | [Haskell](Kattis/mylla2.hs) |
-| [Nafnagift](https://open.kattis.com/problems/nafnagift) | nafnagift | 2.0 | [Haskell](Kattis/nafnagift.hs) |
-| [Nafnatalning](https://open.kattis.com/problems/nafnatalning) | nafnatalning | 3.1 | [Haskell](Kattis/nafnatalning.hs) |
-| [File Extension](https://open.kattis.com/problems/nafnauki) | nafnauki | 1.4 | [Haskell](Kattis/nafnauki.hs) |
-| [Naïve Convolution](https://open.kattis.com/problems/naiveconvolution) | naiveconvolution | 3.3 | [Haskell](Kattis/naiveconvolution.hs) |
-| [Name Generation](https://open.kattis.com/problems/namegeneration) | namegeneration | 2.8 | [Haskell](Kattis/namegeneration.hs) |
-| [Namnsdag](https://open.kattis.com/problems/namnsdag) | namnsdag | 1.6 | [Haskell](Kattis/namnsdag.hs) |
-| [Námsleið](https://open.kattis.com/problems/namsleid) | namsleid | 2.0 | [Haskell](Kattis/namsleid.hs) |
-| [Narrow Art Gallery](https://open.kattis.com/problems/narrowartgallery) | narrowartgallery | 3.3 | [Haskell](Kattis/narrowartgallery.hs) [Python](Kattis/narrowartgallery.py) |
-| [Nasty Hacks](https://open.kattis.com/problems/nastyhacks) | nastyhacks | 1.6 | [Haskell](Kattis/nastyhacks.hs) |
-| [Natjecanje](https://open.kattis.com/problems/natjecanje) | natjecanje | 1.9 | [Haskell](Kattis/natjecanje.hs) |
-| [Natrij](https://open.kattis.com/problems/natrij) | natrij | 2.8 | [Haskell](Kattis/natrij.hs) |
-| [Nered](https://open.kattis.com/problems/nered) | nered | 3.6 | [Java](Kattis/nered.java) |
-| [Nested Shapes](https://open.kattis.com/problems/nestedshapes) | nestedshapes | 3.8 | [Haskell](Kattis/nestedshapes.hs) |
-| [Networking](https://open.kattis.com/problems/networking) | networking | 2.9 | [Haskell](Kattis/networking.hs) |
-| [Nicknames](https://open.kattis.com/problems/nicknames) | nicknames | 2.4 | [Haskell](Kattis/nicknames.hs) |
-| [Nikola](https://open.kattis.com/problems/nikola) | nikola | 3.2 | [Haskell](Kattis/nikola.hs) |
-| [Nimionese](https://open.kattis.com/problems/nimionese) | nimionese | 2.3 | [Haskell](Kattis/nimionese.hs) |
-| [I Hate The Number Nine](https://open.kattis.com/problems/nine) | nine | 2.7 | [Haskell](Kattis/nine.hs) |
-| [Nine Knights](https://open.kattis.com/problems/nineknights) | nineknights | 2.1 | [Haskell](Kattis/nineknights.hs) |
-| [Ninety-nine](https://open.kattis.com/problems/ninetynine) | ninetynine | 3.1 | [Haskell](Kattis/ninetynine.hs) |
-| [Nizovi](https://open.kattis.com/problems/nizovi) | nizovi | 3.1 | [Haskell](Kattis/nizovi.hs) |
-| [No Duplicates](https://open.kattis.com/problems/nodup) | nodup | 1.7 | [Haskell](Kattis/nodup.hs) |
-| [Noonerized Spumbers](https://open.kattis.com/problems/noonerizedspumbers) | noonerizedspumbers | 2.6 | [Haskell](Kattis/noonerizedspumbers.hs) |
-| [NOP](https://open.kattis.com/problems/nop) | nop | 2.0 | [Haskell](Kattis/nop.hs) |
-| [Not Amused](https://open.kattis.com/problems/notamused) | notamused | 2.4 | [Haskell](Kattis/notamused.hs) |
-| [No Thanks!](https://open.kattis.com/problems/nothanks) | nothanks | 1.8 | [Haskell](Kattis/nothanks.hs) |
-| [N-Puzzle](https://open.kattis.com/problems/npuzzle) | npuzzle | 1.7 | [Haskell](Kattis/npuzzle.hs) |
-| [N-sum](https://open.kattis.com/problems/nsum) | nsum | 1.2 | [Haskell](Kattis/nsum.hs) |
-| [Determining Nucleotide Assortments](https://open.kattis.com/problems/nucleotides) | nucleotides | 3.3 | [Haskell](Kattis/nucleotides.hs) |
-| [Number Fun](https://open.kattis.com/problems/numberfun) | numberfun | 1.4 | [Python](Kattis/numberfun.py) |
-| [Number Reduction](https://open.kattis.com/problems/numberreduction) | numberreduction | 1.5 | [Haskell](Kattis/numberreduction.hs) |
-| [Number Squistem](https://open.kattis.com/problems/numbersquistem) | numbersquistem | 3.0 | [Python](Kattis/numbersquistem.py) |
-| [Numbers On a Tree](https://open.kattis.com/problems/numbertree) | numbertree | 2.8 | [Haskell](Kattis/numbertree.hs) |
-| [Odd Gnome](https://open.kattis.com/problems/oddgnome) | oddgnome | 1.6 | [Haskell](Kattis/oddgnome.hs) |
-| [Oddities](https://open.kattis.com/problems/oddities) | oddities | 1.5 | [Python](Kattis/oddities.py) |
-| [Odd Man Out](https://open.kattis.com/problems/oddmanout) | oddmanout | 1.7 | [Haskell](Kattis/oddmanout.hs) |
-| [Odds of Mia](https://open.kattis.com/problems/odds) | odds | 2.4 | [Haskell](Kattis/odds.hs) |
-| [Office Building](https://open.kattis.com/problems/officebuilding) | officebuilding | 3.1 | [Haskell](Kattis/officebuilding.hs) |
-| [Off-World Records](https://open.kattis.com/problems/offworldrecords) | offworldrecords | 1.5 | [Haskell](Kattis/offworldrecords.hs) |
-| [of in the cold food of out hot eat the food](https://open.kattis.com/problems/ofinthecoldfoodofouthoteatthefood) | ofinthecoldfoodofouthoteatthefood | 3.5 | [Haskell](Kattis/ofinthecoldfoodofouthoteatthefood.hs) |
-| [Öfugsnúið](https://open.kattis.com/problems/ofugsnuid) | ofugsnuid | 1.2 | [Python](Kattis/ofugsnuid.py) |
-| [Oktalni](https://open.kattis.com/problems/oktalni) | oktalni | 1.7 | [Haskell](Kattis/oktalni.hs) |
-| [Okvir](https://open.kattis.com/problems/okvir) | okvir | 2.1 | [Haskell](Kattis/okvir.hs) |
-| [Okviri](https://open.kattis.com/problems/okviri) | okviri | 2.3 | [Haskell](Kattis/okviri.hs) |
-| [Older Brother](https://open.kattis.com/problems/olderbrother) | olderbrother | 2.9 | [Haskell](Kattis/olderbrother.hs) |
-| [On Average They're Purple](https://open.kattis.com/problems/onaveragetheyrepurple) | onaveragetheyrepurple | 4.2 | [Haskell](Kattis/onaveragetheyrepurple.hs) |
-| [One Chicken Per Person!](https://open.kattis.com/problems/onechicken) | onechicken | 1.6 | [Haskell](Kattis/onechicken.hs) |
-| [Oooh I See](https://open.kattis.com/problems/ooohisee) | ooohisee | 1.5 | [Haskell](Kattis/ooohisee.hs) |
-| [Uh-Oh, It Is Nighttime!](https://open.kattis.com/problems/oothaderkominnott) | oothaderkominnott | 1.8 | [Haskell](Kattis/oothaderkominnott.hs) |
-| [Ordered Problem Set](https://open.kattis.com/problems/orderedproblemset) | orderedproblemset | 2.1 | [Haskell](Kattis/orderedproblemset.hs) |
-| [Orderly Class](https://open.kattis.com/problems/orderlyclass) | orderlyclass | 3.8 | [Haskell](Kattis/orderlyclass.hs) |
-| [Ordinals](https://open.kattis.com/problems/ordinals) | ordinals | 1.9 | [Haskell](Kattis/ordinals.hs) |
-| [Órökrétt](https://open.kattis.com/problems/orokrett) | orokrett | 4.0 | [Haskell](Kattis/orokrett.hs) |
-| [Östgötska](https://open.kattis.com/problems/ostgotska) | ostgotska | 2.1 | [Haskell](Kattis/ostgotska.hs) |
-| [Other Side](https://open.kattis.com/problems/otherside) | otherside | 5.2 | [Haskell](Kattis/otherside.hs) |
-| [Out of Sorts](https://open.kattis.com/problems/outofsorts) | outofsorts | 2.2 | [Haskell](Kattis/outofsorts.hs) |
-| [OvalWatch](https://open.kattis.com/problems/ovalwatch) | ovalwatch | 2.7 | [Haskell](Kattis/ovalwatch.hs) |
-| [Overdraft](https://open.kattis.com/problems/overdraft) | overdraft | 2.0 | [Haskell](Kattis/overdraft.hs) |
-| [Overnight Oats](https://open.kattis.com/problems/overnightoats) | overnightoats | 2.3 | [Haskell](Kattis/overnightoats.hs) |
-| [Over the Hill, Part 1](https://open.kattis.com/problems/overthehill1) | overthehill1 | 2.5 | [Haskell](Kattis/overthehill1.hs) |
-| [Óvissa](https://open.kattis.com/problems/ovissa) | ovissa | 1.1 | [Haskell](Kattis/ovissa.hs) |
-| [The Owl and the Fox](https://open.kattis.com/problems/owlandfox) | owlandfox | 1.8 | [Haskell](Kattis/owlandfox.hs) |
-| [Pachyderm Peanut Packing](https://open.kattis.com/problems/pachydermpeanutpacking) | pachydermpeanutpacking | 2.9 | [Haskell](Kattis/pachydermpeanutpacking.hs) |
-| [Paintings](https://open.kattis.com/problems/paintings) | paintings | 3.1 | [Haskell](Kattis/paintings.hs) |
-| [Pairing Socks](https://open.kattis.com/problems/pairingsocks) | pairingsocks | 2.1 | [Haskell](Kattis/pairingsocks.hs) |
-| [Packagemanager](https://open.kattis.com/problems/pakethanterare) | pakethanterare | 1.9 | [Haskell](Kattis/pakethanterare.hs) |
-| [Pallatölur](https://open.kattis.com/problems/pallatolur) | pallatolur | 1.7 | [Haskell](Kattis/pallatolur.hs) |
-| [Paper Pile Pandemonium](https://open.kattis.com/problems/paperpilepandemonium) | paperpilepandemonium | 1.7 | [Haskell](Kattis/paperpilepandemonium.hs) |
-| [Parent Gap](https://open.kattis.com/problems/parentgap) | parentgap | 2.5 | [Python](Kattis/parentgap.py) |
-| [Parents](https://open.kattis.com/problems/parents) | parents | 3.1 | [Haskell](Kattis/parents.hs) |
-| [Parket](https://open.kattis.com/problems/parket) | parket | 2.1 | [Haskell](Kattis/parket.hs) |
-| [Parking](https://open.kattis.com/problems/parking) | parking | 1.8 | [Haskell](Kattis/parking.hs) |
-| [Parking](https://open.kattis.com/problems/parking2) | parking2 | 1.7 | [Haskell](Kattis/parking2.hs) |
-| [Parsing Hex](https://open.kattis.com/problems/parsinghex) | parsinghex | 2.5 | [Haskell](Kattis/parsinghex.hs) |
-| [Partial Transmission](https://open.kattis.com/problems/partialtransmission) | partialtransmission | 2.4 | [Haskell](Kattis/partialtransmission.hs) |
-| [Pascal](https://open.kattis.com/problems/pascal) | pascal | 3.8 | [C++](Kattis/pascal.cpp) |
-| [Pascal Multiple](https://open.kattis.com/problems/pascalmultiple) | pascalmultiple | 2.8 | [Haskell](Kattis/pascalmultiple.hs) |
-| [Password Hacking](https://open.kattis.com/problems/password) | password | 1.9 | [Haskell](Kattis/password.hs) |
-| [Patchwork](https://open.kattis.com/problems/patchwork) | patchwork | 2.0 | [Haskell](Kattis/patchwork.hs) |
-| [Path Crossings](https://open.kattis.com/problems/pathcrossings) | pathcrossings | 3.1 | [C++](Kattis/pathcrossings.cpp) |
-| [Paths](https://open.kattis.com/problems/paths) | paths | 4.4 | [C++](Kattis/paths.cpp) [Python](Kattis/paths.py) |
-| [Path Tracing](https://open.kattis.com/problems/pathtracing) | pathtracing | 3.3 | [Haskell](Kattis/pathtracing.hs) |
-| [Patuljci](https://open.kattis.com/problems/patuljci) | patuljci | 1.7 | [Haskell](Kattis/patuljci.hs) |
-| [Paul Eigon](https://open.kattis.com/problems/pauleigon) | pauleigon | 1.7 | [Haskell](Kattis/pauleigon.hs) |
-| [Pawn Shop](https://open.kattis.com/problems/pawnshop) | pawnshop | 3.5 | [Haskell](Kattis/pawnshop.hs) |
-| [Peach Powder Polygon](https://open.kattis.com/problems/peachpowderpolygon) | peachpowderpolygon | 1.9 | [Haskell](Kattis/peachpowderpolygon.hs) |
-| [Pea Soup and Pancakes](https://open.kattis.com/problems/peasoup) | peasoup | 1.6 | [Haskell](Kattis/peasoup.hs) |
-| [Pebble Solitaire](https://open.kattis.com/problems/pebblesolitaire) | pebblesolitaire | 2.1 | [C++](Kattis/pebblesolitaire.cpp) |
-| [Pebble Solitaire](https://open.kattis.com/problems/pebblesolitaire2) | pebblesolitaire2 | 2.5 | [C++](Kattis/pebblesolitaire2.cpp) |
-| [Peg](https://open.kattis.com/problems/peg) | peg | 1.9 | [Haskell](Kattis/peg.hs) |
-| [Pencil Crayons](https://open.kattis.com/problems/pencilcrayons) | pencilcrayons | 1.5 | [Haskell](Kattis/pencilcrayons.hs) |
-| [Peningar](https://open.kattis.com/problems/peningar) | peningar | 2.2 | [Haskell](Kattis/peningar.hs) |
-| [Peragrams](https://open.kattis.com/problems/peragrams) | peragrams | 1.7 | [Haskell](Kattis/peragrams.hs) |
-| [Periodic Strings](https://open.kattis.com/problems/periodicstrings) | periodicstrings | 2.2 | [Haskell](Kattis/periodicstrings.hs) |
-| [Perket](https://open.kattis.com/problems/perket) | perket | 2.0 | [Haskell](Kattis/perket.hs) |
-| [Permutation Descent Counts](https://open.kattis.com/problems/permutationdescent) | permutationdescent | 2.0 | [Haskell](Kattis/permutationdescent.hs) |
-| [Permutation Encryption](https://open.kattis.com/problems/permutationencryption) | permutationencryption | 2.2 | [Haskell](Kattis/permutationencryption.hs) |
-| [Permuted Arithmetic Sequence](https://open.kattis.com/problems/permutedarithmeticsequence) | permutedarithmeticsequence | 1.9 | [Haskell](Kattis/permutedarithmeticsequence.hs) |
-| [Pervasive Heart Monitor](https://open.kattis.com/problems/pervasiveheartmonitor) | pervasiveheartmonitor | 1.7 | [Haskell](Kattis/pervasiveheartmonitor.hs) |
-| [Pet](https://open.kattis.com/problems/pet) | pet | 1.3 | [Haskell](Kattis/pet.hs) |
-| [Phone Book](https://open.kattis.com/problems/phonebook) | phonebook | 1.5 | [Haskell](Kattis/phonebook.hs) |
-| [Phone List](https://open.kattis.com/problems/phonelist) | phonelist | 3.1 | [Haskell](Kattis/phonelist.hs) |
-| [Pick up sticks](https://open.kattis.com/problems/pickupsticks) | pickupsticks | 3.1 | [C++](Kattis/pickupsticks.cpp) |
-| [Pie](https://open.kattis.com/problems/pie) | pie | 3.0 | [Haskell](Kattis/pie.hs) |
-| [Piece of Cake!](https://open.kattis.com/problems/pieceofcake2) | pieceofcake2 | 1.4 | [Haskell](Kattis/pieceofcake2.hs) |
-| [Pig Latin](https://open.kattis.com/problems/piglatin) | piglatin | 2.6 | [Haskell](Kattis/piglatin.hs) |
-| [A Vicious Pikeman (Easy)](https://open.kattis.com/problems/pikemaneasy) | pikemaneasy | 2.9 | [Haskell](Kattis/pikemaneasy.hs) |
-| [Darts Scoring](https://open.kattis.com/problems/pilustig) | pilustig | 3.5 | [Haskell](Kattis/pilustig.hs) |
-| [Ping Pong Tournament](https://open.kattis.com/problems/pingis) | pingis | 3.8 | [Haskell](Kattis/pingis.hs) |
-| [Pinni Frændi](https://open.kattis.com/problems/pinnifraendi) | pinnifraendi | 2.2 | [Haskell](Kattis/pinnifraendi.hs) |
-| [Pivot](https://open.kattis.com/problems/pivot) | pivot | 2.3 | [Haskell](Kattis/pivot.hs) |
-| [Pizza Crust](https://open.kattis.com/problems/pizza2) | pizza2 | 1.9 | [Haskell](Kattis/pizza2.hs) |
-| [Pizza Hawaii](https://open.kattis.com/problems/pizzahawaii) | pizzahawaii | 2.5 | [Haskell](Kattis/pizzahawaii.hs) |
-| [Pizzastrengur](https://open.kattis.com/problems/pizzastrengur) | pizzastrengur | 3.5 | [Python](Kattis/pizzastrengur.py) [Haskell](Kattis/pizzastrengur.hs) |
-| [Pizzubestun](https://open.kattis.com/problems/pizzubestun) | pizzubestun | 2.2 | [Haskell](Kattis/pizzubestun.hs) |
-| [Planetaris](https://open.kattis.com/problems/planetaris) | planetaris | 2.0 | [Haskell](Kattis/planetaris.hs) |
-| [Planet Hopping](https://open.kattis.com/problems/planethopping) | planethopping | 4.3 | [Haskell](Kattis/planethopping.hs) |
-| [Planets](https://open.kattis.com/problems/planets2) | planets2 | 2.7 | [Haskell](Kattis/planets2.hs) |
-| [Planina](https://open.kattis.com/problems/planina) | planina | 1.4 | [Haskell](Kattis/planina.hs) |
-| [Planting Trees](https://open.kattis.com/problems/plantingtrees) | plantingtrees | 1.7 | [Haskell](Kattis/plantingtrees.hs) |
-| [Platforme](https://open.kattis.com/problems/platforme) | platforme | 2.8 | [Haskell](Kattis/platforme.hs) |
-| [Playfair Cipher](https://open.kattis.com/problems/playfair) | playfair | 2.7 | [Haskell](Kattis/playfair.hs) |
-| [Playing the Slots](https://open.kattis.com/problems/playingtheslots) | playingtheslots | 2.7 | [Haskell](Kattis/playingtheslots.hs) |
-| [Please, Go First](https://open.kattis.com/problems/pleasegofirst) | pleasegofirst | 3.3 | [Haskell](Kattis/pleasegofirst.hs) |
-| [Programmeringsolympiaden's Budget](https://open.kattis.com/problems/pobudget) | pobudget | 1.3 | [Haskell](Kattis/pobudget.hs) |
-| [Pokechat](https://open.kattis.com/problems/pokechat) | pokechat | 1.5 | [C++](Kattis/pokechat.cpp) |
-| [Pokémon Ice Maze](https://open.kattis.com/problems/pokemon) | pokemon | 6.7 | [Haskell](Kattis/pokemon.hs) |
-| [Poker Hand](https://open.kattis.com/problems/pokerhand) | pokerhand | 1.4 | [Python](Kattis/pokerhand.py) |
-| [Political Distance](https://open.kattis.com/problems/politicaldistance) | politicaldistance | 1.7 | [Haskell](Kattis/politicaldistance.hs) |
-| [Polygon Area](https://open.kattis.com/problems/polygonarea) | polygonarea | 2.0 | [C++](Kattis/polygonarea.cpp) |
-| [Polynomial Multiplication 1](https://open.kattis.com/problems/polymul1) | polymul1 | 1.8 | [Haskell](Kattis/polymul1.hs) |
-| [Polynomial Multiplication 2](https://open.kattis.com/problems/polymul2) | polymul2 | 5.1 | [C++](Kattis/polymul2.cpp) |
-| [Pop Count](https://open.kattis.com/problems/popcount) | popcount | 1.3 | [Haskell](Kattis/popcount.hs) |
-| [Popcorn](https://open.kattis.com/problems/popkorn) | popkorn | 3.0 | [Haskell](Kattis/popkorn.hs) |
-| [Popularity Contest](https://open.kattis.com/problems/popularitycontest) | popularitycontest | 1.8 | [Haskell](Kattis/popularitycontest.hs) |
-| [Immortal Porpoises](https://open.kattis.com/problems/porpoises) | porpoises | 2.5 | [Python](Kattis/porpoises.py) [Haskell](Kattis/porpoises.hs) |
-| [KTH Challenge Posters](https://open.kattis.com/problems/posters) | posters | 3.7 | [Haskell](Kattis/posters.hs) |
-| [Pot](https://open.kattis.com/problems/pot) | pot | 1.3 | [Haskell](Kattis/pot.hs) |
-| [Powers and Modulus](https://open.kattis.com/problems/powers) | powers | 4.5 | [Haskell](Kattis/powers.hs) |
-| [Powers of 2 (Easy)](https://open.kattis.com/problems/powersof2easy) | powersof2easy | 2.1 | [Haskell](Kattis/powersof2easy.hs) |
-| [Power Strings](https://open.kattis.com/problems/powerstrings) | powerstrings | 5.2 | [C++](Kattis/powerstrings.cpp) [Python](Kattis/powerstrings.py) |
-| [Predicting GME](https://open.kattis.com/problems/predictinggme) | predictinggme | 3.2 | [Haskell](Kattis/predictinggme.hs) |
-| [Prerequisites?](https://open.kattis.com/problems/prerequisites) | prerequisites | 2.0 | [Haskell](Kattis/prerequisites.hs) |
-| [Primal Representation](https://open.kattis.com/problems/primalrepresentation) | primalrepresentation | 2.9 | [Haskell](Kattis/primalrepresentation.hs) |
-| [Primary Arithmetic](https://open.kattis.com/problems/primaryarithmetic) | primaryarithmetic | 2.7 | [Haskell](Kattis/primaryarithmetic.hs) |
-| [Prime Path](https://open.kattis.com/problems/primepath) | primepath | 1.9 | [C++](Kattis/primepath.cpp) |
-| [Prime Reduction](https://open.kattis.com/problems/primereduction) | primereduction | 2.4 | [C++](Kattis/primereduction.cpp) |
-| [Saving Princess Peach](https://open.kattis.com/problems/princesspeach) | princesspeach | 1.7 | [Haskell](Kattis/princesspeach.hs) |
-| [Printing Costs](https://open.kattis.com/problems/printingcosts) | printingcosts | 2.1 | [Python](Kattis/printingcosts.py) |
-| [PrintQuoter3D](https://open.kattis.com/problems/printquoter3d) | printquoter3d | 5.4 | [Haskell](Kattis/printquoter3d.hs) |
-| [Pripreme](https://open.kattis.com/problems/pripreme) | pripreme | 2.8 | [Haskell](Kattis/pripreme.hs) |
-| [Prjónamynstur](https://open.kattis.com/problems/prjonamynstur) | prjonamynstur | 1.6 | [Haskell](Kattis/prjonamynstur.hs) |
-| [Problem Classification](https://open.kattis.com/problems/problemclassification) | problemclassification | 2.9 | [Haskell](Kattis/problemclassification.hs) |
-| [Product Divisors](https://open.kattis.com/problems/productdivisors) | productdivisors | 6.0 | [Haskell](Kattis/productdivisors.hs) |
-| [Progressive Scramble](https://open.kattis.com/problems/progressivescramble) | progressivescramble | 2.2 | [Haskell](Kattis/progressivescramble.hs) |
-| [Proofs](https://open.kattis.com/problems/proofs) | proofs | 2.4 | [Haskell](Kattis/proofs.hs) |
-| [Provinces and Gold](https://open.kattis.com/problems/provincesandgold) | provincesandgold | 1.5 | [Haskell](Kattis/provincesandgold.hs) |
-| [Prozor](https://open.kattis.com/problems/prozor) | prozor | 1.9 | [Haskell](Kattis/prozor.hs) |
-| [Prsteni](https://open.kattis.com/problems/prsteni) | prsteni | 1.5 | [Haskell](Kattis/prsteni.hs) |
-| [Prva](https://open.kattis.com/problems/prva) | prva | 1.6 | [Haskell](Kattis/prva.hs) |
-| [Ptice](https://open.kattis.com/problems/ptice) | ptice | 1.6 | [Haskell](Kattis/ptice.hs) |
-| [Pub Crawl](https://open.kattis.com/problems/pubrunda) | pubrunda | 2.1 | [Haskell](Kattis/pubrunda.hs) |
-| [Purple Rain](https://open.kattis.com/problems/purplerain) | purplerain | 3.9 | [Haskell](Kattis/purplerain.hs) |
-| [Púsluspil](https://open.kattis.com/problems/pusluspil) | pusluspil | 2.0 | [Haskell](Kattis/pusluspil.hs) |
-| [Putovanje](https://open.kattis.com/problems/putovanje) | putovanje | 3.1 | [Python](Kattis/putovanje.py) |
-| [Plants vs Bad Guys](https://open.kattis.com/problems/pvbg) | pvbg | 1.7 | [Haskell](Kattis/pvbg.hs) |
-| [Building Pyramids](https://open.kattis.com/problems/pyramids) | pyramids | 1.5 | [Haskell](Kattis/pyramids.hs) |
-| [Pythagorean Problem](https://open.kattis.com/problems/pythagoreanproblem) | pythagoreanproblem | 3.0 | [Haskell](Kattis/pythagoreanproblem.hs) |
-| [Quality-Adjusted Life-Year](https://open.kattis.com/problems/qaly) | qaly | 1.2 | [Haskell](Kattis/qaly.hs) |
-| [Quadrant Selection](https://open.kattis.com/problems/quadrant) | quadrant | 1.2 | [Python](Kattis/quadrant.py) |
-| [Quantum Superposition](https://open.kattis.com/problems/quantumsuperposition) | quantumsuperposition | 2.7 | [Haskell](Kattis/quantumsuperposition.hs) |
-| [Verify This, Your Majesty](https://open.kattis.com/problems/queens) | queens | 2.3 | [Haskell](Kattis/queens.hs) |
-| [Quick Brown Fox](https://open.kattis.com/problems/quickbrownfox) | quickbrownfox | 1.6 | [Haskell](Kattis/quickbrownfox.hs) |
-| [Quick Estimates](https://open.kattis.com/problems/quickestimate) | quickestimate | 1.9 | [Haskell](Kattis/quickestimate.hs) |
-| [Quite a Problem](https://open.kattis.com/problems/quiteaproblem) | quiteaproblem | 2.1 | [Haskell](Kattis/quiteaproblem.hs) |
-| [R2](https://open.kattis.com/problems/r2) | r2 | 1.2 | [Python](Kattis/r2.py) [C++](Kattis/r2.cpp) |
-| [Racing Around the Alphabet](https://open.kattis.com/problems/racingalphabet) | racingalphabet | 1.6 | [Haskell](Kattis/racingalphabet.hs) |
-| [Raðgreining 1](https://open.kattis.com/problems/radgreining1) | radgreining1 | 1.6 | [Haskell](Kattis/radgreining1.hs) |
-| [Ragged Right](https://open.kattis.com/problems/raggedright) | raggedright | 1.7 | [Haskell](Kattis/raggedright.hs) |
-| [Railroad](https://open.kattis.com/problems/railroad2) | railroad2 | 1.5 | [Haskell](Kattis/railroad2.hs) |
-| [Rampant Growth](https://open.kattis.com/problems/rampantgrowth) | rampantgrowth | 2.0 | [Haskell](Kattis/rampantgrowth.hs) |
-| [A Rank Problem](https://open.kattis.com/problems/rankproblem) | rankproblem | 2.9 | [Python](Kattis/rankproblem.py) |
-| [Rating Problems](https://open.kattis.com/problems/ratingproblems) | ratingproblems | 1.4 | [Haskell](Kattis/ratingproblems.hs) |
-| [Rational Arithmetic](https://open.kattis.com/problems/rationalarithmetic) | rationalarithmetic | 3.1 | [Haskell](Kattis/rationalarithmetic.hs) |
-| [A Rational Sequence](https://open.kattis.com/problems/rationalsequence) | rationalsequence | 5.2 | [Haskell](Kattis/rationalsequence.hs) |
-| [A Rational Sequence 2](https://open.kattis.com/problems/rationalsequence2) | rationalsequence2 | 2.7 | [Haskell](Kattis/rationalsequence2.hs) |
-| [A Rational Sequence (Take 3)](https://open.kattis.com/problems/rationalsequence3) | rationalsequence3 | 2.5 | [Haskell](Kattis/rationalsequence3.hs) |
-| [Razbibriga](https://open.kattis.com/problems/razbibriga) | razbibriga | 6.0 | [Haskell](Kattis/razbibriga.hs) |
-| [Reachable Roads](https://open.kattis.com/problems/reachableroads) | reachableroads | 1.8 | [Haskell](Kattis/reachableroads.hs) |
-| [Reactivity Series](https://open.kattis.com/problems/reactivity) | reactivity | 3.0 | [C++](Kattis/reactivity.cpp) |
-| [Rečenice](https://open.kattis.com/problems/recenice) | recenice | 2.6 | [Haskell](Kattis/recenice.hs) |
-| [Recess Rocks](https://open.kattis.com/problems/recessrocks) | recessrocks | 1.6 | [Haskell](Kattis/recessrocks.hs) |
-| [Scaling Recipes](https://open.kattis.com/problems/recipes) | recipes | 2.4 | [Haskell](Kattis/recipes.hs) |
-| [Reconnaissance](https://open.kattis.com/problems/reconnaissance) | reconnaissance | 3.4 | [Haskell](Kattis/reconnaissance.hs) |
-| [Recount](https://open.kattis.com/problems/recount) | recount | 2.1 | [Haskell](Kattis/recount.hs) |
-| [Rectangle Area](https://open.kattis.com/problems/rectanglearea) | rectanglearea | 1.4 | [Haskell](Kattis/rectanglearea.hs) |
-| [The Rectangles Are Surrounding Us!](https://open.kattis.com/problems/rectanglesurrounding) | rectanglesurrounding | 2.5 | [Haskell](Kattis/rectanglesurrounding.hs) [C++](Kattis/rectanglesurrounding.cpp) |
-| [Growing Rectangular Spiral](https://open.kattis.com/problems/rectangularspiral) | rectangularspiral | 3.1 | [Haskell](Kattis/rectangularspiral.hs) |
-| [RectSect](https://open.kattis.com/problems/rectsect) | rectsect | 2.7 | [Haskell](Kattis/rectsect.hs) |
-| [Exam Redistribution](https://open.kattis.com/problems/redistribution) | redistribution | 2.5 | [Haskell](Kattis/redistribution.hs) |
-| [Red Rover](https://open.kattis.com/problems/redrover) | redrover | 2.1 | [Haskell](Kattis/redrover.hs) |
-| [Reduced ID Numbers](https://open.kattis.com/problems/reducedidnumbers) | reducedidnumbers | 2.3 | [C++](Kattis/reducedidnumbers.cpp) |
-| [Work Reduction](https://open.kattis.com/problems/reduction) | reduction | 5.3 | [Haskell](Kattis/reduction.hs) |
-| [Reduplication](https://open.kattis.com/problems/reduplikation) | reduplikation | 1.1 | [Haskell](Kattis/reduplikation.hs) |
-| [Refrigerator Transport](https://open.kattis.com/problems/refrigerator) | refrigerator | 2.3 | [Haskell](Kattis/refrigerator.hs) |
-| [Primary Register](https://open.kattis.com/problems/register) | register | 2.4 | [Haskell](Kattis/register.hs) |
-| [Relatives](https://open.kattis.com/problems/relatives) | relatives | 2.8 | [Haskell](Kattis/relatives.hs) |
-| [Relocation](https://open.kattis.com/problems/relocation) | relocation | 1.5 | [C++](Kattis/relocation.cpp) |
-| [ReMorse](https://open.kattis.com/problems/remorse) | remorse | 2.4 | [Python](Kattis/remorse.py) |
-| [Repeated Subsequence](https://open.kattis.com/problems/repeatedsubsequence) | repeatedsubsequence | 2.4 | [Haskell](Kattis/repeatedsubsequence.hs) |
-| [Research Productivity Index](https://open.kattis.com/problems/researchproductivityindex) | researchproductivityindex | 3.3 | [Haskell](Kattis/researchproductivityindex.hs) |
-| [Reservoir](https://open.kattis.com/problems/reservoir) | reservoir | 5.0 | [Haskell](Kattis/reservoir.hs) |
-| [Reseto](https://open.kattis.com/problems/reseto) | reseto | 2.2 | [C++](Kattis/reseto.cpp) |
-| [Restaurant Opening](https://open.kattis.com/problems/restaurantopening) | restaurantopening | 1.8 | [C++](Kattis/restaurantopening.cpp) |
-| [Reversed Binary Numbers](https://open.kattis.com/problems/reversebinary) | reversebinary | 1.3 | [Haskell](Kattis/reversebinary.hs) |
-| [Reverse Rot](https://open.kattis.com/problems/reverserot) | reverserot | 1.6 | [Haskell](Kattis/reverserot.hs) |
-| [Reversibly Cyclic Strings](https://open.kattis.com/problems/reversiblecyclic) | reversiblecyclic | 3.3 | [C++](Kattis/reversiblecyclic.cpp) |
-| [Revision Control](https://open.kattis.com/problems/revisionskontroll) | revisionskontroll | 2.3 | [Haskell](Kattis/revisionskontroll.hs) [C++](Kattis/revisionskontroll.cpp) |
-| [RGB Hydra](https://open.kattis.com/problems/rgb) | rgb | 3.1 | [Haskell](Kattis/rgb.hs) |
-| [Rhyming Slang](https://open.kattis.com/problems/rhyming) | rhyming | 3.2 | [Haskell](Kattis/rhyming.hs) |
-| [Riddle of the Sphinx](https://open.kattis.com/problems/riddleofthesphinx) | riddleofthesphinx | 3.3 | [Haskell](Kattis/riddleofthesphinx.hs) |
-| [Riječi](https://open.kattis.com/problems/rijeci) | rijeci | 1.6 | [Haskell](Kattis/rijeci.hs) |
-| [Ríkjafræði](https://open.kattis.com/problems/rikjafraedi) | rikjafraedi | 3.3 | [C++](Kattis/rikjafraedi.cpp) |
-| [Rice judge](https://open.kattis.com/problems/risdomare) | risdomare | 1.9 | [Haskell](Kattis/risdomare.hs) |
-| [Robots on a Grid](https://open.kattis.com/problems/robotsonagrid) | robotsonagrid | 4.6 | [Python](Kattis/robotsonagrid.py) |
-| [Robot Turtles](https://open.kattis.com/problems/robotturtles) | robotturtles | 2.9 | [Haskell](Kattis/robotturtles.hs) |
-| [Röðunarrugl](https://open.kattis.com/problems/rodunarrugl) | rodunarrugl | 2.4 | [Haskell](Kattis/rodunarrugl.hs) |
-| [Röknet](https://open.kattis.com/problems/roknet) | roknet | 1.6 | [Haskell](Kattis/roknet.hs) |
-| [Roll Call](https://open.kattis.com/problems/rollcall) | rollcall | 2.8 | [Haskell](Kattis/rollcall.hs) |
-| [Rolling The Dice](https://open.kattis.com/problems/rollingthedice) | rollingthedice | 1.5 | [Haskell](Kattis/rollingthedice.hs) |
-| [Roaming Romans](https://open.kattis.com/problems/romans) | romans | 1.6 | [Haskell](Kattis/romans.hs) |
-| [Roomba 1](https://open.kattis.com/problems/roomba1) | roomba1 | 3.7 | [Haskell](Kattis/roomba1.hs) |
-| [Roomba 2](https://open.kattis.com/problems/roomba2) | roomba2 | 4.1 | [Haskell](Kattis/roomba2.hs) |
-| [Room Painting](https://open.kattis.com/problems/roompainting) | roompainting | 2.5 | [C++](Kattis/roompainting.cpp) [Haskell](Kattis/roompainting.hs) |
-| [Rot](https://open.kattis.com/problems/rot) | rot | 3.1 | [Haskell](Kattis/rot.hs) |
-| [Rounded Buttons](https://open.kattis.com/problems/roundedbuttons) | roundedbuttons | 3.4 | [C++](Kattis/roundedbuttons.cpp) |
-| [Ruffians](https://open.kattis.com/problems/ruffians) | ruffians | 1.8 | [Haskell](Kattis/ruffians.hs) |
-| [Ruglaður listi](https://open.kattis.com/problems/rugladurlisti) | rugladurlisti | 4.8 | [C++](Kattis/rugladurlisti.cpp) |
-| [Rule N](https://open.kattis.com/problems/rulen) | rulen | 4.1 | [Haskell](Kattis/rulen.hs) |
-| [Run-Length Encoding, Run!](https://open.kattis.com/problems/runlengthencodingrun) | runlengthencodingrun | 1.6 | [Haskell](Kattis/runlengthencodingrun.hs) |
-| [Running Steps](https://open.kattis.com/problems/runningsteps) | runningsteps | 2.7 | [Haskell](Kattis/runningsteps.hs) [Python](Kattis/runningsteps.py) |
-| [Rust](https://open.kattis.com/problems/rust) | rust | 5.2 | [Haskell](Kattis/rust.hs) |
-| [Cracking The Safe](https://open.kattis.com/problems/safe) | safe | 2.8 | [Haskell](Kattis/safe.hs) |
-| [Safe Houses](https://open.kattis.com/problems/safehouses) | safehouses | 2.0 | [Haskell](Kattis/safehouses.hs) |
-| [Safe Squares](https://open.kattis.com/problems/safesquares) | safesquares | 1.5 | [Haskell](Kattis/safesquares.hs) |
-| [Sailing Friends](https://open.kattis.com/problems/sailingfriends) | sailingfriends | 2.1 | [Haskell](Kattis/sailingfriends.hs) |
-| [Same Digits (Easy)](https://open.kattis.com/problems/samedigitseasy) | samedigitseasy | 2.3 | [Haskell](Kattis/samedigitseasy.hs) |
-| [Same Digits (Hard)](https://open.kattis.com/problems/samedigitshard) | samedigitshard | 2.4 | [Haskell](Kattis/samedigitshard.hs) |
-| [Songbook](https://open.kattis.com/problems/sangbok) | sangbok | 1.9 | [Haskell](Kattis/sangbok.hs) |
-| [Sanic](https://open.kattis.com/problems/sanic) | sanic | 2.5 | [Haskell](Kattis/sanic.hs) |
-| [Sannvirði](https://open.kattis.com/problems/sannvirdi) | sannvirdi | 2.2 | [Haskell](Kattis/sannvirdi.hs) |
-| [Sarah's Sandwich Shop](https://open.kattis.com/problems/sarahssandwichshop) | sarahssandwichshop | 2.8 | [Haskell](Kattis/sarahssandwichshop.hs) |
-| [Sauna](https://open.kattis.com/problems/sauna) | sauna | 1.5 | [Haskell](Kattis/sauna.hs) |
-| [Saving Daylight](https://open.kattis.com/problems/savingdaylight) | savingdaylight | 2.2 | [Haskell](Kattis/savingdaylight.hs) |
-| [Saving For Retirement](https://open.kattis.com/problems/savingforretirement) | savingforretirement | 1.8 | [Haskell](Kattis/savingforretirement.hs) |
-| [Eb Alto Saxophone Player](https://open.kattis.com/problems/saxophone) | saxophone | 2.2 | [Haskell](Kattis/saxophone.hs) |
-| [Scaling Recipe](https://open.kattis.com/problems/scalingrecipe) | scalingrecipe | 1.9 | [Haskell](Kattis/scalingrecipe.hs) |
-| [Mountain Scenes](https://open.kattis.com/problems/scenes) | scenes | 3.4 | [Python](Kattis/scenes.py) [Haskell](Kattis/scenes.hs) |
-| [School Spirit](https://open.kattis.com/problems/schoolspirit) | schoolspirit | 1.8 | [Haskell](Kattis/schoolspirit.hs) |
-| [Score!](https://open.kattis.com/problems/score) | score | 3.2 | [Haskell](Kattis/score.hs) |
-| [Scrolling Sign](https://open.kattis.com/problems/scrollingsign) | scrollingsign | 2.9 | [Haskell](Kattis/scrollingsign.hs) |
-| [Search Wizard](https://open.kattis.com/problems/searchwizard) | searchwizard | 1.6 | [Haskell](Kattis/searchwizard.hs) |
-| [A Second Opinion](https://open.kattis.com/problems/secondopinion) | secondopinion | 1.4 | [Haskell](Kattis/secondopinion.hs) |
-| [Secret Chamber at Mount Rushmore](https://open.kattis.com/problems/secretchamber) | secretchamber | 2.5 | [Haskell](Kattis/secretchamber.hs) |
-| [Secret Message](https://open.kattis.com/problems/secretmessage) | secretmessage | 1.7 | [Haskell](Kattis/secretmessage.hs) |
-| [Secret Santa](https://open.kattis.com/problems/secretsanta) | secretsanta | 3.1 | [Haskell](Kattis/secretsanta.hs) |
-| [Secure Doors](https://open.kattis.com/problems/securedoors) | securedoors | 1.8 | [Haskell](Kattis/securedoors.hs) |
-| [Self-Similar Strings](https://open.kattis.com/problems/selfsimilarstrings) | selfsimilarstrings | 3.0 | [Haskell](Kattis/selfsimilarstrings.hs) |
-| [Semafori](https://open.kattis.com/problems/semafori) | semafori | 1.9 | [Haskell](Kattis/semafori.hs) |
-| [Siggi sement](https://open.kattis.com/problems/sement) | sement | 3.6 | [Haskell](Kattis/sement.hs) |
-| [0-1 Sequences](https://open.kattis.com/problems/sequences) | sequences | 5.5 | [C++](Kattis/sequences.cpp) |
-| [Server](https://open.kattis.com/problems/server) | server | 1.6 | [Haskell](Kattis/server.hs) |
-| [Set!](https://open.kattis.com/problems/set) | set | 1.9 | [Haskell](Kattis/set.hs) |
-| [Seven Wonders](https://open.kattis.com/problems/sevenwonders) | sevenwonders | 1.5 | [Java](Kattis/sevenwonders.java) |
-| [Shandy](https://open.kattis.com/problems/shandy) | shandy | 1.3 | [Haskell](Kattis/shandy.hs) |
-| [Shattered Cake](https://open.kattis.com/problems/shatteredcake) | shatteredcake | 1.4 | [Haskell](Kattis/shatteredcake.hs) |
-| [Shiritori](https://open.kattis.com/problems/shiritori) | shiritori | 2.3 | [Haskell](Kattis/shiritori.hs) |
-| [Shopaholic](https://open.kattis.com/problems/shopaholic) | shopaholic | 2.1 | [Haskell](Kattis/shopaholic.hs) |
-| [Shopping List](https://open.kattis.com/problems/shoppinglist) | shoppinglist | 2.7 | [Haskell](Kattis/shoppinglist.hs) |
-| [Shopping List (Easy)](https://open.kattis.com/problems/shoppinglisteasy) | shoppinglisteasy | 1.7 | [Haskell](Kattis/shoppinglisteasy.hs) |
-| [A Shortcut to What?](https://open.kattis.com/problems/shortcuttowhat) | shortcuttowhat | 1.1 | [Haskell](Kattis/shortcuttowhat.hs) |
-| [Single source shortest path, non-negative weights](https://open.kattis.com/problems/shortestpath1) | shortestpath1 | 2.5 | [C++](Kattis/shortestpath1.cpp) |
-| [Single source shortest path, time table](https://open.kattis.com/problems/shortestpath2) | shortestpath2 | 2.7 | [C++](Kattis/shortestpath2.cpp) |
-| [Shortlex](https://open.kattis.com/problems/shortlex) | shortlex | 3.2 | [Haskell](Kattis/shortlex.hs) |
-| [Elegant Showroom](https://open.kattis.com/problems/showroom) | showroom | 4.2 | [Haskell](Kattis/showroom.hs) |
-| [Shuffling Along](https://open.kattis.com/problems/shuffling) | shuffling | 2.5 | [Haskell](Kattis/shuffling.hs) |
-| [Sibice](https://open.kattis.com/problems/sibice) | sibice | 1.3 | [Haskell](Kattis/sibice.hs) |
-| [Sideways Sorting](https://open.kattis.com/problems/sidewayssorting) | sidewayssorting | 1.9 | [Haskell](Kattis/sidewayssorting.hs) |
-| [Digit Product](https://open.kattis.com/problems/sifferprodukt) | sifferprodukt | 1.5 | [Haskell](Kattis/sifferprodukt.hs) |
-| [Siffrid's Digit Sum](https://open.kattis.com/problems/siffrid) | siffrid | 2.0 | [Haskell](Kattis/siffrid.hs) |
-| [Bridging Signals](https://open.kattis.com/problems/signals) | signals | 2.5 | [C++](Kattis/signals.cpp) |
-| [Silver Star Stands Alone](https://open.kattis.com/problems/silverstarstandsalone) | silverstarstandsalone | 2.6 | [Haskell](Kattis/silverstarstandsalone.hs) |
-| [Símanúmer](https://open.kattis.com/problems/simanumer) | simanumer | 3.2 | [Haskell](Kattis/simanumer.hs) |
-| [Simon Says](https://open.kattis.com/problems/simon) | simon | 2.1 | [Haskell](Kattis/simon.hs) |
-| [Simone](https://open.kattis.com/problems/simone) | simone | 1.9 | [Haskell](Kattis/simone.hs) |
-| [Simon Says](https://open.kattis.com/problems/simonsays) | simonsays | 1.4 | [Haskell](Kattis/simonsays.hs) |
-| [Simple Addition](https://open.kattis.com/problems/simpleaddition) | simpleaddition | 2.9 | [Haskell](Kattis/simpleaddition.hs) |
-| [Simple Arithmetic](https://open.kattis.com/problems/simplearithmetic) | simplearithmetic | 4.7 | [Haskell](Kattis/simplearithmetic.hs) |
-| [Simple Cron Spec](https://open.kattis.com/problems/simplecronspec) | simplecronspec | 2.1 | [Haskell](Kattis/simplecronspec.hs) |
-| [Simple Factoring](https://open.kattis.com/problems/simplefactoring) | simplefactoring | 2.5 | [Haskell](Kattis/simplefactoring.hs) |
-| [Simple Polygon](https://open.kattis.com/problems/simplepolygon) | simplepolygon | 4.8 | [C++](Kattis/simplepolygon.cpp) |
-| [Simplicity](https://open.kattis.com/problems/simplicity) | simplicity | 2.5 | [Haskell](Kattis/simplicity.hs) |
-| [Sing a Song of Sixpence](https://open.kattis.com/problems/singasongofsixpence) | singasongofsixpence | 2.4 | [Haskell](Kattis/singasongofsixpence.hs) |
-| [The Last Pizza](https://open.kattis.com/problems/sistapizzan) | sistapizzan | 4.8 | [Haskell](Kattis/sistapizzan.hs) |
-| [Sith](https://open.kattis.com/problems/sith) | sith | 1.5 | [Haskell](Kattis/sith.hs) |
-| [Sjecista](https://open.kattis.com/problems/sjecista) | sjecista | 1.8 | [Haskell](Kattis/sjecista.hs) |
-| [Skák](https://open.kattis.com/problems/skak) | skak | 1.2 | [Haskell](Kattis/skak.hs) |
-| [Skammstöfun](https://open.kattis.com/problems/skammstofun) | skammstofun | 1.5 | [Haskell](Kattis/skammstofun.hs) |
-| [Skener](https://open.kattis.com/problems/skener) | skener | 1.4 | [Haskell](Kattis/skener.hs) |
-| [Concatenate](https://open.kattis.com/problems/skeytasaman) | skeytasaman | 1.1 | [Haskell](Kattis/skeytasaman.hs) |
-| [Skilaboð](https://open.kattis.com/problems/skilabod) | skilabod | 2.3 | [Haskell](Kattis/skilabod.hs) |
-| [Ski Traffic](https://open.kattis.com/problems/skitraffic) | skitraffic | 1.7 | [Haskell](Kattis/skitraffic.hs) |
-| [Skocimis](https://open.kattis.com/problems/skocimis) | skocimis | 1.5 | [Python](Kattis/skocimis.py) |
-| [Graduation](https://open.kattis.com/problems/skolavslutningen) | skolavslutningen | 2.3 | [Haskell](Kattis/skolavslutningen.hs) |
-| [Going to School](https://open.kattis.com/problems/skolvagen) | skolvagen | 2.6 | [Haskell](Kattis/skolvagen.hs) |
-| [Turn It Up!](https://open.kattis.com/problems/skruop) | skruop | 1.5 | [Haskell](Kattis/skruop.hs) |
-| [Sky Islands](https://open.kattis.com/problems/skyislands) | skyislands | 2.0 | [Haskell](Kattis/skyislands.hs) |
-| [Slatkisi](https://open.kattis.com/problems/slatkisi) | slatkisi | 1.8 | [Haskell](Kattis/slatkisi.hs) |
-| [Slikar](https://open.kattis.com/problems/slikar) | slikar | 3.0 | [Haskell](Kattis/slikar.hs) |
-| [Slikar](https://open.kattis.com/problems/slikar2) | slikar2 | 5.2 | [Haskell](Kattis/slikar2.hs) |
-| [Sly Students](https://open.kattis.com/problems/slystudents) | slystudents | 2.1 | [Haskell](Kattis/slystudents.hs) |
-| [Smallest Calculated Value](https://open.kattis.com/problems/smallestcalculatedvalue) | smallestcalculatedvalue | 2.6 | [Haskell](Kattis/smallestcalculatedvalue.hs) |
-| [Smallest Multiple](https://open.kattis.com/problems/smallestmultiple) | smallestmultiple | 3.2 | [Haskell](Kattis/smallestmultiple.hs) |
-| [Smart Phone](https://open.kattis.com/problems/smartphone) | smartphone | 2.9 | [Haskell](Kattis/smartphone.hs) |
-| [SMIL](https://open.kattis.com/problems/smil) | smil | 1.5 | [Haskell](Kattis/smil.hs) |
-| [Smoothie Stand](https://open.kattis.com/problems/smoothiestand) | smoothiestand | 2.3 | [Haskell](Kattis/smoothiestand.hs) |
-| [Snakes and Masters](https://open.kattis.com/problems/snakesandmasters) | snakesandmasters | 3.0 | [Python](Kattis/snakesandmasters.py) |
-| [Snapper Chain (Easy)](https://open.kattis.com/problems/snappereasy) | snappereasy | 2.5 | [Haskell](Kattis/snappereasy.hs) |
-| [Snapper Chain (Hard)](https://open.kattis.com/problems/snapperhard) | snapperhard | 2.2 | [Haskell](Kattis/snapperhard.hs) |
-| [Touch Grass](https://open.kattis.com/problems/snertugras) | snertugras | 3.0 | [Haskell](Kattis/snertugras.hs) |
-| [Snowfall](https://open.kattis.com/problems/snowfall) | snowfall | 1.6 | [Haskell](Kattis/snowfall.hs) |
-| [Social Distancing](https://open.kattis.com/problems/socialdistancing2) | socialdistancing2 | 2.2 | [Python](Kattis/socialdistancing2.py) |
-| [Social running](https://open.kattis.com/problems/socialrunning) | socialrunning | 2.3 | [Haskell](Kattis/socialrunning.hs) |
-| [Soda Slurper](https://open.kattis.com/problems/sodaslurper) | sodaslurper | 1.8 | [Haskell](Kattis/sodaslurper.hs) |
-| [Soft Passwords](https://open.kattis.com/problems/softpasswords) | softpasswords | 2.4 | [Haskell](Kattis/softpasswords.hs) |
-| [Sok](https://open.kattis.com/problems/sok) | sok | 1.7 | [Haskell](Kattis/sok.hs) |
-| [Solidus Fraction](https://open.kattis.com/problems/solidus) | solidus | 3.0 | [Haskell](Kattis/solidus.hs) |
-| [Peg Solitaire](https://open.kattis.com/problems/solitaire) | solitaire | 3.0 | [Haskell](Kattis/solitaire.hs) |
-| [Some Sum](https://open.kattis.com/problems/somesum) | somesum | 2.2 | [Haskell](Kattis/somesum.hs) |
-| [Sort](https://open.kattis.com/problems/sort) | sort | 2.4 | [Haskell](Kattis/sort.hs) |
-| [Sort of Sort](https://open.kattis.com/problems/sortofsort) | sortofsort | 2.2 | [Haskell](Kattis/sortofsort.hs) |
-| [Sort of Sorting](https://open.kattis.com/problems/sortofsorting) | sortofsorting | 1.8 | [Java](Kattis/sortofsorting.java) |
-| [Sort Two Numbers](https://open.kattis.com/problems/sorttwonumbers) | sorttwonumbers | 1.2 | [Rust](Kattis/sorttwonumbers.rs) |
-| [Sóttkví](https://open.kattis.com/problems/sottkvi) | sottkvi | 1.7 | [Haskell](Kattis/sottkvi.hs) |
-| [The Sound of Silence](https://open.kattis.com/problems/sound) | sound | 3.7 | [C++](Kattis/sound.cpp) |
-| [Soundex](https://open.kattis.com/problems/soundex) | soundex | 2.4 | [Haskell](Kattis/soundex.hs) |
-| [Soylent](https://open.kattis.com/problems/soylent) | soylent | 1.8 | [Haskell](Kattis/soylent.hs) |
-| [Space Race](https://open.kattis.com/problems/spacerace) | spacerace | 2.1 | [Haskell](Kattis/spacerace.hs) |
-| [Spavanac](https://open.kattis.com/problems/spavanac) | spavanac | 1.4 | [Python](Kattis/spavanac.py) |
-| [Need for Speed](https://open.kattis.com/problems/speed) | speed | 3.1 | [Haskell](Kattis/speed.hs) |
-| [Speeding](https://open.kattis.com/problems/speeding) | speeding | 1.5 | [Haskell](Kattis/speeding.hs) |
-| [Speed Limit](https://open.kattis.com/problems/speedlimit) | speedlimit | 1.6 | [Haskell](Kattis/speedlimit.hs) |
-| [Speedrun](https://open.kattis.com/problems/speedrun) | speedrun | 2.2 | [Python](Kattis/speedrun.py) [Haskell](Kattis/speedrun.hs) [C++](Kattis/speedrun.cpp) |
-| [Speedrunning](https://open.kattis.com/problems/speedrunning) | speedrunning | 3.3 | [Haskell](Kattis/speedrunning.hs) |
-| [Sperhling](https://open.kattis.com/problems/spehrling) | spehrling | 2.3 | [Haskell](Kattis/spehrling.hs) |
-| [Spelling Bee](https://open.kattis.com/problems/spellingbee) | spellingbee | 2.0 | [Haskell](Kattis/spellingbee.hs) |
-| [Spider Fashion](https://open.kattis.com/problems/spiderfashion) | spiderfashion | 2.8 | [Haskell](Kattis/spiderfashion.hs) |
-| [Spiderman's Workout](https://open.kattis.com/problems/spiderman) | spiderman | 3.4 | [Haskell](Kattis/spiderman.hs) |
-| [Cards Sorting](https://open.kattis.com/problems/spilarodun) | spilarodun | 1.5 | [Haskell](Kattis/spilarodun.hs) |
-| [Splat](https://open.kattis.com/problems/splat) | splat | 2.6 | [Haskell](Kattis/splat.hs) |
-| [Sports Rank](https://open.kattis.com/problems/sportsrank2) | sportsrank2 | 4.0 | [Haskell](Kattis/sportsrank2.hs) |
-| [Spritt](https://open.kattis.com/problems/spritt) | spritt | 1.2 | [Haskell](Kattis/spritt.hs) |
-| [Square Peg](https://open.kattis.com/problems/squarepeg) | squarepeg | 1.5 | [Haskell](Kattis/squarepeg.hs) |
-| [Square Peg in a Round Hole](https://open.kattis.com/problems/squarepegs) | squarepegs | 2.6 | [Haskell](Kattis/squarepegs.hs) |
-| [Squawk Virus](https://open.kattis.com/problems/squawk) | squawk | 3.1 | [Haskell](Kattis/squawk.hs) |
-| [Sretan](https://open.kattis.com/problems/sretan) | sretan | 2.9 | [Haskell](Kattis/sretan.hs) |
-| [Illuminated City](https://open.kattis.com/problems/stadiljus) | stadiljus | 2.1 | [Haskell](Kattis/stadiljus.hs) [Python](Kattis/stadiljus.py) |
-| [Stafsetning](https://open.kattis.com/problems/stafsetning) | stafsetning | 2.2 | [Haskell](Kattis/stafsetning.hs) |
-| [Stafur](https://open.kattis.com/problems/stafur) | stafur | 1.5 | [Haskell](Kattis/stafur.hs) |
-| [Biased Standings](https://open.kattis.com/problems/standings) | standings | 3.1 | [Haskell](Kattis/standings.hs) |
-| [Star Arrangements](https://open.kattis.com/problems/stararrangements) | stararrangements | 1.8 | [Haskell](Kattis/stararrangements.hs) |
-| [Star Battles I](https://open.kattis.com/problems/starbattles1) | starbattles1 | 2.7 | [Python](Kattis/starbattles1.py) |
-| [Star Wars röðun](https://open.kattis.com/problems/starwars2) | starwars2 | 1.7 | [Haskell](Kattis/starwars2.hs) |
-| [Statistics](https://open.kattis.com/problems/statistics) | statistics | 1.6 | [Haskell](Kattis/statistics.hs) |
-| [Staying Frosty](https://open.kattis.com/problems/stayingfrosty) | stayingfrosty | 1.4 | [Haskell](Kattis/stayingfrosty.hs) |
-| [Sticky Keys](https://open.kattis.com/problems/stickykeys) | stickykeys | 1.4 | [Haskell](Kattis/stickykeys.hs) |
-| [Sticky Situation](https://open.kattis.com/problems/stickysituation) | stickysituation | 2.4 | [Haskell](Kattis/stickysituation.hs) |
-| [Stikl](https://open.kattis.com/problems/stikl) | stikl | 3.7 | [C++](Kattis/stikl.cpp) [Haskell](Kattis/stikl.hs) |
-| [Daydreaming Stockbroker](https://open.kattis.com/problems/stockbroker) | stockbroker | 3.0 | [Python](Kattis/stockbroker.py) |
-| [Stock Prices](https://open.kattis.com/problems/stockprices) | stockprices | 2.0 | [Haskell](Kattis/stockprices.hs) |
-| [Messy lists](https://open.kattis.com/problems/stokigalistor) | stokigalistor | 2.1 | [C++](Kattis/stokigalistor.cpp) |
-| [Stop Counting!](https://open.kattis.com/problems/stopcounting) | stopcounting | 5.1 | [Haskell](Kattis/stopcounting.hs) |
-| [Stopwatch](https://open.kattis.com/problems/stopwatch) | stopwatch | 1.4 | [Python](Kattis/stopwatch.py) |
-| [Stórafmæli](https://open.kattis.com/problems/storafmaeli) | storafmaeli | 1.1 | [Haskell](Kattis/storafmaeli.hs) |
-| [Straights](https://open.kattis.com/problems/straights) | straights | 3.3 | [Haskell](Kattis/straights.hs) |
-| [Stream Lag](https://open.kattis.com/problems/streamlag) | streamlag | 3.9 | [Haskell](Kattis/streamlag.hs) |
-| [Streets Ahead](https://open.kattis.com/problems/streetsahead) | streetsahead | 2.1 | [C++](Kattis/streetsahead.cpp) |
-| [String Matching](https://open.kattis.com/problems/stringmatching) | stringmatching | 3.2 | [C++](Kattis/stringmatching.cpp) |
-| [Subaruba](https://open.kattis.com/problems/subaruba) | subaruba | 3.9 | [Haskell](Kattis/subaruba.hs) |
-| [Subprime](https://open.kattis.com/problems/subprime) | subprime | 3.6 | [Python](Kattis/subprime.py) |
-| [Counting Subsequences (Hard)](https://open.kattis.com/problems/subseqhard) | subseqhard | 3.1 | [Haskell](Kattis/subseqhard.hs) |
-| [Subtraction Plus Plus](https://open.kattis.com/problems/subtractionplusplus) | subtractionplusplus | 5.3 | [Python](Kattis/subtractionplusplus.py) |
-| [Subtraction Plus Plus Plus](https://open.kattis.com/problems/subtractionplusplusplus) | subtractionplusplusplus | 4.3 | [Python](Kattis/subtractionplusplusplus.py) |
-| [Successful Zoom](https://open.kattis.com/problems/successfulzoom) | successfulzoom | 2.5 | [Haskell](Kattis/successfulzoom.hs) |
-| [Succession](https://open.kattis.com/problems/succession) | succession | 5.2 | [Haskell](Kattis/succession.hs) |
-| [Sudoku Verify](https://open.kattis.com/problems/sudokuverify) | sudokuverify | 2.7 | [Haskell](Kattis/sudokuverify.hs) |
-| [Sum Kind of Problem](https://open.kattis.com/problems/sumkindofproblem) | sumkindofproblem | 1.3 | [Haskell](Kattis/sumkindofproblem.hs) |
-| [Summer Trip](https://open.kattis.com/problems/summertrip) | summertrip | 3.1 | [Haskell](Kattis/summertrip.hs) |
-| [Sum of the Others](https://open.kattis.com/problems/sumoftheothers) | sumoftheothers | 2.1 | [Haskell](Kattis/sumoftheothers.hs) |
-| [Sum of the Year](https://open.kattis.com/problems/sumoftheyear) | sumoftheyear | 1.4 | [Haskell](Kattis/sumoftheyear.hs) |
-| [Sums of Primes](https://open.kattis.com/problems/sumsofprimes) | sumsofprimes | 3.6 | [Haskell](Kattis/sumsofprimes.hs) [C++](Kattis/sumsofprimes.cpp) |
-| [Sum Squared Digits Function](https://open.kattis.com/problems/sumsquareddigits) | sumsquareddigits | 1.5 | [Haskell](Kattis/sumsquareddigits.hs) |
-| [Sun and Moon](https://open.kattis.com/problems/sunandmoon) | sunandmoon | 2.1 | [Haskell](Kattis/sunandmoon.hs) |
-| [Supercomputer](https://open.kattis.com/problems/supercomputer) | supercomputer | 2.4 | [C++](Kattis/supercomputer.cpp) [Python](Kattis/supercomputer.py) |
-| [Superyatzy](https://open.kattis.com/problems/superyatzy) | superyatzy | 1.6 | [Haskell](Kattis/superyatzy.hs) |
-| [Swap to Sort](https://open.kattis.com/problems/swaptosort) | swaptosort | 2.9 | [Haskell](Kattis/swaptosort.hs) |
-| [Sweet Dreams](https://open.kattis.com/problems/sweetdreams) | sweetdreams | 1.6 | [Haskell](Kattis/sweetdreams.hs) |
-| [Sylvester Construction](https://open.kattis.com/problems/sylvester) | sylvester | 2.2 | [Haskell](Kattis/sylvester.hs) |
-| [Symmetric Order](https://open.kattis.com/problems/symmetricorder) | symmetricorder | 1.7 | [Haskell](Kattis/symmetricorder.hs) |
-| [Synchronizing Lists](https://open.kattis.com/problems/synchronizinglists) | synchronizinglists | 1.7 | [Haskell](Kattis/synchronizinglists.hs) |
-| [T9 Spelling](https://open.kattis.com/problems/t9spelling) | t9spelling | 1.7 | [Haskell](Kattis/t9spelling.hs) |
-| [Tabs and spaces](https://open.kattis.com/problems/tabsandspaces) | tabsandspaces | 3.3 | [Haskell](Kattis/tabsandspaces.hs) |
-| [Tai's formula](https://open.kattis.com/problems/taisformula) | taisformula | 1.5 | [Haskell](Kattis/taisformula.hs) |
-| [Tajna](https://open.kattis.com/problems/tajna) | tajna | 2.0 | [C++](Kattis/tajna.cpp) |
-| [Taking Inventory](https://open.kattis.com/problems/takinginventory) | takinginventory | 1.7 | [Haskell](Kattis/takinginventory.hs) |
-| [Taking Out the Trash](https://open.kattis.com/problems/takingoutthetrash) | takingoutthetrash | 3.7 | [Haskell](Kattis/takingoutthetrash.hs) |
-| [Takkar](https://open.kattis.com/problems/takkar) | takkar | 1.2 | [Haskell](Kattis/takkar.hs) |
-| [Takk fyrir mig](https://open.kattis.com/problems/takkfyrirmig) | takkfyrirmig | 1.2 | [Haskell](Kattis/takkfyrirmig.hs) |
-| [Taktsveðjur](https://open.kattis.com/problems/taktsvedjur) | taktsvedjur | 3.0 | [Haskell](Kattis/taktsvedjur.hs) |
-| [Tall Enough](https://open.kattis.com/problems/tallenough) | tallenough | 1.6 | [Haskell](Kattis/tallenough.hs) |
-| [Talnalás](https://open.kattis.com/problems/talnalas) | talnalas | 2.6 | [Haskell](Kattis/talnalas.hs) |
-| [Tarifa](https://open.kattis.com/problems/tarifa) | tarifa | 1.4 | [Python](Kattis/tarifa.py) |
-| [Tautology](https://open.kattis.com/problems/tautology) | tautology | 2.5 | [Haskell](Kattis/tautology.hs) |
-| [Teacher Evaluation](https://open.kattis.com/problems/teacherevaluation) | teacherevaluation | 2.8 | [Haskell](Kattis/teacherevaluation.hs) |
-| [Happy Telephones](https://open.kattis.com/problems/telephones) | telephones | 2.7 | [Haskell](Kattis/telephones.hs) |
-| [Telja](https://open.kattis.com/problems/telja) | telja | 1.2 | [Haskell](Kattis/telja.hs) |
-| [Time Travelling Temperatures](https://open.kattis.com/problems/temperature) | temperature | 2.1 | [Haskell](Kattis/temperature.hs) |
-| [Temperature Confusion](https://open.kattis.com/problems/temperatureconfusion) | temperatureconfusion | 2.8 | [Haskell](Kattis/temperatureconfusion.hs) |
-| [Teque](https://open.kattis.com/problems/teque) | teque | 3.2 | [Haskell](Kattis/teque.hs) |
-| [Ternarian Weights](https://open.kattis.com/problems/ternarianweights) | ternarianweights | 3.1 | [Python](Kattis/ternarianweights.py) [Haskell](Kattis/ternarianweights.hs) |
-| [Terraforming](https://open.kattis.com/problems/terraforming) | terraforming | 2.7 | [Haskell](Kattis/terraforming.hs) |
-| [Test Drive](https://open.kattis.com/problems/testdrive) | testdrive | 2.0 | [Haskell](Kattis/testdrive.hs) |
-| [Testing LEDs](https://open.kattis.com/problems/testingleds) | testingleds | 1.5 | [Haskell](Kattis/testingleds.hs) |
-| [Tetration](https://open.kattis.com/problems/tetration) | tetration | 1.7 | [Haskell](Kattis/tetration.hs) |
-| [Tetris](https://open.kattis.com/problems/tetris) | tetris | 2.2 | [Haskell](Kattis/tetris.hs) |
-| [Texture Analysis](https://open.kattis.com/problems/textureanalysis) | textureanalysis | 3.8 | [Python](Kattis/textureanalysis.py) |
-| [Thank God it’s Friday](https://open.kattis.com/problems/tgif) | tgif | 2.9 | [Python](Kattis/tgif.py) |
-| [Thanos](https://open.kattis.com/problems/thanos) | thanos | 2.1 | [Haskell](Kattis/thanos.hs) |
-| [Thanos the Hero](https://open.kattis.com/problems/thanosthehero) | thanosthehero | 2.5 | [Haskell](Kattis/thanosthehero.hs) |
-| [The Backslash Problem](https://open.kattis.com/problems/thebackslashproblem) | thebackslashproblem | 2.2 | [Haskell](Kattis/thebackslashproblem.hs) |
-| [The Deal of the Day](https://open.kattis.com/problems/thedealoftheday) | thedealoftheday | 2.3 | [Haskell](Kattis/thedealoftheday.hs) |
-| [The Grand Adventure](https://open.kattis.com/problems/thegrandadventure) | thegrandadventure | 1.8 | [Haskell](Kattis/thegrandadventure.hs) |
-| [The Last Problem](https://open.kattis.com/problems/thelastproblem) | thelastproblem | 1.5 | [Python](Kattis/thelastproblem.py) |
-| [The N Days of Christmas](https://open.kattis.com/problems/thendaysofchristmas) | thendaysofchristmas | 1.4 | [Haskell](Kattis/thendaysofchristmas.hs) |
-| [The Plank](https://open.kattis.com/problems/theplank) | theplank | 1.5 | [Haskell](Kattis/theplank.hs) |
-| [Thermostat Trouble](https://open.kattis.com/problems/thermostat) | thermostat | 3.3 | [Haskell](Kattis/thermostat.hs) |
-| [Thirsty Cow](https://open.kattis.com/problems/thirstycow) | thirstycow | 1.9 | [Haskell](Kattis/thirstycow.hs) |
-| [This Ain't Your Grandpa's Checkerboard](https://open.kattis.com/problems/thisaintyourgrandpascheckerboard) | thisaintyourgrandpascheckerboard | 1.7 | [Haskell](Kattis/thisaintyourgrandpascheckerboard.hs) |
-| [Þjarki](https://open.kattis.com/problems/thjarki) | thjarki | 6.2 | [Haskell](Kattis/thjarki.hs) |
-| [Thoring test](https://open.kattis.com/problems/thoringtest) | thoringtest | 1.9 | [Haskell](Kattis/thoringtest.hs) |
-| [Three Dice](https://open.kattis.com/problems/threedice) | threedice | 4.7 | [Haskell](Kattis/threedice.hs) |
-| [Three Powers](https://open.kattis.com/problems/threepowers) | threepowers | 2.3 | [Haskell](Kattis/threepowers.hs) |
-| [Threes and Fives](https://open.kattis.com/problems/threesandfives) | threesandfives | 4.6 | [Haskell](Kattis/threesandfives.hs) |
-| [Game of Throwns](https://open.kattis.com/problems/throwns) | throwns | 2.0 | [Haskell](Kattis/throwns.hs) |
-| [Ticket Completed?](https://open.kattis.com/problems/ticketcompleted) | ticketcompleted | 3.2 | [Haskell](Kattis/ticketcompleted.hs) |
-| [Tic-Tac State](https://open.kattis.com/problems/tictacstate) | tictacstate | 2.4 | [Haskell](Kattis/tictacstate.hs) |
-| [Passing Time](https://open.kattis.com/problems/tidsfordriv) | tidsfordriv | 1.6 | [Haskell](Kattis/tidsfordriv.hs) |
-| [Tight words](https://open.kattis.com/problems/tight) | tight | 2.7 | [Haskell](Kattis/tight.hs) |
-| [Tildes](https://open.kattis.com/problems/tildes) | tildes | 2.5 | [Haskell](Kattis/tildes.hs) |
-| [Til hamingju](https://open.kattis.com/problems/tilhamingju) | tilhamingju | 1.0 | [Haskell](Kattis/tilhamingju.hs) |
-| [Timebomb](https://open.kattis.com/problems/timebomb) | timebomb | 2.1 | [Haskell](Kattis/timebomb.hs) |
-| [Stuck In A Time Loop](https://open.kattis.com/problems/timeloop) | timeloop | 1.2 | [Python](Kattis/timeloop.py) [C++](Kattis/timeloop.cpp) |
-| [Tired Terry](https://open.kattis.com/problems/tiredterry) | tiredterry | 3.2 | [Haskell](Kattis/tiredterry.hs) |
-| [Title Cost](https://open.kattis.com/problems/titlecost) | titlecost | 1.5 | [Haskell](Kattis/titlecost.hs) |
-| [Töflur](https://open.kattis.com/problems/toflur) | toflur | 2.4 | [Haskell](Kattis/toflur.hs) |
-| [Toggi](https://open.kattis.com/problems/toggi) | toggi | 2.4 | [Haskell](Kattis/toggi.hs) |
-| [Toilet Seat](https://open.kattis.com/problems/toilet) | toilet | 2.6 | [Haskell](Kattis/toilet.hs) |
-| [Tok Tik](https://open.kattis.com/problems/toktik) | toktik | 1.6 | [Haskell](Kattis/toktik.hs) [C++](Kattis/toktik.cpp) |
-| [ToLower](https://open.kattis.com/problems/tolower) | tolower | 2.4 | [Haskell](Kattis/tolower.hs) |
-| [Tölvunarfræðingar telja](https://open.kattis.com/problems/tolvunarfraedingartelja) | tolvunarfraedingartelja | 1.1 | [Haskell](Kattis/tolvunarfraedingartelja.hs) |
-| [Torn To Pieces](https://open.kattis.com/problems/torn2pieces) | torn2pieces | 3.0 | [Haskell](Kattis/torn2pieces.hs) |
-| [Tower Construction](https://open.kattis.com/problems/tornbygge) | tornbygge | 1.7 | [Haskell](Kattis/tornbygge.hs) |
-| [Töskupökkun](https://open.kattis.com/problems/toskupokkun) | toskupokkun | 4.4 | [Haskell](Kattis/toskupokkun.hs) |
-| [Touchscreen Keyboard](https://open.kattis.com/problems/touchscreenkeyboard) | touchscreenkeyboard | 2.1 | [Haskell](Kattis/touchscreenkeyboard.hs) |
-| [Tour de France](https://open.kattis.com/problems/tourdefrance) | tourdefrance | 2.8 | [Haskell](Kattis/tourdefrance.hs) |
-| [Tourists](https://open.kattis.com/problems/tourists) | tourists | 4.0 | [C++](Kattis/tourists.cpp) |
-| [A Towering Problem](https://open.kattis.com/problems/towering) | towering | 2.4 | [Haskell](Kattis/towering.hs) |
-| [Tracking Shares](https://open.kattis.com/problems/trackingshares) | trackingshares | 2.4 | [Haskell](Kattis/trackingshares.hs) |
-| [Traffic Lights](https://open.kattis.com/problems/trafficlights) | trafficlights | 3.2 | [Haskell](Kattis/trafficlights.hs) |
-| [Training](https://open.kattis.com/problems/training) | training | 1.6 | [Haskell](Kattis/training.hs) |
-| [Train Passengers](https://open.kattis.com/problems/trainpassengers) | trainpassengers | 3.0 | [Haskell](Kattis/trainpassengers.hs) |
-| [Train Timetables](https://open.kattis.com/problems/traintimetables) | traintimetables | 3.1 | [Haskell](Kattis/traintimetables.hs) |
-| [Tram](https://open.kattis.com/problems/tram) | tram | 2.2 | [Haskell](Kattis/tram.hs) |
-| [Transit Woes](https://open.kattis.com/problems/transitwoes) | transitwoes | 1.5 | [Haskell](Kattis/transitwoes.hs) |
-| [Translation](https://open.kattis.com/problems/translation) | translation | 1.5 | [Haskell](Kattis/translation.hs) |
-| [Trapizza](https://open.kattis.com/problems/trapizza) | trapizza | 2.0 | [Haskell](Kattis/trapizza.hs) |
-| [Treasure Hunt](https://open.kattis.com/problems/treasure) | treasure | 7.4 | [C++](Kattis/treasure.cpp) |
-| [Treasure Hunt](https://open.kattis.com/problems/treasurehunt) | treasurehunt | 2.3 | [Haskell](Kattis/treasurehunt.hs) |
-| [Treehouses](https://open.kattis.com/problems/treehouses) | treehouses | 2.9 | [Haskell](Kattis/treehouses.hs) |
-| [Tree Skiing](https://open.kattis.com/problems/treeskiing) | treeskiing | 2.7 | [Haskell](Kattis/treeskiing.hs) |
-| [Three in a Row](https://open.kattis.com/problems/treirad) | treirad | 1.5 | [Haskell](Kattis/treirad.hs) |
-| [Tri](https://open.kattis.com/problems/tri) | tri | 1.8 | [Haskell](Kattis/tri.hs) |
-| [The Triangle Factory](https://open.kattis.com/problems/triangelfabriken) | triangelfabriken | 1.3 | [Haskell](Kattis/triangelfabriken.hs) |
-| [Triangle Drama](https://open.kattis.com/problems/triangledrama) | triangledrama | 2.5 | [Haskell](Kattis/triangledrama.hs) |
-| [Triangles of a Square](https://open.kattis.com/problems/trianglesofasquare) | trianglesofasquare | 1.9 | [Haskell](Kattis/trianglesofasquare.hs) |
-| [Triangle Text](https://open.kattis.com/problems/triangulartext) | triangulartext | 6.1 | [Haskell](Kattis/triangulartext.hs) |
-| [Triangle Area](https://open.kattis.com/problems/triarea) | triarea | 1.2 | [Python](Kattis/triarea.py) |
-| [Trik](https://open.kattis.com/problems/trik) | trik | 1.4 | [Haskell](Kattis/trik.hs) |
-| [Triangle Trilemma](https://open.kattis.com/problems/trilemma) | trilemma | 2.9 | [Haskell](Kattis/trilemma.hs) |
-| [The Trip, 2007](https://open.kattis.com/problems/trip2007) | trip2007 | 3.0 | [Haskell](Kattis/trip2007.hs) |
-| [Triple Sevens](https://open.kattis.com/problems/triplesevens) | triplesevens | 1.6 | [Haskell](Kattis/triplesevens.hs) |
-| [Triple Texting](https://open.kattis.com/problems/tripletexting) | tripletexting | 1.7 | [Haskell](Kattis/tripletexting.hs) |
-| [Trip Odometer](https://open.kattis.com/problems/tripodometer) | tripodometer | 2.1 | [Haskell](Kattis/tripodometer.hs) |
-| [Tri Tiling](https://open.kattis.com/problems/tritiling) | tritiling | 2.7 | [Haskell](Kattis/tritiling.hs) |
-| [Trojke](https://open.kattis.com/problems/trojke) | trojke | 3.3 | [Haskell](Kattis/trojke.hs) |
-| [Troll Hunt](https://open.kattis.com/problems/trollhunt) | trollhunt | 2.5 | [Haskell](Kattis/trollhunt.hs) |
-| [Truls' Troubles](https://open.kattis.com/problems/trulstrubbel) | trulstrubbel | 1.5 | [Haskell](Kattis/trulstrubbel.hs) |
-| [Turtle Master](https://open.kattis.com/problems/turtlemaster) | turtlemaster | 3.6 | [Haskell](Kattis/turtlemaster.hs) |
-| [ICPC Tutorial](https://open.kattis.com/problems/tutorial) | tutorial | 3.1 | [Haskell](Kattis/tutorial.hs) |
-| [Take Two Stones](https://open.kattis.com/problems/twostones) | twostones | 1.2 | [Haskell](Kattis/twostones.hs) |
-| [Two-sum](https://open.kattis.com/problems/twosum) | twosum | 1.2 | [Python](Kattis/twosum.py) |
-| [Typo](https://open.kattis.com/problems/typo) | typo | 6.4 | [C++](Kattis/typo.cpp) |
-| [Úllen dúllen doff](https://open.kattis.com/problems/ullendullendoff) | ullendullendoff | 1.7 | [Haskell](Kattis/ullendullendoff.hs) |
-| [Úllen Dúllen Doff 2](https://open.kattis.com/problems/ullendullendoff2) | ullendullendoff2 | 2.5 | [Haskell](Kattis/ullendullendoff2.hs) |
-| [Ultimate Binary Watch](https://open.kattis.com/problems/ultimatebinarywatch) | ultimatebinarywatch | 2.1 | [Haskell](Kattis/ultimatebinarywatch.hs) |
-| [Umferð](https://open.kattis.com/problems/umferd) | umferd | 1.3 | [Haskell](Kattis/umferd.hs) |
-| [Umm Code](https://open.kattis.com/problems/ummcode) | ummcode | 3.3 | [Haskell](Kattis/ummcode.hs) |
-| [Undead or Alive](https://open.kattis.com/problems/undeadoralive) | undeadoralive | 1.4 | [Haskell](Kattis/undeadoralive.hs) |
-| [UnDetected](https://open.kattis.com/problems/undetected) | undetected | 3.2 | [Haskell](Kattis/undetected.hs) |
-| [Union-Find](https://open.kattis.com/problems/unionfind) | unionfind | 3.4 | [Haskell](Kattis/unionfind.hs) [C++](Kattis/unionfind.cpp) |
-| [University Zoning](https://open.kattis.com/problems/universityzoning) | universityzoning | 2.9 | [Haskell](Kattis/universityzoning.hs) |
-| [Unlockable](https://open.kattis.com/problems/unlockable) | unlockable | 2.3 | [Haskell](Kattis/unlockable.hs) |
-| [Unlock Pattern](https://open.kattis.com/problems/unlockpattern) | unlockpattern | 1.9 | [Haskell](Kattis/unlockpattern.hs) |
-| [Uno Reverse](https://open.kattis.com/problems/unoreverse) | unoreverse | 5.6 | [Haskell](Kattis/unoreverse.hs) |
-| [Uppröðun](https://open.kattis.com/problems/upprodun) | upprodun | 1.6 | [Haskell](Kattis/upprodun.hs) |
-| [The Ups and Downs of Investing](https://open.kattis.com/problems/upsanddownsofinvesting) | upsanddownsofinvesting | 3.7 | [Haskell](Kattis/upsanddownsofinvesting.hs) |
-| [Upside Down](https://open.kattis.com/problems/upsidedown) | upsidedown | 1.6 | [Haskell](Kattis/upsidedown.hs) |
-| [UTF-8](https://open.kattis.com/problems/utf8) | utf8 | 2.2 | [Haskell](Kattis/utf8.hs) |
-| [Excursion](https://open.kattis.com/problems/utflykt) | utflykt | 1.8 | [Haskell](Kattis/utflykt.hs) |
-| [The Uxuhul Voting System](https://open.kattis.com/problems/uxuhulvoting) | uxuhulvoting | 3.1 | [Haskell](Kattis/uxuhulvoting.hs) |
-| [Vacation Time](https://open.kattis.com/problems/vacationtime) | vacationtime | 3.0 | [C++](Kattis/vacationtime.cpp) |
-| [Vaccine Efficacy](https://open.kattis.com/problems/vaccineefficacy) | vaccineefficacy | 3.0 | [Haskell](Kattis/vaccineefficacy.hs) |
-| [Vacuumba](https://open.kattis.com/problems/vacuumba) | vacuumba | 2.0 | [Haskell](Kattis/vacuumba.hs) |
-| [Fallen Chimney](https://open.kattis.com/problems/vaeltetskorsten) | vaeltetskorsten | 1.3 | [Haskell](Kattis/vaeltetskorsten.hs) |
-| [Right-of-Way](https://open.kattis.com/problems/vajningsplikt) | vajningsplikt | 2.3 | [Haskell](Kattis/vajningsplikt.hs) |
-| [Vandalism](https://open.kattis.com/problems/vandalism) | vandalism | 1.4 | [Haskell](Kattis/vandalism.hs) |
-| [Variable Arithmetic](https://open.kattis.com/problems/variablearithmetic) | variablearithmetic | 2.3 | [Haskell](Kattis/variablearithmetic.hs) |
-| [Electric Torch](https://open.kattis.com/problems/vasaljos) | vasaljos | 9.0 | [Haskell](Kattis/vasaljos.hs) |
-| [Vauvau](https://open.kattis.com/problems/vauvau) | vauvau | 2.0 | [Haskell](Kattis/vauvau.hs) |
-| [Veci](https://open.kattis.com/problems/veci) | veci | 1.5 | [Haskell](Kattis/veci.hs) |
-| [Vector Functions](https://open.kattis.com/problems/vectorfunctions) | vectorfunctions | 3.1 | [C++](Kattis/vectorfunctions.cpp) [C](Kattis/vectorfunctions.h) |
-| [Veður - Lokaðar heiðar](https://open.kattis.com/problems/vedurheidar) | vedurheidar | 1.3 | [Haskell](Kattis/vedurheidar.hs) |
-| [Veður - Vindhraði](https://open.kattis.com/problems/vedurvindhradi) | vedurvindhradi | 1.7 | [Haskell](Kattis/vedurvindhradi.hs) |
-| [Vefþjónatjón](https://open.kattis.com/problems/vefthjonatjon) | vefthjonatjon | 1.6 | [Haskell](Kattis/vefthjonatjon.hs) |
-| [Passport Dates](https://open.kattis.com/problems/vegabrefadagsetningar) | vegabrefadagsetningar | 1.8 | [Python](Kattis/vegabrefadagsetningar.py) |
-| [Boiling Vegetables](https://open.kattis.com/problems/vegetables) | vegetables | 3.8 | [Python](Kattis/vegetables.py) |
-| [Veggja Kalli](https://open.kattis.com/problems/veggjakalli) | veggjakalli | 3.3 | [Haskell](Kattis/veggjakalli.hs) |
-| [Velkomin!](https://open.kattis.com/problems/velkomin) | velkomin | 1.0 | [Haskell](Kattis/velkomin.hs) |
-| [Who wins?](https://open.kattis.com/problems/vemvinner) | vemvinner | 1.8 | [Haskell](Kattis/vemvinner.hs) |
-| [Enjoy Your Repast!](https://open.kattis.com/problems/verditheradgodu) | verditheradgodu | 1.1 | [Haskell](Kattis/verditheradgodu.hs) |
-| [Video Speedup](https://open.kattis.com/problems/videospeedup) | videospeedup | 1.9 | [Haskell](Kattis/videospeedup.hs) |
-| [Viðsnúningur](https://open.kattis.com/problems/vidsnuningur) | vidsnuningur | 1.1 | [Haskell](Kattis/vidsnuningur.hs) |
-| [Vinir](https://open.kattis.com/problems/vinir) | vinir | 1.7 | [Haskell](Kattis/vinir.hs) |
-| [Virtual Friends](https://open.kattis.com/problems/virtualfriends) | virtualfriends | 3.2 | [Haskell](Kattis/virtualfriends.hs) |
-| [Virus](https://open.kattis.com/problems/virus3) | virus3 | 1.6 | [Haskell](Kattis/virus3.hs) |
-| [VisuAlgo Online Quiz](https://open.kattis.com/problems/visualgo) | visualgo | 3.3 | [Python](Kattis/visualgo.py) |
-| [Volim](https://open.kattis.com/problems/volim) | volim | 1.6 | [Haskell](Kattis/volim.hs) |
-| [Popular Vote](https://open.kattis.com/problems/vote) | vote | 2.6 | [Haskell](Kattis/vote.hs) |
-| [Waif Until Dark](https://open.kattis.com/problems/waif) | waif | 2.7 | [C++](Kattis/waif.cpp) |
-| [Wake up call](https://open.kattis.com/problems/wakeupcall) | wakeupcall | 1.4 | [Haskell](Kattis/wakeupcall.hs) |
-| [A Walk Through The Forest](https://open.kattis.com/problems/walkforest) | walkforest | 5.1 | [C++](Kattis/walkforest.cpp) |
-| [Trapezoid Walkway](https://open.kattis.com/problems/walkway) | walkway | 2.8 | [C++](Kattis/walkway.cpp) |
-| [Warehouse](https://open.kattis.com/problems/warehouse) | warehouse | 2.0 | [Haskell](Kattis/warehouse.hs) |
-| [Watchdog](https://open.kattis.com/problems/watchdog) | watchdog | 2.3 | [Haskell](Kattis/watchdog.hs) |
-| [Water Journal](https://open.kattis.com/problems/waterjournal) | waterjournal | 2.2 | [Haskell](Kattis/waterjournal.hs) |
-| [Watersheds](https://open.kattis.com/problems/watersheds) | watersheds | 3.1 | [Haskell](Kattis/watersheds.hs) |
-| [Water Slide Waste (Easy)](https://open.kattis.com/problems/waterslidewasteeasy) | waterslidewasteeasy | 1.9 | [Haskell](Kattis/waterslidewasteeasy.hs) |
-| [Waterworld](https://open.kattis.com/problems/waterworld) | waterworld | 2.2 | [Haskell](Kattis/waterworld.hs) |
-| [Weak Vertices](https://open.kattis.com/problems/weakvertices) | weakvertices | 1.4 | [C++](Kattis/weakvertices.cpp) |
-| [Weather Nodes](https://open.kattis.com/problems/weathernodes) | weathernodes | 5.7 | [Haskell](Kattis/weathernodes.hs) |
-| [The Weight Of Words](https://open.kattis.com/problems/weightofwords) | weightofwords | 2.2 | [Haskell](Kattis/weightofwords.hs) |
-| [Welcome to Code Jam (Easy)](https://open.kattis.com/problems/welcomeeasy) | welcomeeasy | 2.0 | [C++](Kattis/welcomeeasy.cpp) |
-| [Welcome to Code Jam (Hard)](https://open.kattis.com/problems/welcomehard) | welcomehard | 3.5 | [C++](Kattis/welcomehard.cpp) |
-| [Welcome Sign](https://open.kattis.com/problems/welcomesign) | welcomesign | 2.1 | [Haskell](Kattis/welcomesign.hs) |
-| [We Need to Go Deeper](https://open.kattis.com/problems/weneedtogodeeper) | weneedtogodeeper | 2.9 | [Haskell](Kattis/weneedtogodeeper.hs) |
-| [WERTYU](https://open.kattis.com/problems/wertyu) | wertyu | 2.9 | [Haskell](Kattis/wertyu.hs) |
-| [WFF 'N PROOF](https://open.kattis.com/problems/wffnproof) | wffnproof | 3.0 | [Haskell](Kattis/wffnproof.hs) |
-| [What a Deal!](https://open.kattis.com/problems/whatadeal) | whatadeal | 2.2 | [Haskell](Kattis/whatadeal.hs) |
-| [What does the fox say?](https://open.kattis.com/problems/whatdoesthefoxsay) | whatdoesthefoxsay | 2.0 | [Haskell](Kattis/whatdoesthefoxsay.hs) |
-| [Where, Oh Where Has my Little Dog Gone?](https://open.kattis.com/problems/wherehasmylittledoggone) | wherehasmylittledoggone | 2.9 | [Kotlin](Kattis/wherehasmylittledoggone.kt) |
-| [Where's My Internet??](https://open.kattis.com/problems/wheresmyinternet) | wheresmyinternet | 2.0 | [Haskell](Kattis/wheresmyinternet.hs) |
-| [Which Base is it Anyway?](https://open.kattis.com/problems/whichbase) | whichbase | 2.4 | [Haskell](Kattis/whichbase.hs) |
-| [Which is Greater?](https://open.kattis.com/problems/whichisgreater) | whichisgreater | 1.2 | [Python](Kattis/whichisgreater.py) |
-| [Which Number Kind Is It?](https://open.kattis.com/problems/whichnumberkindisit2) | whichnumberkindisit2 | 1.4 | [Haskell](Kattis/whichnumberkindisit2.hs) |
-| [Which One is Larger](https://open.kattis.com/problems/whichoneislarger) | whichoneislarger | 3.3 | [Python](Kattis/whichoneislarger.py) [Haskell](Kattis/whichoneislarger.hs) |
-| [Wizard of Odds](https://open.kattis.com/problems/wizardofodds) | wizardofodds | 2.4 | [Haskell](Kattis/wizardofodds.hs) |
-| [Wood Cutting](https://open.kattis.com/problems/woodcutting) | woodcutting | 3.0 | [Haskell](Kattis/woodcutting.hs) |
-| [Word Cloud](https://open.kattis.com/problems/wordcloud) | wordcloud | 2.3 | [Haskell](Kattis/wordcloud.hs) |
-| [Word Game](https://open.kattis.com/problems/wordgame2) | wordgame2 | 5.1 | [Haskell](Kattis/wordgame2.hs) |
-| [Wordle Feedback](https://open.kattis.com/problems/wordlefeedback) | wordlefeedback | 2.4 | [Haskell](Kattis/wordlefeedback.hs) |
-| [Words for Numbers](https://open.kattis.com/problems/wordsfornumbers) | wordsfornumbers | 2.6 | [Haskell](Kattis/wordsfornumbers.hs) |
-| [Work From Home](https://open.kattis.com/problems/workfromhome) | workfromhome | 2.9 | [Haskell](Kattis/workfromhome.hs) |
-| [Assigning Workstations](https://open.kattis.com/problems/workstations) | workstations | 2.1 | [Haskell](Kattis/workstations.hs) [Python](Kattis/workstations.py) |
-| [XORsistinn](https://open.kattis.com/problems/xorsist) | xorsist | 2.2 | [Haskell](Kattis/xorsist.hs) |
-| [XORsistinn 2](https://open.kattis.com/problems/xorsist2) | xorsist2 | 3.0 | [Haskell](Kattis/xorsist2.hs) |
-| [Yin and Yang Stones](https://open.kattis.com/problems/yinyangstones) | yinyangstones | 1.9 | [Haskell](Kattis/yinyangstones.hs) |
-| [Yoda](https://open.kattis.com/problems/yoda) | yoda | 2.1 | [Haskell](Kattis/yoda.hs) |
-| [You Be the Judge!](https://open.kattis.com/problems/youbethejudge) | youbethejudge | 5.8 | [Haskell](Kattis/youbethejudge.hs) |
-| [Zadaca](https://open.kattis.com/problems/zadaca) | zadaca | 3.2 | [Haskell](Kattis/zadaca.hs) |
-| [Zagrade](https://open.kattis.com/problems/zagrade) | zagrade | 3.0 | [Haskell](Kattis/zagrade.hs) |
-| [Zamka](https://open.kattis.com/problems/zamka) | zamka | 1.4 | [Haskell](Kattis/zamka.hs) |
-| [Stand on Zanzibar](https://open.kattis.com/problems/zanzibar) | zanzibar | 1.5 | [Haskell](Kattis/zanzibar.hs) |
-| [Zapis](https://open.kattis.com/problems/zapis) | zapis | 5.4 | [Haskell](Kattis/zapis.hs) |
-| [Zebras and Ocelots](https://open.kattis.com/problems/zebrasocelots) | zebrasocelots | 3.5 | [Haskell](Kattis/zebrasocelots.hs) |
-| [Un-bear-able Zoo](https://open.kattis.com/problems/zoo) | zoo | 1.7 | [Haskell](Kattis/zoo.hs) |
-| [Zoom](https://open.kattis.com/problems/zoom) | zoom | 1.5 | [Haskell](Kattis/zoom.hs) |
-| [Zyxab](https://open.kattis.com/problems/zyxab) | zyxab | 2.4 | [Haskell](Kattis/zyxab.hs) |
+| [10 Kinds of People](https://open.kattis.com/problems/10kindsofpeople) | 10kindsofpeople | 4.3 | <a href="Kattis/10kindsofpeople.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [1-D Frogger (Easy)](https://open.kattis.com/problems/1dfroggereasy) | 1dfroggereasy | 2.8 | <a href="Kattis/1dfroggereasy.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [2048](https://open.kattis.com/problems/2048) | 2048 | 2.6 | <a href="Kattis/2048.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [So you want to be a 2^n-aire?](https://open.kattis.com/problems/2naire) | 2naire | 3.2 | <a href="Kattis/2naire.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [3D Printed Statues](https://open.kattis.com/problems/3dprinter) | 3dprinter | 2.1 | <a href="Kattis/3dprinter.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [3-Puzzle](https://open.kattis.com/problems/3puzzle) | 3puzzle | 1.8 | <a href="Kattis/3puzzle.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [4 thought](https://open.kattis.com/problems/4thought) | 4thought | 2.7 | <a href="Kattis/4thought.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Eight Queens](https://open.kattis.com/problems/8queens) | 8queens | 2.8 | <a href="Kattis/8queens.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [99 Problems](https://open.kattis.com/problems/99problems) | 99problems | 2.7 | <a href="Kattis/99problems.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [99 Problems](https://open.kattis.com/problems/99problems2) | 99problems2 | 5.0 | <a href="Kattis/99problems2.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Aaah!](https://open.kattis.com/problems/aaah) | aaah | 1.4 | <a href="Kattis/aaah.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [ABC](https://open.kattis.com/problems/abc) | abc | 1.8 | <a href="Kattis/abc.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Above Average](https://open.kattis.com/problems/aboveaverage) | aboveaverage | 1.9 | <a href="Kattis/aboveaverage.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Above Sea Level](https://open.kattis.com/problems/abovesealevel) | abovesealevel | 1.3 | <a href="Kattis/abovesealevel.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Absolutely Symmetric](https://open.kattis.com/problems/absolutelysymmetric) | absolutelysymmetric | 4.2 | <a href="Kattis/absolutelysymmetric.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [A Cappella Recording](https://open.kattis.com/problems/acappellarecording) | acappellarecording | 2.6 | <a href="Kattis/acappellarecording.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Access Denied](https://open.kattis.com/problems/accessdenied) | accessdenied | 4.5 | <a href="Kattis/accessdenied.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Ace Arbiter](https://open.kattis.com/problems/acearbiter) | acearbiter | 5.7 | <a href="Kattis/acearbiter.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [ACKME Company Picnic](https://open.kattis.com/problems/ackmecompanypicnic) | ackmecompanypicnic | 4.7 | <a href="Kattis/ackmecompanypicnic.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [ACM Contest Scoring](https://open.kattis.com/problems/acm) | acm | 1.7 | <a href="Kattis/acm.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Association for Computing Machinery](https://open.kattis.com/problems/acm2) | acm2 | 2.5 | <a href="Kattis/acm2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Acquire Hardware](https://open.kattis.com/problems/acquirehardware) | acquirehardware | 1.9 | <a href="Kattis/acquirehardware.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [The Calculus of Ada](https://open.kattis.com/problems/ada) | ada | 2.4 | <a href="Kattis/ada.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Adding Trouble](https://open.kattis.com/problems/addingtrouble) | addingtrouble | 1.2 | <a href="Kattis/addingtrouble.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Adding Words](https://open.kattis.com/problems/addingwords) | addingwords | 2.9 | <a href="Kattis/addingwords.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Add Two Numbers](https://open.kattis.com/problems/addtwonumbers) | addtwonumbers | 1.2 | <a href="Kattis/addtwonumbers.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Afjörmun](https://open.kattis.com/problems/afjormun) | afjormun | 1.5 | <a href="Kattis/afjormun.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a><a href="Kattis/afjormun.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [A Game in the Park](https://open.kattis.com/problems/agameinthepark) | agameinthepark | 5.5 | <a href="Kattis/agameinthepark.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Air Conditioned Minions](https://open.kattis.com/problems/airconditioned) | airconditioned | 2.7 | <a href="Kattis/airconditioned.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Airfare Grants](https://open.kattis.com/problems/airfaregrants) | airfaregrants | 1.3 | <a href="Kattis/airfaregrants.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Akcija](https://open.kattis.com/problems/akcija) | akcija | 1.6 | <a href="Kattis/akcija.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Akureyri](https://open.kattis.com/problems/akureyri) | akureyri | 1.5 | <a href="Kattis/akureyri.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Aldur](https://open.kattis.com/problems/aldur) | aldur | 1.2 | <a href="Kattis/aldur.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Aldursröðun](https://open.kattis.com/problems/aldursrodun) | aldursrodun | 2.3 | <a href="Kattis/aldursrodun.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Alehouse](https://open.kattis.com/problems/alehouse) | alehouse | 4.1 | <a href="Kattis/alehouse.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Á leið í bíó](https://open.kattis.com/problems/aleidibio) | aleidibio | 1.1 | <a href="Kattis/aleidibio.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Alex and Barb](https://open.kattis.com/problems/alexandbarb) | alexandbarb | 3.8 | <a href="Kattis/alexandbarb.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Alien Attack 2](https://open.kattis.com/problems/alienattack2) | alienattack2 | 2.5 | <a href="Kattis/alienattack2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Alien Math](https://open.kattis.com/problems/alienmath) | alienmath | 2.3 | <a href="Kattis/alienmath.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Alien Numbers](https://open.kattis.com/problems/aliennumbers) | aliennumbers | 1.9 | <a href="Kattis/aliennumbers.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [All about that base](https://open.kattis.com/problems/allaboutthatbase) | allaboutthatbase | 2.9 | <a href="Kattis/allaboutthatbase.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Almost Perfect](https://open.kattis.com/problems/almostperfect) | almostperfect | 2.5 | <a href="Kattis/almostperfect.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Almost Union-Find](https://open.kattis.com/problems/almostunionfind) | almostunionfind | 4.2 | <a href="Kattis/almostunionfind.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Alphabet](https://open.kattis.com/problems/alphabet) | alphabet | 2.9 | <a href="Kattis/alphabet.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Alphabetical Aristocrats](https://open.kattis.com/problems/alphabeticalaristocrats) | alphabeticalaristocrats | 1.9 | <a href="Kattis/alphabeticalaristocrats.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Alphabet Soup](https://open.kattis.com/problems/alphabetsoup) | alphabetsoup | 1.6 | <a href="Kattis/alphabetsoup.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Alphabet Spam](https://open.kattis.com/problems/alphabetspam) | alphabetspam | 1.5 | <a href="Kattis/alphabetspam.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Amanda Lounges](https://open.kattis.com/problems/amanda) | amanda | 5.4 | <a href="Kattis/amanda.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [A Mazing!](https://open.kattis.com/problems/amazing) | amazing | 6.3 | <a href="Kattis/amazing.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Amerískur vinnustaður](https://open.kattis.com/problems/ameriskur) | ameriskur | 1.2 | <a href="Kattis/ameriskur.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Sheba's Amoebas](https://open.kattis.com/problems/amoebas) | amoebas | 1.6 | <a href="Kattis/amoebas.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [A Multiplication Game](https://open.kattis.com/problems/amultiplicationgame) | amultiplicationgame | 3.8 | <a href="Kattis/amultiplicationgame.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a><a href="Kattis/amultiplicationgame.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Anagram Counting](https://open.kattis.com/problems/anagramcounting) | anagramcounting | 5.4 | <a href="Kattis/anagramcounting.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Contrarianism](https://open.kattis.com/problems/andmal) | andmal | 1.4 | <a href="Kattis/andmal.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Duck Journey](https://open.kattis.com/problems/andvag) | andvag | 2.4 | <a href="Kattis/andvag.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [A New Alphabet](https://open.kattis.com/problems/anewalphabet) | anewalphabet | 2.0 | <a href="Kattis/anewalphabet.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [The Duckamyds](https://open.kattis.com/problems/ankamyderna) | ankamyderna | 2.9 | <a href="Kattis/ankamyderna.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Annoyed Coworkers](https://open.kattis.com/problems/annoyedcoworkers) | annoyedcoworkers | 5.8 | <a href="Kattis/annoyedcoworkers.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Another Ancient Cipher](https://open.kattis.com/problems/anotherancientcipher) | anotherancientcipher | 2.4 | <a href="Kattis/anotherancientcipher.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Another Brick in the Wall](https://open.kattis.com/problems/anotherbrick) | anotherbrick | 2.1 | <a href="Kattis/anotherbrick.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Another Candies](https://open.kattis.com/problems/anothercandies) | anothercandies | 2.5 | <a href="Kattis/anothercandies.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Anthony and Cora](https://open.kattis.com/problems/anthony) | anthony | 4.4 | <a href="Kattis/anthony.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a><a href="Kattis/anthony.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Anthony and Diablo](https://open.kattis.com/problems/anthonyanddiablo) | anthonyanddiablo | 2.6 | <a href="Kattis/anthonyanddiablo.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Ocean's Anti-11](https://open.kattis.com/problems/anti11) | anti11 | 2.0 | <a href="Kattis/anti11.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Anti-Palindrome](https://open.kattis.com/problems/antipalindrome) | antipalindrome | 2.0 | <a href="Kattis/antipalindrome.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Anti-Tetris](https://open.kattis.com/problems/antitetris) | antitetris | 3.8 | <a href="Kattis/antitetris.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Ants](https://open.kattis.com/problems/ants) | ants | 2.3 | <a href="Kattis/ants.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Any Pythagorean Triple](https://open.kattis.com/problems/anypythagorean) | anypythagorean | 2.0 | <a href="Kattis/anypythagorean.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Apaxiaaaaaaaaaaaans!](https://open.kattis.com/problems/apaxiaaans) | apaxiaaans | 1.4 | <a href="Kattis/apaxiaaans.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Honour Thy (Apaxian) Parent](https://open.kattis.com/problems/apaxianparent) | apaxianparent | 1.7 | <a href="Kattis/apaxianparent.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Aperiodic Appointments](https://open.kattis.com/problems/aperiodicappointments) | aperiodicappointments | 6.6 | <a href="Kattis/aperiodicappointments.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Falling Apples](https://open.kattis.com/problems/apples) | apples | 3.0 | <a href="Kattis/apples.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Johnny Applesack](https://open.kattis.com/problems/applesack) | applesack | 3.6 | <a href="Kattis/applesack.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Approval Area](https://open.kattis.com/problems/approvalarea) | approvalarea | 1.9 | <a href="Kattis/approvalarea.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Is Everybody Appy?](https://open.kattis.com/problems/appy) | appy | 1.7 | <a href="Kattis/appy.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [A Prize No One Can Win](https://open.kattis.com/problems/aprizenoonecanwin) | aprizenoonecanwin | 3.0 | <a href="Kattis/aprizenoonecanwin.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Architecture](https://open.kattis.com/problems/architecture) | architecture | 2.8 | <a href="Kattis/architecture.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [A Real Challenge](https://open.kattis.com/problems/areal) | areal | 1.7 | <a href="Kattis/areal.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Are You Listening?](https://open.kattis.com/problems/areyoulistening) | areyoulistening | 2.9 | <a href="Kattis/areyoulistening.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Arggggggh!](https://open.kattis.com/problems/arggggggh) | arggggggh | 1.8 | <a href="Kattis/arggggggh.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Arithmetic](https://open.kattis.com/problems/arithmetic) | arithmetic | 3.2 | <a href="Kattis/arithmetic.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Arithmetic Decoding](https://open.kattis.com/problems/arithmeticdecoding) | arithmeticdecoding | 2.5 | <a href="Kattis/arithmeticdecoding.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Arithmetic Functions](https://open.kattis.com/problems/arithmeticfunctions) | arithmeticfunctions | 1.7 | <a href="Kattis/arithmeticfunctions.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Arm Coordination](https://open.kattis.com/problems/armcoordination) | armcoordination | 1.6 | <a href="Kattis/armcoordination.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Army Strength (Easy)](https://open.kattis.com/problems/armystrengtheasy) | armystrengtheasy | 2.2 | <a href="Kattis/armystrengtheasy.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Army Strength (Hard)](https://open.kattis.com/problems/armystrengthhard) | armystrengthhard | 2.1 | <a href="Kattis/armystrengthhard.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Array of Discord](https://open.kattis.com/problems/arrayofdiscord) | arrayofdiscord | 4.7 | <a href="Kattis/arrayofdiscord.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Array Smoothening](https://open.kattis.com/problems/arraysmoothening) | arraysmoothening | 3.3 | <a href="Kattis/arraysmoothening.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Amalgamated Artichokes](https://open.kattis.com/problems/artichoke) | artichoke | 2.3 | <a href="Kattis/artichoke.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [ASCII Addition](https://open.kattis.com/problems/asciiaddition) | asciiaddition | 2.5 | <a href="Kattis/asciiaddition.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [ASCII Figure Rotation](https://open.kattis.com/problems/asciifigurerotation) | asciifigurerotation | 3.0 | <a href="Kattis/asciifigurerotation.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [ASCII kassi](https://open.kattis.com/problems/asciikassi) | asciikassi | 1.4 | <a href="Kattis/asciikassi.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [ASCII Kassi 2](https://open.kattis.com/problems/asciikassi2) | asciikassi2 | 2.4 | <a href="Kattis/asciikassi2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [ASCII Box 3](https://open.kattis.com/problems/asciikassi3) | asciikassi3 | 5.8 | <a href="Kattis/asciikassi3.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Associative Exponents](https://open.kattis.com/problems/associativeexponents) | associativeexponents | 3.7 | <a href="Kattis/associativeexponents.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [A Stack of Gold](https://open.kattis.com/problems/astackofgold) | astackofgold | 2.4 | <a href="Kattis/astackofgold.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Asteroid Avoidance](https://open.kattis.com/problems/asteroidavoidance) | asteroidavoidance | 2.7 | <a href="Kattis/asteroidavoidance.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Astrological Sign](https://open.kattis.com/problems/astrologicalsign) | astrologicalsign | 2.5 | <a href="Kattis/astrologicalsign.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [A Tale of Two Queues](https://open.kattis.com/problems/ataleoftwoqueues) | ataleoftwoqueues | 1.4 | <a href="Kattis/ataleoftwoqueues.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [A Terrible Fortress](https://open.kattis.com/problems/aterriblefortress) | aterriblefortress | 1.2 | <a href="Kattis/aterriblefortress.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Atlögur](https://open.kattis.com/problems/atlogur) | atlogur | 2.1 | <a href="Kattis/atlogur.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [ATM Maintenance](https://open.kattis.com/problems/atmmaintenance) | atmmaintenance | 2.2 | <a href="Kattis/atmmaintenance.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Attempted Alphabet](https://open.kattis.com/problems/attemptedalphabet) | attemptedalphabet | 1.6 | <a href="Kattis/attemptedalphabet.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Attendance](https://open.kattis.com/problems/attendance2) | attendance2 | 1.8 | <a href="Kattis/attendance2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Automatic Trading](https://open.kattis.com/problems/automatictrading) | automatictrading | 4.8 | <a href="Kattis/automatictrading.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Autori](https://open.kattis.com/problems/autori) | autori | 1.2 | <a href="Kattis/autori.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Average Character](https://open.kattis.com/problems/averagecharacter) | averagecharacter | 2.0 | <a href="Kattis/averagecharacter.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Paradox With Averages](https://open.kattis.com/problems/averageseasy) | averageseasy | 2.6 | <a href="Kattis/averageseasy.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Paradox With Averages (Hard)](https://open.kattis.com/problems/averageshard) | averageshard | 2.8 | <a href="Kattis/averageshard.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Avion](https://open.kattis.com/problems/avion) | avion | 1.4 | <a href="Kattis/avion.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Avoiding the Abyss](https://open.kattis.com/problems/avoidingtheabyss) | avoidingtheabyss | 3.6 | <a href="Kattis/avoidingtheabyss.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a><a href="Kattis/avoidingtheabyss.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Avoidland](https://open.kattis.com/problems/avoidland) | avoidland | 3.1 | <a href="Kattis/avoidland.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Awkward Auction](https://open.kattis.com/problems/awkwardauction) | awkwardauction | 3.4 | <a href="Kattis/awkwardauction.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Awkward Party](https://open.kattis.com/problems/awkwardparty) | awkwardparty | 2.2 | <a href="Kattis/awkwardparty.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Aww Man](https://open.kattis.com/problems/awwman) | awwman | 4.2 | <a href="Kattis/awwman.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Babel](https://open.kattis.com/problems/babel) | babel | 6.1 | <a href="Kattis/babel.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Babelfish](https://open.kattis.com/problems/babelfish) | babelfish | 2.9 | <a href="Kattis/babelfish.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Baby Bites](https://open.kattis.com/problems/babybites) | babybites | 1.5 | <a href="Kattis/babybites.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Babylonian Numbers](https://open.kattis.com/problems/babylonian) | babylonian | 2.0 | <a href="Kattis/babylonian.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Baby Panda](https://open.kattis.com/problems/babypanda) | babypanda | 2.2 | <a href="Kattis/babypanda.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Backspace](https://open.kattis.com/problems/backspace) | backspace | 1.6 | <a href="Kattis/backspace.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Bacon, Eggs, and Spam](https://open.kattis.com/problems/baconeggsandspam) | baconeggsandspam | 1.8 | <a href="Kattis/baconeggsandspam.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Bad Directions](https://open.kattis.com/problems/baddirections) | baddirections | 1.6 | <a href="Kattis/baddirections.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Bag Deposit](https://open.kattis.com/problems/bagdeposit) | bagdeposit | 2.2 | <a href="Kattis/bagdeposit.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Balanced Diet](https://open.kattis.com/problems/balanceddiet) | balanceddiet | 3.3 | <a href="Kattis/balanceddiet.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Ball](https://open.kattis.com/problems/ball) | ball | 3.3 | <a href="Kattis/ball.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Baloni](https://open.kattis.com/problems/baloni) | baloni | 3.0 | <a href="Kattis/baloni.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Bank Queue](https://open.kattis.com/problems/bank) | bank | 3.1 | <a href="Kattis/bank.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Bannorð](https://open.kattis.com/problems/bannord) | bannord | 1.6 | <a href="Kattis/bannord.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Barcelona](https://open.kattis.com/problems/barcelona) | barcelona | 1.3 | <a href="Kattis/barcelona.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Bard](https://open.kattis.com/problems/bard) | bard | 2.4 | <a href="Kattis/bard.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Baseball Packs](https://open.kattis.com/problems/baseball) | baseball | 2.8 | <a href="Kattis/baseball.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Basic Programming 1](https://open.kattis.com/problems/basicprogramming1) | basicprogramming1 | 4.2 | <a href="Kattis/basicprogramming1.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Basic Programming 2](https://open.kattis.com/problems/basicprogramming2) | basicprogramming2 | 3.5 | <a href="Kattis/basicprogramming2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Basic Remains](https://open.kattis.com/problems/basicremains) | basicremains | 3.4 | <a href="Kattis/basicremains.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Basketball One-on-One](https://open.kattis.com/problems/basketballoneonone) | basketballoneonone | 1.5 | <a href="Kattis/basketballoneonone.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Batmanacci](https://open.kattis.com/problems/batmanacci) | batmanacci | 3.0 | <a href="Kattis/batmanacci.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Exploding Batteries](https://open.kattis.com/problems/batteries) | batteries | 6.0 | <a href="Kattis/batteries.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Batter Up](https://open.kattis.com/problems/batterup) | batterup | 1.3 | <a href="Kattis/batterup.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Battle of Nieuwpoort](https://open.kattis.com/problems/battleofnieuwpoort) | battleofnieuwpoort | 2.2 | <a href="Kattis/battleofnieuwpoort.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Battle Simulation](https://open.kattis.com/problems/battlesimulation) | battlesimulation | 2.3 | <a href="Kattis/battlesimulation.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Beat the Spread!](https://open.kattis.com/problems/beatspread) | beatspread | 2.2 | <a href="Kattis/beatspread.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Beautiful Primes](https://open.kattis.com/problems/beautifulprimes) | beautifulprimes | 4.0 | <a href="Kattis/beautifulprimes.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Beavergnaw](https://open.kattis.com/problems/beavergnaw) | beavergnaw | 2.0 | <a href="Kattis/beavergnaw.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Beehives](https://open.kattis.com/problems/beehives) | beehives | 1.9 | <a href="Kattis/beehives.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Beekeeper](https://open.kattis.com/problems/beekeeper) | beekeeper | 2.5 | <a href="Kattis/beekeeper.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Bela](https://open.kattis.com/problems/bela) | bela | 1.4 | <a href="Kattis/bela.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Bendilfærslur](https://open.kattis.com/problems/bendilfaerslur) | bendilfaerslur | 2.5 | <a href="Kattis/bendilfaerslur.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [BergMál](https://open.kattis.com/problems/bergmal) | bergmal | 1.2 | <a href="Kattis/bergmal.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Bergur](https://open.kattis.com/problems/bergur) | bergur | 1.7 | <a href="Kattis/bergur.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a><a href="Kattis/bergur.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Besta gjöfin](https://open.kattis.com/problems/bestagjofin) | bestagjofin | 1.2 | <a href="Kattis/bestagjofin.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Best Compression Ever](https://open.kattis.com/problems/bestcompression) | bestcompression | 2.6 | <a href="Kattis/bestcompression.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Best Relay Team](https://open.kattis.com/problems/bestrelayteam) | bestrelayteam | 1.7 | <a href="Kattis/bestrelayteam.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Better Dice](https://open.kattis.com/problems/betterdice) | betterdice | 1.9 | <a href="Kattis/betterdice.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Betting](https://open.kattis.com/problems/betting) | betting | 1.3 | <a href="Kattis/betting.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Betting Profit](https://open.kattis.com/problems/bettingprofit) | bettingprofit | 1.6 | <a href="Kattis/bettingprofit.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Bicikli](https://open.kattis.com/problems/bicikli) | bicikli | 6.7 | <a href="Kattis/bicikli.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a><a href="Kattis/bicikli.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Bið, endalaus bið](https://open.kattis.com/problems/bidendalausbid) | bidendalausbid | 2.2 | <a href="Kattis/bidendalausbid.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Big Boxes](https://open.kattis.com/problems/bigboxes) | bigboxes | 2.1 | <a href="Kattis/bigboxes.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Big Integers](https://open.kattis.com/problems/bigintegers) | bigintegers | 5.0 | <a href="Kattis/bigintegers.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Big Totoro](https://open.kattis.com/problems/bigtotoro) | bigtotoro | 3.2 | <a href="Kattis/bigtotoro.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Bijele](https://open.kattis.com/problems/bijele) | bijele | 1.2 | <a href="Kattis/bijele.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Bikes and Barricades](https://open.kattis.com/problems/bikesandbarricades) | bikesandbarricades | 2.5 | <a href="Kattis/bikesandbarricades.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Bilað Lyklaborð](https://open.kattis.com/problems/biladlyklabord) | biladlyklabord | 1.4 | <a href="Kattis/biladlyklabord.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Billy the apprentice](https://open.kattis.com/problems/billy) | billy | 3.9 | <a href="Kattis/billy.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Bílskúrar](https://open.kattis.com/problems/bilskurar) | bilskurar | 2.6 | <a href="Kattis/bilskurar.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Binary Exponentiation](https://open.kattis.com/problems/binaryexponentiation) | binaryexponentiation | 3.4 | <a href="Kattis/binaryexponentiation.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a><a href="Kattis/binaryexponentiation.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Binary Seating](https://open.kattis.com/problems/binaryseating) | binaryseating | 2.7 | <a href="Kattis/binaryseating.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Birds on a Wire](https://open.kattis.com/problems/birds) | birds | 2.7 | <a href="Kattis/birds.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Bishops](https://open.kattis.com/problems/bishops) | bishops | 2.4 | <a href="Kattis/bishops.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Bitaflipp](https://open.kattis.com/problems/bitaflipp) | bitaflipp | 3.4 | <a href="Kattis/bitaflipp.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Bit by Bit](https://open.kattis.com/problems/bitbybit) | bitbybit | 3.5 | <a href="Kattis/bitbybit.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Bits](https://open.kattis.com/problems/bits) | bits | 2.4 | <a href="Kattis/bits.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Bitte ein Bit](https://open.kattis.com/problems/bitteeinbit) | bitteeinbit | 1.4 | <a href="Kattis/bitteeinbit.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Black Friday](https://open.kattis.com/problems/blackfriday) | blackfriday | 1.7 | <a href="Kattis/blackfriday.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Blackthorn](https://open.kattis.com/problems/blackthorn) | blackthorn | 1.4 | <a href="Kattis/blackthorn.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Blaðra](https://open.kattis.com/problems/bladra) | bladra | 1.8 | <a href="Kattis/bladra.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a><a href="Kattis/bladra.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Blaðra](https://open.kattis.com/problems/bladra2) | bladra2 | 1.2 | <a href="Kattis/bladra2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Blandað Best](https://open.kattis.com/problems/blandadbest) | blandadbest | 1.2 | <a href="Kattis/blandadbest.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Blaster's Dash](https://open.kattis.com/problems/blastersdash) | blastersdash | 1.7 | <a href="Kattis/blastersdash.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Blueberry Waffle](https://open.kattis.com/problems/blueberrywaffle) | blueberrywaffle | 2.2 | <a href="Kattis/blueberrywaffle.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Bluetooth](https://open.kattis.com/problems/bluetooth) | bluetooth | 2.1 | <a href="Kattis/bluetooth.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Boat Parts](https://open.kattis.com/problems/boatparts) | boatparts | 1.7 | <a href="Kattis/boatparts.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Bobby's Bet](https://open.kattis.com/problems/bobby) | bobby | 2.2 | <a href="Kattis/bobby.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Bocchi's Rocks](https://open.kattis.com/problems/bocchinorokku) | bocchinorokku | 2.9 | <a href="Kattis/bocchinorokku.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Boggle](https://open.kattis.com/problems/boggle) | boggle | 4.9 | <a href="Kattis/boggle.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Accounting](https://open.kattis.com/problems/bokforing) | bokforing | 3.0 | <a href="Kattis/bokforing.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Bokstavstärningar](https://open.kattis.com/problems/bokstavstarningar) | bokstavstarningar | 4.0 | <a href="Kattis/bokstavstarningar.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Bolir](https://open.kattis.com/problems/bolir) | bolir | 4.6 | <a href="Kattis/bolir.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Booking a Room](https://open.kattis.com/problems/bookingaroom) | bookingaroom | 1.6 | <a href="Kattis/bookingaroom.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Bookshelf Bottleneck](https://open.kattis.com/problems/bookshelfbottleneck) | bookshelfbottleneck | 2.4 | <a href="Kattis/bookshelfbottleneck.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Bootstrapping Number](https://open.kattis.com/problems/bootstrappingnumber) | bootstrappingnumber | 2.8 | <a href="Kattis/bootstrappingnumber.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Killing Aliens in a Borg Maze](https://open.kattis.com/problems/borg) | borg | 3.4 | <a href="Kattis/borg.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [The Stock Market](https://open.kattis.com/problems/borsen) | borsen | 3.1 | <a href="Kattis/borsen.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Boss Battle](https://open.kattis.com/problems/bossbattle) | bossbattle | 2.4 | <a href="Kattis/bossbattle.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Bottled-Up Feelings](https://open.kattis.com/problems/bottledup) | bottledup | 2.4 | <a href="Kattis/bottledup.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Bottle Opening](https://open.kattis.com/problems/bottleopening) | bottleopening | 1.8 | <a href="Kattis/bottleopening.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Boule Judge](https://open.kattis.com/problems/boulejudge) | boulejudge | 2.1 | <a href="Kattis/boulejudge.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Bounding Robots](https://open.kattis.com/problems/boundingrobots) | boundingrobots | 2.1 | <a href="Kattis/boundingrobots.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Bowser's Pipes](https://open.kattis.com/problems/bowserspipes) | bowserspipes | 5.5 | <a href="Kattis/bowserspipes.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Bracket Matching](https://open.kattis.com/problems/bracketmatching) | bracketmatching | 1.5 | <a href="Kattis/bracketmatching.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Bracket Pairing](https://open.kattis.com/problems/bracketpairing) | bracketpairing | 5.9 | <a href="Kattis/bracketpairing.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Brahmagupta-Fibonacci](https://open.kattis.com/problems/brahmaguptafibonacci) | brahmaguptafibonacci | 6.0 | <a href="Kattis/brahmaguptafibonacci.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Brainfuck](https://open.kattis.com/problems/brainfuck) | brainfuck | 3.6 | <a href="Kattis/brainfuck.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Brandvägg](https://open.kattis.com/problems/brandvagg) | brandvagg | 3.4 | <a href="Kattis/brandvagg.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Breaking Branches](https://open.kattis.com/problems/breakingbranches) | breakingbranches | 1.7 | <a href="Kattis/breakingbranches.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Brexit](https://open.kattis.com/problems/brexit) | brexit | 2.6 | <a href="Kattis/brexit.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a><a href="Kattis/brexit.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Brick Wall](https://open.kattis.com/problems/brickwall) | brickwall | 5.3 | <a href="Kattis/brickwall.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a><a href="Kattis/brickwall.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Bridges and Tunnels](https://open.kattis.com/problems/bridgesandtunnels) | bridgesandtunnels | 2.6 | <a href="Kattis/bridgesandtunnels.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Brilliance of Wings](https://open.kattis.com/problems/brillianceofwings) | brillianceofwings | 1.9 | <a href="Kattis/brillianceofwings.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Broken Calculator](https://open.kattis.com/problems/brokencalculator) | brokencalculator | 2.7 | <a href="Kattis/brokencalculator.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Broken Keypad](https://open.kattis.com/problems/brokenkeypad) | brokenkeypad | 6.1 | <a href="Kattis/brokenkeypad.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Broken Swords](https://open.kattis.com/problems/brokenswords) | brokenswords | 2.7 | <a href="Kattis/brokenswords.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Brownie Points I](https://open.kattis.com/problems/browniepoints) | browniepoints | 2.2 | <a href="Kattis/browniepoints.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Brýr](https://open.kattis.com/problems/bryr) | bryr | 2.4 | <a href="Kattis/bryr.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Buffon's Needle](https://open.kattis.com/problems/buffonsneedle) | buffonsneedle | 3.4 | <a href="Kattis/buffonsneedle.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Buildin' Fences](https://open.kattis.com/problems/buildinfences) | buildinfences | 1.6 | <a href="Kattis/buildinfences.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Building Highways](https://open.kattis.com/problems/buildinghighways) | buildinghighways | 2.2 | <a href="Kattis/buildinghighways.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Buka](https://open.kattis.com/problems/buka) | buka | 2.2 | <a href="Kattis/buka.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Bumped!](https://open.kattis.com/problems/bumped) | bumped | 3.7 | <a href="Kattis/bumped.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Bungee Builder](https://open.kattis.com/problems/bungeebuilder) | bungeebuilder | 3.2 | <a href="Kattis/bungeebuilder.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Bunny Town Bonding](https://open.kattis.com/problems/bunnytownbonding) | bunnytownbonding | 2.4 | <a href="Kattis/bunnytownbonding.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Burizon Fort](https://open.kattis.com/problems/burizonfort) | burizonfort | 4.9 | <a href="Kattis/burizonfort.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Bus](https://open.kattis.com/problems/bus) | bus | 1.7 | <a href="Kattis/bus.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Bus Assignment](https://open.kattis.com/problems/busassignment) | busassignment | 1.4 | <a href="Kattis/busassignment.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Bus Lines](https://open.kattis.com/problems/buslines) | buslines | 2.4 | <a href="Kattis/buslines.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Bus Numbers](https://open.kattis.com/problems/busnumbers) | busnumbers | 2.1 | <a href="Kattis/busnumbers.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Bus Numbers](https://open.kattis.com/problems/busnumbers2) | busnumbers2 | 2.6 | <a href="Kattis/busnumbers2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [The Bus Card](https://open.kattis.com/problems/busskortet) | busskortet | 3.1 | <a href="Kattis/busskortet.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Busy Schedule](https://open.kattis.com/problems/busyschedule) | busyschedule | 2.2 | <a href="Kattis/busyschedule.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Button Bashing](https://open.kattis.com/problems/buttonbashing) | buttonbashing | 2.9 | <a href="Kattis/buttonbashing.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Cake](https://open.kattis.com/problems/cake) | cake | 6.2 | <a href="Kattis/cake.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Cakey McCakeFace](https://open.kattis.com/problems/cakeymccakeface) | cakeymccakeface | 4.3 | <a href="Kattis/cakeymccakeface.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Calculating Dart Scores](https://open.kattis.com/problems/calculatingdartscores) | calculatingdartscores | 2.2 | <a href="Kattis/calculatingdartscores.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Calculator](https://open.kattis.com/problems/calculator) | calculator | 3.1 | <a href="Kattis/calculator.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Call for Problems](https://open.kattis.com/problems/callforproblems) | callforproblems | 1.3 | <a href="Kattis/callforproblems.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Nordic Camping](https://open.kattis.com/problems/camping) | camping | 6.8 | <a href="Kattis/camping.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Canadians, eh?](https://open.kattis.com/problems/canadianseh) | canadianseh | 1.5 | <a href="Kattis/canadianseh.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Candle Box](https://open.kattis.com/problems/candlebox) | candlebox | 3.2 | <a href="Kattis/candlebox.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Candy Contribution](https://open.kattis.com/problems/candycontribution) | candycontribution | 4.5 | <a href="Kattis/candycontribution.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Candy Store](https://open.kattis.com/problems/candystore) | candystore | 1.5 | <a href="Kattis/candystore.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Canonical Coin Systems](https://open.kattis.com/problems/canonical) | canonical | 5.1 | <a href="Kattis/canonical.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Cantina of Babel](https://open.kattis.com/problems/cantinaofbabel) | cantinaofbabel | 3.0 | <a href="Kattis/cantinaofbabel.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Cantor](https://open.kattis.com/problems/cantor) | cantor | 2.7 | <a href="Kattis/cantor.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Canvas Line](https://open.kattis.com/problems/canvasline) | canvasline | 5.2 | <a href="Kattis/canvasline.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Capsules](https://open.kattis.com/problems/capsules) | capsules | 3.1 | <a href="Kattis/capsules.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Cardboard Container](https://open.kattis.com/problems/cardboardcontainer) | cardboardcontainer | 2.4 | <a href="Kattis/cardboardcontainer.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Card Trick](https://open.kattis.com/problems/cardtrick2) | cardtrick2 | 2.2 | <a href="Kattis/cardtrick2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Careful Ascent](https://open.kattis.com/problems/carefulascent) | carefulascent | 2.2 | <a href="Kattis/carefulascent.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Carousel Rides](https://open.kattis.com/problems/carousel) | carousel | 2.8 | <a href="Kattis/carousel.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Car Racing](https://open.kattis.com/problems/carracing) | carracing | 1.8 | <a href="Kattis/carracing.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Solving for Carrots](https://open.kattis.com/problems/carrots) | carrots | 1.2 | <a href="Kattis/carrots.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Cascade Centrality](https://open.kattis.com/problems/cascadecentrality) | cascadecentrality | 3.0 | <a href="Kattis/cascadecentrality.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Catalan Numbers](https://open.kattis.com/problems/catalan) | catalan | 3.1 | <a href="Kattis/catalan.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [A Feast For Cats](https://open.kattis.com/problems/cats) | cats | 3.9 | <a href="Kattis/cats.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Cat Toys](https://open.kattis.com/problems/cattoys) | cattoys | 1.5 | <a href="Kattis/cattoys.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Cave Exploration](https://open.kattis.com/problems/caveexploration) | caveexploration | 3.1 | <a href="Kattis/caveexploration.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [CD](https://open.kattis.com/problems/cd) | cd | 3.3 | <a href="Kattis/cd.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Ceiling Function](https://open.kattis.com/problems/ceiling) | ceiling | 2.2 | <a href="Kattis/ceiling.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Opening Ceremony](https://open.kattis.com/problems/ceremony) | ceremony | 3.8 | <a href="Kattis/ceremony.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Certainly](https://open.kattis.com/problems/certainly) | certainly | 1.6 | <a href="Kattis/certainly.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Cetiri](https://open.kattis.com/problems/cetiri) | cetiri | 1.8 | <a href="Kattis/cetiri.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Cetvrta](https://open.kattis.com/problems/cetvrta) | cetvrta | 1.3 | <a href="Kattis/cetvrta.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Champernowne Subsequence](https://open.kattis.com/problems/champernownesubsequence) | champernownesubsequence | 3.1 | <a href="Kattis/champernownesubsequence.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Champernowne Verification](https://open.kattis.com/problems/champernowneverification) | champernowneverification | 1.6 | <a href="Kattis/champernowneverification.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Chanukah Challenge](https://open.kattis.com/problems/chanukah) | chanukah | 1.4 | <a href="Kattis/chanukah.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Character Development](https://open.kattis.com/problems/character) | character | 2.1 | <a href="Kattis/character.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Chardonnay](https://open.kattis.com/problems/chardonnay) | chardonnay | 1.6 | <a href="Kattis/chardonnay.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Charged](https://open.kattis.com/problems/charged) | charged | 2.3 | <a href="Kattis/charged.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Charting Progress](https://open.kattis.com/problems/chartingprogress) | chartingprogress | 2.2 | <a href="Kattis/chartingprogress.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Cheater Detection](https://open.kattis.com/problems/cheaterdetection) | cheaterdetection | 4.0 | <a href="Kattis/cheaterdetection.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Cheating at War](https://open.kattis.com/problems/cheatingatwar) | cheatingatwar | 5.4 | <a href="Kattis/cheatingatwar.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Cheating Students](https://open.kattis.com/problems/cheatingstudents) | cheatingstudents | 2.8 | <a href="Kattis/cheatingstudents.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a><a href="Kattis/cheatingstudents.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Checkmate in One](https://open.kattis.com/problems/checkmateinone) | checkmateinone | 4.5 | <a href="Kattis/checkmateinone.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Checkout](https://open.kattis.com/problems/checkout) | checkout | 3.9 | <a href="Kattis/checkout.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Cheese Touch](https://open.kattis.com/problems/cheesetouch) | cheesetouch | 3.3 | <a href="Kattis/cheesetouch.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Chasing the Cheetahs](https://open.kattis.com/problems/cheetahs) | cheetahs | 6.3 | <a href="Kattis/cheetahs.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Chemist's vows](https://open.kattis.com/problems/chemistsvows) | chemistsvows | 3.0 | <a href="Kattis/chemistsvows.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Chess](https://open.kattis.com/problems/chess) | chess | 3.0 | <a href="Kattis/chess.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Chewbacca](https://open.kattis.com/problems/chewbacca) | chewbacca | 3.0 | <a href="Kattis/chewbacca.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Chocolate Division](https://open.kattis.com/problems/chocolatedivision) | chocolatedivision | 1.9 | <a href="Kattis/chocolatedivision.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Chocolate Balls](https://open.kattis.com/problems/chokladbollar) | chokladbollar | 3.1 | <a href="Kattis/chokladbollar.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Preludes](https://open.kattis.com/problems/chopin) | chopin | 2.0 | <a href="Kattis/chopin.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Chopsticks](https://open.kattis.com/problems/chopsticks) | chopsticks | 4.2 | <a href="Kattis/chopsticks.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Chopping Wood](https://open.kattis.com/problems/chopwood) | chopwood | 3.4 | <a href="Kattis/chopwood.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Chugging](https://open.kattis.com/problems/chugging) | chugging | 1.6 | <a href="Kattis/chugging.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Cinema Crowds](https://open.kattis.com/problems/cinema) | cinema | 2.1 | <a href="Kattis/cinema.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Cinema Crowds 2](https://open.kattis.com/problems/cinema2) | cinema2 | 1.8 | <a href="Kattis/cinema2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Cinema Seating](https://open.kattis.com/problems/cinemaseating) | cinemaseating | 2.8 | <a href="Kattis/cinemaseating.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Circuit Math](https://open.kattis.com/problems/circuitmath) | circuitmath | 2.0 | <a href="Kattis/circuitmath.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Circular Painting](https://open.kattis.com/problems/circularpainting) | circularpainting | 1.7 | <a href="Kattis/circularpainting.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Class Field Trip](https://open.kattis.com/problems/classfieldtrip) | classfieldtrip | 1.4 | <a href="Kattis/classfieldtrip.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Class Photo](https://open.kattis.com/problems/classphoto) | classphoto | 1.3 | <a href="Kattis/classphoto.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Climbing Worm](https://open.kattis.com/problems/climbingworm) | climbingworm | 2.0 | <a href="Kattis/climbingworm.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Clock Construction](https://open.kattis.com/problems/clockconstruction) | clockconstruction | 4.0 | <a href="Kattis/clockconstruction.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Closest Pair (Uniform)](https://open.kattis.com/problems/closestpair1) | closestpair1 | 4.5 | <a href="Kattis/closestpair1.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Closest Pair](https://open.kattis.com/problems/closestpair2) | closestpair2 | 6.2 | <a href="Kattis/closestpair2.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Closest Sums](https://open.kattis.com/problems/closestsums) | closestsums | 2.4 | <a href="Kattis/closestsums.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Closing the Loop](https://open.kattis.com/problems/closingtheloop) | closingtheloop | 2.1 | <a href="Kattis/closingtheloop.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Club Pizza](https://open.kattis.com/problems/clubpizza) | clubpizza | 2.4 | <a href="Kattis/clubpizza.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Coast Length](https://open.kattis.com/problems/coast) | coast | 2.7 | <a href="Kattis/coast.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [A Furious Cocktail](https://open.kattis.com/problems/cocktail) | cocktail | 2.7 | <a href="Kattis/cocktail.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Coconut Splat](https://open.kattis.com/problems/coconut) | coconut | 1.8 | <a href="Kattis/coconut.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Code Guessing](https://open.kattis.com/problems/codeguessing) | codeguessing | 2.9 | <a href="Kattis/codeguessing.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Code to Save Lives](https://open.kattis.com/problems/codetosavelives) | codetosavelives | 1.7 | <a href="Kattis/codetosavelives.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Coffee Cup Combo](https://open.kattis.com/problems/coffeecupcombo) | coffeecupcombo | 1.6 | <a href="Kattis/coffeecupcombo.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Cokolada](https://open.kattis.com/problems/cokolada) | cokolada | 2.3 | <a href="Kattis/cokolada.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Cold-puter Science](https://open.kattis.com/problems/cold) | cold | 1.4 | <a href="Kattis/cold.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a><a href="Kattis/cold.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Collapse](https://open.kattis.com/problems/collapse) | collapse | 3.2 | <a href="Kattis/collapse.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Coloring Socks](https://open.kattis.com/problems/color) | color | 2.0 | <a href="Kattis/color.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Colour Wars](https://open.kattis.com/problems/colourwars) | colourwars | 2.4 | <a href="Kattis/colourwars.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Combination Lock](https://open.kattis.com/problems/combinationlock) | combinationlock | 2.7 | <a href="Kattis/combinationlock.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Combinatorial Stanley Cup](https://open.kattis.com/problems/combinatorialstanleycup) | combinatorialstanleycup | 2.7 | <a href="Kattis/combinatorialstanleycup.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Radio Commercials](https://open.kattis.com/problems/commercials) | commercials | 1.9 | <a href="Kattis/commercials.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Common Factors](https://open.kattis.com/problems/commonfactors) | commonfactors | 4.2 | <a href="Kattis/commonfactors.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Jumbled Communication](https://open.kattis.com/problems/communication) | communication | 2.0 | <a href="Kattis/communication.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Communication Line](https://open.kattis.com/problems/communicationline) | communicationline | 4.3 | <a href="Kattis/communicationline.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Company Picnic](https://open.kattis.com/problems/companypicnic) | companypicnic | 4.2 | <a href="Kattis/companypicnic.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Jumbled Compass](https://open.kattis.com/problems/compass) | compass | 2.1 | <a href="Kattis/compass.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Competitive Arcade Basketball](https://open.kattis.com/problems/competitivearcadebasketball) | competitivearcadebasketball | 2.0 | <a href="Kattis/competitivearcadebasketball.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Completing the Square](https://open.kattis.com/problems/completingthesquare) | completingthesquare | 2.0 | <a href="Kattis/completingthesquare.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Composed Rhythms](https://open.kattis.com/problems/composedrhythms) | composedrhythms | 1.7 | <a href="Kattis/composedrhythms.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a><a href="Kattis/composedrhythms.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Compositions](https://open.kattis.com/problems/compositions) | compositions | 2.3 | <a href="Kattis/compositions.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Compound Words](https://open.kattis.com/problems/compoundwords) | compoundwords | 1.6 | <a href="Kattis/compoundwords.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Compression](https://open.kattis.com/problems/compression2) | compression2 | 3.6 | <a href="Kattis/compression2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Best Compromise](https://open.kattis.com/problems/compromise) | compromise | 2.1 | <a href="Kattis/compromise.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Conformity](https://open.kattis.com/problems/conformity) | conformity | 1.6 | <a href="Kattis/conformity.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Conquest](https://open.kattis.com/problems/conquest) | conquest | 2.9 | <a href="Kattis/conquest.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a><a href="Kattis/conquest.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Conquest Campaign](https://open.kattis.com/problems/conquestcampaign) | conquestcampaign | 2.1 | <a href="Kattis/conquestcampaign.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a><a href="Kattis/conquestcampaign.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Sums](https://open.kattis.com/problems/consecutivesums) | consecutivesums | 3.0 | <a href="Kattis/consecutivesums.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Conservation](https://open.kattis.com/problems/conservation) | conservation | 4.7 | <a href="Kattis/conservation.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Contest Struggles](https://open.kattis.com/problems/conteststruggles) | conteststruggles | 2.1 | <a href="Kattis/conteststruggles.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Contingency Planning](https://open.kattis.com/problems/contingencyplanning) | contingencyplanning | 2.1 | <a href="Kattis/contingencyplanning.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Continuous Median](https://open.kattis.com/problems/continuousmedian) | continuousmedian | 2.7 | <a href="Kattis/continuousmedian.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Cryptographer's Conundrum](https://open.kattis.com/problems/conundrum) | conundrum | 1.7 | <a href="Kattis/conundrum.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Conversation Log](https://open.kattis.com/problems/conversationlog) | conversationlog | 2.8 | <a href="Kattis/conversationlog.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Converting Romans](https://open.kattis.com/problems/convertingromans) | convertingromans | 3.6 | <a href="Kattis/convertingromans.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Convex Polygon Area](https://open.kattis.com/problems/convexpolygonarea) | convexpolygonarea | 2.0 | <a href="Kattis/convexpolygonarea.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Cookie Cutters](https://open.kattis.com/problems/cookiecutter) | cookiecutter | 2.1 | <a href="Kattis/cookiecutter.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Cookie Monster Concussion](https://open.kattis.com/problems/cookiemonsterconcussion) | cookiemonsterconcussion | 2.3 | <a href="Kattis/cookiemonsterconcussion.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Cooking Water](https://open.kattis.com/problems/cookingwater) | cookingwater | 2.2 | <a href="Kattis/cookingwater.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Cops and Robbers](https://open.kattis.com/problems/copsandrobbers) | copsandrobbers | 4.9 | <a href="Kattis/copsandrobbers.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Cornhusker](https://open.kattis.com/problems/cornhusker) | cornhusker | 1.7 | <a href="Kattis/cornhusker.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Cosmic Commute](https://open.kattis.com/problems/cosmiccommute) | cosmiccommute | 4.8 | <a href="Kattis/cosmiccommute.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a><a href="Kattis/cosmiccommute.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Cosmic Path Optimization](https://open.kattis.com/problems/cosmicpathoptimization) | cosmicpathoptimization | 1.3 | <a href="Kattis/cosmicpathoptimization.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Costume Contest](https://open.kattis.com/problems/costumecontest) | costumecontest | 2.2 | <a href="Kattis/costumecontest.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Circuit Counting](https://open.kattis.com/problems/countcircuits) | countcircuits | 4.9 | <a href="Kattis/countcircuits.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Count Doubles](https://open.kattis.com/problems/countdoubles) | countdoubles | 1.9 | <a href="Kattis/countdoubles.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Skip Counting](https://open.kattis.com/problems/counting) | counting | 1.3 | <a href="Kattis/counting.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Counting Clauses](https://open.kattis.com/problems/countingclauses) | countingclauses | 1.6 | <a href="Kattis/countingclauses.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Counting Days](https://open.kattis.com/problems/countingdays) | countingdays | 3.0 | <a href="Kattis/countingdays.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Counting Stars](https://open.kattis.com/problems/countingstars) | countingstars | 2.6 | <a href="Kattis/countingstars.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Counting Triangles](https://open.kattis.com/problems/countingtriangles) | countingtriangles | 2.0 | <a href="Kattis/countingtriangles.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Count the Vowels](https://open.kattis.com/problems/countthevowels) | countthevowels | 1.2 | <a href="Kattis/countthevowels.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Course Scheduling](https://open.kattis.com/problems/coursescheduling) | coursescheduling | 1.7 | <a href="Kattis/coursescheduling.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [CPR Number](https://open.kattis.com/problems/cprnummer) | cprnummer | 1.5 | <a href="Kattis/cprnummer.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Cracking RSA](https://open.kattis.com/problems/crackingrsa) | crackingrsa | 1.9 | <a href="Kattis/crackingrsa.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Crafting Recipes](https://open.kattis.com/problems/craftingrecipes) | craftingrecipes | 4.4 | <a href="Kattis/craftingrecipes.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Crashing Robots](https://open.kattis.com/problems/crashingrobots) | crashingrobots | 3.3 | <a href="Kattis/crashingrobots.cs"><img src="https://cdn-icons-png.flaticon.com/512/6132/6132221.png" alt="C#" width="32" height="32"></a> |
+| [Crne](https://open.kattis.com/problems/crne) | crne | 2.5 | <a href="Kattis/crne.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Cross Country](https://open.kattis.com/problems/crosscountry) | crosscountry | 2.4 | <a href="Kattis/crosscountry.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [CS Building Blueprint](https://open.kattis.com/problems/csbuildingblueprint) | csbuildingblueprint | 7.7 | <a href="Kattis/csbuildingblueprint.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Cuckoo Hashing](https://open.kattis.com/problems/cuckoo) | cuckoo | 4.0 | <a href="Kattis/cuckoo.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Cudoviste](https://open.kattis.com/problems/cudoviste) | cudoviste | 1.5 | <a href="Kattis/cudoviste.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Culture shock](https://open.kattis.com/problems/cultureshock) | cultureshock | 1.7 | <a href="Kattis/cultureshock.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Stacking Cups](https://open.kattis.com/problems/cups) | cups | 1.6 | <a href="Kattis/cups.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Cups and Balls](https://open.kattis.com/problems/cupsandballs) | cupsandballs | 1.6 | <a href="Kattis/cupsandballs.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Curse the Darkness](https://open.kattis.com/problems/cursethedarkness) | cursethedarkness | 2.5 | <a href="Kattis/cursethedarkness.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Curveknights](https://open.kattis.com/problems/curveknights) | curveknights | 3.7 | <a href="Kattis/curveknights.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Curve Speed](https://open.kattis.com/problems/curvespeed) | curvespeed | 2.2 | <a href="Kattis/curvespeed.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Cut in Line](https://open.kattis.com/problems/cutinline) | cutinline | 1.6 | <a href="Kattis/cutinline.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Cut the Negativity](https://open.kattis.com/problems/cutthenegativity) | cutthenegativity | 1.4 | <a href="Kattis/cutthenegativity.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Cutting Brownies](https://open.kattis.com/problems/cuttingbrownies) | cuttingbrownies | 4.1 | <a href="Kattis/cuttingbrownies.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Cyanide Rivers](https://open.kattis.com/problems/cyaniderivers) | cyaniderivers | 2.2 | <a href="Kattis/cyaniderivers.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Cyclical Periods](https://open.kattis.com/problems/cyclicalperiods) | cyclicalperiods | 2.6 | <a href="Kattis/cyclicalperiods.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Cypher Decypher](https://open.kattis.com/problems/cypherdecypher) | cypherdecypher | 1.5 | <a href="Kattis/cypherdecypher.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Dacey the Dice](https://open.kattis.com/problems/daceydice) | daceydice | 3.6 | <a href="Kattis/daceydice.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a><a href="Kattis/daceydice.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Dagatal](https://open.kattis.com/problems/dagatal) | dagatal | 1.2 | <a href="Kattis/dagatal.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Damaged Equation](https://open.kattis.com/problems/damagedequation) | damagedequation | 2.4 | <a href="Kattis/damagedequation.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Dams in Distress](https://open.kattis.com/problems/damsindistress) | damsindistress | 3.8 | <a href="Kattis/damsindistress.java"><img src="https://img.icons8.com/color/96/java-coffee-cup-logo--v1.png" alt="Java" width="32" height="32"></a> |
+| [Daniel's Debugging Disaster](https://open.kattis.com/problems/danielsdebuggingdisaster) | danielsdebuggingdisaster | 2.4 | <a href="Kattis/danielsdebuggingdisaster.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Danish Date Format](https://open.kattis.com/problems/danishdateformat) | danishdateformat | 1.5 | <a href="Kattis/danishdateformat.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Dansgólf](https://open.kattis.com/problems/dansgolf) | dansgolf | 2.3 | <a href="Kattis/dansgolf.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Darts](https://open.kattis.com/problems/dartscores) | dartscores | 2.1 | <a href="Kattis/dartscores.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Das Blinkenlights](https://open.kattis.com/problems/dasblinkenlights) | dasblinkenlights | 1.6 | <a href="Kattis/dasblinkenlights.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [DA-Sort](https://open.kattis.com/problems/dasort) | dasort | 3.5 | <a href="Kattis/dasort.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Datum](https://open.kattis.com/problems/datum) | datum | 1.6 | <a href="Kattis/datum.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Death Knight Hero](https://open.kattis.com/problems/deathknight) | deathknight | 1.5 | <a href="Kattis/deathknight.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Deathstar](https://open.kattis.com/problems/deathstar) | deathstar | 1.7 | <a href="Kattis/deathstar.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Breaking into the Death Star](https://open.kattis.com/problems/deathstar2) | deathstar2 | 1.5 | <a href="Kattis/deathstar2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Death and Taxes](https://open.kattis.com/problems/deathtaxes) | deathtaxes | 3.1 | <a href="Kattis/deathtaxes.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Deceptive Dice](https://open.kattis.com/problems/deceptivedice) | deceptivedice | 3.0 | <a href="Kattis/deceptivedice.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Decimal deletion](https://open.kattis.com/problems/decimaldeletion) | decimaldeletion | 1.2 | <a href="Kattis/decimaldeletion.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Decisions, Decisions](https://open.kattis.com/problems/decisions) | decisions | 2.9 | <a href="Kattis/decisions.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Deildadrottnun](https://open.kattis.com/problems/deildadrottnun) | deildadrottnun | 3.0 | <a href="Kattis/deildadrottnun.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Deildajöfnuður](https://open.kattis.com/problems/deildajofnudur) | deildajofnudur | 2.1 | <a href="Kattis/deildajofnudur.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Deild Goðsagnanna](https://open.kattis.com/problems/deildgodsagnanna) | deildgodsagnanna | 3.7 | <a href="Kattis/deildgodsagnanna.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Dejavu](https://open.kattis.com/problems/dejavu) | dejavu | 3.0 | <a href="Kattis/dejavu.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Delft Distance](https://open.kattis.com/problems/delftdistance) | delftdistance | 3.9 | <a href="Kattis/delftdistance.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Delimiter Soup](https://open.kattis.com/problems/delimitersoup) | delimitersoup | 1.8 | <a href="Kattis/delimitersoup.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Democratic Naming](https://open.kattis.com/problems/democraticnaming) | democraticnaming | 1.7 | <a href="Kattis/democraticnaming.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Desiigner strengir](https://open.kattis.com/problems/desiigner) | desiigner | 2.1 | <a href="Kattis/desiigner.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Detailed Differences](https://open.kattis.com/problems/detaileddifferences) | detaileddifferences | 1.4 | <a href="Kattis/detaileddifferences.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Deterministic Finite Automata - Complement](https://open.kattis.com/problems/dfacomplement) | dfacomplement | 2.7 | <a href="Kattis/dfacomplement.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Deterministic Finite Automata - Difference](https://open.kattis.com/problems/dfadifference) | dfadifference | 3.1 | <a href="Kattis/dfadifference.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Deterministic Finite Automata - Enumeration](https://open.kattis.com/problems/dfaenumeration) | dfaenumeration | 6.7 | <a href="Kattis/dfaenumeration.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Deterministic Finite Automata - Intersection](https://open.kattis.com/problems/dfaintersection) | dfaintersection | 4.6 | <a href="Kattis/dfaintersection.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Deterministic Finite Automata - Is the Empty Language?](https://open.kattis.com/problems/dfaisempty) | dfaisempty | 3.8 | <a href="Kattis/dfaisempty.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Deterministic Finite Automata - Is a Finite Language?](https://open.kattis.com/problems/dfaisfinite) | dfaisfinite | 7.2 | <a href="Kattis/dfaisfinite.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Deterministic Finite Automata - Maximum Word Length](https://open.kattis.com/problems/dfamaximumwordlength) | dfamaximumwordlength | 5.6 | <a href="Kattis/dfamaximumwordlength.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Deterministic Finite Automata - Minimum Word Length](https://open.kattis.com/problems/dfaminimumwordlength) | dfaminimumwordlength | 2.6 | <a href="Kattis/dfaminimumwordlength.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Deterministic Finite Automata - Read](https://open.kattis.com/problems/dfaread) | dfaread | 2.4 | <a href="Kattis/dfaread.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Deterministic Finite Automata - Symmetric Difference](https://open.kattis.com/problems/dfasymmetricdifference) | dfasymmetricdifference | 3.7 | <a href="Kattis/dfasymmetricdifference.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Deterministic Finite Automata - Union](https://open.kattis.com/problems/dfaunion) | dfaunion | 3.5 | <a href="Kattis/dfaunion.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [D Fyrir Dreki](https://open.kattis.com/problems/dfyrirdreki) | dfyrirdreki | 1.2 | <a href="Kattis/dfyrirdreki.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Dialling Digits](https://open.kattis.com/problems/diallingdigits) | diallingdigits | 2.1 | <a href="Kattis/diallingdigits.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Diamonds](https://open.kattis.com/problems/diamonds) | diamonds | 6.5 | <a href="Kattis/diamonds.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Dice Cup](https://open.kattis.com/problems/dicecup) | dicecup | 1.5 | <a href="Kattis/dicecup.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Dice Game](https://open.kattis.com/problems/dicegame) | dicegame | 1.8 | <a href="Kattis/dicegame.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Dickensian Dictionary](https://open.kattis.com/problems/dickensiandictionary) | dickensiandictionary | 1.7 | <a href="Kattis/dickensiandictionary.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Die Hard](https://open.kattis.com/problems/diehard) | diehard | 2.9 | <a href="Kattis/diehard.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [A Different Problem](https://open.kattis.com/problems/different) | different | 2.2 | <a href="Kattis/different.rs"><img src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/96/external-rust-is-a-multi-paradigm-system-programming-language-logo-bold-tal-revivo.png" alt="Rust" width="32" height="32"></a><a href="Kattis/different.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Different Distances](https://open.kattis.com/problems/differentdistances) | differentdistances | 2.2 | <a href="Kattis/differentdistances.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Digit Division](https://open.kattis.com/problems/digitdivision) | digitdivision | 4.7 | <a href="Kattis/digitdivision.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Digits](https://open.kattis.com/problems/digits) | digits | 3.1 | <a href="Kattis/digits.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Digit Swap](https://open.kattis.com/problems/digitswap) | digitswap | 1.2 | <a href="Kattis/digitswap.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Ding Dong Ditch](https://open.kattis.com/problems/dingdongditch) | dingdongditch | 2.6 | <a href="Kattis/dingdongditch.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a><a href="Kattis/dingdongditch.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Disc District](https://open.kattis.com/problems/discdistrict) | discdistrict | 2.4 | <a href="Kattis/discdistrict.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a><a href="Kattis/discdistrict.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Dishonest Lottery](https://open.kattis.com/problems/dishonestlottery) | dishonestlottery | 2.1 | <a href="Kattis/dishonestlottery.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Digital display](https://open.kattis.com/problems/display) | display | 2.6 | <a href="Kattis/display.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Distance](https://open.kattis.com/problems/distance) | distance | 3.5 | <a href="Kattis/distance.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Distracted](https://open.kattis.com/problems/distracted) | distracted | 7.3 | <a href="Kattis/distracted.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Distributing Poffins](https://open.kattis.com/problems/distributingpoffins) | distributingpoffins | 1.9 | <a href="Kattis/distributingpoffins.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Diverse Contest](https://open.kattis.com/problems/diversecontest) | diversecontest | 2.6 | <a href="Kattis/diversecontest.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Divisible Subsequences](https://open.kattis.com/problems/divisible) | divisible | 3.0 | <a href="Kattis/divisible.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a><a href="Kattis/divisible.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Divvying Up](https://open.kattis.com/problems/divvyingup) | divvyingup | 1.4 | <a href="Kattis/divvyingup.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [DIY Planes](https://open.kattis.com/problems/diyplanes) | diyplanes | 7.1 | <a href="Kattis/diyplanes.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [DnD Dice](https://open.kattis.com/problems/dnddice) | dnddice | 5.2 | <a href="Kattis/dnddice.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Dodecaphony](https://open.kattis.com/problems/dodecaphony) | dodecaphony | 2.9 | <a href="Kattis/dodecaphony.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Dog & Gopher](https://open.kattis.com/problems/doggopher) | doggopher | 2.2 | <a href="Kattis/doggopher.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Dominoes 2](https://open.kattis.com/problems/dominoes2) | dominoes2 | 2.6 | <a href="Kattis/dominoes2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Don't Be Fake](https://open.kattis.com/problems/dontbefake) | dontbefake | 2.2 | <a href="Kattis/dontbefake.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Don't Fall Down Stairs](https://open.kattis.com/problems/dontfalldownstairs) | dontfalldownstairs | 2.2 | <a href="Kattis/dontfalldownstairs.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Doorman](https://open.kattis.com/problems/doorman) | doorman | 2.3 | <a href="Kattis/doorman.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Double Palindromes](https://open.kattis.com/problems/doublepalindromes) | doublepalindromes | 4.9 | <a href="Kattis/doublepalindromes.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Double Password](https://open.kattis.com/problems/doublepassword) | doublepassword | 1.5 | <a href="Kattis/doublepassword.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Doubleplusgood](https://open.kattis.com/problems/doubleplusgood) | doubleplusgood | 2.6 | <a href="Kattis/doubleplusgood.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Disastrous Downtime](https://open.kattis.com/problems/downtime) | downtime | 3.3 | <a href="Kattis/downtime.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Draga Frá](https://open.kattis.com/problems/dragafra) | dragafra | 1.1 | <a href="Kattis/dragafra.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Dragons in a Dungeon](https://open.kattis.com/problems/dragonsinadungeon) | dragonsinadungeon | 2.6 | <a href="Kattis/dragonsinadungeon.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Dreamer](https://open.kattis.com/problems/dreamer) | dreamer | 2.3 | <a href="Kattis/dreamer.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Drinking Song](https://open.kattis.com/problems/drinkingsong) | drinkingsong | 2.3 | <a href="Kattis/drinkingsong.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Drink Menu](https://open.kattis.com/problems/drinkmenu) | drinkmenu | 1.6 | <a href="Kattis/drinkmenu.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Driver's Dilemma](https://open.kattis.com/problems/driversdilemma) | driversdilemma | 2.3 | <a href="Kattis/driversdilemma.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [DRM Messages](https://open.kattis.com/problems/drmmessages) | drmmessages | 1.5 | <a href="Kattis/drmmessages.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Drunk Vigenère](https://open.kattis.com/problems/drunkvigenere) | drunkvigenere | 1.6 | <a href="Kattis/drunkvigenere.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Daylight Saving Time](https://open.kattis.com/problems/dst) | dst | 2.0 | <a href="Kattis/dst.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Duck Pond](https://open.kattis.com/problems/duckpond) | duckpond | 3.2 | <a href="Kattis/duckpond.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Ducky Debugging](https://open.kattis.com/problems/duckydebugging) | duckydebugging | 2.2 | <a href="Kattis/duckydebugging.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Duel of Cards](https://open.kattis.com/problems/duelofcards) | duelofcards | 2.5 | <a href="Kattis/duelofcards.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Pigeon-holes](https://open.kattis.com/problems/dufuskuffur) | dufuskuffur | 1.6 | <a href="Kattis/dufuskuffur.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Dungeon master](https://open.kattis.com/problems/dungeon) | dungeon | 3.2 | <a href="Kattis/dungeon.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Dunglish](https://open.kattis.com/problems/dunglish) | dunglish | 2.8 | <a href="Kattis/dunglish.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Duplicate Removal](https://open.kattis.com/problems/duplicateremoval) | duplicateremoval | 3.0 | <a href="Kattis/duplicateremoval.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [DVDs](https://open.kattis.com/problems/dvds) | dvds | 2.8 | <a href="Kattis/dvds.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Dyslectionary](https://open.kattis.com/problems/dyslectionary) | dyslectionary | 2.7 | <a href="Kattis/dyslectionary.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Early Termination](https://open.kattis.com/problems/earlytermination) | earlytermination | 2.4 | <a href="Kattis/earlytermination.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Early Winter](https://open.kattis.com/problems/earlywinter) | earlywinter | 2.1 | <a href="Kattis/earlywinter.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Easier Done than Said?](https://open.kattis.com/problems/easierdonethansaid) | easierdonethansaid | 2.3 | <a href="Kattis/easierdonethansaid.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [The Easiest Problem Is This One](https://open.kattis.com/problems/easiest) | easiest | 1.5 | <a href="Kattis/easiest.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [As Easy as CAB](https://open.kattis.com/problems/easyascab) | easyascab | 7.7 | <a href="Kattis/easyascab.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Eating Out](https://open.kattis.com/problems/eatingout) | eatingout | 2.9 | <a href="Kattis/eatingout.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Echo Echo Echo](https://open.kattis.com/problems/echoechoecho) | echoechoecho | 1.2 | <a href="Kattis/echoechoecho.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [E-Clips](https://open.kattis.com/problems/eclips) | eclips | 1.7 | <a href="Kattis/eclips.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Edgar Mine](https://open.kattis.com/problems/edgarmine) | edgarmine | 6.5 | <a href="Kattis/edgarmine.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Eeny Meeny](https://open.kattis.com/problems/eenymeeny) | eenymeeny | 1.9 | <a href="Kattis/eenymeeny.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Efficient Eating](https://open.kattis.com/problems/efficienteating) | efficienteating | 4.7 | <a href="Kattis/efficienteating.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Ég elska hann](https://open.kattis.com/problems/egelskahann) | egelskahann | 2.0 | <a href="Kattis/egelskahann.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Egypt](https://open.kattis.com/problems/egypt) | egypt | 1.8 | <a href="Kattis/egypt.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Eidam-Sand Lair](https://open.kattis.com/problems/eidamsandlair) | eidamsandlair | 5.3 | <a href="Kattis/eidamsandlair.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [EIEIO](https://open.kattis.com/problems/eieio) | eieio | 2.8 | <a href="Kattis/eieio.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Eiginnöfn](https://open.kattis.com/problems/eiginnofn) | eiginnofn | 2.0 | <a href="Kattis/eiginnofn.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Einfalt Dæmi!](https://open.kattis.com/problems/einfalt) | einfalt | 2.6 | <a href="Kattis/einfalt.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Einkunnir](https://open.kattis.com/problems/einkunnir) | einkunnir | 2.9 | <a href="Kattis/einkunnir.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Einvígi](https://open.kattis.com/problems/einvigi) | einvigi | 3.9 | <a href="Kattis/einvigi.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Ekki dauði opna inni](https://open.kattis.com/problems/ekkidaudi) | ekkidaudi | 1.5 | <a href="Kattis/ekkidaudi.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Eko](https://open.kattis.com/problems/eko) | eko | 3.4 | <a href="Kattis/eko.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Eldspýtur](https://open.kattis.com/problems/eldspytur) | eldspytur | 2.0 | <a href="Kattis/eldspytur.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Election](https://open.kattis.com/problems/election2) | election2 | 2.2 | <a href="Kattis/election2.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a><a href="Kattis/election2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Election Paradox](https://open.kattis.com/problems/electionparadox) | electionparadox | 1.8 | <a href="Kattis/electionparadox.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Electrical Outlets](https://open.kattis.com/problems/electricaloutlets) | electricaloutlets | 1.4 | <a href="Kattis/electricaloutlets.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Elevating the Prank](https://open.kattis.com/problems/elevatingtheprank) | elevatingtheprank | 1.6 | <a href="Kattis/elevatingtheprank.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Elevators](https://open.kattis.com/problems/elevators) | elevators | 1.6 | <a href="Kattis/elevators.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Elevator Trouble](https://open.kattis.com/problems/elevatortrouble) | elevatortrouble | 2.1 | <a href="Kattis/elevatortrouble.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Eligibility](https://open.kattis.com/problems/eligibility) | eligibility | 1.6 | <a href="Kattis/eligibility.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Elo](https://open.kattis.com/problems/elo) | elo | 3.8 | <a href="Kattis/elo.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [The Embarrassed Cryptographer](https://open.kattis.com/problems/embarrassedcryptographer) | embarrassedcryptographer | 5.9 | <a href="Kattis/embarrassedcryptographer.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Emag Eht Htiw Em Pleh](https://open.kattis.com/problems/empleh) | empleh | 1.9 | <a href="Kattis/empleh.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Encoded Message](https://open.kattis.com/problems/encodedmessage) | encodedmessage | 1.6 | <a href="Kattis/encodedmessage.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Encryption](https://open.kattis.com/problems/encryption) | encryption | 3.2 | <a href="Kattis/encryption.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Enduro](https://open.kattis.com/problems/enduro) | enduro | 2.2 | <a href="Kattis/enduro.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Endurvinnsla](https://open.kattis.com/problems/endurvinnsla) | endurvinnsla | 1.7 | <a href="Kattis/endurvinnsla.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Escape from Enemy Territory](https://open.kattis.com/problems/enemyterritory) | enemyterritory | 5.8 | <a href="Kattis/enemyterritory.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Engineering English](https://open.kattis.com/problems/engineeringenglish) | engineeringenglish | 2.6 | <a href="Kattis/engineeringenglish.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Envious Exponents](https://open.kattis.com/problems/enviousexponents) | enviousexponents | 5.1 | <a href="Kattis/enviousexponents.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [EpigDanceOff](https://open.kattis.com/problems/epigdanceoff) | epigdanceoff | 1.9 | <a href="Kattis/epigdanceoff.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Equalizing Debt](https://open.kattis.com/problems/equalizingdebt) | equalizingdebt | 4.5 | <a href="Kattis/equalizingdebt.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Equal Shots](https://open.kattis.com/problems/equalshots) | equalshots | 1.3 | <a href="Kattis/equalshots.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Equal Sums (Easy)](https://open.kattis.com/problems/equalsumseasy) | equalsumseasy | 2.6 | <a href="Kattis/equalsumseasy.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a><a href="Kattis/equalsumseasy.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Erase Securely](https://open.kattis.com/problems/erase) | erase | 1.9 | <a href="Kattis/erase.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Escape Wall Maria](https://open.kattis.com/problems/escapewallmaria) | escapewallmaria | 5.6 | <a href="Kattis/escapewallmaria.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Espresso!](https://open.kattis.com/problems/espresso) | espresso | 2.0 | <a href="Kattis/espresso.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Espresso Bucks](https://open.kattis.com/problems/espressobucks) | espressobucks | 2.2 | <a href="Kattis/espressobucks.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Integer Estate Agent](https://open.kattis.com/problems/estate) | estate | 5.2 | <a href="Kattis/estate.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Estimating the Area of a Circle](https://open.kattis.com/problems/estimatingtheareaofacircle) | estimatingtheareaofacircle | 1.5 | <a href="Kattis/estimatingtheareaofacircle.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Eszett](https://open.kattis.com/problems/eszett) | eszett | 3.2 | <a href="Kattis/eszett.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Ethanol](https://open.kattis.com/problems/ethanol) | ethanol | 1.5 | <a href="Kattis/ethanol.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Euclidean TSP](https://open.kattis.com/problems/euclideantsp) | euclideantsp | 2.3 | <a href="Kattis/euclideantsp.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Euclid's Algorithm](https://open.kattis.com/problems/euclidsalgorithm) | euclidsalgorithm | 1.6 | <a href="Kattis/euclidsalgorithm.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Eulerian Graphs](https://open.kattis.com/problems/eulerian) | eulerian | 2.4 | <a href="Kattis/eulerian.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Eulerian Graphs 2](https://open.kattis.com/problems/eulerian2) | eulerian2 | 3.1 | <a href="Kattis/eulerian2.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Euler's Number](https://open.kattis.com/problems/eulersnumber) | eulersnumber | 2.5 | <a href="Kattis/eulersnumber.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [European Trip](https://open.kattis.com/problems/europeantrip) | europeantrip | 3.3 | <a href="Kattis/europeantrip.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Evening Out 1](https://open.kattis.com/problems/eveningout1) | eveningout1 | 2.2 | <a href="Kattis/eveningout1.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Event Planning](https://open.kattis.com/problems/eventplanning) | eventplanning | 2.4 | <a href="Kattis/eventplanning.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Even Up Solitaire](https://open.kattis.com/problems/evenup) | evenup | 2.0 | <a href="Kattis/evenup.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Every Second Counts](https://open.kattis.com/problems/everysecond) | everysecond | 3.0 | <a href="Kattis/everysecond.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [I've Been Everywhere, Man](https://open.kattis.com/problems/everywhere) | everywhere | 1.5 | <a href="Kattis/everywhere.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Exactly Electrical](https://open.kattis.com/problems/exactlyelectrical) | exactlyelectrical | 1.6 | <a href="Kattis/exactlyelectrical.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Exam](https://open.kattis.com/problems/exam) | exam | 2.0 | <a href="Kattis/exam.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Exam Manipulation](https://open.kattis.com/problems/exammanipulation) | exammanipulation | 3.7 | <a href="Kattis/exammanipulation.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a><a href="Kattis/exammanipulation.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Excellent Engineers](https://open.kattis.com/problems/excellentengineers) | excellentengineers | 5.5 | <a href="Kattis/excellentengineers.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Exits in Excess](https://open.kattis.com/problems/exitsinexcess) | exitsinexcess | 4.0 | <a href="Kattis/exitsinexcess.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Expected Earnings](https://open.kattis.com/problems/expectedearnings) | expectedearnings | 1.7 | <a href="Kattis/expectedearnings.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Expected Error](https://open.kattis.com/problems/expectederror) | expectederror | 2.9 | <a href="Kattis/expectederror.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Eye of Sauron](https://open.kattis.com/problems/eyeofsauron) | eyeofsauron | 1.5 | <a href="Kattis/eyeofsauron.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Eye Spy](https://open.kattis.com/problems/eyespy) | eyespy | 2.5 | <a href="Kattis/eyespy.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Factor-Full Tree](https://open.kattis.com/problems/factorfulltree) | factorfulltree | 7.4 | <a href="Kattis/factorfulltree.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Fading Wind](https://open.kattis.com/problems/fadingwind) | fadingwind | 1.6 | <a href="Kattis/fadingwind.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a><a href="Kattis/fadingwind.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Fair Grading](https://open.kattis.com/problems/fairgrading) | fairgrading | 1.5 | <a href="Kattis/fairgrading.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Fair Play](https://open.kattis.com/problems/fairplay) | fairplay | 3.4 | <a href="Kattis/fairplay.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Fake Arithmetic Sequence](https://open.kattis.com/problems/fakearithmeticsequence) | fakearithmeticsequence | 3.3 | <a href="Kattis/fakearithmeticsequence.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Faktor](https://open.kattis.com/problems/faktor) | faktor | 1.3 | <a href="Kattis/faktor.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Falcon Dive](https://open.kattis.com/problems/falcondive) | falcondive | 3.2 | <a href="Kattis/falcondive.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Falling Apart](https://open.kattis.com/problems/fallingapart) | fallingapart | 1.5 | <a href="Kattis/fallingapart.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Falling Snow](https://open.kattis.com/problems/fallingsnow2) | fallingsnow2 | 1.5 | <a href="Kattis/fallingsnow2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [False Sense of Security](https://open.kattis.com/problems/falsesecurity) | falsesecurity | 2.0 | <a href="Kattis/falsesecurity.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Fancy Frames](https://open.kattis.com/problems/fancyframes) | fancyframes | 1.8 | <a href="Kattis/fancyframes.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Fantasy Draft](https://open.kattis.com/problems/fantasydraft) | fantasydraft | 3.9 | <a href="Kattis/fantasydraft.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Färgrobot](https://open.kattis.com/problems/fargrobot) | fargrobot | 1.8 | <a href="Kattis/fargrobot.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Fastest Available Route](https://open.kattis.com/problems/fastestavailableroute) | fastestavailableroute | 2.5 | <a href="Kattis/fastestavailableroute.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Fastestest Function](https://open.kattis.com/problems/fastestestfunction) | fastestestfunction | 2.7 | <a href="Kattis/fastestestfunction.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Fast Food Prizes](https://open.kattis.com/problems/fastfood) | fastfood | 1.9 | <a href="Kattis/fastfood.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Fast Fourier Transform](https://open.kattis.com/problems/fastfouriertransform) | fastfouriertransform | 4.1 | <a href="Kattis/fastfouriertransform.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [A Favourable Ending](https://open.kattis.com/problems/favourable) | favourable | 3.5 | <a href="Kattis/favourable.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [FBI Universal Control Numbers](https://open.kattis.com/problems/fbiuniversal) | fbiuniversal | 2.2 | <a href="Kattis/fbiuniversal.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Ferry Loading IV](https://open.kattis.com/problems/ferryloading4) | ferryloading4 | 2.1 | <a href="Kattis/ferryloading4.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Ferskasta Jarmið](https://open.kattis.com/problems/ferskastajarmid) | ferskastajarmid | 1.9 | <a href="Kattis/ferskastajarmid.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Fibonacci Cycles](https://open.kattis.com/problems/fibonaccicycles) | fibonaccicycles | 3.1 | <a href="Kattis/fibonaccicycles.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Minimal Fibonacci Sums](https://open.kattis.com/problems/fibonaccisum) | fibonaccisum | 2.1 | <a href="Kattis/fibonaccisum.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Field Trip](https://open.kattis.com/problems/fieldtrip) | fieldtrip | 2.1 | <a href="Kattis/fieldtrip.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a><a href="Kattis/fieldtrip.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Framtíðar FIFA](https://open.kattis.com/problems/fifa) | fifa | 1.2 | <a href="Kattis/fifa.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Fifty Shades of Pink](https://open.kattis.com/problems/fiftyshades) | fiftyshades | 1.5 | <a href="Kattis/fiftyshades.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Figure Skating](https://open.kattis.com/problems/figureskating) | figureskating | 2.5 | <a href="Kattis/figureskating.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Filip](https://open.kattis.com/problems/filip) | filip | 1.3 | <a href="Kattis/filip.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Filling Crates](https://open.kattis.com/problems/fillingcrates) | fillingcrates | 1.9 | <a href="Kattis/fillingcrates.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Fimmtudagstilboð](https://open.kattis.com/problems/fimmtudagstilbod) | fimmtudagstilbod | 1.4 | <a href="Kattis/fimmtudagstilbod.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Final Exam](https://open.kattis.com/problems/finalexam2) | finalexam2 | 1.6 | <a href="Kattis/finalexam2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Financial Planning](https://open.kattis.com/problems/financialplanning) | financialplanning | 4.1 | <a href="Kattis/financialplanning.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Finding An A](https://open.kattis.com/problems/findingana) | findingana | 1.3 | <a href="Kattis/findingana.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Finding Forks](https://open.kattis.com/problems/findingforks) | findingforks | 1.5 | <a href="Kattis/findingforks.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Find Poly](https://open.kattis.com/problems/findpoly) | findpoly | 2.9 | <a href="Kattis/findpoly.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Find the Graph](https://open.kattis.com/problems/findthegraph) | findthegraph | 3.6 | <a href="Kattis/findthegraph.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Fire](https://open.kattis.com/problems/fire2) | fire2 | 3.5 | <a href="Kattis/fire2.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Firefly](https://open.kattis.com/problems/firefly) | firefly | 2.6 | <a href="Kattis/firefly.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [FizzBuzz](https://open.kattis.com/problems/fizzbuzz) | fizzbuzz | 1.3 | <a href="Kattis/fizzbuzz.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [FizzBuzz](https://open.kattis.com/problems/fizzbuzz2) | fizzbuzz2 | 2.6 | <a href="Kattis/fizzbuzz2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Fjöldi Bókstafa](https://open.kattis.com/problems/fjoldibokstafa) | fjoldibokstafa | 1.3 | <a href="Kattis/fjoldibokstafa.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Flatbökuveisla](https://open.kattis.com/problems/flatbokuveisla) | flatbokuveisla | 1.1 | <a href="Kattis/flatbokuveisla.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Flexible Spaces](https://open.kattis.com/problems/flexible) | flexible | 1.8 | <a href="Kattis/flexible.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Fleytitala](https://open.kattis.com/problems/fleytitala) | fleytitala | 3.0 | <a href="Kattis/fleytitala.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Flip Five](https://open.kattis.com/problems/flipfive) | flipfive | 4.6 | <a href="Kattis/flipfive.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Flip Flow](https://open.kattis.com/problems/flipflow) | flipflow | 2.2 | <a href="Kattis/flipflow.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Flipping Patties](https://open.kattis.com/problems/flippingpatties) | flippingpatties | 2.4 | <a href="Kattis/flippingpatties.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Floor Plan](https://open.kattis.com/problems/floorplan) | floorplan | 3.9 | <a href="Kattis/floorplan.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Flower Garden](https://open.kattis.com/problems/flowergarden) | flowergarden | 3.9 | <a href="Kattis/flowergarden.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Flowery Trails](https://open.kattis.com/problems/flowerytrails) | flowerytrails | 3.0 | <a href="Kattis/flowerytrails.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Flow Layout](https://open.kattis.com/problems/flowlayout) | flowlayout | 1.8 | <a href="Kattis/flowlayout.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Flow Shop](https://open.kattis.com/problems/flowshop) | flowshop | 2.1 | <a href="Kattis/flowshop.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Fluortanten](https://open.kattis.com/problems/fluortanten) | fluortanten | 3.3 | <a href="Kattis/fluortanten.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Flygildi](https://open.kattis.com/problems/flygildi) | flygildi | 4.6 | <a href="Kattis/flygildi.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Flying Safely](https://open.kattis.com/problems/flyingsafely) | flyingsafely | 1.7 | <a href="Kattis/flyingsafely.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Flýtibaka](https://open.kattis.com/problems/flytibaka) | flytibaka | 1.3 | <a href="Kattis/flytibaka.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Birthday Memorization](https://open.kattis.com/problems/fodelsedagsmemorisering) | fodelsedagsmemorisering | 1.6 | <a href="Kattis/fodelsedagsmemorisering.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [For, against, or on the Fence](https://open.kattis.com/problems/foragainstoronthefence) | foragainstoronthefence | 2.4 | <a href="Kattis/foragainstoronthefence.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Forced Choice](https://open.kattis.com/problems/forcedchoice) | forcedchoice | 1.4 | <a href="Kattis/forcedchoice.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Forests](https://open.kattis.com/problems/forests) | forests | 3.2 | <a href="Kattis/forests.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Formúlublað](https://open.kattis.com/problems/formulublad) | formulublad | 3.6 | <a href="Kattis/formulublad.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Fouled files](https://open.kattis.com/problems/fouledfiles) | fouledfiles | 2.7 | <a href="Kattis/fouledfiles.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Four Die Rolls](https://open.kattis.com/problems/fourdierolls) | fourdierolls | 2.5 | <a href="Kattis/fourdierolls.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Fractional Lotion](https://open.kattis.com/problems/fractionallotion) | fractionallotion | 2.5 | <a href="Kattis/fractionallotion.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Framvindustika](https://open.kattis.com/problems/framvindustika) | framvindustika | 3.3 | <a href="Kattis/framvindustika.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Free Food](https://open.kattis.com/problems/freefood) | freefood | 1.5 | <a href="Kattis/freefood.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a><a href="Kattis/freefood.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Free-Form Input](https://open.kattis.com/problems/freeforminput) | freeforminput | 2.2 | <a href="Kattis/freeforminput.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Friday the 13th](https://open.kattis.com/problems/friday) | friday | 2.4 | <a href="Kattis/friday.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Fridge](https://open.kattis.com/problems/fridge) | fridge | 3.8 | <a href="Kattis/fridge.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Fridge Distraction](https://open.kattis.com/problems/fridgedistraction) | fridgedistraction | 3.6 | <a href="Kattis/fridgedistraction.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [From A to B](https://open.kattis.com/problems/fromatob) | fromatob | 2.7 | <a href="Kattis/fromatob.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Frosh Week](https://open.kattis.com/problems/froshweek) | froshweek | 4.4 | <a href="Kattis/froshweek.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a><a href="Kattis/froshweek.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Frosh Week](https://open.kattis.com/problems/froshweek2) | froshweek2 | 1.9 | <a href="Kattis/froshweek2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Frozen Rose-Heads](https://open.kattis.com/problems/frozenrose) | frozenrose | 4.5 | <a href="Kattis/frozenrose.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Frumtölur](https://open.kattis.com/problems/frumtolur) | frumtolur | 1.8 | <a href="Kattis/frumtolur.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Functional Fun](https://open.kattis.com/problems/functionalfun) | functionalfun | 2.1 | <a href="Kattis/functionalfun.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Fundamental Neighbors](https://open.kattis.com/problems/fundamentalneighbors) | fundamentalneighbors | 2.9 | <a href="Kattis/fundamentalneighbors.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Fun House](https://open.kattis.com/problems/funhouse) | funhouse | 2.4 | <a href="Kattis/funhouse.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [FYI](https://open.kattis.com/problems/fyi) | fyi | 1.3 | <a href="Kattis/fyi.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Fyrirtækjanafn](https://open.kattis.com/problems/fyrirtaekjanafn) | fyrirtaekjanafn | 1.8 | <a href="Kattis/fyrirtaekjanafn.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Game Rank](https://open.kattis.com/problems/gamerank) | gamerank | 3.8 | <a href="Kattis/gamerank.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Gandalf's Spell](https://open.kattis.com/problems/gandalfsspell) | gandalfsspell | 2.3 | <a href="Kattis/gandalfsspell.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Gangur](https://open.kattis.com/problems/gangur) | gangur | 2.4 | <a href="Kattis/gangur.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Garage Door Code](https://open.kattis.com/problems/garagedoorcode) | garagedoorcode | 2.8 | <a href="Kattis/garagedoorcode.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Gatnamót](https://open.kattis.com/problems/gatnamot) | gatnamot | 3.2 | <a href="Kattis/gatnamot.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [GCD](https://open.kattis.com/problems/gcd) | gcd | 1.4 | <a href="Kattis/gcd.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [GCVWR](https://open.kattis.com/problems/gcvwr) | gcvwr | 1.4 | <a href="Kattis/gcvwr.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Geezer Scripts](https://open.kattis.com/problems/geezerscripts) | geezerscripts | 2.7 | <a href="Kattis/geezerscripts.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Genealogical Research](https://open.kattis.com/problems/genealogical) | genealogical | 3.7 | <a href="Kattis/genealogical.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Gene Block](https://open.kattis.com/problems/geneblock) | geneblock | 2.7 | <a href="Kattis/geneblock.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Generalized FizzBuzz](https://open.kattis.com/problems/generalizedfizzbuzz) | generalizedfizzbuzz | 1.5 | <a href="Kattis/generalizedfizzbuzz.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [General Knight](https://open.kattis.com/problems/generalknight) | generalknight | 3.1 | <a href="Kattis/generalknight.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Genetic Search](https://open.kattis.com/problems/geneticsearch) | geneticsearch | 2.8 | <a href="Kattis/geneticsearch.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Genius](https://open.kattis.com/problems/genius) | genius | 3.2 | <a href="Kattis/genius.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Georgette Me, Georgette You](https://open.kattis.com/problems/georgettemegeorgetteyou) | georgettemegeorgetteyou | 4.6 | <a href="Kattis/georgettemegeorgetteyou.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Geppetto](https://open.kattis.com/problems/geppetto) | geppetto | 2.3 | <a href="Kattis/geppetto.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [German Conference for Public Counting](https://open.kattis.com/problems/germanconferenceforpubliccounting) | germanconferenceforpubliccounting | 3.8 | <a href="Kattis/germanconferenceforpubliccounting.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Gerrymandering](https://open.kattis.com/problems/gerrymandering) | gerrymandering | 1.6 | <a href="Kattis/gerrymandering.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Guest List](https://open.kattis.com/problems/gestalisti) | gestalisti | 1.9 | <a href="Kattis/gestalisti.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Get Shorty](https://open.kattis.com/problems/getshorty) | getshorty | 3.1 | <a href="Kattis/getshorty.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Getting Wood](https://open.kattis.com/problems/gettingwood) | gettingwood | 1.4 | <a href="Kattis/gettingwood.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Get to Work](https://open.kattis.com/problems/gettowork) | gettowork | 2.7 | <a href="Kattis/gettowork.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Ghostbusters 3](https://open.kattis.com/problems/ghostbusters3) | ghostbusters3 | 4.1 | <a href="Kattis/ghostbusters3.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a><a href="Kattis/ghostbusters3.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Ghost Leg](https://open.kattis.com/problems/ghostleg) | ghostleg | 1.5 | <a href="Kattis/ghostleg.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Gig Combinatorics](https://open.kattis.com/problems/gigcombinatorics) | gigcombinatorics | 3.8 | <a href="Kattis/gigcombinatorics.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Gin Fizz](https://open.kattis.com/problems/ginfizz) | ginfizz | 1.4 | <a href="Kattis/ginfizz.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Gini Stuðull](https://open.kattis.com/problems/ginistudull) | ginistudull | 3.9 | <a href="Kattis/ginistudull.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Giskaðu á svarið](https://open.kattis.com/problems/giskadu) | giskadu | 3.0 | <a href="Kattis/giskadu.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Git Good](https://open.kattis.com/problems/gitgood) | gitgood | 1.7 | <a href="Kattis/gitgood.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [\texttt{git mv}](https://open.kattis.com/problems/gitmv) | gitmv | 4.1 | <a href="Kattis/gitmv.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [GlitchBot](https://open.kattis.com/problems/glitchbot) | glitchbot | 1.9 | <a href="Kattis/glitchbot.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Glitching screen](https://open.kattis.com/problems/glitchingscreen) | glitchingscreen | 3.0 | <a href="Kattis/glitchingscreen.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Glyph Recognition](https://open.kattis.com/problems/glyphrecognition) | glyphrecognition | 2.7 | <a href="Kattis/glyphrecognition.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Gnome Sequencing](https://open.kattis.com/problems/gnomesequencing) | gnomesequencing | 1.4 | <a href="Kattis/gnomesequencing.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Goat Rope](https://open.kattis.com/problems/goatrope) | goatrope | 1.5 | <a href="Kattis/goatrope.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Gluttonous George](https://open.kattis.com/problems/goggi) | goggi | 1.2 | <a href="Kattis/goggi.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Going Nuts](https://open.kattis.com/problems/goingnuts) | goingnuts | 1.3 | <a href="Kattis/goingnuts.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Getting Gold](https://open.kattis.com/problems/gold) | gold | 2.3 | <a href="Kattis/gold.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Goldbach's Conjecture](https://open.kattis.com/problems/goldbach2) | goldbach2 | 2.0 | <a href="Kattis/goldbach2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Golden Landmarks](https://open.kattis.com/problems/goldenlandmarks) | goldenlandmarks | 2.6 | <a href="Kattis/goldenlandmarks.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Golomb Rulers](https://open.kattis.com/problems/golombrulers) | golombrulers | 2.7 | <a href="Kattis/golombrulers.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Good Coalition](https://open.kattis.com/problems/goodcoalition) | goodcoalition | 3.7 | <a href="Kattis/goodcoalition.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Good Morning!](https://open.kattis.com/problems/goodmorning) | goodmorning | 3.0 | <a href="Kattis/goodmorning.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Goomba Stacks](https://open.kattis.com/problems/goombastacks) | goombastacks | 1.6 | <a href="Kattis/goombastacks.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Gopher II](https://open.kattis.com/problems/gopher2) | gopher2 | 3.4 | <a href="Kattis/gopher2.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [The Gourmet](https://open.kattis.com/problems/gourmeten) | gourmeten | 1.9 | <a href="Kattis/gourmeten.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Grading](https://open.kattis.com/problems/grading) | grading | 1.4 | <a href="Kattis/grading.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Diggy Hole](https://open.kattis.com/problems/grafaholur) | grafaholur | 1.3 | <a href="Kattis/grafaholur.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Grandpa Bernie](https://open.kattis.com/problems/grandpabernie) | grandpabernie | 2.5 | <a href="Kattis/grandpabernie.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Through the Grapevine](https://open.kattis.com/problems/grapevine) | grapevine | 3.3 | <a href="Kattis/grapevine.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Gregory the Grasshopper](https://open.kattis.com/problems/grasshopper) | grasshopper | 3.0 | <a href="Kattis/grasshopper.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Grass Seed Inc.](https://open.kattis.com/problems/grassseed) | grassseed | 1.3 | <a href="Kattis/grassseed.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Grazed Grains](https://open.kattis.com/problems/grazedgrains) | grazedgrains | 2.7 | <a href="Kattis/grazedgrains.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Greedily Increasing Subsequence](https://open.kattis.com/problems/greedilyincreasing) | greedilyincreasing | 1.7 | <a href="Kattis/greedilyincreasing.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a><a href="Kattis/greedilyincreasing.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Greedy Polygons](https://open.kattis.com/problems/greedypolygons) | greedypolygons | 1.9 | <a href="Kattis/greedypolygons.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Greetings!](https://open.kattis.com/problems/greetings2) | greetings2 | 1.4 | <a href="Kattis/greetings2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Gremlins](https://open.kattis.com/problems/gremlins) | gremlins | 2.5 | <a href="Kattis/gremlins.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Grid](https://open.kattis.com/problems/grid) | grid | 1.9 | <a href="Kattis/grid.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Grid Magic](https://open.kattis.com/problems/gridmagic) | gridmagic | 2.7 | <a href="Kattis/gridmagic.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Groupthink](https://open.kattis.com/problems/groupthink) | groupthink | 2.2 | <a href="Kattis/groupthink.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Growling Gears](https://open.kattis.com/problems/growlinggears) | growlinggears | 1.8 | <a href="Kattis/growlinggears.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Guaranteed Victory](https://open.kattis.com/problems/guaranteedvictory) | guaranteedvictory | 2.6 | <a href="Kattis/guaranteedvictory.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Guess the Number](https://open.kattis.com/problems/guess) | guess | 2.9 | <a href="Kattis/guess.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Guessing Game](https://open.kattis.com/problems/guessinggame) | guessinggame | 2.6 | <a href="Kattis/guessinggame.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [I Can Guess the Data Structure!](https://open.kattis.com/problems/guessthedatastructure) | guessthedatastructure | 2.1 | <a href="Kattis/guessthedatastructure.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Guess Who](https://open.kattis.com/problems/guesswho) | guesswho | 1.5 | <a href="Kattis/guesswho.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Steam Column](https://open.kattis.com/problems/gufustrokur) | gufustrokur | 1.7 | <a href="Kattis/gufustrokur.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Guilds](https://open.kattis.com/problems/guilds) | guilds | 4.4 | <a href="Kattis/guilds.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Guillaume](https://open.kattis.com/problems/guillaume) | guillaume | 2.3 | <a href="Kattis/guillaume.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Gullpeningastaflar](https://open.kattis.com/problems/gullpeningastaflar) | gullpeningastaflar | 3.7 | <a href="Kattis/gullpeningastaflar.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a><a href="Kattis/gullpeningastaflar.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Háhýsi](https://open.kattis.com/problems/hahysi) | hahysi | 3.0 | <a href="Kattis/hahysi.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Haiku](https://open.kattis.com/problems/haiku) | haiku | 4.9 | <a href="Kattis/haiku.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Watch Out For Those Hailstones!](https://open.kattis.com/problems/hailstone) | hailstone | 2.1 | <a href="Kattis/hailstone.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Hailstone Sequences](https://open.kattis.com/problems/hailstone2) | hailstone2 | 1.6 | <a href="Kattis/hailstone2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Hair of the Dog](https://open.kattis.com/problems/hairofthedog) | hairofthedog | 1.4 | <a href="Kattis/hairofthedog.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Hakkari](https://open.kattis.com/problems/hakkari) | hakkari | 1.4 | <a href="Kattis/hakkari.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Half a Cookie](https://open.kattis.com/problems/halfacookie) | halfacookie | 1.7 | <a href="Kattis/halfacookie.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Handy Beer](https://open.kattis.com/problems/handybeer) | handybeer | 3.8 | <a href="Kattis/handybeer.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Hanging Out on the Terrace](https://open.kattis.com/problems/hangingout) | hangingout | 1.4 | <a href="Kattis/hangingout.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Hangman](https://open.kattis.com/problems/hangman) | hangman | 1.6 | <a href="Kattis/hangman.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Happy and Unhappy Numbers](https://open.kattis.com/problems/happyandunhappynumbers) | happyandunhappynumbers | 5.0 | <a href="Kattis/happyandunhappynumbers.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Happy Hibernation](https://open.kattis.com/problems/happyhibernation) | happyhibernation | 3.3 | <a href="Kattis/happyhibernation.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Happy Happy Prime Prime](https://open.kattis.com/problems/happyprime) | happyprime | 2.0 | <a href="Kattis/happyprime.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a><a href="Kattis/happyprime.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Happy Trails](https://open.kattis.com/problems/happytrails) | happytrails | 1.9 | <a href="Kattis/happytrails.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [HARDFLOR](https://open.kattis.com/problems/hardflor) | hardflor | 2.1 | <a href="Kattis/hardflor.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Hard Rocks and Atomic Clocks](https://open.kattis.com/problems/hardrocksandatomicclocks) | hardrocksandatomicclocks | 3.1 | <a href="Kattis/hardrocksandatomicclocks.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Hardware](https://open.kattis.com/problems/hardware) | hardware | 2.1 | <a href="Kattis/hardware.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Hardwood Species](https://open.kattis.com/problems/hardwoodspecies) | hardwoodspecies | 2.4 | <a href="Kattis/hardwoodspecies.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Harshad Numbers](https://open.kattis.com/problems/harshadnumbers) | harshadnumbers | 1.4 | <a href="Kattis/harshadnumbers.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Haughty Cuisine](https://open.kattis.com/problems/haughtycuisine) | haughtycuisine | 1.7 | <a href="Kattis/haughtycuisine.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Hay Points](https://open.kattis.com/problems/haypoints) | haypoints | 2.1 | <a href="Kattis/haypoints.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Head Guard](https://open.kattis.com/problems/headguard) | headguard | 2.2 | <a href="Kattis/headguard.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Binary Heap](https://open.kattis.com/problems/heap) | heap | 2.3 | <a href="Kattis/heap.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Heart Rate](https://open.kattis.com/problems/heartrate) | heartrate | 1.5 | <a href="Kattis/heartrate.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Height Ordering](https://open.kattis.com/problems/height) | height | 1.7 | <a href="Kattis/height.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Heiltölusumma](https://open.kattis.com/problems/heiltolusumma) | heiltolusumma | 3.5 | <a href="Kattis/heiltolusumma.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Web Page](https://open.kattis.com/problems/heimasida) | heimasida | 2.4 | <a href="Kattis/heimasida.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Heimavinna](https://open.kattis.com/problems/heimavinna) | heimavinna | 1.6 | <a href="Kattis/heimavinna.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Heimilisverk](https://open.kattis.com/problems/heimilisverk) | heimilisverk | 1.9 | <a href="Kattis/heimilisverk.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Heir's Dilemma](https://open.kattis.com/problems/heirsdilemma) | heirsdilemma | 1.5 | <a href="Kattis/heirsdilemma.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Heliocentric](https://open.kattis.com/problems/heliocentric) | heliocentric | 2.2 | <a href="Kattis/heliocentric.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Hello World!](https://open.kattis.com/problems/hello) | hello | 1.1 | <a href="Kattis/hello.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a><a href="Kattis/hello.rs"><img src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/96/external-rust-is-a-multi-paradigm-system-programming-language-logo-bold-tal-revivo.png" alt="Rust" width="32" height="32"></a> |
+| [Help a PhD candidate out!](https://open.kattis.com/problems/helpaphd) | helpaphd | 1.5 | <a href="Kattis/helpaphd.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Help Me With The Game](https://open.kattis.com/problems/helpme) | helpme | 2.8 | <a href="Kattis/helpme.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Herb Mixing](https://open.kattis.com/problems/herbmixing) | herbmixing | 1.7 | <a href="Kattis/herbmixing.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Herman](https://open.kattis.com/problems/herman) | herman | 1.6 | <a href="Kattis/herman.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Hermits](https://open.kattis.com/problems/hermits) | hermits | 2.8 | <a href="Kattis/hermits.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Heroes of Velmar](https://open.kattis.com/problems/heroesofvelmar) | heroesofvelmar | 2.3 | <a href="Kattis/heroesofvelmar.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a><a href="Kattis/heroesofvelmar.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Hexaphobic Square](https://open.kattis.com/problems/hexaphobicsquare) | hexaphobicsquare | 1.8 | <a href="Kattis/hexaphobicsquare.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Heysáta](https://open.kattis.com/problems/heysata) | heysata | 1.3 | <a href="Kattis/heysata.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Hidden Password](https://open.kattis.com/problems/hidden) | hidden | 2.1 | <a href="Kattis/hidden.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Hiding Places](https://open.kattis.com/problems/hidingplaces) | hidingplaces | 1.7 | <a href="Kattis/hidingplaces.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Highest Hill](https://open.kattis.com/problems/highesthill) | highesthill | 4.2 | <a href="Kattis/highesthill.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [High Score](https://open.kattis.com/problems/highscore2) | highscore2 | 5.6 | <a href="Kattis/highscore2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Hill Climb Racing](https://open.kattis.com/problems/hillclimbracing) | hillclimbracing | 2.2 | <a href="Kattis/hillclimbracing.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [H-Index](https://open.kattis.com/problems/hindex) | hindex | 2.5 | <a href="Kattis/hindex.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Hipp Hipp](https://open.kattis.com/problems/hipphipp) | hipphipp | 1.1 | <a href="Kattis/hipphipp.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Hipp Hipp Húrra](https://open.kattis.com/problems/hipphipphurra) | hipphipphurra | 1.2 | <a href="Kattis/hipphipphurra.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [It's Hip to Be Square](https://open.kattis.com/problems/hiptobesquare) | hiptobesquare | 1.6 | <a href="Kattis/hiptobesquare.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Hissing Microphone](https://open.kattis.com/problems/hissingmicrophone) | hissingmicrophone | 1.2 | <a href="Kattis/hissingmicrophone.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Histogram](https://open.kattis.com/problems/histogram) | histogram | 4.2 | <a href="Kattis/histogram.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Hitastig](https://open.kattis.com/problems/hitastig) | hitastig | 1.6 | <a href="Kattis/hitastig.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Hittast](https://open.kattis.com/problems/hittast) | hittast | 2.0 | <a href="Kattis/hittast.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Hitting the Targets](https://open.kattis.com/problems/hittingtargets) | hittingtargets | 1.6 | <a href="Kattis/hittingtargets.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Hlaupafmæli](https://open.kattis.com/problems/hlaupafmaeli) | hlaupafmaeli | 2.9 | <a href="Kattis/hlaupafmaeli.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Hljóðstilling](https://open.kattis.com/problems/hljodstilling) | hljodstilling | 4.5 | <a href="Kattis/hljodstilling.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Hnappasetningaskipti](https://open.kattis.com/problems/hnappasetningaskipti) | hnappasetningaskipti | 2.1 | <a href="Kattis/hnappasetningaskipti.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Höfundaleit](https://open.kattis.com/problems/hofundaleit) | hofundaleit | 2.6 | <a href="Kattis/hofundaleit.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Honeycomb Walk](https://open.kattis.com/problems/honey) | honey | 2.7 | <a href="Kattis/honey.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Hópavinna](https://open.kattis.com/problems/hopavinna) | hopavinna | 3.2 | <a href="Kattis/hopavinna.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Hopscotch 50](https://open.kattis.com/problems/hopscotch50) | hopscotch50 | 2.6 | <a href="Kattis/hopscotch50.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Hornrétt](https://open.kattis.com/problems/hornrett) | hornrett | 2.2 | <a href="Kattis/hornrett.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Horror List](https://open.kattis.com/problems/horror) | horror | 2.5 | <a href="Kattis/horror.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Höskuldarháska](https://open.kattis.com/problems/hoskuldarhaska) | hoskuldarhaska | 1.9 | <a href="Kattis/hoskuldarhaska.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Hot Hike](https://open.kattis.com/problems/hothike) | hothike | 1.9 | <a href="Kattis/hothike.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Howl](https://open.kattis.com/problems/howl) | howl | 2.3 | <a href="Kattis/howl.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [How Many Digits?](https://open.kattis.com/problems/howmanydigits) | howmanydigits | 3.3 | <a href="Kattis/howmanydigits.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Hraðgreining](https://open.kattis.com/problems/hradgreining) | hradgreining | 1.3 | <a href="Kattis/hradgreining.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [H to O](https://open.kattis.com/problems/htoo) | htoo | 2.6 | <a href="Kattis/htoo.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Human Cannonball Run](https://open.kattis.com/problems/humancannonball) | humancannonball | 1.8 | <a href="Kattis/humancannonball.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [The Amazing Human Cannonball](https://open.kattis.com/problems/humancannonball2) | humancannonball2 | 1.5 | <a href="Kattis/humancannonball2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Human Pyramid](https://open.kattis.com/problems/humanpyramid) | humanpyramid | 2.3 | <a href="Kattis/humanpyramid.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Hunt the Wumpus](https://open.kattis.com/problems/huntthewumpus) | huntthewumpus | 2.1 | <a href="Kattis/huntthewumpus.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Hvert Skal Mæta?](https://open.kattis.com/problems/hvertskalmaeta) | hvertskalmaeta | 1.5 | <a href="Kattis/hvertskalmaeta.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Hydra's Heads](https://open.kattis.com/problems/hydrasheads) | hydrasheads | 2.1 | <a href="Kattis/hydrasheads.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Hydro Potential](https://open.kattis.com/problems/hydropotential) | hydropotential | 1.7 | <a href="Kattis/hydropotential.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [iBoard](https://open.kattis.com/problems/iboard) | iboard | 2.2 | <a href="Kattis/iboard.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Ice Bucket Challenge](https://open.kattis.com/problems/icebucketchallenge) | icebucketchallenge | 6.9 | <a href="Kattis/icebucketchallenge.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [I Could Have Won](https://open.kattis.com/problems/icouldhavewon) | icouldhavewon | 3.1 | <a href="Kattis/icouldhavewon.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [ICPC Awards](https://open.kattis.com/problems/icpcawards) | icpcawards | 1.6 | <a href="Kattis/icpcawards.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [ICPC Team Selection](https://open.kattis.com/problems/icpcteamselection) | icpcteamselection | 2.3 | <a href="Kattis/icpcteamselection.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Ignore the Garbage](https://open.kattis.com/problems/ignore) | ignore | 3.2 | <a href="Kattis/ignore.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Illiteracy](https://open.kattis.com/problems/illiteracy) | illiteracy | 3.3 | <a href="Kattis/illiteracy.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Illuminati Spotti](https://open.kattis.com/problems/illuminatispotti) | illuminatispotti | 2.0 | <a href="Kattis/illuminatispotti.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Image Decoding](https://open.kattis.com/problems/imagedecoding) | imagedecoding | 3.0 | <a href="Kattis/imagedecoding.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Image Processing](https://open.kattis.com/problems/imageprocessing) | imageprocessing | 1.8 | <a href="Kattis/imageprocessing.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Imperfect GPS](https://open.kattis.com/problems/imperfectgps) | imperfectgps | 4.1 | <a href="Kattis/imperfectgps.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Incognito](https://open.kattis.com/problems/incognito) | incognito | 2.6 | <a href="Kattis/incognito.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Increasing Subsequence](https://open.kattis.com/problems/increasingsubsequence) | increasingsubsequence | 3.2 | <a href="Kattis/increasingsubsequence.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [An Industrial Spy](https://open.kattis.com/problems/industrialspy) | industrialspy | 2.3 | <a href="Kattis/industrialspy.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Infinite Cash](https://open.kattis.com/problems/infinitecash) | infinitecash | 6.8 | <a href="Kattis/infinitecash.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a><a href="Kattis/infinitecash.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Inflation](https://open.kattis.com/problems/inflation) | inflation | 2.2 | <a href="Kattis/inflation.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Inflation](https://open.kattis.com/problems/inflation2) | inflation2 | 3.1 | <a href="Kattis/inflation2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Inheritance](https://open.kattis.com/problems/inheritance) | inheritance | 2.9 | <a href="Kattis/inheritance.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Innvolsarinnihaldslýsing](https://open.kattis.com/problems/innvols) | innvols | 1.7 | <a href="Kattis/innvols.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [In-place Sorting](https://open.kattis.com/problems/inplacesorting) | inplacesorting | 5.7 | <a href="Kattis/inplacesorting.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Inputmaxxing](https://open.kattis.com/problems/inputmaxxing) | inputmaxxing | 4.8 | <a href="Kattis/inputmaxxing.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Input Scandal](https://open.kattis.com/problems/inputscandal) | inputscandal | 1.8 | <a href="Kattis/inputscandal.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Inquiry I](https://open.kattis.com/problems/inquiryi) | inquiryi | 2.4 | <a href="Kattis/inquiryi.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Tree Insertion](https://open.kattis.com/problems/insert) | insert | 2.8 | <a href="Kattis/insert.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Integer Division](https://open.kattis.com/problems/integerdivision) | integerdivision | 3.2 | <a href="Kattis/integerdivision.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Integer Lists](https://open.kattis.com/problems/integerlists) | integerlists | 3.2 | <a href="Kattis/integerlists.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [International Dates](https://open.kattis.com/problems/internationaldates) | internationaldates | 1.6 | <a href="Kattis/internationaldates.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Interplanetary Tunnels](https://open.kattis.com/problems/interplanetarytunnels) | interplanetarytunnels | 2.0 | <a href="Kattis/interplanetarytunnels.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Interpreter](https://open.kattis.com/problems/interpreter) | interpreter | 3.4 | <a href="Kattis/interpreter.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Interval Scheduling](https://open.kattis.com/problems/intervalscheduling) | intervalscheduling | 1.6 | <a href="Kattis/intervalscheduling.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Intuitive Elements](https://open.kattis.com/problems/intuitiveelements) | intuitiveelements | 1.5 | <a href="Kattis/intuitiveelements.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Invoker (Easy)](https://open.kattis.com/problems/invokereasy) | invokereasy | 2.3 | <a href="Kattis/invokereasy.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Invoker (Hard)](https://open.kattis.com/problems/invokerhard) | invokerhard | 2.8 | <a href="Kattis/invokerhard.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [I Repeat Myself I Repeat Myself I Repeat](https://open.kattis.com/problems/irepeatmyself) | irepeatmyself | 2.8 | <a href="Kattis/irepeatmyself.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Is It Even?](https://open.kattis.com/problems/isiteven) | isiteven | 2.9 | <a href="Kattis/isiteven.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [IsItHalloween.com](https://open.kattis.com/problems/isithalloween) | isithalloween | 1.3 | <a href="Kattis/isithalloween.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Island Exploration](https://open.kattis.com/problems/islandexploration) | islandexploration | 3.0 | <a href="Kattis/islandexploration.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Island Hopping](https://open.kattis.com/problems/islandhopping) | islandhopping | 2.4 | <a href="Kattis/islandhopping.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Islands](https://open.kattis.com/problems/islands3) | islands3 | 1.8 | <a href="Kattis/islands3.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Is Y a Vowel?](https://open.kattis.com/problems/isyavowel) | isyavowel | 1.2 | <a href="Kattis/isyavowel.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [I Wanna Be The Very Best](https://open.kattis.com/problems/iwannabe) | iwannabe | 2.4 | <a href="Kattis/iwannabe.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Jabuke](https://open.kattis.com/problems/jabuke) | jabuke | 1.6 | <a href="Kattis/jabuke.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Jack-O'-Lantern Juxtaposition](https://open.kattis.com/problems/jackolanternjuxtaposition) | jackolanternjuxtaposition | 1.2 | <a href="Kattis/jackolanternjuxtaposition.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Jackpot](https://open.kattis.com/problems/jackpot) | jackpot | 3.1 | <a href="Kattis/jackpot.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Tag](https://open.kattis.com/problems/jage) | jage | 2.3 | <a href="Kattis/jage.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Jamboree](https://open.kattis.com/problems/jamboree) | jamboree | 3.0 | <a href="Kattis/jamboree.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a><a href="Kattis/jamboree.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Jam-packed](https://open.kattis.com/problems/jampacked) | jampacked | 6.2 | <a href="Kattis/jampacked.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Janitor Troubles](https://open.kattis.com/problems/janitortroubles) | janitortroubles | 1.5 | <a href="Kattis/janitortroubles.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Jazz it Up!](https://open.kattis.com/problems/jazzitup) | jazzitup | 2.1 | <a href="Kattis/jazzitup.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Jealous Youngsters](https://open.kattis.com/problems/jealousyoungsters) | jealousyoungsters | 7.8 | <a href="Kattis/jealousyoungsters.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Jewelry Box](https://open.kattis.com/problems/jewelrybox) | jewelrybox | 1.8 | <a href="Kattis/jewelrybox.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Jib Job](https://open.kattis.com/problems/jibjob) | jibjob | 2.9 | <a href="Kattis/jibjob.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Job Switching](https://open.kattis.com/problems/jobbyte) | jobbyte | 2.5 | <a href="Kattis/jobbyte.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Job Expenses](https://open.kattis.com/problems/jobexpenses) | jobexpenses | 1.5 | <a href="Kattis/jobexpenses.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [John Dillermand](https://open.kattis.com/problems/johndillermand) | johndillermand | 2.6 | <a href="Kattis/johndillermand.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Join Strings](https://open.kattis.com/problems/joinstrings) | joinstrings | 4.4 | <a href="Kattis/joinstrings.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Joint Attack](https://open.kattis.com/problems/jointattack) | jointattack | 2.3 | <a href="Kattis/jointattack.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Joint Jog Jam](https://open.kattis.com/problems/jointjogjam) | jointjogjam | 1.7 | <a href="Kattis/jointjogjam.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Jolly Jumpers](https://open.kattis.com/problems/jollyjumpers) | jollyjumpers | 2.6 | <a href="Kattis/jollyjumpers.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Joyless Game](https://open.kattis.com/problems/joylessgame) | joylessgame | 4.1 | <a href="Kattis/joylessgame.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Judging Troubles](https://open.kattis.com/problems/judging) | judging | 2.3 | <a href="Kattis/judging.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Judging Moose](https://open.kattis.com/problems/judgingmoose) | judgingmoose | 1.7 | <a href="Kattis/judgingmoose.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Jug Hard](https://open.kattis.com/problems/jughard) | jughard | 3.5 | <a href="Kattis/jughard.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Julmust](https://open.kattis.com/problems/julmust) | julmust | 2.3 | <a href="Kattis/julmust.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Jumbled Scoreboards](https://open.kattis.com/problems/jumbledscoreboards) | jumbledscoreboards | 1.8 | <a href="Kattis/jumbledscoreboards.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Jumbo Javelin](https://open.kattis.com/problems/jumbojavelin) | jumbojavelin | 1.2 | <a href="Kattis/jumbojavelin.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a><a href="Kattis/jumbojavelin.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Jumping Yoshi](https://open.kattis.com/problems/jumpingyoshi) | jumpingyoshi | 6.1 | <a href="Kattis/jumpingyoshi.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Jungle Game](https://open.kattis.com/problems/junglegame) | junglegame | 6.5 | <a href="Kattis/junglegame.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Junior price robot](https://open.kattis.com/problems/juniorpricerobot) | juniorpricerobot | 2.7 | <a href="Kattis/juniorpricerobot.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Jurassic Jigsaw](https://open.kattis.com/problems/jurassicjigsaw) | jurassicjigsaw | 2.2 | <a href="Kattis/jurassicjigsaw.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Jury Jeopardy](https://open.kattis.com/problems/juryjeopardy) | juryjeopardy | 2.4 | <a href="Kattis/juryjeopardy.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Just a Minute](https://open.kattis.com/problems/justaminute) | justaminute | 2.5 | <a href="Kattis/justaminute.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Just for Sidekicks](https://open.kattis.com/problems/justforsidekicks) | justforsidekicks | 3.4 | <a href="Kattis/justforsidekicks.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Kafkaesque](https://open.kattis.com/problems/kafkaesque) | kafkaesque | 2.0 | <a href="Kattis/kafkaesque.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Cookies](https://open.kattis.com/problems/kakor) | kakor | 1.7 | <a href="Kattis/kakor.java"><img src="https://img.icons8.com/color/96/java-coffee-cup-logo--v1.png" alt="Java" width="32" height="32"></a> |
+| [Kaleidoscopic Palindromes](https://open.kattis.com/problems/kaleidoscopicpalindromes) | kaleidoscopicpalindromes | 2.7 | <a href="Kattis/kaleidoscopicpalindromes.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Running Race](https://open.kattis.com/problems/kaploeb) | kaploeb | 2.9 | <a href="Kattis/kaploeb.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Kaprekar Numbers](https://open.kattis.com/problems/kaprekarnumbers) | kaprekarnumbers | 3.7 | <a href="Kattis/kaprekarnumbers.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Karl Coder](https://open.kattis.com/problems/karlcoder) | karlcoder | 4.4 | <a href="Kattis/karlcoder.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Karte](https://open.kattis.com/problems/karte) | karte | 1.5 | <a href="Kattis/karte.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Kastenlauf](https://open.kattis.com/problems/kastenlauf) | kastenlauf | 2.8 | <a href="Kattis/kastenlauf.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Kattis Speedrun](https://open.kattis.com/problems/kattisspeedrun) | kattisspeedrun | 3.6 | <a href="Kattis/kattisspeedrun.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Kayaking Trip](https://open.kattis.com/problems/kayaking) | kayaking | 5.4 | <a href="Kattis/kayaking.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [kcuD dlanoD](https://open.kattis.com/problems/kcuddlanod) | kcuddlanod | 1.8 | <a href="Kattis/kcuddlanod.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Kemija](https://open.kattis.com/problems/kemija08) | kemija08 | 1.6 | <a href="Kattis/kemija08.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Keyboardd](https://open.kattis.com/problems/keyboardd) | keyboardd | 2.6 | <a href="Kattis/keyboardd.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Keylogger](https://open.kattis.com/problems/keylogger) | keylogger | 2.5 | <a href="Kattis/keylogger.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Keys, Phone, Wallet](https://open.kattis.com/problems/keysphonewallet) | keysphonewallet | 1.3 | <a href="Kattis/keysphonewallet.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [The Key to Cryptography](https://open.kattis.com/problems/keytocrypto) | keytocrypto | 1.7 | <a href="Kattis/keytocrypto.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Keywords](https://open.kattis.com/problems/keywords) | keywords | 1.8 | <a href="Kattis/keywords.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Kiki Boba](https://open.kattis.com/problems/kikiboba) | kikiboba | 1.3 | <a href="Kattis/kikiboba.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Kínahvísl](https://open.kattis.com/problems/kinahvisl) | kinahvisl | 1.4 | <a href="Kattis/kinahvisl.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a><a href="Kattis/kinahvisl.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [King Arthur's Round Table](https://open.kattis.com/problems/kingarthur) | kingarthur | 1.4 | <a href="Kattis/kingarthur.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [King's Decree](https://open.kattis.com/problems/kingsdecree) | kingsdecree | 3.7 | <a href="Kattis/kingsdecree.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Kitchen Combinatorics](https://open.kattis.com/problems/kitchencombinatorics) | kitchencombinatorics | 4.7 | <a href="Kattis/kitchencombinatorics.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Kitten on a Tree](https://open.kattis.com/problems/kitten) | kitten | 1.6 | <a href="Kattis/kitten.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Kitten of Chaos](https://open.kattis.com/problems/kittenofchaos) | kittenofchaos | 3.8 | <a href="Kattis/kittenofchaos.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Kleptography](https://open.kattis.com/problems/kleptography) | kleptography | 1.7 | <a href="Kattis/kleptography.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [The Clock](https://open.kattis.com/problems/klockan2) | klockan2 | 1.9 | <a href="Kattis/klockan2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Klósettröð](https://open.kattis.com/problems/klosettrod) | klosettrod | 2.1 | <a href="Kattis/klosettrod.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Knight Jump](https://open.kattis.com/problems/knightjump) | knightjump | 2.1 | <a href="Kattis/knightjump.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Knight Packing](https://open.kattis.com/problems/knightpacking) | knightpacking | 1.3 | <a href="Kattis/knightpacking.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Knight Search](https://open.kattis.com/problems/knightsearch) | knightsearch | 3.0 | <a href="Kattis/knightsearch.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Knights Move](https://open.kattis.com/problems/knightsmove) | knightsmove | 2.9 | <a href="Kattis/knightsmove.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Knight Walk](https://open.kattis.com/problems/knightwalk) | knightwalk | 2.6 | <a href="Kattis/knightwalk.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Knitting Pattern](https://open.kattis.com/problems/knittingpattern) | knittingpattern | 3.6 | <a href="Kattis/knittingpattern.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a><a href="Kattis/knittingpattern.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Knot Knowledge](https://open.kattis.com/problems/knotknowledge) | knotknowledge | 1.3 | <a href="Kattis/knotknowledge.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Kolone](https://open.kattis.com/problems/kolone) | kolone | 3.2 | <a href="Kattis/kolone.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Kornislav](https://open.kattis.com/problems/kornislav) | kornislav | 1.6 | <a href="Kattis/kornislav.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Kratki](https://open.kattis.com/problems/kratki) | kratki | 3.6 | <a href="Kattis/kratki.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Križaljka](https://open.kattis.com/problems/krizaljka) | krizaljka | 1.7 | <a href="Kattis/krizaljka.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Kuggfrågan](https://open.kattis.com/problems/kuggfragan) | kuggfragan | 2.0 | <a href="Kattis/kuggfragan.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Kutevi](https://open.kattis.com/problems/kutevi) | kutevi | 2.5 | <a href="Kattis/kutevi.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Quack](https://open.kattis.com/problems/kvack) | kvack | 4.6 | <a href="Kattis/kvack.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Evening Fika](https://open.kattis.com/problems/kvallsfika) | kvallsfika | 2.1 | <a href="Kattis/kvallsfika.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Kveðja](https://open.kattis.com/problems/kvedja) | kvedja | 1.1 | <a href="Kattis/kvedja.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [L33T H4X0R](https://open.kattis.com/problems/l33th4x0r) | l33th4x0r | 2.5 | <a href="Kattis/l33th4x0r.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Ladder](https://open.kattis.com/problems/ladder) | ladder | 1.5 | <a href="Kattis/ladder.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Lægð yfir landinu](https://open.kattis.com/problems/laegdyfirlandinu) | laegdyfirlandinu | 1.4 | <a href="Kattis/laegdyfirlandinu.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Lamppost Race](https://open.kattis.com/problems/lamppostrace) | lamppostrace | 2.0 | <a href="Kattis/lamppostrace.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Lamps](https://open.kattis.com/problems/lamps) | lamps | 2.9 | <a href="Kattis/lamps.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Landscaping](https://open.kattis.com/problems/landscaping) | landscaping | 4.1 | <a href="Kattis/landscaping.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Laptop Sticker](https://open.kattis.com/problems/laptopsticker) | laptopsticker | 1.4 | <a href="Kattis/laptopsticker.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Laptop Stickers](https://open.kattis.com/problems/laptopstickers) | laptopstickers | 2.1 | <a href="Kattis/laptopstickers.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Last Factorial Digit](https://open.kattis.com/problems/lastfactorialdigit) | lastfactorialdigit | 1.2 | <a href="Kattis/lastfactorialdigit.java"><img src="https://img.icons8.com/color/96/java-coffee-cup-logo--v1.png" alt="Java" width="32" height="32"></a><a href="Kattis/lastfactorialdigit.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Last Minute](https://open.kattis.com/problems/lastminute) | lastminute | 2.7 | <a href="Kattis/lastminute.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Lawful Limits](https://open.kattis.com/problems/lawfullimits) | lawfullimits | 4.3 | <a href="Kattis/lawfullimits.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Lawn Mower](https://open.kattis.com/problems/lawnmower) | lawnmower | 1.9 | <a href="Kattis/lawnmower.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Left and Right](https://open.kattis.com/problems/leftandright) | leftandright | 2.9 | <a href="Kattis/leftandright.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Left Beehind](https://open.kattis.com/problems/leftbeehind) | leftbeehind | 1.5 | <a href="Kattis/leftbeehind.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Leggja saman](https://open.kattis.com/problems/leggjasaman) | leggjasaman | 1.1 | <a href="Kattis/leggjasaman.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Leiðangur](https://open.kattis.com/problems/leidangur) | leidangur | 2.2 | <a href="Kattis/leidangur.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Lektira](https://open.kattis.com/problems/lektira) | lektira | 2.3 | <a href="Kattis/lektira.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Less vs. Fewer](https://open.kattis.com/problems/lessvsfewer) | lessvsfewer | 2.1 | <a href="Kattis/lessvsfewer.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Léttasta verkefnið?](https://open.kattis.com/problems/lettasta) | lettasta | 1.4 | <a href="Kattis/lettasta.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Leyniþjónusta](https://open.kattis.com/problems/leynithjonusta) | leynithjonusta | 1.3 | <a href="Kattis/leynithjonusta.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [License to Launch](https://open.kattis.com/problems/licensetolaunch) | licensetolaunch | 1.5 | <a href="Kattis/licensetolaunch.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Liðaskipting](https://open.kattis.com/problems/lidaskipting) | lidaskipting | 1.7 | <a href="Kattis/lidaskipting.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Liðaskipting 2](https://open.kattis.com/problems/lidaskipting2) | lidaskipting2 | 2.4 | <a href="Kattis/lidaskipting2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Light Up](https://open.kattis.com/problems/lightup) | lightup | 2.6 | <a href="Kattis/lightup.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Limbo: Part 1](https://open.kattis.com/problems/limbo1) | limbo1 | 3.6 | <a href="Kattis/limbo1.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Linden Mayor System](https://open.kattis.com/problems/lindenmayorsystem) | lindenmayorsystem | 2.2 | <a href="Kattis/lindenmayorsystem.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Lines Per Hour](https://open.kattis.com/problems/linesperhour) | linesperhour | 1.7 | <a href="Kattis/linesperhour.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Line Them Up](https://open.kattis.com/problems/lineup) | lineup | 1.7 | <a href="Kattis/lineup.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Línuhlýnun](https://open.kattis.com/problems/linuhlynun) | linuhlynun | 3.3 | <a href="Kattis/linuhlynun.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Lipschitz Constant](https://open.kattis.com/problems/lipschitzconstant) | lipschitzconstant | 3.5 | <a href="Kattis/lipschitzconstant.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Liquid Assets](https://open.kattis.com/problems/liquidassets) | liquidassets | 3.0 | <a href="Kattis/liquidassets.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [A List Game](https://open.kattis.com/problems/listgame) | listgame | 2.7 | <a href="Kattis/listgame.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Colour Analysis](https://open.kattis.com/problems/litagreining) | litagreining | 1.7 | <a href="Kattis/litagreining.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Ljutnja](https://open.kattis.com/problems/ljutnja) | ljutnja | 5.3 | <a href="Kattis/ljutnja.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Locked Treasure](https://open.kattis.com/problems/lockedtreasure) | lockedtreasure | 2.3 | <a href="Kattis/lockedtreasure.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Locust Locus](https://open.kattis.com/problems/locustlocus) | locustlocus | 1.8 | <a href="Kattis/locustlocus.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Logic Functions](https://open.kattis.com/problems/logicfunctions) | logicfunctions | 1.6 | <a href="Kattis/logicfunctions.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Logland](https://open.kattis.com/problems/logland) | logland | 5.7 | <a href="Kattis/logland.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Logo](https://open.kattis.com/problems/logo) | logo | 2.1 | <a href="Kattis/logo.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Lög um lög](https://open.kattis.com/problems/logumlog) | logumlog | 3.8 | <a href="Kattis/logumlog.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Lone Rook](https://open.kattis.com/problems/lonerook) | lonerook | 7.4 | <a href="Kattis/lonerook.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Longest Collatz Chain](https://open.kattis.com/problems/longestcollatz) | longestcollatz | 2.5 | <a href="Kattis/longestcollatz.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Longest Prime Sum](https://open.kattis.com/problems/longestprimesum) | longestprimesum | 2.3 | <a href="Kattis/longestprimesum.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Loo Rolls](https://open.kattis.com/problems/loorolls) | loorolls | 2.5 | <a href="Kattis/loorolls.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [The Dragon of Loowater](https://open.kattis.com/problems/loowater) | loowater | 2.2 | <a href="Kattis/loowater.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Lopsided Lineup](https://open.kattis.com/problems/lopsidedlineup) | lopsidedlineup | 3.0 | <a href="Kattis/lopsidedlineup.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Lost Lineup](https://open.kattis.com/problems/lostlineup) | lostlineup | 1.7 | <a href="Kattis/lostlineup.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Lost Map](https://open.kattis.com/problems/lostmap) | lostmap | 1.8 | <a href="Kattis/lostmap.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Lost On Campus](https://open.kattis.com/problems/lostoncampus) | lostoncampus | 5.5 | <a href="Kattis/lostoncampus.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Low Power](https://open.kattis.com/problems/low) | low | 5.3 | <a href="Kattis/low.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a><a href="Kattis/low.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Lubbi Lærir](https://open.kattis.com/problems/lubbilaerir) | lubbilaerir | 1.1 | <a href="Kattis/lubbilaerir.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Lucky Draw](https://open.kattis.com/problems/luckydraw) | luckydraw | 4.3 | <a href="Kattis/luckydraw.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Luhn's Checksum Algorithm](https://open.kattis.com/problems/luhnchecksum) | luhnchecksum | 1.7 | <a href="Kattis/luhnchecksum.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| ["lv"-able](https://open.kattis.com/problems/lvable) | lvable | 2.1 | <a href="Kattis/lvable.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Password Filter](https://open.kattis.com/problems/lykilordasia) | lykilordasia | 2.1 | <a href="Kattis/lykilordasia.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Keyboard Warrior](https://open.kattis.com/problems/lyklabordskappi) | lyklabordskappi | 4.3 | <a href="Kattis/lyklabordskappi.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Mæting](https://open.kattis.com/problems/maeting) | maeting | 1.4 | <a href="Kattis/maeting.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Mætingarlisti](https://open.kattis.com/problems/maetingarlisti) | maetingarlisti | 1.6 | <a href="Kattis/maetingarlisti.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Magical Runes](https://open.kattis.com/problems/magicalrunes) | magicalrunes | 2.9 | <a href="Kattis/magicalrunes.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a><a href="Kattis/magicalrunes.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Magic Trick](https://open.kattis.com/problems/magictrick) | magictrick | 1.4 | <a href="Kattis/magictrick.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Majór Skýrsla](https://open.kattis.com/problems/majorskyrsla) | majorskyrsla | 3.5 | <a href="Kattis/majorskyrsla.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Majstor](https://open.kattis.com/problems/majstor) | majstor | 2.2 | <a href="Kattis/majstor.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Making A Meowth](https://open.kattis.com/problems/makingameowth) | makingameowth | 2.1 | <a href="Kattis/makingameowth.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Veggurinn, seinni hluti](https://open.kattis.com/problems/malari) | malari | 3.8 | <a href="Kattis/malari.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Mancala](https://open.kattis.com/problems/mancala) | mancala | 2.1 | <a href="Kattis/mancala.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Mandelbrot](https://open.kattis.com/problems/mandelbrot) | mandelbrot | 2.6 | <a href="Kattis/mandelbrot.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Identifying Map Tiles](https://open.kattis.com/problems/maptiles2) | maptiles2 | 1.6 | <a href="Kattis/maptiles2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Marathon](https://open.kattis.com/problems/marathon3) | marathon3 | 2.8 | <a href="Kattis/marathon3.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Marbles On A Tree](https://open.kattis.com/problems/marblestree) | marblestree | 3.1 | <a href="Kattis/marblestree.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Marko](https://open.kattis.com/problems/marko) | marko | 1.8 | <a href="Kattis/marko.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Mars Window](https://open.kattis.com/problems/marswindow) | marswindow | 2.3 | <a href="Kattis/marswindow.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Massive Card Game](https://open.kattis.com/problems/massivecardgame) | massivecardgame | 2.8 | <a href="Kattis/massivecardgame.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Mastering Mastermind](https://open.kattis.com/problems/mastermind) | mastermind | 2.0 | <a href="Kattis/mastermind.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Mate in One](https://open.kattis.com/problems/mateinone) | mateinone | 8.1 | <a href="Kattis/mateinone.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Math Homework](https://open.kattis.com/problems/mathhomework) | mathhomework | 2.1 | <a href="Kattis/mathhomework.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Matrix Inverse](https://open.kattis.com/problems/matrix) | matrix | 2.9 | <a href="Kattis/matrix.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Maximum Number of Colinear Points](https://open.kattis.com/problems/maxcolinear) | maxcolinear | 3.1 | <a href="Kattis/maxcolinear.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Maximum Choice](https://open.kattis.com/problems/maximumchoice) | maximumchoice | 3.8 | <a href="Kattis/maximumchoice.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Maze Movement](https://open.kattis.com/problems/mazemovement) | mazemovement | 3.2 | <a href="Kattis/mazemovement.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [M-Climb](https://open.kattis.com/problems/mclimb) | mclimb | 1.2 | <a href="Kattis/mclimb.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Mean Words](https://open.kattis.com/problems/meanwords) | meanwords | 1.7 | <a href="Kattis/meanwords.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Imperial Measurement](https://open.kattis.com/problems/measurement) | measurement | 2.5 | <a href="Kattis/measurement.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Message](https://open.kattis.com/problems/meddelande) | meddelande | 1.9 | <a href="Kattis/meddelande.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Melting Snow](https://open.kattis.com/problems/meltingsnow) | meltingsnow | 1.7 | <a href="Kattis/meltingsnow.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Memory Game](https://open.kattis.com/problems/memorygame) | memorygame | 6.1 | <a href="Kattis/memorygame.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Mergjað Mál](https://open.kattis.com/problems/mergjadmal) | mergjadmal | 1.6 | <a href="Kattis/mergjadmal.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Metaprogramming](https://open.kattis.com/problems/metaprogramming) | metaprogramming | 2.0 | <a href="Kattis/metaprogramming.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Methodic Multiplication](https://open.kattis.com/problems/methodicmultiplication) | methodicmultiplication | 1.6 | <a href="Kattis/methodicmultiplication.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Metronome](https://open.kattis.com/problems/metronome) | metronome | 1.1 | <a href="Kattis/metronome.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Mia](https://open.kattis.com/problems/mia) | mia | 2.1 | <a href="Kattis/mia.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Miði](https://open.kattis.com/problems/midi) | midi | 1.8 | <a href="Kattis/midi.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Miðjan](https://open.kattis.com/problems/midjan) | midjan | 2.6 | <a href="Kattis/midjan.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Milk Mystery](https://open.kattis.com/problems/milkmystery) | milkmystery | 1.7 | <a href="Kattis/milkmystery.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Millifærsla](https://open.kattis.com/problems/millifaersla) | millifaersla | 1.1 | <a href="Kattis/millifaersla.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Minimum Cut](https://open.kattis.com/problems/mincut) | mincut | 3.1 | <a href="Kattis/mincut.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Mines Football](https://open.kattis.com/problems/minesfootball) | minesfootball | 2.0 | <a href="Kattis/minesfootball.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Mines Meal Plans](https://open.kattis.com/problems/minesmealplans) | minesmealplans | 2.9 | <a href="Kattis/minesmealplans.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Minesweeper](https://open.kattis.com/problems/minesweeper) | minesweeper | 1.5 | <a href="Kattis/minesweeper.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Minimum Scalar Product](https://open.kattis.com/problems/minimumscalar) | minimumscalar | 1.6 | <a href="Kattis/minimumscalar.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Minimum Spanning Tree](https://open.kattis.com/problems/minspantree) | minspantree | 3.1 | <a href="Kattis/minspantree.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Mirror Images](https://open.kattis.com/problems/mirror) | mirror | 1.8 | <a href="Kattis/mirror.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Misa](https://open.kattis.com/problems/misa) | misa | 2.1 | <a href="Kattis/misa.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Mischievous Math](https://open.kattis.com/problems/mischievousmath) | mischievousmath | 5.2 | <a href="Kattis/mischievousmath.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Missing Numbers](https://open.kattis.com/problems/missingnumbers) | missingnumbers | 1.8 | <a href="Kattis/missingnumbers.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Mixed Fractions](https://open.kattis.com/problems/mixedfractions) | mixedfractions | 1.5 | <a href="Kattis/mixedfractions.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Mjehuric](https://open.kattis.com/problems/mjehuric) | mjehuric | 1.7 | <a href="Kattis/mjehuric.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Moderate Pace](https://open.kattis.com/problems/moderatepace) | moderatepace | 1.5 | <a href="Kattis/moderatepace.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Modular Arithmetic](https://open.kattis.com/problems/modulararithmetic) | modulararithmetic | 2.7 | <a href="Kattis/modulararithmetic.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Modulo](https://open.kattis.com/problems/modulo) | modulo | 1.5 | <a href="Kattis/modulo.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Modulo Solitaire](https://open.kattis.com/problems/modulosolitaire) | modulosolitaire | 3.0 | <a href="Kattis/modulosolitaire.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Molecules](https://open.kattis.com/problems/molecules) | molecules | 3.9 | <a href="Kattis/molecules.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Mona, Mona, Mona](https://open.kattis.com/problems/monamonamona) | monamonamona | 1.6 | <a href="Kattis/monamonamona.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Money Matters](https://open.kattis.com/problems/moneymatters) | moneymatters | 2.3 | <a href="Kattis/moneymatters.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Monopoly](https://open.kattis.com/problems/monopol) | monopol | 1.3 | <a href="Kattis/monopol.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Monster Hunter](https://open.kattis.com/problems/monsterhunter2) | monsterhunter2 | 5.3 | <a href="Kattis/monsterhunter2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [More or Less](https://open.kattis.com/problems/moreorless) | moreorless | 1.7 | <a href="Kattis/moreorless.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Mörk](https://open.kattis.com/problems/mork) | mork | 1.8 | <a href="Kattis/mork.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Moscow Dream](https://open.kattis.com/problems/moscowdream) | moscowdream | 1.8 | <a href="Kattis/moscowdream.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Mosquito Multiplication](https://open.kattis.com/problems/mosquito) | mosquito | 1.8 | <a href="Kattis/mosquito.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Mountainpeeker](https://open.kattis.com/problems/mountainpeeker) | mountainpeeker | 2.2 | <a href="Kattis/mountainpeeker.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Mountain Range](https://open.kattis.com/problems/mountainrange) | mountainrange | 4.8 | <a href="Kattis/mountainrange.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Mouse Pursuit](https://open.kattis.com/problems/mousepursuit) | mousepursuit | 2.1 | <a href="Kattis/mousepursuit.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Moving Day](https://open.kattis.com/problems/movingday) | movingday | 2.0 | <a href="Kattis/movingday.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Mravi](https://open.kattis.com/problems/mravi) | mravi | 2.8 | <a href="Kattis/mravi.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [MrCodeFormatGrader](https://open.kattis.com/problems/mrcodeformatgrader) | mrcodeformatgrader | 2.0 | <a href="Kattis/mrcodeformatgrader.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Muddy Hike](https://open.kattis.com/problems/muddyhike) | muddyhike | 4.0 | <a href="Kattis/muddyhike.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Mult!](https://open.kattis.com/problems/mult) | mult | 1.9 | <a href="Kattis/mult.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Multigram](https://open.kattis.com/problems/multigram) | multigram | 2.5 | <a href="Kattis/multigram.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Multiplication](https://open.kattis.com/problems/multiplications) | multiplications | 2.1 | <a href="Kattis/multiplications.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Mumble Rap](https://open.kattis.com/problems/mumblerap) | mumblerap | 1.5 | <a href="Kattis/mumblerap.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Musical Chairs](https://open.kattis.com/problems/musicalchairs) | musicalchairs | 2.9 | <a href="Kattis/musicalchairs.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Musical Notation](https://open.kattis.com/problems/musicalnotation) | musicalnotation | 2.2 | <a href="Kattis/musicalnotation.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Musical Scales](https://open.kattis.com/problems/musicalscales) | musicalscales | 1.7 | <a href="Kattis/musicalscales.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Music Your Way](https://open.kattis.com/problems/musicyourway) | musicyourway | 1.8 | <a href="Kattis/musicyourway.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Fullkomin mylla](https://open.kattis.com/problems/mylla) | mylla | 1.6 | <a href="Kattis/mylla.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Mylla](https://open.kattis.com/problems/mylla2) | mylla2 | 1.5 | <a href="Kattis/mylla2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Nafnagift](https://open.kattis.com/problems/nafnagift) | nafnagift | 2.0 | <a href="Kattis/nafnagift.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Nafnatalning](https://open.kattis.com/problems/nafnatalning) | nafnatalning | 2.7 | <a href="Kattis/nafnatalning.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [File Extension](https://open.kattis.com/problems/nafnauki) | nafnauki | 1.4 | <a href="Kattis/nafnauki.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Naïve Convolution](https://open.kattis.com/problems/naiveconvolution) | naiveconvolution | 3.5 | <a href="Kattis/naiveconvolution.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Name Generation](https://open.kattis.com/problems/namegeneration) | namegeneration | 2.9 | <a href="Kattis/namegeneration.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Namnsdag](https://open.kattis.com/problems/namnsdag) | namnsdag | 1.6 | <a href="Kattis/namnsdag.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Námsleið](https://open.kattis.com/problems/namsleid) | namsleid | 2.0 | <a href="Kattis/namsleid.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Narrow Art Gallery](https://open.kattis.com/problems/narrowartgallery) | narrowartgallery | 3.4 | <a href="Kattis/narrowartgallery.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a><a href="Kattis/narrowartgallery.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Nasty Hacks](https://open.kattis.com/problems/nastyhacks) | nastyhacks | 1.6 | <a href="Kattis/nastyhacks.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Natjecanje](https://open.kattis.com/problems/natjecanje) | natjecanje | 1.9 | <a href="Kattis/natjecanje.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Natrij](https://open.kattis.com/problems/natrij) | natrij | 2.7 | <a href="Kattis/natrij.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Navigation Nightmare](https://open.kattis.com/problems/navigationnightmare) | navigationnightmare | 4.1 | <a href="Kattis/navigationnightmare.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Nered](https://open.kattis.com/problems/nered) | nered | 3.6 | <a href="Kattis/nered.java"><img src="https://img.icons8.com/color/96/java-coffee-cup-logo--v1.png" alt="Java" width="32" height="32"></a> |
+| [Nested Shapes](https://open.kattis.com/problems/nestedshapes) | nestedshapes | 3.9 | <a href="Kattis/nestedshapes.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Server Space](https://open.kattis.com/problems/netthjonaplass) | netthjonaplass | 3.5 | <a href="Kattis/netthjonaplass.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Networking](https://open.kattis.com/problems/networking) | networking | 2.8 | <a href="Kattis/networking.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Nicknames](https://open.kattis.com/problems/nicknames) | nicknames | 2.5 | <a href="Kattis/nicknames.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Nikola](https://open.kattis.com/problems/nikola) | nikola | 3.2 | <a href="Kattis/nikola.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Nimionese](https://open.kattis.com/problems/nimionese) | nimionese | 2.3 | <a href="Kattis/nimionese.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [I Hate The Number Nine](https://open.kattis.com/problems/nine) | nine | 2.7 | <a href="Kattis/nine.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Nine Knights](https://open.kattis.com/problems/nineknights) | nineknights | 2.1 | <a href="Kattis/nineknights.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Ninety-nine](https://open.kattis.com/problems/ninetynine) | ninetynine | 3.0 | <a href="Kattis/ninetynine.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Nizovi](https://open.kattis.com/problems/nizovi) | nizovi | 3.1 | <a href="Kattis/nizovi.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [No Duplicates](https://open.kattis.com/problems/nodup) | nodup | 1.7 | <a href="Kattis/nodup.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Noonerized Spumbers](https://open.kattis.com/problems/noonerizedspumbers) | noonerizedspumbers | 2.7 | <a href="Kattis/noonerizedspumbers.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [NOP](https://open.kattis.com/problems/nop) | nop | 2.0 | <a href="Kattis/nop.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Not Amused](https://open.kattis.com/problems/notamused) | notamused | 2.4 | <a href="Kattis/notamused.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [No Thanks!](https://open.kattis.com/problems/nothanks) | nothanks | 1.8 | <a href="Kattis/nothanks.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [N-Puzzle](https://open.kattis.com/problems/npuzzle) | npuzzle | 1.7 | <a href="Kattis/npuzzle.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [N-sum](https://open.kattis.com/problems/nsum) | nsum | 1.2 | <a href="Kattis/nsum.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Determining Nucleotide Assortments](https://open.kattis.com/problems/nucleotides) | nucleotides | 3.3 | <a href="Kattis/nucleotides.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Number Fun](https://open.kattis.com/problems/numberfun) | numberfun | 1.4 | <a href="Kattis/numberfun.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Number Reduction](https://open.kattis.com/problems/numberreduction) | numberreduction | 1.5 | <a href="Kattis/numberreduction.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Number Squistem](https://open.kattis.com/problems/numbersquistem) | numbersquistem | 3.1 | <a href="Kattis/numbersquistem.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Numbers On a Tree](https://open.kattis.com/problems/numbertree) | numbertree | 2.5 | <a href="Kattis/numbertree.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Odd Gnome](https://open.kattis.com/problems/oddgnome) | oddgnome | 1.6 | <a href="Kattis/oddgnome.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Oddities](https://open.kattis.com/problems/oddities) | oddities | 1.5 | <a href="Kattis/oddities.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Odd Man Out](https://open.kattis.com/problems/oddmanout) | oddmanout | 1.6 | <a href="Kattis/oddmanout.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Odds of Mia](https://open.kattis.com/problems/odds) | odds | 2.4 | <a href="Kattis/odds.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Office Building](https://open.kattis.com/problems/officebuilding) | officebuilding | 3.1 | <a href="Kattis/officebuilding.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Office Hours](https://open.kattis.com/problems/officehours) | officehours | 4.6 | <a href="Kattis/officehours.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Office Hours 2](https://open.kattis.com/problems/officehours2) | officehours2 | 6.1 | <a href="Kattis/officehours2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Off-World Records](https://open.kattis.com/problems/offworldrecords) | offworldrecords | 1.5 | <a href="Kattis/offworldrecords.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [of in the cold food of out hot eat the food](https://open.kattis.com/problems/ofinthecoldfoodofouthoteatthefood) | ofinthecoldfoodofouthoteatthefood | 3.6 | <a href="Kattis/ofinthecoldfoodofouthoteatthefood.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Öfugsnúið](https://open.kattis.com/problems/ofugsnuid) | ofugsnuid | 1.2 | <a href="Kattis/ofugsnuid.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Oktalni](https://open.kattis.com/problems/oktalni) | oktalni | 1.7 | <a href="Kattis/oktalni.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Okvir](https://open.kattis.com/problems/okvir) | okvir | 2.1 | <a href="Kattis/okvir.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Okviri](https://open.kattis.com/problems/okviri) | okviri | 2.3 | <a href="Kattis/okviri.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Older Brother](https://open.kattis.com/problems/olderbrother) | olderbrother | 2.9 | <a href="Kattis/olderbrother.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [On Average They're Purple](https://open.kattis.com/problems/onaveragetheyrepurple) | onaveragetheyrepurple | 4.1 | <a href="Kattis/onaveragetheyrepurple.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [One Chicken Per Person!](https://open.kattis.com/problems/onechicken) | onechicken | 1.6 | <a href="Kattis/onechicken.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Oooh I See](https://open.kattis.com/problems/ooohisee) | ooohisee | 1.5 | <a href="Kattis/ooohisee.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Uh-Oh, It Is Nighttime!](https://open.kattis.com/problems/oothaderkominnott) | oothaderkominnott | 1.7 | <a href="Kattis/oothaderkominnott.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Ordered Problem Set](https://open.kattis.com/problems/orderedproblemset) | orderedproblemset | 2.1 | <a href="Kattis/orderedproblemset.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Orderly Class](https://open.kattis.com/problems/orderlyclass) | orderlyclass | 3.8 | <a href="Kattis/orderlyclass.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Ordinals](https://open.kattis.com/problems/ordinals) | ordinals | 1.9 | <a href="Kattis/ordinals.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Órökrétt](https://open.kattis.com/problems/orokrett) | orokrett | 4.2 | <a href="Kattis/orokrett.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Scream Cipher](https://open.kattis.com/problems/oskurdulmal) | oskurdulmal | 3.9 | <a href="Kattis/oskurdulmal.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Östgötska](https://open.kattis.com/problems/ostgotska) | ostgotska | 2.1 | <a href="Kattis/ostgotska.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Other Side](https://open.kattis.com/problems/otherside) | otherside | 5.2 | <a href="Kattis/otherside.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Out of Sorts](https://open.kattis.com/problems/outofsorts) | outofsorts | 2.2 | <a href="Kattis/outofsorts.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [OvalWatch](https://open.kattis.com/problems/ovalwatch) | ovalwatch | 2.7 | <a href="Kattis/ovalwatch.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Overdraft](https://open.kattis.com/problems/overdraft) | overdraft | 2.0 | <a href="Kattis/overdraft.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Overnight Oats](https://open.kattis.com/problems/overnightoats) | overnightoats | 2.3 | <a href="Kattis/overnightoats.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Over the Hill, Part 1](https://open.kattis.com/problems/overthehill1) | overthehill1 | 2.5 | <a href="Kattis/overthehill1.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Óvissa](https://open.kattis.com/problems/ovissa) | ovissa | 1.1 | <a href="Kattis/ovissa.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [The Owl and the Fox](https://open.kattis.com/problems/owlandfox) | owlandfox | 1.8 | <a href="Kattis/owlandfox.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Pachyderm Peanut Packing](https://open.kattis.com/problems/pachydermpeanutpacking) | pachydermpeanutpacking | 2.9 | <a href="Kattis/pachydermpeanutpacking.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Paintings](https://open.kattis.com/problems/paintings) | paintings | 3.1 | <a href="Kattis/paintings.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Pairing Socks](https://open.kattis.com/problems/pairingsocks) | pairingsocks | 2.2 | <a href="Kattis/pairingsocks.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Packagemanager](https://open.kattis.com/problems/pakethanterare) | pakethanterare | 1.9 | <a href="Kattis/pakethanterare.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Pallatölur](https://open.kattis.com/problems/pallatolur) | pallatolur | 1.7 | <a href="Kattis/pallatolur.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Paper Pile Pandemonium](https://open.kattis.com/problems/paperpilepandemonium) | paperpilepandemonium | 1.5 | <a href="Kattis/paperpilepandemonium.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Parent Gap](https://open.kattis.com/problems/parentgap) | parentgap | 2.5 | <a href="Kattis/parentgap.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Parents](https://open.kattis.com/problems/parents) | parents | 3.3 | <a href="Kattis/parents.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Parket](https://open.kattis.com/problems/parket) | parket | 2.1 | <a href="Kattis/parket.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Parking](https://open.kattis.com/problems/parking) | parking | 1.9 | <a href="Kattis/parking.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Parking](https://open.kattis.com/problems/parking2) | parking2 | 1.7 | <a href="Kattis/parking2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Parsing Hex](https://open.kattis.com/problems/parsinghex) | parsinghex | 2.5 | <a href="Kattis/parsinghex.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Partial Transmission](https://open.kattis.com/problems/partialtransmission) | partialtransmission | 2.4 | <a href="Kattis/partialtransmission.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Pascal](https://open.kattis.com/problems/pascal) | pascal | 3.8 | <a href="Kattis/pascal.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Pascal Multiple](https://open.kattis.com/problems/pascalmultiple) | pascalmultiple | 2.9 | <a href="Kattis/pascalmultiple.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Password Hacking](https://open.kattis.com/problems/password) | password | 1.8 | <a href="Kattis/password.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Patchwork](https://open.kattis.com/problems/patchwork) | patchwork | 2.0 | <a href="Kattis/patchwork.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Path Crossings](https://open.kattis.com/problems/pathcrossings) | pathcrossings | 3.1 | <a href="Kattis/pathcrossings.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Paths](https://open.kattis.com/problems/paths) | paths | 4.4 | <a href="Kattis/paths.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a><a href="Kattis/paths.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Path Tracing](https://open.kattis.com/problems/pathtracing) | pathtracing | 3.2 | <a href="Kattis/pathtracing.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Patuljci](https://open.kattis.com/problems/patuljci) | patuljci | 1.7 | <a href="Kattis/patuljci.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Paul Eigon](https://open.kattis.com/problems/pauleigon) | pauleigon | 1.6 | <a href="Kattis/pauleigon.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Pawn Shop](https://open.kattis.com/problems/pawnshop) | pawnshop | 3.5 | <a href="Kattis/pawnshop.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Peach Powder Polygon](https://open.kattis.com/problems/peachpowderpolygon) | peachpowderpolygon | 2.0 | <a href="Kattis/peachpowderpolygon.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Pea Soup and Pancakes](https://open.kattis.com/problems/peasoup) | peasoup | 1.6 | <a href="Kattis/peasoup.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Pebble Solitaire](https://open.kattis.com/problems/pebblesolitaire) | pebblesolitaire | 2.1 | <a href="Kattis/pebblesolitaire.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Pebble Solitaire](https://open.kattis.com/problems/pebblesolitaire2) | pebblesolitaire2 | 2.5 | <a href="Kattis/pebblesolitaire2.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Peg](https://open.kattis.com/problems/peg) | peg | 2.0 | <a href="Kattis/peg.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Pencil Crayons](https://open.kattis.com/problems/pencilcrayons) | pencilcrayons | 1.5 | <a href="Kattis/pencilcrayons.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Peningar](https://open.kattis.com/problems/peningar) | peningar | 2.3 | <a href="Kattis/peningar.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Peragrams](https://open.kattis.com/problems/peragrams) | peragrams | 1.7 | <a href="Kattis/peragrams.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Periodic Strings](https://open.kattis.com/problems/periodicstrings) | periodicstrings | 2.2 | <a href="Kattis/periodicstrings.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Perket](https://open.kattis.com/problems/perket) | perket | 2.0 | <a href="Kattis/perket.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Permutation Descent Counts](https://open.kattis.com/problems/permutationdescent) | permutationdescent | 2.0 | <a href="Kattis/permutationdescent.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Permutation Encryption](https://open.kattis.com/problems/permutationencryption) | permutationencryption | 2.1 | <a href="Kattis/permutationencryption.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Permuted Arithmetic Sequence](https://open.kattis.com/problems/permutedarithmeticsequence) | permutedarithmeticsequence | 1.9 | <a href="Kattis/permutedarithmeticsequence.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Pervasive Heart Monitor](https://open.kattis.com/problems/pervasiveheartmonitor) | pervasiveheartmonitor | 1.7 | <a href="Kattis/pervasiveheartmonitor.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Pet](https://open.kattis.com/problems/pet) | pet | 1.3 | <a href="Kattis/pet.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Phone Book](https://open.kattis.com/problems/phonebook) | phonebook | 1.5 | <a href="Kattis/phonebook.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Phone List](https://open.kattis.com/problems/phonelist) | phonelist | 3.0 | <a href="Kattis/phonelist.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Pick up sticks](https://open.kattis.com/problems/pickupsticks) | pickupsticks | 3.1 | <a href="Kattis/pickupsticks.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Pie](https://open.kattis.com/problems/pie) | pie | 2.9 | <a href="Kattis/pie.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Piece of Cake!](https://open.kattis.com/problems/pieceofcake2) | pieceofcake2 | 1.5 | <a href="Kattis/pieceofcake2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Pig Latin](https://open.kattis.com/problems/piglatin) | piglatin | 2.7 | <a href="Kattis/piglatin.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [A Vicious Pikeman (Easy)](https://open.kattis.com/problems/pikemaneasy) | pikemaneasy | 3.0 | <a href="Kattis/pikemaneasy.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Darts Scoring](https://open.kattis.com/problems/pilustig) | pilustig | 3.7 | <a href="Kattis/pilustig.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Ping Pong Tournament](https://open.kattis.com/problems/pingis) | pingis | 3.6 | <a href="Kattis/pingis.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Pinni Frændi](https://open.kattis.com/problems/pinnifraendi) | pinnifraendi | 2.2 | <a href="Kattis/pinnifraendi.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Pivot](https://open.kattis.com/problems/pivot) | pivot | 2.3 | <a href="Kattis/pivot.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Pizza Crust](https://open.kattis.com/problems/pizza2) | pizza2 | 1.9 | <a href="Kattis/pizza2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Pizza Hawaii](https://open.kattis.com/problems/pizzahawaii) | pizzahawaii | 2.5 | <a href="Kattis/pizzahawaii.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Pizzastrengur](https://open.kattis.com/problems/pizzastrengur) | pizzastrengur | 3.5 | <a href="Kattis/pizzastrengur.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a><a href="Kattis/pizzastrengur.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Pizzubestun](https://open.kattis.com/problems/pizzubestun) | pizzubestun | 2.2 | <a href="Kattis/pizzubestun.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Planetaris](https://open.kattis.com/problems/planetaris) | planetaris | 1.8 | <a href="Kattis/planetaris.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Planet Hopping](https://open.kattis.com/problems/planethopping) | planethopping | 4.3 | <a href="Kattis/planethopping.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Planets](https://open.kattis.com/problems/planets2) | planets2 | 2.7 | <a href="Kattis/planets2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Planina](https://open.kattis.com/problems/planina) | planina | 1.4 | <a href="Kattis/planina.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Planting Trees](https://open.kattis.com/problems/plantingtrees) | plantingtrees | 1.7 | <a href="Kattis/plantingtrees.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Platforme](https://open.kattis.com/problems/platforme) | platforme | 2.8 | <a href="Kattis/platforme.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Playfair Cipher](https://open.kattis.com/problems/playfair) | playfair | 2.7 | <a href="Kattis/playfair.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Playing the Slots](https://open.kattis.com/problems/playingtheslots) | playingtheslots | 2.7 | <a href="Kattis/playingtheslots.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Please, Go First](https://open.kattis.com/problems/pleasegofirst) | pleasegofirst | 3.3 | <a href="Kattis/pleasegofirst.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Plotting Polynomials](https://open.kattis.com/problems/plot) | plot | 2.5 | <a href="Kattis/plot.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Programmeringsolympiaden's Budget](https://open.kattis.com/problems/pobudget) | pobudget | 1.3 | <a href="Kattis/pobudget.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Pokechat](https://open.kattis.com/problems/pokechat) | pokechat | 1.5 | <a href="Kattis/pokechat.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Pokémon Ice Maze](https://open.kattis.com/problems/pokemon) | pokemon | 6.7 | <a href="Kattis/pokemon.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Poker Hand](https://open.kattis.com/problems/pokerhand) | pokerhand | 1.4 | <a href="Kattis/pokerhand.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Political Distance](https://open.kattis.com/problems/politicaldistance) | politicaldistance | 1.7 | <a href="Kattis/politicaldistance.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Polygon Area](https://open.kattis.com/problems/polygonarea) | polygonarea | 2.0 | <a href="Kattis/polygonarea.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Polynomial Multiplication 1](https://open.kattis.com/problems/polymul1) | polymul1 | 1.8 | <a href="Kattis/polymul1.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Polynomial Multiplication 2](https://open.kattis.com/problems/polymul2) | polymul2 | 5.1 | <a href="Kattis/polymul2.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Pop Count](https://open.kattis.com/problems/popcount) | popcount | 1.3 | <a href="Kattis/popcount.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Popcorn](https://open.kattis.com/problems/popkorn) | popkorn | 3.1 | <a href="Kattis/popkorn.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Popularity Contest](https://open.kattis.com/problems/popularitycontest) | popularitycontest | 1.8 | <a href="Kattis/popularitycontest.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Immortal Porpoises](https://open.kattis.com/problems/porpoises) | porpoises | 2.5 | <a href="Kattis/porpoises.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a><a href="Kattis/porpoises.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [KTH Challenge Posters](https://open.kattis.com/problems/posters) | posters | 3.6 | <a href="Kattis/posters.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Pot](https://open.kattis.com/problems/pot) | pot | 1.3 | <a href="Kattis/pot.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Powers and Modulus](https://open.kattis.com/problems/powers) | powers | 4.6 | <a href="Kattis/powers.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Powers of 2 (Easy)](https://open.kattis.com/problems/powersof2easy) | powersof2easy | 2.1 | <a href="Kattis/powersof2easy.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Power Strings](https://open.kattis.com/problems/powerstrings) | powerstrings | 5.2 | <a href="Kattis/powerstrings.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a><a href="Kattis/powerstrings.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Predicting GME](https://open.kattis.com/problems/predictinggme) | predictinggme | 3.3 | <a href="Kattis/predictinggme.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Premier League Table](https://open.kattis.com/problems/premierleaguetable) | premierleaguetable | 3.3 | <a href="Kattis/premierleaguetable.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Prerequisites?](https://open.kattis.com/problems/prerequisites) | prerequisites | 2.0 | <a href="Kattis/prerequisites.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Primal Representation](https://open.kattis.com/problems/primalrepresentation) | primalrepresentation | 3.0 | <a href="Kattis/primalrepresentation.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Primary Arithmetic](https://open.kattis.com/problems/primaryarithmetic) | primaryarithmetic | 2.7 | <a href="Kattis/primaryarithmetic.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Prime Path](https://open.kattis.com/problems/primepath) | primepath | 1.9 | <a href="Kattis/primepath.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Prime Reduction](https://open.kattis.com/problems/primereduction) | primereduction | 2.5 | <a href="Kattis/primereduction.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Saving Princess Peach](https://open.kattis.com/problems/princesspeach) | princesspeach | 1.7 | <a href="Kattis/princesspeach.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Printing Costs](https://open.kattis.com/problems/printingcosts) | printingcosts | 2.0 | <a href="Kattis/printingcosts.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [PrintQuoter3D](https://open.kattis.com/problems/printquoter3d) | printquoter3d | 5.0 | <a href="Kattis/printquoter3d.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Pripreme](https://open.kattis.com/problems/pripreme) | pripreme | 2.8 | <a href="Kattis/pripreme.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Prjónamynstur](https://open.kattis.com/problems/prjonamynstur) | prjonamynstur | 1.6 | <a href="Kattis/prjonamynstur.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Problem Classification](https://open.kattis.com/problems/problemclassification) | problemclassification | 2.9 | <a href="Kattis/problemclassification.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Product Divisors](https://open.kattis.com/problems/productdivisors) | productdivisors | 6.0 | <a href="Kattis/productdivisors.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Progressive Scramble](https://open.kattis.com/problems/progressivescramble) | progressivescramble | 2.2 | <a href="Kattis/progressivescramble.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Proofs](https://open.kattis.com/problems/proofs) | proofs | 2.5 | <a href="Kattis/proofs.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Provinces and Gold](https://open.kattis.com/problems/provincesandgold) | provincesandgold | 1.5 | <a href="Kattis/provincesandgold.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Prozor](https://open.kattis.com/problems/prozor) | prozor | 1.9 | <a href="Kattis/prozor.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Prsteni](https://open.kattis.com/problems/prsteni) | prsteni | 1.6 | <a href="Kattis/prsteni.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Prva](https://open.kattis.com/problems/prva) | prva | 1.6 | <a href="Kattis/prva.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Ptice](https://open.kattis.com/problems/ptice) | ptice | 1.6 | <a href="Kattis/ptice.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Pub Crawl](https://open.kattis.com/problems/pubrunda) | pubrunda | 2.1 | <a href="Kattis/pubrunda.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Purple Rain](https://open.kattis.com/problems/purplerain) | purplerain | 3.9 | <a href="Kattis/purplerain.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Púsluspil](https://open.kattis.com/problems/pusluspil) | pusluspil | 1.9 | <a href="Kattis/pusluspil.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Putovanje](https://open.kattis.com/problems/putovanje) | putovanje | 3.1 | <a href="Kattis/putovanje.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Plants vs Bad Guys](https://open.kattis.com/problems/pvbg) | pvbg | 1.6 | <a href="Kattis/pvbg.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Building Pyramids](https://open.kattis.com/problems/pyramids) | pyramids | 1.5 | <a href="Kattis/pyramids.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Pythagorean Problem](https://open.kattis.com/problems/pythagoreanproblem) | pythagoreanproblem | 3.2 | <a href="Kattis/pythagoreanproblem.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Quality-Adjusted Life-Year](https://open.kattis.com/problems/qaly) | qaly | 1.2 | <a href="Kattis/qaly.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Quadrant Selection](https://open.kattis.com/problems/quadrant) | quadrant | 1.2 | <a href="Kattis/quadrant.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Quantum Superposition](https://open.kattis.com/problems/quantumsuperposition) | quantumsuperposition | 2.8 | <a href="Kattis/quantumsuperposition.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Verify This, Your Majesty](https://open.kattis.com/problems/queens) | queens | 2.3 | <a href="Kattis/queens.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Quick Brown Fox](https://open.kattis.com/problems/quickbrownfox) | quickbrownfox | 1.6 | <a href="Kattis/quickbrownfox.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Quick Estimates](https://open.kattis.com/problems/quickestimate) | quickestimate | 1.8 | <a href="Kattis/quickestimate.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Quite a Problem](https://open.kattis.com/problems/quiteaproblem) | quiteaproblem | 2.1 | <a href="Kattis/quiteaproblem.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [R2](https://open.kattis.com/problems/r2) | r2 | 1.2 | <a href="Kattis/r2.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a><a href="Kattis/r2.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Racing Around the Alphabet](https://open.kattis.com/problems/racingalphabet) | racingalphabet | 1.7 | <a href="Kattis/racingalphabet.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Raðgreining 1](https://open.kattis.com/problems/radgreining1) | radgreining1 | 1.6 | <a href="Kattis/radgreining1.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Radioactive Blastervium](https://open.kattis.com/problems/radioactiveblastervium) | radioactiveblastervium | 6.9 | <a href="Kattis/radioactiveblastervium.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Ragged Right](https://open.kattis.com/problems/raggedright) | raggedright | 1.7 | <a href="Kattis/raggedright.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Railroad](https://open.kattis.com/problems/railroad2) | railroad2 | 1.5 | <a href="Kattis/railroad2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Rampant Growth](https://open.kattis.com/problems/rampantgrowth) | rampantgrowth | 2.0 | <a href="Kattis/rampantgrowth.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [A Rank Problem](https://open.kattis.com/problems/rankproblem) | rankproblem | 2.9 | <a href="Kattis/rankproblem.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Rating Problems](https://open.kattis.com/problems/ratingproblems) | ratingproblems | 1.4 | <a href="Kattis/ratingproblems.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Rational Arithmetic](https://open.kattis.com/problems/rationalarithmetic) | rationalarithmetic | 3.1 | <a href="Kattis/rationalarithmetic.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [A Rational Sequence](https://open.kattis.com/problems/rationalsequence) | rationalsequence | 5.1 | <a href="Kattis/rationalsequence.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [A Rational Sequence 2](https://open.kattis.com/problems/rationalsequence2) | rationalsequence2 | 2.6 | <a href="Kattis/rationalsequence2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [A Rational Sequence (Take 3)](https://open.kattis.com/problems/rationalsequence3) | rationalsequence3 | 2.5 | <a href="Kattis/rationalsequence3.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Razbibriga](https://open.kattis.com/problems/razbibriga) | razbibriga | 6.0 | <a href="Kattis/razbibriga.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Reachable Roads](https://open.kattis.com/problems/reachableroads) | reachableroads | 1.8 | <a href="Kattis/reachableroads.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Reactivity Series](https://open.kattis.com/problems/reactivity) | reactivity | 3.0 | <a href="Kattis/reactivity.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Rečenice](https://open.kattis.com/problems/recenice) | recenice | 2.6 | <a href="Kattis/recenice.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Recess Rocks](https://open.kattis.com/problems/recessrocks) | recessrocks | 1.7 | <a href="Kattis/recessrocks.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Scaling Recipes](https://open.kattis.com/problems/recipes) | recipes | 2.4 | <a href="Kattis/recipes.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Reconnaissance](https://open.kattis.com/problems/reconnaissance) | reconnaissance | 3.4 | <a href="Kattis/reconnaissance.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Recount](https://open.kattis.com/problems/recount) | recount | 2.0 | <a href="Kattis/recount.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Rectangle Area](https://open.kattis.com/problems/rectanglearea) | rectanglearea | 1.4 | <a href="Kattis/rectanglearea.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [The Rectangles Are Surrounding Us!](https://open.kattis.com/problems/rectanglesurrounding) | rectanglesurrounding | 2.6 | <a href="Kattis/rectanglesurrounding.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a><a href="Kattis/rectanglesurrounding.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Growing Rectangular Spiral](https://open.kattis.com/problems/rectangularspiral) | rectangularspiral | 3.1 | <a href="Kattis/rectangularspiral.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [RectSect](https://open.kattis.com/problems/rectsect) | rectsect | 3.2 | <a href="Kattis/rectsect.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Exam Redistribution](https://open.kattis.com/problems/redistribution) | redistribution | 2.5 | <a href="Kattis/redistribution.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Red Rover](https://open.kattis.com/problems/redrover) | redrover | 2.1 | <a href="Kattis/redrover.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Reduced ID Numbers](https://open.kattis.com/problems/reducedidnumbers) | reducedidnumbers | 2.3 | <a href="Kattis/reducedidnumbers.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Work Reduction](https://open.kattis.com/problems/reduction) | reduction | 5.3 | <a href="Kattis/reduction.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Reduplication](https://open.kattis.com/problems/reduplikation) | reduplikation | 1.1 | <a href="Kattis/reduplikation.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Refrigerator Transport](https://open.kattis.com/problems/refrigerator) | refrigerator | 2.3 | <a href="Kattis/refrigerator.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Primary Register](https://open.kattis.com/problems/register) | register | 2.4 | <a href="Kattis/register.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Relatives](https://open.kattis.com/problems/relatives) | relatives | 2.8 | <a href="Kattis/relatives.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Relocation](https://open.kattis.com/problems/relocation) | relocation | 1.5 | <a href="Kattis/relocation.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [ReMorse](https://open.kattis.com/problems/remorse) | remorse | 2.4 | <a href="Kattis/remorse.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Repeated Subsequence](https://open.kattis.com/problems/repeatedsubsequence) | repeatedsubsequence | 2.4 | <a href="Kattis/repeatedsubsequence.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Research Productivity Index](https://open.kattis.com/problems/researchproductivityindex) | researchproductivityindex | 3.3 | <a href="Kattis/researchproductivityindex.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Reservoir](https://open.kattis.com/problems/reservoir) | reservoir | 5.1 | <a href="Kattis/reservoir.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Reseto](https://open.kattis.com/problems/reseto) | reseto | 2.2 | <a href="Kattis/reseto.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Restaurant Opening](https://open.kattis.com/problems/restaurantopening) | restaurantopening | 1.8 | <a href="Kattis/restaurantopening.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Reversed Binary Numbers](https://open.kattis.com/problems/reversebinary) | reversebinary | 1.3 | <a href="Kattis/reversebinary.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Reverse Rot](https://open.kattis.com/problems/reverserot) | reverserot | 1.6 | <a href="Kattis/reverserot.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Reversibly Cyclic Strings](https://open.kattis.com/problems/reversiblecyclic) | reversiblecyclic | 3.2 | <a href="Kattis/reversiblecyclic.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Revision Control](https://open.kattis.com/problems/revisionskontroll) | revisionskontroll | 2.3 | <a href="Kattis/revisionskontroll.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a><a href="Kattis/revisionskontroll.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [RGB Hydra](https://open.kattis.com/problems/rgb) | rgb | 3.3 | <a href="Kattis/rgb.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Rhyming Slang](https://open.kattis.com/problems/rhyming) | rhyming | 3.2 | <a href="Kattis/rhyming.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Riddle of the Sphinx](https://open.kattis.com/problems/riddleofthesphinx) | riddleofthesphinx | 3.2 | <a href="Kattis/riddleofthesphinx.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Riječi](https://open.kattis.com/problems/rijeci) | rijeci | 1.6 | <a href="Kattis/rijeci.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Ríkjafræði](https://open.kattis.com/problems/rikjafraedi) | rikjafraedi | 3.5 | <a href="Kattis/rikjafraedi.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Rice judge](https://open.kattis.com/problems/risdomare) | risdomare | 1.9 | <a href="Kattis/risdomare.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Robots on a Grid](https://open.kattis.com/problems/robotsonagrid) | robotsonagrid | 4.6 | <a href="Kattis/robotsonagrid.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Robot Turtles](https://open.kattis.com/problems/robotturtles) | robotturtles | 2.8 | <a href="Kattis/robotturtles.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Röðunarrugl](https://open.kattis.com/problems/rodunarrugl) | rodunarrugl | 2.4 | <a href="Kattis/rodunarrugl.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Röknet](https://open.kattis.com/problems/roknet) | roknet | 1.6 | <a href="Kattis/roknet.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Roll Call](https://open.kattis.com/problems/rollcall) | rollcall | 2.8 | <a href="Kattis/rollcall.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Rolling The Dice](https://open.kattis.com/problems/rollingthedice) | rollingthedice | 1.5 | <a href="Kattis/rollingthedice.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Roaming Romans](https://open.kattis.com/problems/romans) | romans | 1.7 | <a href="Kattis/romans.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Roomba 1](https://open.kattis.com/problems/roomba1) | roomba1 | 3.8 | <a href="Kattis/roomba1.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Roomba 2](https://open.kattis.com/problems/roomba2) | roomba2 | 3.8 | <a href="Kattis/roomba2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Room Painting](https://open.kattis.com/problems/roompainting) | roompainting | 2.5 | <a href="Kattis/roompainting.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a><a href="Kattis/roompainting.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Rot](https://open.kattis.com/problems/rot) | rot | 3.1 | <a href="Kattis/rot.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Rounded Buttons](https://open.kattis.com/problems/roundedbuttons) | roundedbuttons | 3.4 | <a href="Kattis/roundedbuttons.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Ruffians](https://open.kattis.com/problems/ruffians) | ruffians | 1.8 | <a href="Kattis/ruffians.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Ruglaður listi](https://open.kattis.com/problems/rugladurlisti) | rugladurlisti | 4.6 | <a href="Kattis/rugladurlisti.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Rule N](https://open.kattis.com/problems/rulen) | rulen | 3.9 | <a href="Kattis/rulen.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Run-Length Encoding, Run!](https://open.kattis.com/problems/runlengthencodingrun) | runlengthencodingrun | 1.6 | <a href="Kattis/runlengthencodingrun.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Running Steps](https://open.kattis.com/problems/runningsteps) | runningsteps | 2.7 | <a href="Kattis/runningsteps.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a><a href="Kattis/runningsteps.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Rust](https://open.kattis.com/problems/rust) | rust | 5.2 | <a href="Kattis/rust.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Cracking The Safe](https://open.kattis.com/problems/safe) | safe | 2.8 | <a href="Kattis/safe.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Safe Houses](https://open.kattis.com/problems/safehouses) | safehouses | 2.0 | <a href="Kattis/safehouses.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Safe Squares](https://open.kattis.com/problems/safesquares) | safesquares | 1.5 | <a href="Kattis/safesquares.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Sailing Friends](https://open.kattis.com/problems/sailingfriends) | sailingfriends | 2.1 | <a href="Kattis/sailingfriends.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Same Digits (Easy)](https://open.kattis.com/problems/samedigitseasy) | samedigitseasy | 2.4 | <a href="Kattis/samedigitseasy.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Same Digits (Hard)](https://open.kattis.com/problems/samedigitshard) | samedigitshard | 2.5 | <a href="Kattis/samedigitshard.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Songbook](https://open.kattis.com/problems/sangbok) | sangbok | 1.9 | <a href="Kattis/sangbok.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Sanic](https://open.kattis.com/problems/sanic) | sanic | 2.5 | <a href="Kattis/sanic.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Sannvirði](https://open.kattis.com/problems/sannvirdi) | sannvirdi | 2.3 | <a href="Kattis/sannvirdi.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Sarah's Sandwich Shop](https://open.kattis.com/problems/sarahssandwichshop) | sarahssandwichshop | 2.2 | <a href="Kattis/sarahssandwichshop.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Sauna](https://open.kattis.com/problems/sauna) | sauna | 1.6 | <a href="Kattis/sauna.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Saving Daylight](https://open.kattis.com/problems/savingdaylight) | savingdaylight | 2.2 | <a href="Kattis/savingdaylight.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Saving For Retirement](https://open.kattis.com/problems/savingforretirement) | savingforretirement | 1.8 | <a href="Kattis/savingforretirement.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Eb Alto Saxophone Player](https://open.kattis.com/problems/saxophone) | saxophone | 2.2 | <a href="Kattis/saxophone.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Scaling Recipe](https://open.kattis.com/problems/scalingrecipe) | scalingrecipe | 1.9 | <a href="Kattis/scalingrecipe.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Mountain Scenes](https://open.kattis.com/problems/scenes) | scenes | 3.5 | <a href="Kattis/scenes.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a><a href="Kattis/scenes.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [School Spirit](https://open.kattis.com/problems/schoolspirit) | schoolspirit | 1.8 | <a href="Kattis/schoolspirit.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Score!](https://open.kattis.com/problems/score) | score | 3.3 | <a href="Kattis/score.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Scrolling Sign](https://open.kattis.com/problems/scrollingsign) | scrollingsign | 2.9 | <a href="Kattis/scrollingsign.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Search Wizard](https://open.kattis.com/problems/searchwizard) | searchwizard | 1.6 | <a href="Kattis/searchwizard.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [A Second Opinion](https://open.kattis.com/problems/secondopinion) | secondopinion | 1.4 | <a href="Kattis/secondopinion.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Secret Chamber at Mount Rushmore](https://open.kattis.com/problems/secretchamber) | secretchamber | 2.5 | <a href="Kattis/secretchamber.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Secret Message](https://open.kattis.com/problems/secretmessage) | secretmessage | 1.7 | <a href="Kattis/secretmessage.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Secret Santa](https://open.kattis.com/problems/secretsanta) | secretsanta | 3.2 | <a href="Kattis/secretsanta.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Secure Doors](https://open.kattis.com/problems/securedoors) | securedoors | 1.7 | <a href="Kattis/securedoors.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Self-Similar Strings](https://open.kattis.com/problems/selfsimilarstrings) | selfsimilarstrings | 3.0 | <a href="Kattis/selfsimilarstrings.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Semafori](https://open.kattis.com/problems/semafori) | semafori | 1.9 | <a href="Kattis/semafori.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Siggi sement](https://open.kattis.com/problems/sement) | sement | 3.7 | <a href="Kattis/sement.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [0-1 Sequences](https://open.kattis.com/problems/sequences) | sequences | 5.4 | <a href="Kattis/sequences.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Server](https://open.kattis.com/problems/server) | server | 1.6 | <a href="Kattis/server.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Set!](https://open.kattis.com/problems/set) | set | 1.9 | <a href="Kattis/set.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Seven Wonders](https://open.kattis.com/problems/sevenwonders) | sevenwonders | 1.5 | <a href="Kattis/sevenwonders.java"><img src="https://img.icons8.com/color/96/java-coffee-cup-logo--v1.png" alt="Java" width="32" height="32"></a> |
+| [Shandy](https://open.kattis.com/problems/shandy) | shandy | 1.3 | <a href="Kattis/shandy.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Shattered Cake](https://open.kattis.com/problems/shatteredcake) | shatteredcake | 1.5 | <a href="Kattis/shatteredcake.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Shiritori](https://open.kattis.com/problems/shiritori) | shiritori | 2.3 | <a href="Kattis/shiritori.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Shopaholic](https://open.kattis.com/problems/shopaholic) | shopaholic | 2.0 | <a href="Kattis/shopaholic.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Shopping List](https://open.kattis.com/problems/shoppinglist) | shoppinglist | 2.7 | <a href="Kattis/shoppinglist.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Shopping List (Easy)](https://open.kattis.com/problems/shoppinglisteasy) | shoppinglisteasy | 1.7 | <a href="Kattis/shoppinglisteasy.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [A Shortcut to What?](https://open.kattis.com/problems/shortcuttowhat) | shortcuttowhat | 1.1 | <a href="Kattis/shortcuttowhat.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Single source shortest path, non-negative weights](https://open.kattis.com/problems/shortestpath1) | shortestpath1 | 2.5 | <a href="Kattis/shortestpath1.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Single source shortest path, time table](https://open.kattis.com/problems/shortestpath2) | shortestpath2 | 2.7 | <a href="Kattis/shortestpath2.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Shortlex](https://open.kattis.com/problems/shortlex) | shortlex | 3.3 | <a href="Kattis/shortlex.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Elegant Showroom](https://open.kattis.com/problems/showroom) | showroom | 4.3 | <a href="Kattis/showroom.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Shuffling Along](https://open.kattis.com/problems/shuffling) | shuffling | 2.5 | <a href="Kattis/shuffling.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Sibice](https://open.kattis.com/problems/sibice) | sibice | 1.3 | <a href="Kattis/sibice.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Sideways Sorting](https://open.kattis.com/problems/sidewayssorting) | sidewayssorting | 1.9 | <a href="Kattis/sidewayssorting.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Digit Product](https://open.kattis.com/problems/sifferprodukt) | sifferprodukt | 1.5 | <a href="Kattis/sifferprodukt.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Siffrid's Digit Sum](https://open.kattis.com/problems/siffrid) | siffrid | 2.0 | <a href="Kattis/siffrid.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Bridging Signals](https://open.kattis.com/problems/signals) | signals | 2.5 | <a href="Kattis/signals.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Silver Star Stands Alone](https://open.kattis.com/problems/silverstarstandsalone) | silverstarstandsalone | 2.5 | <a href="Kattis/silverstarstandsalone.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Símanúmer](https://open.kattis.com/problems/simanumer) | simanumer | 3.0 | <a href="Kattis/simanumer.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Simon Says](https://open.kattis.com/problems/simon) | simon | 2.1 | <a href="Kattis/simon.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Simone](https://open.kattis.com/problems/simone) | simone | 1.9 | <a href="Kattis/simone.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Simon Says](https://open.kattis.com/problems/simonsays) | simonsays | 1.4 | <a href="Kattis/simonsays.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Simple Addition](https://open.kattis.com/problems/simpleaddition) | simpleaddition | 2.9 | <a href="Kattis/simpleaddition.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Simple Arithmetic](https://open.kattis.com/problems/simplearithmetic) | simplearithmetic | 4.7 | <a href="Kattis/simplearithmetic.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Simple Cron Spec](https://open.kattis.com/problems/simplecronspec) | simplecronspec | 2.1 | <a href="Kattis/simplecronspec.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Simple Factoring](https://open.kattis.com/problems/simplefactoring) | simplefactoring | 2.5 | <a href="Kattis/simplefactoring.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Simple Polygon](https://open.kattis.com/problems/simplepolygon) | simplepolygon | 4.8 | <a href="Kattis/simplepolygon.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Simplicity](https://open.kattis.com/problems/simplicity) | simplicity | 2.5 | <a href="Kattis/simplicity.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Sing a Song of Sixpence](https://open.kattis.com/problems/singasongofsixpence) | singasongofsixpence | 2.5 | <a href="Kattis/singasongofsixpence.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [The Last Pizza](https://open.kattis.com/problems/sistapizzan) | sistapizzan | 4.9 | <a href="Kattis/sistapizzan.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Sith](https://open.kattis.com/problems/sith) | sith | 1.6 | <a href="Kattis/sith.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Sjecista](https://open.kattis.com/problems/sjecista) | sjecista | 1.8 | <a href="Kattis/sjecista.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Skák](https://open.kattis.com/problems/skak) | skak | 1.2 | <a href="Kattis/skak.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Skammstöfun](https://open.kattis.com/problems/skammstofun) | skammstofun | 1.5 | <a href="Kattis/skammstofun.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Skener](https://open.kattis.com/problems/skener) | skener | 1.4 | <a href="Kattis/skener.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Concatenate](https://open.kattis.com/problems/skeytasaman) | skeytasaman | 1.1 | <a href="Kattis/skeytasaman.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Skilaboð](https://open.kattis.com/problems/skilabod) | skilabod | 2.3 | <a href="Kattis/skilabod.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Ski Traffic](https://open.kattis.com/problems/skitraffic) | skitraffic | 1.8 | <a href="Kattis/skitraffic.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Skocimis](https://open.kattis.com/problems/skocimis) | skocimis | 1.5 | <a href="Kattis/skocimis.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Graduation](https://open.kattis.com/problems/skolavslutningen) | skolavslutningen | 2.2 | <a href="Kattis/skolavslutningen.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Going to School](https://open.kattis.com/problems/skolvagen) | skolvagen | 2.6 | <a href="Kattis/skolvagen.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Turn It Up!](https://open.kattis.com/problems/skruop) | skruop | 1.5 | <a href="Kattis/skruop.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Sky Islands](https://open.kattis.com/problems/skyislands) | skyislands | 2.0 | <a href="Kattis/skyislands.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Slatkisi](https://open.kattis.com/problems/slatkisi) | slatkisi | 1.8 | <a href="Kattis/slatkisi.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Slikar](https://open.kattis.com/problems/slikar) | slikar | 3.0 | <a href="Kattis/slikar.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Slikar](https://open.kattis.com/problems/slikar2) | slikar2 | 4.6 | <a href="Kattis/slikar2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Sly Students](https://open.kattis.com/problems/slystudents) | slystudents | 2.1 | <a href="Kattis/slystudents.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Smallest Calculated Value](https://open.kattis.com/problems/smallestcalculatedvalue) | smallestcalculatedvalue | 2.7 | <a href="Kattis/smallestcalculatedvalue.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Smallest Multiple](https://open.kattis.com/problems/smallestmultiple) | smallestmultiple | 3.2 | <a href="Kattis/smallestmultiple.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Smart Phone](https://open.kattis.com/problems/smartphone) | smartphone | 2.9 | <a href="Kattis/smartphone.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [SMIL](https://open.kattis.com/problems/smil) | smil | 1.5 | <a href="Kattis/smil.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Smoothie Stand](https://open.kattis.com/problems/smoothiestand) | smoothiestand | 2.2 | <a href="Kattis/smoothiestand.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Snakes and Masters](https://open.kattis.com/problems/snakesandmasters) | snakesandmasters | 3.1 | <a href="Kattis/snakesandmasters.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Snapper Chain (Easy)](https://open.kattis.com/problems/snappereasy) | snappereasy | 2.5 | <a href="Kattis/snappereasy.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Snapper Chain (Hard)](https://open.kattis.com/problems/snapperhard) | snapperhard | 2.2 | <a href="Kattis/snapperhard.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Touch Grass](https://open.kattis.com/problems/snertugras) | snertugras | 3.1 | <a href="Kattis/snertugras.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Snowfall](https://open.kattis.com/problems/snowfall) | snowfall | 1.6 | <a href="Kattis/snowfall.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Social Distancing](https://open.kattis.com/problems/socialdistancing2) | socialdistancing2 | 2.2 | <a href="Kattis/socialdistancing2.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Social running](https://open.kattis.com/problems/socialrunning) | socialrunning | 2.3 | <a href="Kattis/socialrunning.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Soda Slurper](https://open.kattis.com/problems/sodaslurper) | sodaslurper | 1.8 | <a href="Kattis/sodaslurper.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Soft Passwords](https://open.kattis.com/problems/softpasswords) | softpasswords | 2.4 | <a href="Kattis/softpasswords.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Sok](https://open.kattis.com/problems/sok) | sok | 1.7 | <a href="Kattis/sok.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Solidus Fraction](https://open.kattis.com/problems/solidus) | solidus | 3.0 | <a href="Kattis/solidus.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Peg Solitaire](https://open.kattis.com/problems/solitaire) | solitaire | 3.0 | <a href="Kattis/solitaire.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Some Sum](https://open.kattis.com/problems/somesum) | somesum | 2.2 | <a href="Kattis/somesum.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Sort](https://open.kattis.com/problems/sort) | sort | 2.4 | <a href="Kattis/sort.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Sort of Sort](https://open.kattis.com/problems/sortofsort) | sortofsort | 2.1 | <a href="Kattis/sortofsort.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Sort of Sorting](https://open.kattis.com/problems/sortofsorting) | sortofsorting | 1.6 | <a href="Kattis/sortofsorting.java"><img src="https://img.icons8.com/color/96/java-coffee-cup-logo--v1.png" alt="Java" width="32" height="32"></a> |
+| [Sort Two Numbers](https://open.kattis.com/problems/sorttwonumbers) | sorttwonumbers | 1.2 | <a href="Kattis/sorttwonumbers.rs"><img src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/96/external-rust-is-a-multi-paradigm-system-programming-language-logo-bold-tal-revivo.png" alt="Rust" width="32" height="32"></a> |
+| [Sóttkví](https://open.kattis.com/problems/sottkvi) | sottkvi | 1.7 | <a href="Kattis/sottkvi.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [The Sound of Silence](https://open.kattis.com/problems/sound) | sound | 3.7 | <a href="Kattis/sound.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Soundex](https://open.kattis.com/problems/soundex) | soundex | 2.3 | <a href="Kattis/soundex.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Soylent](https://open.kattis.com/problems/soylent) | soylent | 1.8 | <a href="Kattis/soylent.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Space Race](https://open.kattis.com/problems/spacerace) | spacerace | 2.1 | <a href="Kattis/spacerace.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Spavanac](https://open.kattis.com/problems/spavanac) | spavanac | 1.4 | <a href="Kattis/spavanac.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Need for Speed](https://open.kattis.com/problems/speed) | speed | 3.1 | <a href="Kattis/speed.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Speeding](https://open.kattis.com/problems/speeding) | speeding | 1.5 | <a href="Kattis/speeding.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Speed Limit](https://open.kattis.com/problems/speedlimit) | speedlimit | 1.5 | <a href="Kattis/speedlimit.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Speedrun](https://open.kattis.com/problems/speedrun) | speedrun | 2.2 | <a href="Kattis/speedrun.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a><a href="Kattis/speedrun.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a><a href="Kattis/speedrun.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Speedrunning](https://open.kattis.com/problems/speedrunning) | speedrunning | 3.4 | <a href="Kattis/speedrunning.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Sperhling](https://open.kattis.com/problems/spehrling) | spehrling | 2.4 | <a href="Kattis/spehrling.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Spelling Bee](https://open.kattis.com/problems/spellingbee) | spellingbee | 2.0 | <a href="Kattis/spellingbee.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Spelling with Chemistry](https://open.kattis.com/problems/spellingwithchemistry) | spellingwithchemistry | 5.4 | <a href="Kattis/spellingwithchemistry.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Spider Fashion](https://open.kattis.com/problems/spiderfashion) | spiderfashion | 3.1 | <a href="Kattis/spiderfashion.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Spiderman's Workout](https://open.kattis.com/problems/spiderman) | spiderman | 3.5 | <a href="Kattis/spiderman.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Cards Sorting](https://open.kattis.com/problems/spilarodun) | spilarodun | 1.6 | <a href="Kattis/spilarodun.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Splat](https://open.kattis.com/problems/splat) | splat | 2.6 | <a href="Kattis/splat.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Sports Rank](https://open.kattis.com/problems/sportsrank2) | sportsrank2 | 3.3 | <a href="Kattis/sportsrank2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Spritt](https://open.kattis.com/problems/spritt) | spritt | 1.3 | <a href="Kattis/spritt.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Square Peg](https://open.kattis.com/problems/squarepeg) | squarepeg | 1.5 | <a href="Kattis/squarepeg.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Square Peg in a Round Hole](https://open.kattis.com/problems/squarepegs) | squarepegs | 2.5 | <a href="Kattis/squarepegs.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Squawk Virus](https://open.kattis.com/problems/squawk) | squawk | 3.1 | <a href="Kattis/squawk.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Sretan](https://open.kattis.com/problems/sretan) | sretan | 2.9 | <a href="Kattis/sretan.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Illuminated City](https://open.kattis.com/problems/stadiljus) | stadiljus | 2.1 | <a href="Kattis/stadiljus.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a><a href="Kattis/stadiljus.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Stafsetning](https://open.kattis.com/problems/stafsetning) | stafsetning | 2.2 | <a href="Kattis/stafsetning.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Stafur](https://open.kattis.com/problems/stafur) | stafur | 1.5 | <a href="Kattis/stafur.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Biased Standings](https://open.kattis.com/problems/standings) | standings | 3.1 | <a href="Kattis/standings.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Star Arrangements](https://open.kattis.com/problems/stararrangements) | stararrangements | 1.8 | <a href="Kattis/stararrangements.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Star Battles I](https://open.kattis.com/problems/starbattles1) | starbattles1 | 2.7 | <a href="Kattis/starbattles1.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Star Wars röðun](https://open.kattis.com/problems/starwars2) | starwars2 | 1.7 | <a href="Kattis/starwars2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Statistics](https://open.kattis.com/problems/statistics) | statistics | 1.6 | <a href="Kattis/statistics.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Staying Frosty](https://open.kattis.com/problems/stayingfrosty) | stayingfrosty | 1.4 | <a href="Kattis/stayingfrosty.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Sticky Keys](https://open.kattis.com/problems/stickykeys) | stickykeys | 1.4 | <a href="Kattis/stickykeys.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Sticky Situation](https://open.kattis.com/problems/stickysituation) | stickysituation | 2.4 | <a href="Kattis/stickysituation.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Stikl](https://open.kattis.com/problems/stikl) | stikl | 3.7 | <a href="Kattis/stikl.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a><a href="Kattis/stikl.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Daydreaming Stockbroker](https://open.kattis.com/problems/stockbroker) | stockbroker | 3.1 | <a href="Kattis/stockbroker.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Stock Prices](https://open.kattis.com/problems/stockprices) | stockprices | 2.0 | <a href="Kattis/stockprices.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Messy lists](https://open.kattis.com/problems/stokigalistor) | stokigalistor | 2.1 | <a href="Kattis/stokigalistor.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Stop Counting!](https://open.kattis.com/problems/stopcounting) | stopcounting | 5.0 | <a href="Kattis/stopcounting.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Stopwatch](https://open.kattis.com/problems/stopwatch) | stopwatch | 1.4 | <a href="Kattis/stopwatch.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Stórafmæli](https://open.kattis.com/problems/storafmaeli) | storafmaeli | 1.2 | <a href="Kattis/storafmaeli.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Straights](https://open.kattis.com/problems/straights) | straights | 3.2 | <a href="Kattis/straights.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Stream Lag](https://open.kattis.com/problems/streamlag) | streamlag | 3.8 | <a href="Kattis/streamlag.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Streets Ahead](https://open.kattis.com/problems/streetsahead) | streetsahead | 2.1 | <a href="Kattis/streetsahead.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [String Matching](https://open.kattis.com/problems/stringmatching) | stringmatching | 3.2 | <a href="Kattis/stringmatching.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Subaruba](https://open.kattis.com/problems/subaruba) | subaruba | 4.1 | <a href="Kattis/subaruba.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Subprime](https://open.kattis.com/problems/subprime) | subprime | 3.6 | <a href="Kattis/subprime.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Counting Subsequences (Hard)](https://open.kattis.com/problems/subseqhard) | subseqhard | 3.1 | <a href="Kattis/subseqhard.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Subtraction Plus Plus](https://open.kattis.com/problems/subtractionplusplus) | subtractionplusplus | 5.4 | <a href="Kattis/subtractionplusplus.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Subtraction Plus Plus Plus](https://open.kattis.com/problems/subtractionplusplusplus) | subtractionplusplusplus | 4.2 | <a href="Kattis/subtractionplusplusplus.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Successful Zoom](https://open.kattis.com/problems/successfulzoom) | successfulzoom | 2.5 | <a href="Kattis/successfulzoom.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Succession](https://open.kattis.com/problems/succession) | succession | 5.1 | <a href="Kattis/succession.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Sudoku Verify](https://open.kattis.com/problems/sudokuverify) | sudokuverify | 2.4 | <a href="Kattis/sudokuverify.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Sum Kind of Problem](https://open.kattis.com/problems/sumkindofproblem) | sumkindofproblem | 1.4 | <a href="Kattis/sumkindofproblem.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Summer Trip](https://open.kattis.com/problems/summertrip) | summertrip | 3.1 | <a href="Kattis/summertrip.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Sum of the Others](https://open.kattis.com/problems/sumoftheothers) | sumoftheothers | 2.1 | <a href="Kattis/sumoftheothers.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Sum of the Year](https://open.kattis.com/problems/sumoftheyear) | sumoftheyear | 1.5 | <a href="Kattis/sumoftheyear.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Sums of Primes](https://open.kattis.com/problems/sumsofprimes) | sumsofprimes | 3.7 | <a href="Kattis/sumsofprimes.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a><a href="Kattis/sumsofprimes.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Sum Squared Digits Function](https://open.kattis.com/problems/sumsquareddigits) | sumsquareddigits | 1.5 | <a href="Kattis/sumsquareddigits.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Sun and Moon](https://open.kattis.com/problems/sunandmoon) | sunandmoon | 2.1 | <a href="Kattis/sunandmoon.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Supercomputer](https://open.kattis.com/problems/supercomputer) | supercomputer | 2.4 | <a href="Kattis/supercomputer.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a><a href="Kattis/supercomputer.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Superyatzy](https://open.kattis.com/problems/superyatzy) | superyatzy | 1.6 | <a href="Kattis/superyatzy.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Suspension Bridges](https://open.kattis.com/problems/suspensionbridges) | suspensionbridges | 3.8 | <a href="Kattis/suspensionbridges.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Swap to Sort](https://open.kattis.com/problems/swaptosort) | swaptosort | 2.9 | <a href="Kattis/swaptosort.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Sweet Dreams](https://open.kattis.com/problems/sweetdreams) | sweetdreams | 1.6 | <a href="Kattis/sweetdreams.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Sylvester Construction](https://open.kattis.com/problems/sylvester) | sylvester | 2.2 | <a href="Kattis/sylvester.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Symmetric Order](https://open.kattis.com/problems/symmetricorder) | symmetricorder | 1.7 | <a href="Kattis/symmetricorder.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Synchronizing Lists](https://open.kattis.com/problems/synchronizinglists) | synchronizinglists | 1.6 | <a href="Kattis/synchronizinglists.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Geofencing](https://open.kattis.com/problems/syndargirding) | syndargirding | 3.6 | <a href="Kattis/syndargirding.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [T9 Spelling](https://open.kattis.com/problems/t9spelling) | t9spelling | 1.5 | <a href="Kattis/t9spelling.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Tabs and spaces](https://open.kattis.com/problems/tabsandspaces) | tabsandspaces | 3.3 | <a href="Kattis/tabsandspaces.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Tai's formula](https://open.kattis.com/problems/taisformula) | taisformula | 1.5 | <a href="Kattis/taisformula.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Tajna](https://open.kattis.com/problems/tajna) | tajna | 2.0 | <a href="Kattis/tajna.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Taking Inventory](https://open.kattis.com/problems/takinginventory) | takinginventory | 1.7 | <a href="Kattis/takinginventory.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Taking Out the Trash](https://open.kattis.com/problems/takingoutthetrash) | takingoutthetrash | 3.6 | <a href="Kattis/takingoutthetrash.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Takkar](https://open.kattis.com/problems/takkar) | takkar | 1.1 | <a href="Kattis/takkar.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Takk fyrir mig](https://open.kattis.com/problems/takkfyrirmig) | takkfyrirmig | 1.2 | <a href="Kattis/takkfyrirmig.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Taktsveðjur](https://open.kattis.com/problems/taktsvedjur) | taktsvedjur | 3.0 | <a href="Kattis/taktsvedjur.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Tall Enough](https://open.kattis.com/problems/tallenough) | tallenough | 1.6 | <a href="Kattis/tallenough.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Talnalás](https://open.kattis.com/problems/talnalas) | talnalas | 2.7 | <a href="Kattis/talnalas.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Tarifa](https://open.kattis.com/problems/tarifa) | tarifa | 1.4 | <a href="Kattis/tarifa.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Tautology](https://open.kattis.com/problems/tautology) | tautology | 2.5 | <a href="Kattis/tautology.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Teacher Evaluation](https://open.kattis.com/problems/teacherevaluation) | teacherevaluation | 2.8 | <a href="Kattis/teacherevaluation.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Happy Telephones](https://open.kattis.com/problems/telephones) | telephones | 2.7 | <a href="Kattis/telephones.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Telja](https://open.kattis.com/problems/telja) | telja | 1.2 | <a href="Kattis/telja.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Time Travelling Temperatures](https://open.kattis.com/problems/temperature) | temperature | 2.1 | <a href="Kattis/temperature.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Temperature Confusion](https://open.kattis.com/problems/temperatureconfusion) | temperatureconfusion | 2.8 | <a href="Kattis/temperatureconfusion.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Teque](https://open.kattis.com/problems/teque) | teque | 3.3 | <a href="Kattis/teque.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Ternarian Weights](https://open.kattis.com/problems/ternarianweights) | ternarianweights | 3.1 | <a href="Kattis/ternarianweights.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a><a href="Kattis/ternarianweights.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Terraforming](https://open.kattis.com/problems/terraforming) | terraforming | 2.4 | <a href="Kattis/terraforming.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Test Drive](https://open.kattis.com/problems/testdrive) | testdrive | 2.0 | <a href="Kattis/testdrive.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Testing LEDs](https://open.kattis.com/problems/testingleds) | testingleds | 1.5 | <a href="Kattis/testingleds.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Tetration](https://open.kattis.com/problems/tetration) | tetration | 1.7 | <a href="Kattis/tetration.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Tetris](https://open.kattis.com/problems/tetris) | tetris | 2.2 | <a href="Kattis/tetris.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Texture Analysis](https://open.kattis.com/problems/textureanalysis) | textureanalysis | 3.8 | <a href="Kattis/textureanalysis.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Thank God it’s Friday](https://open.kattis.com/problems/tgif) | tgif | 3.0 | <a href="Kattis/tgif.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Thanos](https://open.kattis.com/problems/thanos) | thanos | 2.1 | <a href="Kattis/thanos.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Thanos the Hero](https://open.kattis.com/problems/thanosthehero) | thanosthehero | 2.6 | <a href="Kattis/thanosthehero.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [The Backslash Problem](https://open.kattis.com/problems/thebackslashproblem) | thebackslashproblem | 2.2 | <a href="Kattis/thebackslashproblem.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [The Deal of the Day](https://open.kattis.com/problems/thedealoftheday) | thedealoftheday | 2.3 | <a href="Kattis/thedealoftheday.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [The Grand Adventure](https://open.kattis.com/problems/thegrandadventure) | thegrandadventure | 1.8 | <a href="Kattis/thegrandadventure.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [The Last Problem](https://open.kattis.com/problems/thelastproblem) | thelastproblem | 1.5 | <a href="Kattis/thelastproblem.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [The N Days of Christmas](https://open.kattis.com/problems/thendaysofchristmas) | thendaysofchristmas | 1.4 | <a href="Kattis/thendaysofchristmas.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [The Plank](https://open.kattis.com/problems/theplank) | theplank | 1.5 | <a href="Kattis/theplank.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Thermostat Trouble](https://open.kattis.com/problems/thermostat) | thermostat | 3.4 | <a href="Kattis/thermostat.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Thirsty Cow](https://open.kattis.com/problems/thirstycow) | thirstycow | 1.9 | <a href="Kattis/thirstycow.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [This Ain't Your Grandpa's Checkerboard](https://open.kattis.com/problems/thisaintyourgrandpascheckerboard) | thisaintyourgrandpascheckerboard | 1.7 | <a href="Kattis/thisaintyourgrandpascheckerboard.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Þjarki](https://open.kattis.com/problems/thjarki) | thjarki | 5.9 | <a href="Kattis/thjarki.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Thoring test](https://open.kattis.com/problems/thoringtest) | thoringtest | 2.0 | <a href="Kattis/thoringtest.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Three Dice](https://open.kattis.com/problems/threedice) | threedice | 4.6 | <a href="Kattis/threedice.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Three Powers](https://open.kattis.com/problems/threepowers) | threepowers | 2.4 | <a href="Kattis/threepowers.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Threes and Fives](https://open.kattis.com/problems/threesandfives) | threesandfives | 4.5 | <a href="Kattis/threesandfives.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Game of Throwns](https://open.kattis.com/problems/throwns) | throwns | 2.0 | <a href="Kattis/throwns.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Ticket Completed?](https://open.kattis.com/problems/ticketcompleted) | ticketcompleted | 3.2 | <a href="Kattis/ticketcompleted.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Tic-Tac State](https://open.kattis.com/problems/tictacstate) | tictacstate | 2.4 | <a href="Kattis/tictacstate.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Tic-Tac-Toe AI](https://open.kattis.com/problems/tictactoeai) | tictactoeai | 3.7 | <a href="Kattis/tictactoeai.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Passing Time](https://open.kattis.com/problems/tidsfordriv) | tidsfordriv | 1.6 | <a href="Kattis/tidsfordriv.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Tight words](https://open.kattis.com/problems/tight) | tight | 2.7 | <a href="Kattis/tight.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Tildes](https://open.kattis.com/problems/tildes) | tildes | 2.5 | <a href="Kattis/tildes.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Til hamingju](https://open.kattis.com/problems/tilhamingju) | tilhamingju | 1.0 | <a href="Kattis/tilhamingju.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Timebomb](https://open.kattis.com/problems/timebomb) | timebomb | 2.1 | <a href="Kattis/timebomb.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Stuck In A Time Loop](https://open.kattis.com/problems/timeloop) | timeloop | 1.2 | <a href="Kattis/timeloop.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a><a href="Kattis/timeloop.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Tired Terry](https://open.kattis.com/problems/tiredterry) | tiredterry | 3.2 | <a href="Kattis/tiredterry.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Title Cost](https://open.kattis.com/problems/titlecost) | titlecost | 1.5 | <a href="Kattis/titlecost.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Töflur](https://open.kattis.com/problems/toflur) | toflur | 2.4 | <a href="Kattis/toflur.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Toggi](https://open.kattis.com/problems/toggi) | toggi | 2.4 | <a href="Kattis/toggi.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Toilet Seat](https://open.kattis.com/problems/toilet) | toilet | 2.6 | <a href="Kattis/toilet.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Tok Tik](https://open.kattis.com/problems/toktik) | toktik | 1.6 | <a href="Kattis/toktik.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a><a href="Kattis/toktik.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Toll Booths](https://open.kattis.com/problems/tollbooths) | tollbooths | 4.7 | <a href="Kattis/tollbooths.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [ToLower](https://open.kattis.com/problems/tolower) | tolower | 2.4 | <a href="Kattis/tolower.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Tölvunarfræðingar telja](https://open.kattis.com/problems/tolvunarfraedingartelja) | tolvunarfraedingartelja | 1.1 | <a href="Kattis/tolvunarfraedingartelja.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Torn To Pieces](https://open.kattis.com/problems/torn2pieces) | torn2pieces | 3.1 | <a href="Kattis/torn2pieces.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Tower Construction](https://open.kattis.com/problems/tornbygge) | tornbygge | 1.7 | <a href="Kattis/tornbygge.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Töskupökkun](https://open.kattis.com/problems/toskupokkun) | toskupokkun | 3.8 | <a href="Kattis/toskupokkun.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Touchscreen Keyboard](https://open.kattis.com/problems/touchscreenkeyboard) | touchscreenkeyboard | 2.1 | <a href="Kattis/touchscreenkeyboard.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Tour de France](https://open.kattis.com/problems/tourdefrance) | tourdefrance | 2.8 | <a href="Kattis/tourdefrance.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Tourists](https://open.kattis.com/problems/tourists) | tourists | 4.1 | <a href="Kattis/tourists.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [A Towering Problem](https://open.kattis.com/problems/towering) | towering | 2.4 | <a href="Kattis/towering.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Tracking Shares](https://open.kattis.com/problems/trackingshares) | trackingshares | 2.4 | <a href="Kattis/trackingshares.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Traffic Lights](https://open.kattis.com/problems/trafficlights) | trafficlights | 3.3 | <a href="Kattis/trafficlights.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Training](https://open.kattis.com/problems/training) | training | 1.6 | <a href="Kattis/training.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Train Passengers](https://open.kattis.com/problems/trainpassengers) | trainpassengers | 3.0 | <a href="Kattis/trainpassengers.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Train Timetables](https://open.kattis.com/problems/traintimetables) | traintimetables | 3.1 | <a href="Kattis/traintimetables.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Tram](https://open.kattis.com/problems/tram) | tram | 2.2 | <a href="Kattis/tram.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Transit Woes](https://open.kattis.com/problems/transitwoes) | transitwoes | 1.5 | <a href="Kattis/transitwoes.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Translation](https://open.kattis.com/problems/translation) | translation | 1.5 | <a href="Kattis/translation.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Trapizza](https://open.kattis.com/problems/trapizza) | trapizza | 2.0 | <a href="Kattis/trapizza.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Treasure Hunt](https://open.kattis.com/problems/treasure) | treasure | 7.4 | <a href="Kattis/treasure.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Treasure Hunt](https://open.kattis.com/problems/treasurehunt) | treasurehunt | 2.3 | <a href="Kattis/treasurehunt.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Treehouses](https://open.kattis.com/problems/treehouses) | treehouses | 2.9 | <a href="Kattis/treehouses.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Tree Skiing](https://open.kattis.com/problems/treeskiing) | treeskiing | 2.5 | <a href="Kattis/treeskiing.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Three in a Row](https://open.kattis.com/problems/treirad) | treirad | 1.5 | <a href="Kattis/treirad.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Tri](https://open.kattis.com/problems/tri) | tri | 1.8 | <a href="Kattis/tri.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [The Triangle Factory](https://open.kattis.com/problems/triangelfabriken) | triangelfabriken | 1.3 | <a href="Kattis/triangelfabriken.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Triangle Drama](https://open.kattis.com/problems/triangledrama) | triangledrama | 2.6 | <a href="Kattis/triangledrama.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Triangles of a Square](https://open.kattis.com/problems/trianglesofasquare) | trianglesofasquare | 1.9 | <a href="Kattis/trianglesofasquare.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Triangle Text](https://open.kattis.com/problems/triangulartext) | triangulartext | 6.2 | <a href="Kattis/triangulartext.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Triangle Area](https://open.kattis.com/problems/triarea) | triarea | 1.2 | <a href="Kattis/triarea.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Trik](https://open.kattis.com/problems/trik) | trik | 1.4 | <a href="Kattis/trik.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Triangle Trilemma](https://open.kattis.com/problems/trilemma) | trilemma | 3.0 | <a href="Kattis/trilemma.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [The Trip, 2007](https://open.kattis.com/problems/trip2007) | trip2007 | 2.7 | <a href="Kattis/trip2007.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Triple Sevens](https://open.kattis.com/problems/triplesevens) | triplesevens | 1.6 | <a href="Kattis/triplesevens.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Triple Texting](https://open.kattis.com/problems/tripletexting) | tripletexting | 1.7 | <a href="Kattis/tripletexting.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Trip Odometer](https://open.kattis.com/problems/tripodometer) | tripodometer | 2.1 | <a href="Kattis/tripodometer.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Tri Tiling](https://open.kattis.com/problems/tritiling) | tritiling | 2.7 | <a href="Kattis/tritiling.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Trojke](https://open.kattis.com/problems/trojke) | trojke | 3.3 | <a href="Kattis/trojke.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Troll Hunt](https://open.kattis.com/problems/trollhunt) | trollhunt | 2.5 | <a href="Kattis/trollhunt.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Truls' Troubles](https://open.kattis.com/problems/trulstrubbel) | trulstrubbel | 1.5 | <a href="Kattis/trulstrubbel.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Turtle Master](https://open.kattis.com/problems/turtlemaster) | turtlemaster | 3.5 | <a href="Kattis/turtlemaster.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [ICPC Tutorial](https://open.kattis.com/problems/tutorial) | tutorial | 3.1 | <a href="Kattis/tutorial.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Take Two Stones](https://open.kattis.com/problems/twostones) | twostones | 1.2 | <a href="Kattis/twostones.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Two-sum](https://open.kattis.com/problems/twosum) | twosum | 1.2 | <a href="Kattis/twosum.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Typo](https://open.kattis.com/problems/typo) | typo | 6.4 | <a href="Kattis/typo.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Úllen dúllen doff](https://open.kattis.com/problems/ullendullendoff) | ullendullendoff | 1.7 | <a href="Kattis/ullendullendoff.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Úllen Dúllen Doff 2](https://open.kattis.com/problems/ullendullendoff2) | ullendullendoff2 | 2.5 | <a href="Kattis/ullendullendoff2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Ultimate Binary Watch](https://open.kattis.com/problems/ultimatebinarywatch) | ultimatebinarywatch | 2.1 | <a href="Kattis/ultimatebinarywatch.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Ultimate License Plate](https://open.kattis.com/problems/ultimatelicenseplate) | ultimatelicenseplate | 5.2 | <a href="Kattis/ultimatelicenseplate.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Umferð](https://open.kattis.com/problems/umferd) | umferd | 1.3 | <a href="Kattis/umferd.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Umm Code](https://open.kattis.com/problems/ummcode) | ummcode | 3.3 | <a href="Kattis/ummcode.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Undead or Alive](https://open.kattis.com/problems/undeadoralive) | undeadoralive | 1.4 | <a href="Kattis/undeadoralive.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [UnDetected](https://open.kattis.com/problems/undetected) | undetected | 3.2 | <a href="Kattis/undetected.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Union-Find](https://open.kattis.com/problems/unionfind) | unionfind | 3.4 | <a href="Kattis/unionfind.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a><a href="Kattis/unionfind.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [University Zoning](https://open.kattis.com/problems/universityzoning) | universityzoning | 2.9 | <a href="Kattis/universityzoning.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Unlockable](https://open.kattis.com/problems/unlockable) | unlockable | 2.4 | <a href="Kattis/unlockable.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Unlock Pattern](https://open.kattis.com/problems/unlockpattern) | unlockpattern | 1.9 | <a href="Kattis/unlockpattern.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Uno Reverse](https://open.kattis.com/problems/unoreverse) | unoreverse | 5.6 | <a href="Kattis/unoreverse.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Uppröðun](https://open.kattis.com/problems/upprodun) | upprodun | 1.5 | <a href="Kattis/upprodun.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [The Ups and Downs of Investing](https://open.kattis.com/problems/upsanddownsofinvesting) | upsanddownsofinvesting | 3.8 | <a href="Kattis/upsanddownsofinvesting.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Upside Down](https://open.kattis.com/problems/upsidedown) | upsidedown | 1.6 | <a href="Kattis/upsidedown.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [UTF-8](https://open.kattis.com/problems/utf8) | utf8 | 2.2 | <a href="Kattis/utf8.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Excursion](https://open.kattis.com/problems/utflykt) | utflykt | 1.9 | <a href="Kattis/utflykt.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [The Uxuhul Voting System](https://open.kattis.com/problems/uxuhulvoting) | uxuhulvoting | 3.1 | <a href="Kattis/uxuhulvoting.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Vacation Time](https://open.kattis.com/problems/vacationtime) | vacationtime | 3.6 | <a href="Kattis/vacationtime.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Vaccine Efficacy](https://open.kattis.com/problems/vaccineefficacy) | vaccineefficacy | 2.8 | <a href="Kattis/vaccineefficacy.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Vacuumba](https://open.kattis.com/problems/vacuumba) | vacuumba | 2.0 | <a href="Kattis/vacuumba.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Fallen Chimney](https://open.kattis.com/problems/vaeltetskorsten) | vaeltetskorsten | 1.3 | <a href="Kattis/vaeltetskorsten.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Right-of-Way](https://open.kattis.com/problems/vajningsplikt) | vajningsplikt | 2.3 | <a href="Kattis/vajningsplikt.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Vandalism](https://open.kattis.com/problems/vandalism) | vandalism | 1.4 | <a href="Kattis/vandalism.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Variable Arithmetic](https://open.kattis.com/problems/variablearithmetic) | variablearithmetic | 2.3 | <a href="Kattis/variablearithmetic.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Electric Torch](https://open.kattis.com/problems/vasaljos) | vasaljos | 9.0 | <a href="Kattis/vasaljos.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Vauvau](https://open.kattis.com/problems/vauvau) | vauvau | 2.0 | <a href="Kattis/vauvau.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Veci](https://open.kattis.com/problems/veci) | veci | 1.5 | <a href="Kattis/veci.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Vector Functions](https://open.kattis.com/problems/vectorfunctions) | vectorfunctions | 3.1 | <a href="Kattis/vectorfunctions.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Veður - Lokaðar heiðar](https://open.kattis.com/problems/vedurheidar) | vedurheidar | 1.3 | <a href="Kattis/vedurheidar.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Veður - Vindhraði](https://open.kattis.com/problems/vedurvindhradi) | vedurvindhradi | 1.7 | <a href="Kattis/vedurvindhradi.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Vefþjónatjón](https://open.kattis.com/problems/vefthjonatjon) | vefthjonatjon | 1.6 | <a href="Kattis/vefthjonatjon.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Passport Dates](https://open.kattis.com/problems/vegabrefadagsetningar) | vegabrefadagsetningar | 1.8 | <a href="Kattis/vegabrefadagsetningar.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Boiling Vegetables](https://open.kattis.com/problems/vegetables) | vegetables | 3.8 | <a href="Kattis/vegetables.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Veggja Kalli](https://open.kattis.com/problems/veggjakalli) | veggjakalli | 3.3 | <a href="Kattis/veggjakalli.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Velkomin!](https://open.kattis.com/problems/velkomin) | velkomin | 1.0 | <a href="Kattis/velkomin.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Who wins?](https://open.kattis.com/problems/vemvinner) | vemvinner | 1.8 | <a href="Kattis/vemvinner.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Enjoy Your Repast!](https://open.kattis.com/problems/verditheradgodu) | verditheradgodu | 1.1 | <a href="Kattis/verditheradgodu.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Video Speedup](https://open.kattis.com/problems/videospeedup) | videospeedup | 1.9 | <a href="Kattis/videospeedup.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Viðsnúningur](https://open.kattis.com/problems/vidsnuningur) | vidsnuningur | 1.1 | <a href="Kattis/vidsnuningur.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Vinir](https://open.kattis.com/problems/vinir) | vinir | 1.8 | <a href="Kattis/vinir.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Virtual Friends](https://open.kattis.com/problems/virtualfriends) | virtualfriends | 3.0 | <a href="Kattis/virtualfriends.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Virus](https://open.kattis.com/problems/virus3) | virus3 | 1.6 | <a href="Kattis/virus3.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [VisuAlgo Online Quiz](https://open.kattis.com/problems/visualgo) | visualgo | 3.3 | <a href="Kattis/visualgo.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Volim](https://open.kattis.com/problems/volim) | volim | 1.6 | <a href="Kattis/volim.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Popular Vote](https://open.kattis.com/problems/vote) | vote | 2.6 | <a href="Kattis/vote.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Waif Until Dark](https://open.kattis.com/problems/waif) | waif | 2.7 | <a href="Kattis/waif.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Wake up call](https://open.kattis.com/problems/wakeupcall) | wakeupcall | 1.4 | <a href="Kattis/wakeupcall.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [A Walk Through The Forest](https://open.kattis.com/problems/walkforest) | walkforest | 5.1 | <a href="Kattis/walkforest.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Trapezoid Walkway](https://open.kattis.com/problems/walkway) | walkway | 2.8 | <a href="Kattis/walkway.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Warehouse](https://open.kattis.com/problems/warehouse) | warehouse | 2.0 | <a href="Kattis/warehouse.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Watchdog](https://open.kattis.com/problems/watchdog) | watchdog | 2.3 | <a href="Kattis/watchdog.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Water Journal](https://open.kattis.com/problems/waterjournal) | waterjournal | 2.2 | <a href="Kattis/waterjournal.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Watersheds](https://open.kattis.com/problems/watersheds) | watersheds | 3.2 | <a href="Kattis/watersheds.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Water Slide Waste (Easy)](https://open.kattis.com/problems/waterslidewasteeasy) | waterslidewasteeasy | 1.7 | <a href="Kattis/waterslidewasteeasy.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Waterworld](https://open.kattis.com/problems/waterworld) | waterworld | 2.3 | <a href="Kattis/waterworld.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Weak Vertices](https://open.kattis.com/problems/weakvertices) | weakvertices | 1.5 | <a href="Kattis/weakvertices.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Weather Nodes](https://open.kattis.com/problems/weathernodes) | weathernodes | 5.5 | <a href="Kattis/weathernodes.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [The Weight Of Words](https://open.kattis.com/problems/weightofwords) | weightofwords | 2.2 | <a href="Kattis/weightofwords.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Welcome to Code Jam (Easy)](https://open.kattis.com/problems/welcomeeasy) | welcomeeasy | 2.0 | <a href="Kattis/welcomeeasy.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Welcome to Code Jam (Hard)](https://open.kattis.com/problems/welcomehard) | welcomehard | 3.5 | <a href="Kattis/welcomehard.cpp"><img src="https://img.icons8.com/color/96/c-plus-plus-logo.png" alt="C++" width="32" height="32"></a> |
+| [Welcome Sign](https://open.kattis.com/problems/welcomesign) | welcomesign | 2.1 | <a href="Kattis/welcomesign.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [We Need to Go Deeper](https://open.kattis.com/problems/weneedtogodeeper) | weneedtogodeeper | 2.9 | <a href="Kattis/weneedtogodeeper.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [WERTYU](https://open.kattis.com/problems/wertyu) | wertyu | 2.8 | <a href="Kattis/wertyu.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [WFF 'N PROOF](https://open.kattis.com/problems/wffnproof) | wffnproof | 3.0 | <a href="Kattis/wffnproof.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [What a Deal!](https://open.kattis.com/problems/whatadeal) | whatadeal | 2.2 | <a href="Kattis/whatadeal.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [What does the fox say?](https://open.kattis.com/problems/whatdoesthefoxsay) | whatdoesthefoxsay | 2.0 | <a href="Kattis/whatdoesthefoxsay.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Where, Oh Where Has my Little Dog Gone?](https://open.kattis.com/problems/wherehasmylittledoggone) | wherehasmylittledoggone | 2.5 | <a href="Kattis/wherehasmylittledoggone.kt"><img src="https://img.icons8.com/color/96/kotlin.png" alt="Kotlin" width="32" height="32"></a> |
+| [Where's My Internet??](https://open.kattis.com/problems/wheresmyinternet) | wheresmyinternet | 2.1 | <a href="Kattis/wheresmyinternet.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Which Base is it Anyway?](https://open.kattis.com/problems/whichbase) | whichbase | 2.5 | <a href="Kattis/whichbase.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Which is Greater?](https://open.kattis.com/problems/whichisgreater) | whichisgreater | 1.2 | <a href="Kattis/whichisgreater.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [Which Number Kind Is It?](https://open.kattis.com/problems/whichnumberkindisit2) | whichnumberkindisit2 | 1.4 | <a href="Kattis/whichnumberkindisit2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Which One is Larger](https://open.kattis.com/problems/whichoneislarger) | whichoneislarger | 3.3 | <a href="Kattis/whichoneislarger.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a><a href="Kattis/whichoneislarger.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Wizard of Odds](https://open.kattis.com/problems/wizardofodds) | wizardofodds | 2.4 | <a href="Kattis/wizardofodds.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Wood Cutting](https://open.kattis.com/problems/woodcutting) | woodcutting | 3.0 | <a href="Kattis/woodcutting.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Word Cloud](https://open.kattis.com/problems/wordcloud) | wordcloud | 2.3 | <a href="Kattis/wordcloud.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Word Game](https://open.kattis.com/problems/wordgame2) | wordgame2 | 5.4 | <a href="Kattis/wordgame2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Wordle Feedback](https://open.kattis.com/problems/wordlefeedback) | wordlefeedback | 2.4 | <a href="Kattis/wordlefeedback.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Words for Numbers](https://open.kattis.com/problems/wordsfornumbers) | wordsfornumbers | 2.6 | <a href="Kattis/wordsfornumbers.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Work From Home](https://open.kattis.com/problems/workfromhome) | workfromhome | 2.5 | <a href="Kattis/workfromhome.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Assigning Workstations](https://open.kattis.com/problems/workstations) | workstations | 2.1 | <a href="Kattis/workstations.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a><a href="Kattis/workstations.py"><img src="https://img.icons8.com/color/96/python--v1.png" alt="Python" width="32" height="32"></a> |
+| [XORsistinn](https://open.kattis.com/problems/xorsist) | xorsist | 2.2 | <a href="Kattis/xorsist.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [XORsistinn 2](https://open.kattis.com/problems/xorsist2) | xorsist2 | 3.3 | <a href="Kattis/xorsist2.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Yin and Yang Stones](https://open.kattis.com/problems/yinyangstones) | yinyangstones | 1.9 | <a href="Kattis/yinyangstones.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Yoda](https://open.kattis.com/problems/yoda) | yoda | 2.1 | <a href="Kattis/yoda.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [You Be the Judge!](https://open.kattis.com/problems/youbethejudge) | youbethejudge | 5.8 | <a href="Kattis/youbethejudge.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Zadaca](https://open.kattis.com/problems/zadaca) | zadaca | 3.3 | <a href="Kattis/zadaca.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Zagrade](https://open.kattis.com/problems/zagrade) | zagrade | 3.0 | <a href="Kattis/zagrade.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Zamka](https://open.kattis.com/problems/zamka) | zamka | 1.4 | <a href="Kattis/zamka.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Stand on Zanzibar](https://open.kattis.com/problems/zanzibar) | zanzibar | 1.5 | <a href="Kattis/zanzibar.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Zapis](https://open.kattis.com/problems/zapis) | zapis | 5.3 | <a href="Kattis/zapis.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Zebras and Ocelots](https://open.kattis.com/problems/zebrasocelots) | zebrasocelots | 3.5 | <a href="Kattis/zebrasocelots.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Un-bear-able Zoo](https://open.kattis.com/problems/zoo) | zoo | 1.7 | <a href="Kattis/zoo.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Zoom](https://open.kattis.com/problems/zoom) | zoom | 1.5 | <a href="Kattis/zoom.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
+| [Zyxab](https://open.kattis.com/problems/zyxab) | zyxab | 2.4 | <a href="Kattis/zyxab.hs"><img src="https://img.icons8.com/color/96/haskell.png" alt="Haskell" width="32" height="32"></a> |
