@@ -1,11 +1,16 @@
 #include <iostream>
 #include <vector>
 #include <cmath>
+#include <iomanip>
 
 using namespace std;
 
 int main(){
+    cin.tie(nullptr);
+    ios::sync_with_stdio(false);
     cin.exceptions(ios::failbit);
+    cout << setprecision(10) << fixed;
+
     int n, m, a, b;
     cin >> n >> m;
     vector<vector<bool>> graph(n, vector<bool>(n, false));
@@ -18,12 +23,10 @@ int main(){
     vector<int> current;
     bool independent;
     int s = 0;
-    for (int bit {0}; bit < pow(2, n); bit++){
+    for (int bit {0}; bit < (1 << n); bit++){
         independent = true;
         for (int j {0}; j < n; j++){
-            if ((bit & (1 << j)) == 0){
-                continue;
-            } 
+            if ((bit & (1 << j)) == 0) continue;
             for (int k : current){
                 if (graph[j][k]) {
                     independent = false;
@@ -33,8 +36,7 @@ int main(){
             if ( ! independent) break;
             current.push_back(j);
         }
-
-        if (independent) s += 1;
+        s += independent;
         current.clear();
     }
     
