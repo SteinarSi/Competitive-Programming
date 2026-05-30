@@ -1,12 +1,13 @@
+{-# LANGUAGE MultiWayIf #-}
+
 main :: IO ()
 main = do
-    input <- getLine
-    let wordss = getWordList ((length input)`div`3) input
-    if wordss!!0 == wordss!!1 then putStrLn (wordss!!0) 
-    else if wordss!!0 == wordss!!2 then putStrLn (wordss!!0)
-    else putStrLn (wordss!!1)
-
-
-getWordList :: Int -> String -> [String]
-getWordList _ "" = []
-getWordList n s = take n s : getWordList n (drop n s)
+    xss <- getLine
+    let n = length xss `div` 3
+        xs = take n xss
+        ys = take n (drop n xss)
+        zs = drop (2*n) xss
+    putStrLn $ if
+        | xs == ys  -> xs
+        | ys == zs  -> ys
+        | otherwise -> zs

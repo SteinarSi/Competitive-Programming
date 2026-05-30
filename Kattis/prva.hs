@@ -1,16 +1,10 @@
-import           Control.Arrow   ((>>>))
-import           Data.Function   ((&))
-import           Data.List       (transpose)
-import           Data.List.Split (chunksOf)
-
+import           Control.Arrow ((>>>))
+import           Data.List     (transpose)
 
 main :: IO ()
 main = do
-    rows <- fmap (tail . lines) getContents
-    let cols = transpose rows
-        words = concatMap (filter (length >>> (>=2)) . splitOn '#') (rows ++ cols)
-
-    putStrLn $ minimum words
+    rows <- fmap (lines >>> drop 1) getContents
+    putStrLn (minimum (concatMap (splitOn '#' >>> filter (length >>> (>=2))) (rows ++ transpose rows)))
 
 splitOn :: Eq a => a -> [a] -> [[a]]
 splitOn _ [] = []

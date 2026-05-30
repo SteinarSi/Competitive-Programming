@@ -1,17 +1,22 @@
-import Control.Monad (replicateM)
+import           Control.Arrow         ((>>>))
+import qualified Data.ByteString.Char8 as C
+import           Data.Maybe            (fromJust)
 
 main :: IO ()
-main = do
-    n <- getLine 
-    xs <- replicateM (read n) getLine
-    print $ sumYears (map words xs) 0
+main = C.getContents >>= (
+            C.lines
+        >>> drop 1
+        >>> map (C.words >>> map readDouble >>> product)
+        >>> sum
+        >>> print
+    )
 
-
-sumYears :: [[String]] -> Double -> Double 
-sumYears [] sum = sum
-sumYears ([quality, time]:xs) sum = sumYears xs (sum + read quality * read time)
-
-
-main' = getLine >>= \n -> mapM (const getLine) [1..read n] >>= print . sum . map (\x -> ( read (words x!!0) :: Float) * (read (words x!!1) :: Float)) 
-
-main'' = getLine >>= flip replicateM (words <$> getLine) . read >>= print . sum . map (\x -> (read (x!!0)) * (read (x!!1) :: Float))
+readDouble :: C.ByteString -> Double
+readDouble s | C.head s == '-' = negate (readDouble (C.tail s))
+             | C.length r1 <= 1 = fromIntegral int
+             | otherwise = fromIntegral int + float
+    where (int, r1) | C.head s == '.' = (0, s)
+                    | otherwise = fromJust (C.readInt s)
+          Just (dec, r2) = C.readInt (C.tail r1)
+          float | C.length r1 <= 1 = 0
+                | otherwise = fromIntegral dec / (10^^fromIntegral (C.length r1 - C.length r2 - 1))

@@ -1,21 +1,19 @@
+import           Control.Arrow         ((>>>))
+import qualified Data.ByteString.Char8 as C
+import           Data.Functor          ((<&>))
+import           Data.Maybe            (fromJust)
+
 main :: IO ()
 main = do
-    pris <- getLine
-    let kostnad = read pris::Double
-    plener <- getLine
-    let antall = read plener::Double
-    plenliste <- getInputs antall []
-    print (kostnad * (total plenliste))
+    c:_:xs <- C.getContents <&> (C.lines >>> map (C.words >>> map readDouble >>> product))
+    print (c * sum xs)
 
-total :: [[String]] -> Double
-total [] = 0
-total (x:xs) = (read (x!!0) :: Double) * (read (x!!1) :: Double) + total xs
-
-getInputs :: (Eq t, Num t) => t -> [[String]] -> IO [[String]]
-getInputs antall liste = do
-    case antall of
-        0 -> pure liste
-        _ -> do
-            input <- getLine
-            let intervall = words input
-            getInputs (antall-1) (intervall : liste)
+readDouble :: C.ByteString -> Double
+readDouble s | C.head s == '-' = negate (readDouble (C.tail s))
+             | C.length r1 <= 1 = fromIntegral int
+             | otherwise = fromIntegral int + float
+    where (int, r1) | C.head s == '.' = (0, s)
+                    | otherwise = fromJust (C.readInt s)
+          Just (dec, r2) = C.readInt (C.tail r1)
+          float | C.length r1 <= 1 = 0
+                | otherwise = fromIntegral dec / (10^^fromIntegral (C.length r1 - C.length r2 - 1))
