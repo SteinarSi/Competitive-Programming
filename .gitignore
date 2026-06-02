@@ -31,3 +31,5 @@ Unfinished*
 Advent of Code/inputs/prod
 scripts*
 Competitions/
+__pycache__/
+.mypy_cache/
