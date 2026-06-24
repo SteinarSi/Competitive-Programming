@@ -4,11 +4,12 @@ using namespace std;
 
 template <typename Num>
 class UF {
+  private:
     vector<Num> repr;
     vector<Num> size;
     Num comps;
 
-    public:
+  public:
     UF(Num n){
         repr = vector<Num>(n, 0);
         size = vector<Num>(n, 1);

@@ -9,7 +9,7 @@ class ID {
     map<string,i64> name2id;
     vector<string> id2name;
 
-public:
+  public:
     void add(const string &s){
         get_id(s);
     }

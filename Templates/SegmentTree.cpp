@@ -11,7 +11,7 @@ class SegmentTree{
     int n;
     bool incl;
 
-    public:
+  public:
     SegmentTree(vector<Data> data, bool inclusive, Op f){
         n = data.size();
         incl = inclusive;
@@ -50,7 +50,6 @@ class SegmentTree{
         Data ret {tree[l]};
         if (l == r) return ret;
         if (incl) ret = f(ret, tree[r]);
-        // ret = f(ret, tree[r]); // ta med denne om vi vi skal ha [l, r] istedet for [l,r>
         int pl, pr;
         while (true){
             pl = parent(l);

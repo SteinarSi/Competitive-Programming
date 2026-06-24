@@ -8,7 +8,7 @@ using i64 = int64_t;
 
 template<typename Num>
 class Flow {
-    private:
+  private:
     int size;
     int source;
     int sink;
@@ -19,7 +19,7 @@ class Flow {
     vector<int> parent;
     vector<int> bfs_q;
 
-    public:
+  public:
     vector<bool> seen;
     Flow(int _source, int _sink, int n){
         source = _source;

@@ -1,16 +1,11 @@
-{-# LANGUAGE FlexibleContexts #-}
-
-module UnionFind (UF, newUF, find, merge, connected, size, components) where
-
 import           Control.Applicative (liftA2)
+import           Control.Arrow       ((>>>))
 import           Control.Monad       (when)
 import           Control.Monad.ST    (ST)
-import           Data.Array.ST       (STUArray, newArray, readArray, writeArray)
-import           Data.STRef          (STRef, modifySTRef', newSTRef, readSTRef)
-
-import           Control.Arrow       ((>>>))
 import           Data.Array.Base     (listUArrayST)
+import           Data.Array.ST       (STUArray, newArray, readArray, writeArray)
 import           Data.Ix             (Ix (..))
+import           Data.STRef          (STRef, modifySTRef', newSTRef, readSTRef)
 
 data UF s i = UF {
     rng   :: (i,i),
@@ -21,21 +16,23 @@ data UF s i = UF {
 
 newUF :: Ix i => (i,i) -> ST s (UF s i)
 newUF r = UF r <$> newSTRef n <*> listUArrayST (0,n-1) [0..] <*> newArray (0,n-1) 1
-    where n = rangeSize r
+  where
+    n = rangeSize r
 
 find :: Ix i => UF s i -> i -> ST s Int
 find uf u = find' (index (rng uf) u)
-    where find' ix = do
-            parent <- readArray (repr uf) ix
-            if ix == parent
-                then pure ix
-                else do
-                    grandparent <- readArray (repr uf) parent
-                    writeArray (repr uf) ix grandparent
-                    find' grandparent
+  where
+    find' ix = do
+        parent <- readArray (repr uf) ix
+        if ix == parent
+            then pure ix
+            else do
+                grandparent <- readArray (repr uf) parent
+                writeArray (repr uf) ix grandparent
+                find' grandparent
 
-merge :: Ix i => UF s i -> i -> i -> ST s Bool
-merge uf u v = do
+union :: Ix i => UF s i -> i -> i -> ST s Bool
+union uf u v = do
     p1 <- find uf u
     p2 <- find uf v
     if p1 == p2
