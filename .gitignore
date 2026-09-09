@@ -24,8 +24,8 @@ cabal.project.local~
 tempCodeRunnerFile.py
 *.exe
 .vscode*
-a.in
-a.out
+*.in
+*.out
 out/
 Unfinished*
 Advent of Code/inputs/prod
