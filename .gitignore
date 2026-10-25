@@ -33,3 +33,4 @@ scripts*
 Competitions/
 __pycache__/
 .mypy_cache/
+The Birthday Problem/
